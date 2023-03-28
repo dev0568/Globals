@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="178.238pt" height="192.254pt" viewBox="0 0 178.238 192.254">
+<g enable-background="new">
+<path transform="matrix(1,0,0,-1,0,192.254)" d="M 0 0 L 178.238 0 L 178.238 192.254 L 0 192.254 Z " fill="#19a8d5"/>
+<path transform="matrix(1,0,0,-1,87.1104,75.6277)" stroke-width="1.089" stroke-linecap="butt" stroke-miterlimit="10" stroke-linejoin="miter" fill="none" stroke="#ffffff" d="M 0 0 L -10.479 -18.148 L 10.479 -18.148 L 0 0 Z "/>
+<clipPath id="cp0">
+<path transform="matrix(1,0,0,-1,0,192.254)" d="M 0 192.254 L 178.238 192.254 L 178.238 0 L 0 0 Z "/>
+</clipPath>
+<g clip-path="url(#cp0)">
+<path transform="matrix(1,0,0,-1,141.5566,84.7019)" stroke-width="1.089" stroke-linecap="butt" stroke-miterlimit="10" stroke-linejoin="miter" fill="none" stroke="#ffffff" d="M 0 0 C 0 -30.07 -24.377 -54.446 -54.446 -54.446 C -84.516 -54.446 -108.893 -30.07 -108.893 0 C -108.893 30.07 -84.516 54.446 -54.446 54.446 C -24.377 54.446 0 30.07 0 0 Z "/>
+<path transform="matrix(1,0,0,-1,109.7959,45.408998)" stroke-width="1.089" stroke-linecap="butt" stroke-miterlimit="10" stroke-linejoin="miter" fill="none" stroke="#ffffff" d="M 0 0 L -45.371 0 L -68.058 -39.293 L -45.371 -78.586 L 0 -78.586 L 22.687 -39.293 L 0 0 Z "/>
+<path transform="matrix(1,0,0,-1,0,192.254)" stroke-width="1.089" stroke-linecap="butt" stroke-miterlimit="10" stroke-linejoin="miter" fill="none" stroke="#ffffff" d="M 109.796 84.867 L 64.425 84.867 L 64.425 130.239 L 109.796 130.239 Z "/>
+</g>
+<text fill="#ffffff" xml:space="preserve" transform="matrix(1 0 -0 1 0 192.254)" font-size="13" font-family="SemplicitaPro" font-weight="bold"><tspan y="-17.8726" x="17.6729 28.7229 36.4449 47.5859 57.4659 65.187908 73.36491 78.94191 87.11891 94.84091 102.52391 110.32391 122.114917 133.25592 140.93892 144.81291 154.05591">GENDER-RESPONSIVE</tspan></text>
+</g>
+</svg>

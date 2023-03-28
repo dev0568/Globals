@@ -1,0 +1,2706 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GCM Ojectives</title>
+  <link rel="stylesheet" href="./styles/style.css">
+  <link rel="stylesheet" href="./styles/Objectives-style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="js/jquery.min.js"></script>
+  <script src="js/index.js"></script>
+  <script src="js/tinyi18n.js"></script>
+  <script src="js/gcmobjectives.js"></script>
+</head>
+
+<body>
+  <!-- Header -->
+  <div class="hero-bg-about">
+    <header class="headerBg">
+      <div class="container-fluid">
+        <div class="header">
+          <input id="menu__toggle" type="checkbox" />
+          <label class="menu__btn" for="menu__toggle"><span></span></label>
+          <div class="logo">
+            <a target="_blank" href="https://migrationnetwork.un.org/" id="HeaderRightLink">
+              <img id='headerunited' src="./images/UNNM-Logo-TAG.png" alt="logo" />
+            </a>
+            <a target="_blank" class="LogoforMobile" target="_blank"
+              href="https://migrationnetwork.un.org/migration-network-hub"><img src="./images/footer-Logo.png"
+                alt="logo" /></a>
+          </div>
+          <div id="overlay"></div>
+
+          <div id="menu-close" class="menu__box">
+            <div class="collapse-top">
+              <a target="_blank" href="https://migrationnetwork.un.org/migration-network-hub"><img class="collapse-logo"
+                  src="./images/footer-Logo.png" alt="logo" /></a>
+            </div>
+            <ul>
+              <li><a href="/" data-translatekey="home"></a></li>
+              <li><a href="about.html" data-translatekey="about"></a></li>
+              <li><a href="gcmobjectives.html" class="active" data-translatekey="objective"></a></li>
+              <li><a href="Principles.html" data-translatekey="priniciples"></a></li>
+              <li> <a href="ImplementationSteps.html" data-translatekey="implementation"></a></li>
+              <li><a href="resources.html" data-translatekey="resources"></a></li>
+              <li>
+                <div class="dropdown">
+                  <button class="dropbtn" id="dropdowntext" onclick="myFunction()">English</button>
+                  <div id="selectBox" class="dropdown-content">
+                    <a onclick="changeFunc('en')">English</a>
+                    <a onclick="changeFunc('fr')">Français</a>
+                    <a onclick="changeFunc('spa')">Español</a>
+                  </div>
+                </div>
+              </li>
+            </ul>
+
+            <div class="collapse-bottom">
+              <h4 data-translatekey="gcmobjcollapsetitle"></h4>
+              <a target="_blank" href="https://migrationnetwork.un.org/migration-network-hub"><img
+                  src="./images/logo.svg" alt="logo" /></a>
+              <hr class="mobileview-divider">
+              <a target="_blank" href="https://migrationnetwork.un.org/migration-network-hub"><img id="headerunited2"
+                  class="secondImg" src="./images/mignet-logo.png" alt="logo" /></a>
+            </div>
+          </div>
+          <div class="Rightlogo">
+            <a target="_blank" class="LogoforWeb" target="_blank" id="HeaderLeftLink"
+              href="https://migrationnetwork.un.org/migration-network-hub"><img src="./images/logo.svg"
+                alt="logo" /></a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- first hero section -->
+    <section>
+      <div class="container">
+        <div class="objective-inner-section">
+          <div class="content">
+            <h2 class="banner-heading-text" data-translatekey="objective"></h2>
+            <p class="banner-des" data-translatekey="gcmobjectivedescriptionhero"></p>
+            <div class="btnSection">
+              <a target="_blank" class="primarybtn bookletpdf" id="" href="./pdf/booklet.pdf">
+                <span data-translatekey="gcmobjectivebookletbtntxt"></span>
+                <img src="./images/download.png" class="download-icon">
+              </a>
+            </div>
+          </div>
+          <div class="image-section"> <img class="gif" id="headerImg1" src="./images/gif/Cover_Mp4.gif" alt="Cover" />
+          </div>
+        </div>
+      </div>
+      <div class="scroller" id="scroll-to-bottom">
+        <p class="Explore-Text" data-translatekey="gcmobjectivescrollbtntxt"></p> <a>
+          <img src="./images/Arrow_8.png" class="down-icon" /></i></a>
+      </div>
+    </section>
+  </div>
+  <p id="pageScrollBottom"></p>
+  <!-- EXplore GCM section-->
+  <section>
+    <div class="container">
+      <div class="explore">
+        <div class="for-mobile">
+          <p data-translatekey="gcmobjective"></p>
+          <form class="search-form">
+            <input type="hidden" name="search-form-loc" id="search-form-loc" />
+            <div class="pos-rel">
+              <div class="search-form__selector">
+                <p class="search-form__label search-form__label--loc" data-translatekey="gcmobjectivetab3"></p>
+                <img class="search-form__icon" src="./images/AngleDownblue.svg" alt="AngleDownblue">
+              </div>
+              <ul class="search-form__dropdown" id="selectBox4">
+                <li class="search-form__value clickme2 active" data-tag="firstTab" data-loc="search-form-loc"
+                  data-translatekey="gcmobjectivetab3"></li>
+                <li class="search-form__value clickme2" data-tag="secondTab" data-loc="search-form-loc"
+                  data-translatekey="gcmminimze"></li>
+                <li class="search-form__value clickme2" data-tag="thirdTab" data-loc="search-form-loc"
+                  data-translatekey="gcminfo"></li>
+                <li class="search-form__value clickme2" data-tag="fourthTab" data-loc="search-form-loc"
+                  data-translatekey="gcmidentity"></li>
+                <li class="search-form__value clickme2" data-tag="fifthTab" data-loc="search-form-loc"
+                  data-translatekey="gcmpathways"></li>
+                <li class="search-form__value clickme2" data-tag="sixthTab" data-loc="search-form-loc"
+                  data-translatekey="gcmtab6"></li>
+                <li class="search-form__value clickme2" data-tag="seventhTab" data-loc="search-form-loc"
+                  data-translatekey="gcmtab7"></li>
+                <li class="search-form__value clickme2" data-tag="eighthTab" data-loc="search-form-loc"
+                  data-translatekey="gcmtab8"></li>
+                <li class="search-form__value clickme2" data-tag="ninthTab" data-loc="search-form-loc"
+                  data-translatekey="gcmtab9"></li>
+                <li class="search-form__value clickme2" data-tag="tenthTab" data-loc="search-form-loc"
+                  data-translatekey="gcmtab10"></li>
+                <li class="search-form__value clickme2" data-tag="eleventhtab" data-loc="search-form-loc"
+                  data-translatekey="gcmtab11"></li>
+                <li class="search-form__value clickme2" data-tag="twelfthTab" data-loc="search-form-loc"
+                  data-translatekey="gcmtab12"></li>
+                <li class="search-form__value clickme2" data-tag="thirteenthTab" data-loc="search-form-loc"
+                  data-translatekey="gcmtab13"></li>
+                <li class="search-form__value clickme2" data-tag="fourteenthTab" data-loc="search-form-loc"
+                  data-translatekey="gcmtab14"></li>
+                <li class="search-form__value clickme2" data-tag="fifteenthTab" data-loc="search-form-loc"
+                  data-translatekey="gcmtab15"></li>
+                <li class="search-form__value clickme2" data-tag="sixteenthTab" data-loc="search-form-loc"
+                  data-translatekey="gcmtab16"></li>
+                <li class="search-form__value clickme2" data-tag="seventeenthTab" data-loc="search-form-loc"
+                  data-translatekey="gcmtab17"></li>
+                <li class="search-form__value clickme2" data-tag="eighteenthTab" data-loc="search-form-loc"
+                  data-translatekey="gcmtab18"></li>
+                <li class="search-form__value clickme2" data-tag="nineteenthTab" data-loc="search-form-loc"
+                  data-translatekey="gcmtab19"></li>
+                <li class="search-form__value clickme2" data-tag="twentythTab" data-loc="search-form-loc"
+                  data-translatekey="gcmtab20"></li>
+                <li class="search-form__value clickme2" data-tag="twentytwothTab" data-loc="search-form-loc"
+                  data-translatekey="gcmtab21"></li>
+                <li class="search-form__value clickme2" data-tag="twentytwothTab" data-loc="search-form-loc"
+                  data-translatekey="gcmtab22"></li>
+                <li class="search-form__value clickme2" data-tag="twentythreethTab" data-loc="search-form-loc"
+                  data-translatekey="gcmtab23"></li>
+
+              </ul>
+            </div>
+          </form>
+        </div>
+        <div class="exploreDataSection">
+          <div class="tabs">
+            <!-- <div id="LeftSideSection"></div> -->
+            <button class="clickme2 btn1 active" data-tag="firstTab"> <img src="./images/objectiveIcon/Icon1.svg"
+                alt="gcmobjective"> <span data-translatekey="gcmobjectivetab3"></span>
+            </button>
+            <button class="clickme2 btn2" data-tag="secondTab"> <img src="./images/objectiveIcon/Icon2.svg"
+                alt="objectiveIcon">
+              <span data-translatekey="gcmminimze"></span>
+            </button>
+            <button class="clickme2 btn3" data-tag="thirdTab"><img src="./images/objectiveIcon/Icon3.svg"
+                alt="objectiveIcon"><span data-translatekey="gcminfo"></span>
+            </button>
+            <button class="clickme2 btn4" data-tag="fourthTab"><img src="./images/objectiveIcon/Icon4.svg"
+                alt="objectiveIcon"><span data-translatekey="gcmidentity"></span>
+            </button>
+            <button class="clickme2 btn5" data-tag="fifthTab"><img src="./images/objectiveIcon/Icon5.svg"
+                alt="objectiveIcon"><span data-translatekey="gcmpathways"></span>
+            </button>
+            <button class="clickme2 btn6" data-tag="sixthTab"><img src="./images/objectiveIcon/Icon6.svg"
+                alt="objectiveIcon"><span data-translatekey="gcmtab6"></span>
+            </button>
+            <button class="clickme2 btn7" data-tag="seventhTab"><img src="./images/objectiveIcon/Icon7.svg"
+                alt="objectiveIcon"><span data-translatekey="gcmtab7"></span>
+            </button>
+            <button class="clickme2 btn8" data-tag="eighthTab"><img src="./images/objectiveIcon/Icon8.svg"
+                alt="objectiveIcon"><span data-translatekey="gcmtab8"></span>
+            </button>
+            <button class="clickme2 btn9" data-tag="ninthTab"><img src="./images/objectiveIcon/Icon9.svg"
+                alt="objectiveIcon"><span data-translatekey="gcmtab9"></span>
+            </button>
+            <button class="clickme2 btn10" data-tag="tenthTab"><img src="./images/objectiveIcon/Icon10.svg"
+                alt="objectiveIcon"><span data-translatekey="gcmtab10"></span>
+            </button>
+            <button class="clickme2 btn11" data-tag="eleventhtab"><img src="./images/objectiveIcon/Icon11.svg"
+                alt="objectiveIcon"><span data-translatekey="gcmtab11"></span>
+            </button>
+            <button class="clickme2 btn12" data-tag="twelfthTab"><img src="./images/objectiveIcon/Icon12.svg"
+                alt="objectiveIcon"><span data-translatekey="gcmtab12"></span>
+            </button>
+            <button class="clickme2 btn13" data-tag="thirteenthTab"><img src="./images/objectiveIcon/Icon13.svg"
+                alt="objectiveIcon"><span data-translatekey="gcmtab13"></span>
+            </button>
+            <button class="clickme2 btn14" data-tag="fourteenthTab"><img src="./images/objectiveIcon/Icon14.svg"
+                alt="objectiveIcon"><span data-translatekey="gcmtab14"></span>
+            </button>
+            <button class="clickme2 btn15" data-tag="fifteenthTab"><img src="./images/objectiveIcon/Icon15.svg"
+                alt="objectiveIcon"><span data-translatekey="gcmtab15"></span>
+            </button>
+            <button class="clickme2 btn16" data-tag="sixteenthTab"><img src="./images/objectiveIcon/Icon16.svg"
+                alt="objectiveIcon"><span data-translatekey="gcmtab16"></span>
+            </button>
+            <button class="clickme2 btn17" data-tag="seventeenthTab"><img src="./images/objectiveIcon/Icon17.svg"
+                alt="objectiveIcon"><span data-translatekey="gcmtab17"></span>
+            </button>
+            <button class="clickme2 btn18" data-tag="eighteenthTab"><img src="./images/objectiveIcon/Icon18.svg"
+                alt="objectiveIcon"><span data-translatekey="gcmtab18"></span>
+            </button>
+            <button class="clickme2 btn19" data-tag="nineteenthTab"><img src="./images/objectiveIcon/Icon19.svg"
+                alt="objectiveIcon"><span data-translatekey="gcmtab19"></span></button>
+            <button class="clickme2 btn20" data-tag="twentythTab"><img src="./images/objectiveIcon/Icon20.svg"
+                alt="objectiveIcon"><span data-translatekey="gcmtab20"></span>
+            </button>
+            <button class="clickme2 btn21" data-tag="twentyonethTab"><img src="./images/objectiveIcon/Icon21.svg"
+                alt="objectiveIcon"><span data-translatekey="gcmtab21"></span>
+            </button> <button class="clickme2 btn22" data-tag="twentytwothTab"><img
+                src="./images/objectiveIcon/Icon22.svg" alt="objectiveIcon"><span data-translatekey="gcmtab22"></span>
+            </button>
+            <button class="clickme2 btn23" data-tag="twentythreethTab"><img src="./images/objectiveIcon/Icon23.svg"
+                alt="objectiveIcon"><span data-translatekey="gcmtab23"></span>
+            </button>
+          </div>
+          <div class="tab-data tab-inner2" id="firstTab">
+            <div class="card">
+              <img id="firstTabImg" src="./images/objectivesImg/GCM_01_EN.svg" alt="objectivesImg" />
+              <div class="wrapper">
+                <h2 data-translatekey="gcmobjectivetab1header"></h2>
+                <a target="_blank" href="./pdf/English/23 GCM Objectives/1-DATA.pdf" id="tab1pdf"
+                  data-translatekey="gcmobjectivelink"></a>
+              </div>
+            </div>
+            <div>
+              <div class="tab-button">
+                <button class="clickme active" data-tag="one" data-translatekey="gcmobjectivesubtabheading1">
+                </button> <button class="clickme" data-tag="two" data-translatekey="gcmobjectivesubtabheading2">
+                </button> <button class="clickme" data-tag="three" data-translatekey="gcmobjectivesubtabheading3">
+                </button>
+              </div>
+              <div class="tab-maindata">
+                <ul class="tab-inner des-text active" id="one">
+                  <li data-translatekey="gcmobjectivesubtabheadingdata1a"></li>
+                  <li data-translatekey="gcmobjectivesubtabheadingdata1b"></li>
+                  <li data-translatekey="gcmobjectivesubtabheadingdata1c"></li>
+                  <li data-translatekey="gcmobjectivesubtabheadingdata1d"></li>
+                  <li data-translatekey="gcmobjectivesubtabheadingdata1e"></li>
+                  <li data-translatekey="gcmobjectivesubtabheadingdata1f"></li>
+                  <li data-translatekey="gcmobjectivesubtabheadingdata1g"></li>
+                  <li data-translatekey="gcmobjectivesubtabheadingdata1h"></li>
+                  <li data-translatekey="gcmobjectivesubtabheadingdata1i"></li>
+                  <li data-translatekey="gcmobjectivesubtabheadingdata1j"></li>
+                  <li data-translatekey="gcmobjectivesubtabheadingdata1k"></li>
+                </ul>
+                <div class="tab-inner ex-main-div hide" id="two">
+                  <div class="ex-card nice">
+                    <svg width="46" height="30" viewBox="0 0 46 30" fill="red" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M46 3.99351L46 16.8831L22.8708 30L-2.65624e-06 16.8831L-1.51785e-06 3.99351L22.8708 17.5649L46 3.99351Z"
+                        fill="#5B366A" />
+                      <path
+                        d="M14.1489 8.96104C14.1489 4.01199 18.1117 1.40134e-06 23 1.82436e-06C27.8883 2.24738e-06 31.8511 4.012 31.8511 8.96104C31.8511 13.9101 27.8883 17.9221 23 17.9221C18.1117 17.9221 14.1489 13.9101 14.1489 8.96104Z"
+                        fill="#5B366A" />
+                    </svg>
+                    <h2 class="ex-heading" data-translatekey="ex-headingtab1"></h2>
+                    <p class="ex-des" data-translatekey="ex-destab1"></p>
+                  </div>
+                  <div class="ex-card">
+                    <svg width="46" height="30" viewBox="0 0 46 30" fill="red" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M46 3.99351L46 16.8831L22.8708 30L-2.65624e-06 16.8831L-1.51785e-06 3.99351L22.8708 17.5649L46 3.99351Z"
+                        fill="#5B366A" />
+                      <path
+                        d="M14.1489 8.96104C14.1489 4.01199 18.1117 1.40134e-06 23 1.82436e-06C27.8883 2.24738e-06 31.8511 4.012 31.8511 8.96104C31.8511 13.9101 27.8883 17.9221 23 17.9221C18.1117 17.9221 14.1489 13.9101 14.1489 8.96104Z"
+                        fill="#5B366A" />
+                    </svg>
+                    <h2 class="ex-heading" data-translatekey="ex-heading2"></h2>
+                    <p class="ex-des" data-translatekey="ex-des2"></p>
+                  </div>
+                  <div class="ex-card"> <svg width="46" height="30" viewBox="0 0 46 30" fill="red"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M46 3.99351L46 16.8831L22.8708 30L-2.65624e-06 16.8831L-1.51785e-06 3.99351L22.8708 17.5649L46 3.99351Z"
+                        fill="#5B366A" />
+                      <path
+                        d="M14.1489 8.96104C14.1489 4.01199 18.1117 1.40134e-06 23 1.82436e-06C27.8883 2.24738e-06 31.8511 4.012 31.8511 8.96104C31.8511 13.9101 27.8883 17.9221 23 17.9221C18.1117 17.9221 14.1489 13.9101 14.1489 8.96104Z"
+                        fill="#5B366A" />
+                    </svg>
+                    <h2 class="ex-heading" data-translatekey="ex-heading3"></h2>
+                    <p class="ex-des" data-translatekey="ex-des3"></p>
+                  </div>
+                  <div class="ex-card"> <svg width="46" height="30" viewBox="0 0 46 30" fill="red"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M46 3.99351L46 16.8831L22.8708 30L-2.65624e-06 16.8831L-1.51785e-06 3.99351L22.8708 17.5649L46 3.99351Z"
+                        fill="#5B366A" />
+                      <path
+                        d="M14.1489 8.96104C14.1489 4.01199 18.1117 1.40134e-06 23 1.82436e-06C27.8883 2.24738e-06 31.8511 4.012 31.8511 8.96104C31.8511 13.9101 27.8883 17.9221 23 17.9221C18.1117 17.9221 14.1489 13.9101 14.1489 8.96104Z"
+                        fill="#5B366A" />
+                    </svg>
+                    <h2 class="ex-heading" data-translatekey="ex-heading4"></h2>
+                    <p class="ex-des" data-translatekey="ex-des4"></p>
+                  </div>
+                </div>
+                <div class="tab-inner hide" id="three">
+                  <div class="ex-sdg-div"> <img class="ex-sdg-img img10" src="./images/goals/E_SDG_PRINT-10.jpg" />
+                    <div class="ex-sdg-txt-div">
+                      <h2 class="ex-sdg-heading" data-translatekey="ex-sdg-heading3a"></h2>
+                      <p class="ex-sdg-des" data-translatekey="ex-sdg-des3a"> </p>
+                    </div>
+                  </div>
+                  <div class="ex-sdg-div"> <img src="./images/goals/E_SDG_PRINT-17.jpg" class="ex-sdg-img img17" />
+                    <div class="ex-sdg-txt-div">
+                      <h2 class="ex-sdg-heading" data-translatekey="ex-sdg-heading3b"></h2>
+                      <p class="ex-sdg-des" data-translatekey="ex-sdg-des3b"> </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tab-data tab-inner2 hide" id="secondTab">
+            <div class="card"> <img id="secondTabImg" src="./images/objectivesImg/GCM_02_EN.svg" alt="objectivesImg" />
+              <div class="wrapper">
+                <h2 data-translatekey="gcmobjectivetabheading2"></h2>
+                <a href="./pdf/English/23 GCM Objectives/2-MINIMIZE THE ADVERSE DRIVERS.pdf" id="tab2pdf"
+                  data-translatekey="gcmobjectivelink" target="_blank"></a>
+              </div>
+            </div>
+            <div>
+              <div class="tab-button"> <button class="clickme active" data-tag="11"
+                  data-translatekey="gcmobjectivesubtabheading1"></button> <button class="clickme" data-tag="12"
+                  data-translatekey="gcmobjectivesubtabheading2"></button> <button class="clickme" data-tag="13"
+                  data-translatekey="gcmobjectivesubtabheading3"></button> </div>
+              <div class="tab-maindata">
+                <ul class="tab-inner des-text active" id="11">
+                  <li data-translatekey="tab-innerdes-textactivetab2a"> </li>
+                  <li data-translatekey="tab-innerdes-textactivetab2b"> </li>
+                  <li data-translatekey="tab-innerdes-textactivetab2c"> </li>
+                  <li data-translatekey="tab-innerdes-textactivetab2d"> </li>
+                  <li data-translatekey="tab-innerdes-textactivetab2e"> </li>
+                  <li data-translatekey="tab-innerdes-textactivetab2f"> </li>
+                  <li data-translatekey="tab-innerdes-textactivetab2g"> </li>
+                  <li data-translatekey="tab-innerdes-textactivetab2h"> </li>
+                  <li data-translatekey="tab-innerdes-textactivetab2i"> </li>
+                  <li data-translatekey="tab-innerdes-textactivetab2j"> </li>
+                  <li data-translatekey="tab-innerdes-textactivetab2k"> </li>
+                  <li data-translatekey="tab-innerdes-textactivetab2l"></li>
+                </ul>
+                <div class="tab-inner ex-main-div hide" id="12">
+                  <div class="ex-card"> <svg width="46" height="30" viewBox="0 0 46 30" fill="red"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M46 3.99351L46 16.8831L22.8708 30L-2.65624e-06 16.8831L-1.51785e-06 3.99351L22.8708 17.5649L46 3.99351Z"
+                        fill="#9c2569" />
+                      <path
+                        d="M14.1489 8.96104C14.1489 4.01199 18.1117 1.40134e-06 23 1.82436e-06C27.8883 2.24738e-06 31.8511 4.012 31.8511 8.96104C31.8511 13.9101 27.8883 17.9221 23 17.9221C18.1117 17.9221 14.1489 13.9101 14.1489 8.96104Z"
+                        fill="#9c2569" />
+                    </svg>
+                    <h2 class="ex-heading" data-translatekey="ex-headingtab2"></h2>
+                    <p class="ex-des" data-translatekey="ex-desctab2"></p>
+                  </div>
+                  <div class="ex-card"> <svg width="46" height="30" viewBox="0 0 46 30" fill="red"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M46 3.99351L46 16.8831L22.8708 30L-2.65624e-06 16.8831L-1.51785e-06 3.99351L22.8708 17.5649L46 3.99351Z"
+                        fill="#9c2569" />
+                      <path
+                        d="M14.1489 8.96104C14.1489 4.01199 18.1117 1.40134e-06 23 1.82436e-06C27.8883 2.24738e-06 31.8511 4.012 31.8511 8.96104C31.8511 13.9101 27.8883 17.9221 23 17.9221C18.1117 17.9221 14.1489 13.9101 14.1489 8.96104Z"
+                        fill="#9c2569" />
+                    </svg>
+                    <h2 class="ex-heading" data-translatekey="ex-headingtab2b"> </h2>
+                    <p class="ex-des" data-translatekey="ex-desctab2b"></p>
+                  </div>
+                  <div class="ex-card"> <svg width="46" height="30" viewBox="0 0 46 30" fill="red"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M46 3.99351L46 16.8831L22.8708 30L-2.65624e-06 16.8831L-1.51785e-06 3.99351L22.8708 17.5649L46 3.99351Z"
+                        fill="#9c2569" />
+                      <path
+                        d="M14.1489 8.96104C14.1489 4.01199 18.1117 1.40134e-06 23 1.82436e-06C27.8883 2.24738e-06 31.8511 4.012 31.8511 8.96104C31.8511 13.9101 27.8883 17.9221 23 17.9221C18.1117 17.9221 14.1489 13.9101 14.1489 8.96104Z"
+                        fill="#9c2569" />
+                    </svg>
+                    <h2 class="ex-heading" data-translatekey="ex-headingtab3b"> </h2>
+                    <p class="ex-des" data-translatekey="ex-desctab3b"></p>
+                  </div>
+                </div>
+                <div class="tab-inner hide" id="13">
+                  <div class="ex-sdg-div">
+                    <!-- <img src="./images/goals/E_SDG_PRINT-17.jpg" class="ex-sdg-img img17" /> -->
+                    <div class="ex-sdg-txt-div">
+                      <h2 class="ex-sdg-heading" data-translatekey="exsdgheadingtab3"> </h2>
+                      <p class="ex-sdg-des" data-translatekey="exsdgdestab3"> </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tab-data tab-inner2 hide" id="thirdTab">
+            <div class="card">
+              <img id="thirdTabImg" src="./images/objectivesImg/GCM_03_EN.svg" alt="objectivesImg" />
+              <div class="wrapper">
+                <h2 data-translatekey="ex-headingtab3"> </h2>
+                <a href="./pdf/English/23 GCM Objectives/3-INFORMATION PROVISION.pdf" id="tab3pdf"
+                  data-translatekey="gcmobjectivelink" target="_blank"></a>
+              </div>
+            </div>
+            <div>
+              <div class="tab-button">
+                <button class="clickme active" data-tag="14" data-translatekey="gcmobjectivesubtabheading1"></button>
+                <button class="clickme" data-tag="15" data-translatekey="gcmobjectivesubtabheading2"> </button> <button
+                  class="clickme" data-tag="16" data-translatekey="gcmobjectivesubtabheading3"></button>
+              </div>
+              <div class="tab-maindata">
+                <ul class="tab-inner des-text" id="14">
+                  <li data-translatekey="gcmobjectivetab3a"></li>
+                  <li data-translatekey="gcmobjectivetab3b"></li>
+                  <li data-translatekey="gcmobjectivetab3c"></li>
+                  <li data-translatekey="gcmobjectivetab3d"></li>
+                  <li data-translatekey="gcmobjectivetab3e"></li>
+                </ul>
+                <div class="tab-inner ex-main-div hide" id="15">
+                  <div class="ex-card"> <svg width="46" height="30" viewBox="0 0 46 30" fill="red"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M46 3.99351L46 16.8831L22.8708 30L-2.65624e-06 16.8831L-1.51785e-06 3.99351L22.8708 17.5649L46 3.99351Z"
+                        fill="#dc1767" />
+                      <path
+                        d="M14.1489 8.96104C14.1489 4.01199 18.1117 1.40134e-06 23 1.82436e-06C27.8883 2.24738e-06 31.8511 4.012 31.8511 8.96104C31.8511 13.9101 27.8883 17.9221 23 17.9221C18.1117 17.9221 14.1489 13.9101 14.1489 8.96104Z"
+                        fill="#dc1767" />
+                    </svg>
+                    <h2 class="ex-heading" data-translatekey="gcmobjectiveheadingsection2"></h2>
+                    <p class="ex-des" data-translatekey="gcmobjectivedatasection2"></p>
+                  </div>
+                  <div class="ex-card"> <svg width="46" height="30" viewBox="0 0 46 30" fill="red"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M46 3.99351L46 16.8831L22.8708 30L-2.65624e-06 16.8831L-1.51785e-06 3.99351L22.8708 17.5649L46 3.99351Z"
+                        fill="#dc1767" />
+                      <path
+                        d="M14.1489 8.96104C14.1489 4.01199 18.1117 1.40134e-06 23 1.82436e-06C27.8883 2.24738e-06 31.8511 4.012 31.8511 8.96104C31.8511 13.9101 27.8883 17.9221 23 17.9221C18.1117 17.9221 14.1489 13.9101 14.1489 8.96104Z"
+                        fill="#dc1767" />
+                    </svg>
+                    <h2 class="ex-heading" data-translatekey="gcmobjectiveheadingsection2a"></h2>
+                    <p class="ex-des" data-translatekey="gcmobjectivedatasection2a"></p>
+                  </div>
+                  <div class="ex-card"> <svg width="46" height="30" viewBox="0 0 46 30" fill="red"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M46 3.99351L46 16.8831L22.8708 30L-2.65624e-06 16.8831L-1.51785e-06 3.99351L22.8708 17.5649L46 3.99351Z"
+                        fill="#dc1767" />
+                      <path
+                        d="M14.1489 8.96104C14.1489 4.01199 18.1117 1.40134e-06 23 1.82436e-06C27.8883 2.24738e-06 31.8511 4.012 31.8511 8.96104C31.8511 13.9101 27.8883 17.9221 23 17.9221C18.1117 17.9221 14.1489 13.9101 14.1489 8.96104Z"
+                        fill="#dc1767" />
+                    </svg>
+                    <h2 class="ex-heading" data-translatekey="gcmobjectiveheadingsection2b"></h2>
+                    <p class="ex-des" data-translatekey="gcmobjectivedatasection2b"></p>
+                  </div>
+                  <div class="ex-card"> <svg width="46" height="30" viewBox="0 0 46 30" fill="red"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M46 3.99351L46 16.8831L22.8708 30L-2.65624e-06 16.8831L-1.51785e-06 3.99351L22.8708 17.5649L46 3.99351Z"
+                        fill="#dc1767" />
+                      <path
+                        d="M14.1489 8.96104C14.1489 4.01199 18.1117 1.40134e-06 23 1.82436e-06C27.8883 2.24738e-06 31.8511 4.012 31.8511 8.96104C31.8511 13.9101 27.8883 17.9221 23 17.9221C18.1117 17.9221 14.1489 13.9101 14.1489 8.96104Z"
+                        fill="#dc1767" />
+                    </svg>
+                    <h2 class="ex-heading" data-translatekey="gcmobjectiveheadingsection2c"></h2>
+                    <p class="ex-des" data-translatekey="gcmobjectivedatasection2c"></p>
+                  </div>
+                </div>
+                <div class="tab-inner hide" id="16">
+                  <div class="ex-sdg-div"> <img src="./images/goals/E_SDG_PRINT-01.jpg" class="ex-sdg-img img1" />
+                    <div class="ex-sdg-txt-div">
+                      <h2 class="ex-sdg-heading" data-translatekey="gcmobjectiveheadingsection3a">
+                      </h2>
+                      <p class="ex-sdg-des" data-translatekey="gcmobjectivedatasection3a"></p>
+                    </div>
+                  </div>
+                  <div class="ex-sdg-div"> <img src="./images/goals/E_SDG_PRINT-04.jpg" class="ex-sdg-img img4" />
+                    <div class="ex-sdg-txt-div">
+                      <h2 class="ex-sdg-heading" data-translatekey="gcmobjectiveheadingsection3b">
+                      </h2>
+                      <p class="ex-sdg-des" data-translatekey="gcmobjectivedatasection3b"></p>
+                    </div>
+                  </div>
+                  <div class="ex-sdg-div"> <img src="./images/goals/E_SDG_PRINT-05.jpg" class="ex-sdg-img img5" />
+                    <div class="ex-sdg-txt-div">
+                      <h2 class="ex-sdg-heading" data-translatekey="gcmobjectiveheadingsection3c">
+                      </h2>
+                      <p class="ex-sdg-des" data-translatekey="gcmobjectivedatasection3c"></p>
+                    </div>
+                  </div>
+                  <div class="ex-sdg-div"> <img src="./images/goals/E_SDG_PRINT-10.jpg" class="ex-sdg-img img10" />
+                    <div class="ex-sdg-txt-div">
+                      <h2 class="ex-sdg-heading" data-translatekey="gcmobjectiveheadingsection3d">
+                      </h2>
+                      <p class="ex-sdg-des" data-translatekey="gcmobjectivedatasection3d"></p>
+                    </div>
+                  </div>
+                  <div class="ex-sdg-div">
+                    <img src="./images/goals/E_SDG_PRINT-16.jpg" class="ex-sdg-img img16" />
+                    <div class="ex-sdg-txt-div">
+                      <h2 class="ex-sdg-heading" data-translatekey="gcmobjectiveheadingsection3e">
+                      </h2>
+                      <p class="ex-sdg-des" data-translatekey="gcmobjectivedatasection3e"></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tab-data tab-inner2 hide" id="fourthTab">
+            <div class="card"> <img id="fourthTabImg" src="./images/objectivesImg/GCM_04_EN.svg" alt="objectivesImg" />
+              <div class="wrapper">
+                <h2 data-translatekey="gcmheadingtab4"></h2>
+                <a href="./pdf/English/23 GCM Objectives/4-LEGAL IDENTITY.pdf" id="tab4pdf"
+                  data-translatekey="gcmobjectivelink" target="_blank"></a>
+              </div>
+            </div>
+            <div>
+              <div class="tab-button"> <button class="clickme active" data-tag="17"
+                  data-translatekey="gcmobjectivesubtabheading1"></button> <button class="clickme" data-tag="18"
+                  data-translatekey="gcmobjectivesubtabheading2"></button> <button class="clickme" data-tag="19"
+                  data-translatekey="gcmobjectivesubtabheading3"></button> </div>
+              <div class="tab-maindata">
+                <ul class="tab-inner des-text" id="17">
+                  <li data-translatekey="gcmobjectivetab4a"></li>
+                  <li data-translatekey="gcmobjectivetab4b"></li>
+                  <li data-translatekey="gcmobjectivetab4c"></li>
+                  <li data-translatekey="gcmobjectivetab4d"></li>
+                  <li data-translatekey="gcmobjectivetab4e"></li>
+                  <li data-translatekey="gcmobjectivetab4f"></li>
+                  <li data-translatekey="gcmobjectivetab4g"></li>
+                </ul>
+                <div class="tab-inner ex-main-div hide" id="18">
+                  <div class="ex-card"> <svg width="46" height="30" viewBox="0 0 46 30" fill="red"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M46 3.99351L46 16.8831L22.8708 30L-2.65624e-06 16.8831L-1.51785e-06 3.99351L22.8708 17.5649L46 3.99351Z"
+                        fill="#e82050" />
+                      <path
+                        d="M14.1489 8.96104C14.1489 4.01199 18.1117 1.40134e-06 23 1.82436e-06C27.8883 2.24738e-06 31.8511 4.012 31.8511 8.96104C31.8511 13.9101 27.8883 17.9221 23 17.9221C18.1117 17.9221 14.1489 13.9101 14.1489 8.96104Z"
+                        fill="#e82050" />
+                    </svg>
+                    <h2 class="ex-heading" data-translatekey="gcmobjectiveheadingsection4b"></h2>
+                    <p class="ex-des" data-translatekey="gcmobjectivedatasection4b"></p>
+                  </div>
+                  <div class="ex-card"> <svg width="46" height="30" viewBox="0 0 46 30" fill="red"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M46 3.99351L46 16.8831L22.8708 30L-2.65624e-06 16.8831L-1.51785e-06 3.99351L22.8708 17.5649L46 3.99351Z"
+                        fill="#e82050" />
+                      <path
+                        d="M14.1489 8.96104C14.1489 4.01199 18.1117 1.40134e-06 23 1.82436e-06C27.8883 2.24738e-06 31.8511 4.012 31.8511 8.96104C31.8511 13.9101 27.8883 17.9221 23 17.9221C18.1117 17.9221 14.1489 13.9101 14.1489 8.96104Z"
+                        fill="#e82050" />
+                    </svg>
+                    <h2 class="ex-heading" data-translatekey="gcmobjectiveheadingsection4c"></h2>
+                    <p class="ex-des" data-translatekey="gcmobjectivedatasection4c"> </p>
+                  </div>
+                  <div class="ex-card"> <svg width="46" height="30" viewBox="0 0 46 30" fill="red"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M46 3.99351L46 16.8831L22.8708 30L-2.65624e-06 16.8831L-1.51785e-06 3.99351L22.8708 17.5649L46 3.99351Z"
+                        fill="#e82050" />
+                      <path
+                        d="M14.1489 8.96104C14.1489 4.01199 18.1117 1.40134e-06 23 1.82436e-06C27.8883 2.24738e-06 31.8511 4.012 31.8511 8.96104C31.8511 13.9101 27.8883 17.9221 23 17.9221C18.1117 17.9221 14.1489 13.9101 14.1489 8.96104Z"
+                        fill="#e82050" />
+                    </svg>
+                    <h2 class="ex-heading" data-translatekey="gcmobjectiveheadingsection4d"></h2>
+                    <p class="ex-des" data-translatekey="gcmobjectivedatasection4d"></p>
+                  </div>
+                </div>
+                <div class="tab-inner hide" id="19">
+                  <div class="ex-sdg-div"> <img src="./images/goals/E_SDG_PRINT-01.jpg" class="ex-sdg-img img1" />
+                    <div class="ex-sdg-txt-div">
+                      <h2 class="ex-sdg-heading" data-translatekey="gcmobjectiveheadingsection4a">
+                      </h2>
+                      <p class="ex-sdg-des" data-translatekey="gcmobjectivedatasection4a"> </p>
+                    </div>
+                  </div>
+                  <div class="ex-sdg-div"> <img src="./images/goals/E_SDG_PRINT-10.jpg" class="ex-sdg-img img10" />
+                    <div class="ex-sdg-txt-div">
+                      <h2 class="ex-sdg-heading" data-translatekey="gcmobjectiveheading4b"></h2>
+                      <p class="ex-sdg-des" data-translatekey="gcmobjectivedatas4b"> </p>
+                    </div>
+                  </div>
+                  <div class="ex-sdg-div"> <img src="./images/goals/E_SDG_PRINT-16.jpg" class="ex-sdg-img img16" />
+                    <div class="ex-sdg-txt-div">
+                      <h2 class="ex-sdg-heading" data-translatekey="gcmobjectiveheading4c"> </h2>
+                      <p class="ex-sdg-des" data-translatekey="gcmobjectivedatas4c"> </p>
+                    </div>
+                  </div>
+                  <div class="ex-sdg-div"> <img src="./images/goals/E_SDG_PRINT-17.jpg" class="ex-sdg-img img17" />
+                    <div class="ex-sdg-txt-div">
+                      <h2 class="ex-sdg-heading" data-translatekey="gcmobjectiveheading4d"></h2>
+                      <p class="ex-sdg-des" data-translatekey="gcmobjectivedatas4d"> </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tab-data tab-inner2 hide" id="fifthTab">
+            <div class="card"> <img id="fifthTabImg" src="./images/objectivesImg/GCM_05_EN.svg" alt="objectivesImg" />
+              <div class="wrapper">
+                <h2 data-translatekey="gcmobjectivetabheading5"></h2>
+                <a href="./pdf/English/23 GCM Objectives/5-REGULAR PATHWAYS.pdf" id="tab5pdf"
+                  data-translatekey="gcmobjectivelink" target="_blank"></a>
+              </div>
+            </div>
+            <div>
+              <div class="tab-button"> <button class="clickme active" data-tag="20"
+                  data-translatekey="gcmobjectivesubtabheading1"></button> <button class="clickme" data-tag="21"
+                  data-translatekey="gcmobjectivesubtabheading2"></button> <button class="clickme" data-tag="22"
+                  data-translatekey="gcmobjectivesubtabheading3"></button> </div>
+              <div class="tab-maindata">
+                <ul class="tab-inner des-text" id="20">
+                  <li data-translatekey="gcmobjectivedatasection5a"></li>
+                  <li data-translatekey="gcmobjectivedatasection5b"></li>
+                  <li data-translatekey="gcmobjectivedatasection5c"></li>
+                  <li data-translatekey="gcmobjectivedatasection5d"></li>
+                  <li data-translatekey="gcmobjectivedatasection5e"></li>
+                  <li data-translatekey="gcmobjectivedatasection5f"></li>
+                  <li data-translatekey="gcmobjectivedatasection5g"></li>
+                  <li data-translatekey="gcmobjectivedatasection5h"></li>
+                  <li data-translatekey="gcmobjectivedatasection5i"></li>
+                  <li data-translatekey="gcmobjectivedatasection5j"></li>
+                </ul>
+                <div class="tab-inner ex-main-div hide" id="21">
+                  <div class="ex-card"> <svg width="46" height="30" viewBox="0 0 46 30" fill="red"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M46 3.99351L46 16.8831L22.8708 30L-2.65624e-06 16.8831L-1.51785e-06 3.99351L22.8708 17.5649L46 3.99351Z"
+                        fill="#ed313a" />
+                      <path
+                        d="M14.1489 8.96104C14.1489 4.01199 18.1117 1.40134e-06 23 1.82436e-06C27.8883 2.24738e-06 31.8511 4.012 31.8511 8.96104C31.8511 13.9101 27.8883 17.9221 23 17.9221C18.1117 17.9221 14.1489 13.9101 14.1489 8.96104Z"
+                        fill="#ed313a" />
+                    </svg>
+                    <h2 class="ex-heading" data-translatekey="gcmobjectiveheadingtab5"> </h2>
+                    <p class="ex-des" data-translatekey="gcmobjectivedatatab5a"> </p>
+                  </div>
+                  <div class="ex-card"> <svg width="46" height="30" viewBox="0 0 46 30" fill="red"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M46 3.99351L46 16.8831L22.8708 30L-2.65624e-06 16.8831L-1.51785e-06 3.99351L22.8708 17.5649L46 3.99351Z"
+                        fill="#ed313a" />
+                      <path
+                        d="M14.1489 8.96104C14.1489 4.01199 18.1117 1.40134e-06 23 1.82436e-06C27.8883 2.24738e-06 31.8511 4.012 31.8511 8.96104C31.8511 13.9101 27.8883 17.9221 23 17.9221C18.1117 17.9221 14.1489 13.9101 14.1489 8.96104Z"
+                        fill="#ed313a" />
+                    </svg>
+                    <h2 class="ex-heading" data-translatekey="gcmobjectiveheadingtab5b"> </h2>
+                    <p class="ex-des" data-translatekey="gcmobjectivedatatab5b"></p>
+                  </div>
+                  <div class="ex-card"> <svg width="46" height="30" viewBox="0 0 46 30" fill="red"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M46 3.99351L46 16.8831L22.8708 30L-2.65624e-06 16.8831L-1.51785e-06 3.99351L22.8708 17.5649L46 3.99351Z"
+                        fill="#ed313a" />
+                      <path
+                        d="M14.1489 8.96104C14.1489 4.01199 18.1117 1.40134e-06 23 1.82436e-06C27.8883 2.24738e-06 31.8511 4.012 31.8511 8.96104C31.8511 13.9101 27.8883 17.9221 23 17.9221C18.1117 17.9221 14.1489 13.9101 14.1489 8.96104Z"
+                        fill="#ed313a" />
+                    </svg>
+                    <h2 class="ex-heading" data-translatekey="gcmobjectiveheadingtab5c"> </h2>
+                    <p class="ex-des" data-translatekey="gcmobjectivedatatab5c"> </p>
+                  </div>
+                  <div class="ex-card"> <svg width="46" height="30" viewBox="0 0 46 30" fill="red"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M46 3.99351L46 16.8831L22.8708 30L-2.65624e-06 16.8831L-1.51785e-06 3.99351L22.8708 17.5649L46 3.99351Z"
+                        fill="#ed313a" />
+                      <path
+                        d="M14.1489 8.96104C14.1489 4.01199 18.1117 1.40134e-06 23 1.82436e-06C27.8883 2.24738e-06 31.8511 4.012 31.8511 8.96104C31.8511 13.9101 27.8883 17.9221 23 17.9221C18.1117 17.9221 14.1489 13.9101 14.1489 8.96104Z"
+                        fill="#ed313a" />
+                    </svg>
+                    <h2 class="ex-heading" data-translatekey="gcmobjectiveheadingtab5d"> </h2>
+                    <p class="ex-des" data-translatekey="gcmobjectivedatatab5d"> </p>
+                  </div>
+                </div>
+                <div class="tab-inner hide" id="22">
+                  <div class="ex-sdg-div"> <img src="./images/goals/E_SDG_PRINT-03.jpg" class="ex-sdg-img img3" />
+                    <div class="ex-sdg-txt-div">
+                      <h2 class="ex-sdg-heading" data-translatekey="gcmobjectiveheading5a"> </h2>
+                      <p class="ex-sdg-des" data-translatekey="gcmobjectivedata5a"> </p>
+                    </div>
+                  </div>
+                  <div class="ex-sdg-div"> <img src="./images/goals/E_SDG_PRINT-04.jpg" class="ex-sdg-img img4" />
+                    <div class="ex-sdg-txt-div">
+                      <h2 class="ex-sdg-heading" data-translatekey="gcmobjectiveheading5b"></h2>
+                      <p class="ex-sdg-des" data-translatekey="gcmobjectivedata5b"> </p> <br>
+                      <p class="ex-sdg-des" data-translatekey="gcmobjectivesubdata5b"> </p>
+                    </div>
+                  </div>
+                  <div class="ex-sdg-div"> <img src="./images/goals/E_SDG_PRINT-08.jpg" class="ex-sdg-img img8" />
+                    <div class="ex-sdg-txt-div">
+                      <h2 class="ex-sdg-heading" data-translatekey="gcmobjectiveheading5c"> </h2>
+                      <p class="ex-sdg-des" data-translatekey="gcmobjectivesdata5c"> </p>
+                      <p class="ex-sdg-des" data-translatekey="gcmobjectivessubdata5c"> </p>
+                      <p class="ex-sdg-des" data-translatekey="gcmobjectivessubdata5d"> </p>
+                      <p class="ex-sdg-des" data-translatekey="gcmobjectivessubdata5e"> </p>
+                    </div>
+                  </div>
+                  <div class="ex-sdg-div"> <img src="./images/goals/E_SDG_PRINT-10.jpg" class="ex-sdg-img img10" />
+                    <div class="ex-sdg-txt-div">
+                      <h2 class="ex-sdg-heading" data-translatekey="gcmobjectiveheading5f"> </h2>
+                      <p class="ex-sdg-des" data-translatekey="gcmobjectivedata5f"> </p>
+                      <p class="ex-sdg-des" data-translatekey="gcmobjectivesubdata5f"> </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tab-data tab-inner2 hide" id="sixthTab">
+            <div class="card"> <img id="sixthTabImg" src="./images/objectivesImg/GCM_06_EN.svg" alt="objectivesImg" />
+              <div class="wrapper">
+                <h2 data-translatekey="gcmobjectiveheadingtab6"> </h2>
+                <a href="./pdf/English/23 GCM Objectives/6-RECRUITMENT AND DECENT WORK.pdf" id="tab6pdf"
+                  data-translatekey="gcmobjectivelink" target="_blank"></a>
+              </div>
+            </div>
+            <div>
+              <div class="tab-button"> <button class="clickme active" data-tag="23"
+                  data-translatekey="gcmobjectivesubtabheading1"></button> <button class="clickme" data-tag="24"
+                  data-translatekey="gcmobjectivesubtabheading2"></button> <button class="clickme" data-tag="25"
+                  data-translatekey="gcmobjectivesubtabheading3"></button> </div>
+              <div class="tab-maindata">
+                <ul class="tab-inner des-text" id="23">
+                  <li data-translatekey="gcmobjectivedatasection6a"> </li>
+                  <li data-translatekey="gcmobjectivedatasection6b"> </li>
+                  <li data-translatekey="gcmobjectivedatasection6c"> </li>
+                  <li data-translatekey="gcmobjectivedatasection6d"> </li>
+                  <li data-translatekey="gcmobjectivedatasection6e"> </li>
+                  <li data-translatekey="gcmobjectivedatasection6f"> </li>
+                  <li data-translatekey="gcmobjectivedatasection6g"> </li>
+                  <li data-translatekey="gcmobjectivedatasection6h"> </li>
+                  <li data-translatekey="gcmobjectivedatasection6i"> </li>
+                  <li data-translatekey="gcmobjectivedatasection6j"> </li>
+                  <li data-translatekey="gcmobjectivedatasection6k"> </li>
+                  <li data-translatekey="gcmobjectivedatasection6l"> </li>
+                </ul>
+                <div class="tab-inner ex-main-div hide" id="24">
+                  <div class="ex-card">
+                    <svg width="46" height="30" viewBox="0 0 46 30" fill="red" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M46 3.99351L46 16.8831L22.8708 30L-2.65624e-06 16.8831L-1.51785e-06 3.99351L22.8708 17.5649L46 3.99351Z"
+                        fill="#ee3f2a" />
+                      <path
+                        d="M14.1489 8.96104C14.1489 4.01199 18.1117 1.40134e-06 23 1.82436e-06C27.8883 2.24738e-06 31.8511 4.012 31.8511 8.96104C31.8511 13.9101 27.8883 17.9221 23 17.9221C18.1117 17.9221 14.1489 13.9101 14.1489 8.96104Z"
+                        fill="#ee3f2a" />
+                    </svg>
+                    <h2 class="ex-heading" data-translatekey="gcmobjectiveheadingsection6a"></h2>
+                    <p class="ex-des" data-translatekey="gcmobjectivedata6a"> </p>
+                  </div>
+                  <div class="ex-card">
+                    <svg width="46" height="30" viewBox="0 0 46 30" fill="red" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M46 3.99351L46 16.8831L22.8708 30L-2.65624e-06 16.8831L-1.51785e-06 3.99351L22.8708 17.5649L46 3.99351Z"
+                        fill="#ee3f2a" />
+                      <path
+                        d="M14.1489 8.96104C14.1489 4.01199 18.1117 1.40134e-06 23 1.82436e-06C27.8883 2.24738e-06 31.8511 4.012 31.8511 8.96104C31.8511 13.9101 27.8883 17.9221 23 17.9221C18.1117 17.9221 14.1489 13.9101 14.1489 8.96104Z"
+                        fill="#ee3f2a" />
+                    </svg>
+                    <h2 class="ex-heading" data-translatekey="gcmobjectiveheadingsection6b"> </h2>
+                    <p class="ex-des" data-translatekey="gcmobjectivedata6b"> </p>
+                  </div>
+                  <div class="ex-card">
+                    <svg width="46" height="30" viewBox="0 0 46 30" fill="red" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M46 3.99351L46 16.8831L22.8708 30L-2.65624e-06 16.8831L-1.51785e-06 3.99351L22.8708 17.5649L46 3.99351Z"
+                        fill="#ee3f2a" />
+                      <path
+                        d="M14.1489 8.96104C14.1489 4.01199 18.1117 1.40134e-06 23 1.82436e-06C27.8883 2.24738e-06 31.8511 4.012 31.8511 8.96104C31.8511 13.9101 27.8883 17.9221 23 17.9221C18.1117 17.9221 14.1489 13.9101 14.1489 8.96104Z"
+                        fill="#ee3f2a" />
+                    </svg>
+                    <h2 class="ex-heading" data-translatekey="gcmobjectiveheadingsection6c"> </h2>
+                    <p class="ex-des" data-translatekey="gcmobjectivedata6c"> </p>
+                  </div>
+                </div>
+                <div class="tab-inner hide" id="25">
+                  <div class="ex-sdg-div"> <img src="./images/goals/E_SDG_PRINT-01.jpg" class="ex-sdg-img img1" />
+                    <div class="ex-sdg-txt-div">
+                      <h2 class="ex-sdg-heading" data-translatekey="gcmobjectivedatatab6a"> </h2>
+                      <p class="ex-sdg-des" data-translatekey="gcmobjectivedatatab6b"> </p>
+                    </div>
+                  </div>
+                  <div class="ex-sdg-div"> <img src="./images/goals/E_SDG_PRINT-05.jpg" class="ex-sdg-img img5" />
+                    <div class="ex-sdg-txt-div">
+                      <h2 class="ex-sdg-heading" data-translatekey="gcmobjectivedatatab6c"> </h2>
+                      <p class="ex-sdg-des" data-translatekey="gcmobjectivedatatab6d"> </p>
+                      <p class="ex-sdg-des" data-translatekey="gcmobjectivedatatab6e"> </p>
+                    </div>
+                  </div>
+                  <div class="ex-sdg-div"> <img src="./images/goals/E_SDG_PRINT-08.jpg" class="ex-sdg-img img8" />
+                    <div class="ex-sdg-txt-div">
+                      <h2 class="ex-sdg-heading" data-translatekey="ex-sdg-heading6f"> </h2>
+                      <p class="ex-sdg-des" data-translatekey="ex-sdg-des6g"> </p>
+                      <p class="ex-sdg-des" data-translatekey="ex-sdg-des6h"> </p>
+                      <p class="ex-sdg-des" data-translatekey="ex-sdg-des6i"> </p>
+                    </div>
+                  </div>
+                  <div class="ex-sdg-div"> <img src="./images/goals/E_SDG_PRINT-10.jpg" class="ex-sdg-img img10" />
+                    <div class="ex-sdg-txt-div">
+                      <h2 class="ex-sdg-heading" data-translatekey="ex-sdg-heading6j"></h2>
+                      <p class="ex-sdg-des" data-translatekey="ex-sdg-des6k"> </p>
+                      <p class="ex-sdg-des" data-translatekey="ex-sdg-des6l"> </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tab-data tab-inner2 hide" id="seventhTab">
+            <div class="card"> <img id="seventhTabImg" src="./images/objectivesImg/GCM_07_EN.svg" alt="objectivesImg" />
+              <div class="wrapper">
+                <h2 data-translatekey="gcmobjectivetab7header"> </h2>
+                <a href="./pdf/English/23 GCM Objectives/7-REDUCE VULNERABILITIES.pdf" id="tab7pdf"
+                  data-translatekey="gcmobjectivelink" target="_blank"></a>
+              </div>
+            </div>
+            <div>
+              <div class="tab-button"> <button class="clickme active" data-tag="26"
+                  data-translatekey="gcmobjectivesubtabheading1"></button> <button class="clickme" data-tag="27"
+                  data-translatekey="gcmobjectivesubtabheading2"></button> <button class="clickme" data-tag="28"
+                  data-translatekey="gcmobjectivesubtabheading3"></button> </div>
+              <div class="tab-maindata">
+                <ul class="tab-inner des-text" id="26">
+                  <li data-translatekey="tab-innerdes-text1a"> </li>
+                  <li data-translatekey="tab-innerdes-text1b"> </li>
+                  <li data-translatekey="tab-innerdes-text1c"> </li>
+                  <li data-translatekey="tab-innerdes-text1d"> </li>
+                  <li data-translatekey="tab-innerdes-text1e"> </li>
+                  <li data-translatekey="tab-innerdes-text1f"> </li>
+                  <li data-translatekey="tab-innerdes-text1g"> </li>
+                  <li data-translatekey="tab-innerdes-text1h"> </li>
+                  <li data-translatekey="tab-innerdes-text1i"> </li>
+                  <li data-translatekey="tab-innerdes-text1j"> </li>
+                  <li data-translatekey="tab-innerdes-text1k"> </li>
+                  <li data-translatekey="tab-innerdes-text1l"> </li>
+                </ul>
+                <div class="tab-inner ex-main-div hide" id="27">
+                  <div class="ex-card">
+                    <svg width="46" height="30" viewBox="0 0 46 30" fill="red" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M46 3.99351L46 16.8831L22.8708 30L-2.65624e-06 16.8831L-1.51785e-06 3.99351L22.8708 17.5649L46 3.99351Z"
+                        fill="#ee3f2a" />
+                      <path
+                        d="M14.1489 8.96104C14.1489 4.01199 18.1117 1.40134e-06 23 1.82436e-06C27.8883 2.24738e-06 31.8511 4.012 31.8511 8.96104C31.8511 13.9101 27.8883 17.9221 23 17.9221C18.1117 17.9221 14.1489 13.9101 14.1489 8.96104Z"
+                        fill="#ee3f2a" />
+                    </svg>
+                    <h2 class="ex-heading" data-translatekey="ex-heading1a"></h2>
+                    <p class="ex-des" data-translatekey="ex-des1a"></p>
+                  </div>
+                  <div class="ex-card">
+                    <svg width="46" height="30" viewBox="0 0 46 30" fill="red" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M46 3.99351L46 16.8831L22.8708 30L-2.65624e-06 16.8831L-1.51785e-06 3.99351L22.8708 17.5649L46 3.99351Z"
+                        fill="#ee3f2a" />
+                      <path
+                        d="M14.1489 8.96104C14.1489 4.01199 18.1117 1.40134e-06 23 1.82436e-06C27.8883 2.24738e-06 31.8511 4.012 31.8511 8.96104C31.8511 13.9101 27.8883 17.9221 23 17.9221C18.1117 17.9221 14.1489 13.9101 14.1489 8.96104Z"
+                        fill="#ee3f2a" />
+                    </svg>
+                    <!-- <svg width="46" height="30" viewBox="0 0 46 30" fill="red" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M46 3.99351L46 16.8831L22.8708 30L-2.65624e-06 16.8831L-1.51785e-06 3.99351L22.8708 17.5649L463.99351Z"
+                        fill="#5B366A"></path>
+                      <path
+                        d="M14.1489 8.96104C14.1489 4.01199 18.1117 1.40134e-06 23 1.82436e-06C27.8883 2.24738e-06 31.8511 4.012 31.8511 8.96104C31.8511 13.9101 27.8883 17.9221 23 17.9221C18.1117 17.9221 14.1489 13.9101 14.1489 8.96104Z"
+                        fill="#5B366A"></path>
+                    </svg> -->
+                    <h2 class="ex-heading" data-translatekey="ex-heading2a"> </h2>
+                    <p class="ex-des" data-translatekey="ex-des2a"> </p>
+                  </div>
+                  <div class="ex-card">
+                    <svg width="46" height="30" viewBox="0 0 46 30" fill="red" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M46 3.99351L46 16.8831L22.8708 30L-2.65624e-06 16.8831L-1.51785e-06 3.99351L22.8708 17.5649L46 3.99351Z"
+                        fill="#ee3f2a" />
+                      <path
+                        d="M14.1489 8.96104C14.1489 4.01199 18.1117 1.40134e-06 23 1.82436e-06C27.8883 2.24738e-06 31.8511 4.012 31.8511 8.96104C31.8511 13.9101 27.8883 17.9221 23 17.9221C18.1117 17.9221 14.1489 13.9101 14.1489 8.96104Z"
+                        fill="#ee3f2a" />
+                    </svg>
+                    <h2 class="ex-heading" data-translatekey="ex-heading3a"></h2>
+                    <p class="ex-des" data-translatekey="ex-des3a"> </p>
+                  </div>
+                  <div class="ex-card">
+                    <svg width="46" height="30" viewBox="0 0 46 30" fill="red" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M46 3.99351L46 16.8831L22.8708 30L-2.65624e-06 16.8831L-1.51785e-06 3.99351L22.8708 17.5649L46 3.99351Z"
+                        fill="#ee3f2a" />
+                      <path
+                        d="M14.1489 8.96104C14.1489 4.01199 18.1117 1.40134e-06 23 1.82436e-06C27.8883 2.24738e-06 31.8511 4.012 31.8511 8.96104C31.8511 13.9101 27.8883 17.9221 23 17.9221C18.1117 17.9221 14.1489 13.9101 14.1489 8.96104Z"
+                        fill="#ee3f2a" />
+                    </svg>
+                    <h2 class="ex-heading" data-translatekey="ex-heading4a"> </h2>
+                    <p class="ex-des" data-translatekey="ex-des4a"> </p>
+                  </div>
+                </div>
+                <div class="tab-inner hide" id="28">
+                  <div class="ex-sdg-div"> <img src="./images/goals/E_SDG_PRINT-01.jpg" class="ex-sdg-img img1" />
+                    <div class="ex-sdg-txt-div">
+                      <h2 class="ex-sdg-heading" data-translatekey="ex-sdg-heading1a"> </h2>
+                      <p data-translatekey="ex-sdg-heading2a"> </p>
+                      <p class="ex-sdg-des" data-translatekey="ex-sdg-heading2b"> </p>
+                    </div>
+                  </div>
+                  <div class="ex-sdg-div"> <img src="./images/goals/E_SDG_PRINT-05.jpg" class="ex-sdg-img img5" />
+                    <div class="ex-sdg-txt-div">
+                      <h2 class="ex-sdg-heading" data-translatekey="ex-sdg-heading2c"> </h2>
+                      <p class="ex-sdg-des" data-translatekey="ex-sdg-heading2d"> </p>
+                      <p class="ex-sdg-des" data-translatekey="ex-sdg-heading2e"> </p>
+                    </div>
+                  </div>
+                  <div class="ex-sdg-div"> <img src="./images/goals/E_SDG_PRINT-08.jpg" class="ex-sdg-img img8" />
+                    <div class="ex-sdg-txt-div">
+                      <h2 class="ex-sdg-heading" data-translatekey="ex-sdg-heading2f"> </h2>
+                      <p class="ex-sdg-des" data-translatekey="ex-sdg-heading2g"> </p>
+                      <p class="ex-sdg-des" data-translatekey="ex-sdg-heading2h"> </p>
+                    </div>
+                  </div>
+                  <div class="ex-sdg-div"> <img src="./images/goals/E_SDG_PRINT-10.jpg" class="ex-sdg-img img10" />
+                    <div class="ex-sdg-txt-div">
+                      <h2 class="ex-sdg-heading" data-translatekey="ex-sdg-heading2i"> </h2>
+                      <p class="ex-sdg-des" data-translatekey="ex-sdg-heading2j"> </p>
+                      <p class="ex-sdg-des" data-translatekey="ex-sdg-heading2k"> </p>
+                    </div>
+                  </div>
+                  <div class="ex-sdg-div"> <img src="./images/goals/E_SDG_PRINT-16.jpg" class="ex-sdg-img img16" />
+                    <div class="ex-sdg-txt-div">
+                      <h2 class="ex-sdg-heading" data-translatekey="ex-sdg-heading2l"></h2>
+                      <p class="ex-sdg-des" data-translatekey="ex-sdg-heading2m"> </p>
+                      <p class="ex-sdg-des" data-translatekey="ex-sdg-heading2n"> </p>
+                      <p class="ex-sdg-des" data-translatekey="ex-sdg-heading2o"> </p>
+                      <p class="ex-sdg-des" data-translatekey="ex-sdg-heading2p"> </p>
+                    </div>
+                  </div>
+                  <div class="ex-sdg-div"> <img src="./images/goals/E_SDG_PRINT-17.jpg" class="ex-sdg-img img17" />
+                    <div class="ex-sdg-txt-div">
+                      <h2 class="ex-sdg-heading" data-translatekey="ex-sdg-heading2q"> </h2>
+                      <p class="ex-sdg-des" data-translatekey="ex-sdg-heading2r"> </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tab-data tab-inner2 hide" id="eighthTab">
+            <div class="card"> <img id="eighthTabImg" src="./images/objectivesImg/GCM_08_EN.svg" alt="objectivesImg" />
+              <div class="wrapper">
+                <h2 data-translatekey="gcmobjectiveheadingtab8"> </h2>
+                <a href="./pdf/English/23 GCM Objectives/8-SAVE LIVES.pdf" id="tab8pdf"
+                  data-translatekey="gcmobjectivelink" target="_blank"></a>
+              </div>
+            </div>
+            <div>
+              <div class="tab-button"> <button class="clickme active" data-tag="29"
+                  data-translatekey="gcmobjectivesubtabheading1"></button> <button class="clickme" data-tag="30"
+                  data-translatekey="gcmobjectivesubtabheading2"></button> <button class="clickme" data-tag="31"
+                  data-translatekey="gcmobjectivesubtabheading3"></button> </div>
+              <div class="tab-maindata">
+                <ul class="tab-inner des-text" id="29">
+                  <li data-translatekey="tab-innerdes-text1"> </li>
+                  <li data-translatekey="tab-innerdes-text2"> </li>
+                  <li data-translatekey="tab-innerdes-text3"> </li>
+                  <li data-translatekey="tab-innerdes-text4"> </li>
+                  <li data-translatekey="tab-innerdes-text5"> </li>
+                  <li data-translatekey="tab-innerdes-text6"> </li>
+                </ul>
+                <div class="tab-inner ex-main-div hide" id="30">
+                  <div class="ex-card">
+                    <svg width="46" height="30" viewBox="0 0 46 30" fill="red" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M46 3.99351L46 16.8831L22.8708 30L-2.65624e-06 16.8831L-1.51785e-06 3.99351L22.8708 17.5649L46 3.99351Z"
+                        fill="#fe7c24" />
+                      <path
+                        d="M14.1489 8.96104C14.1489 4.01199 18.1117 1.40134e-06 23 1.82436e-06C27.8883 2.24738e-06 31.8511 4.012 31.8511 8.96104C31.8511 13.9101 27.8883 17.9221 23 17.9221C18.1117 17.9221 14.1489 13.9101 14.1489 8.96104Z"
+                        fill="#fe7c24" />
+                    </svg>
+                    <h2 class="ex-heading" data-translatekey="ex-heading1"> </h2>
+                    <p class="ex-des" data-translatekey="ex-des1"> </p>
+                  </div>
+                  <div class="ex-card">
+                    <svg width="46" height="30" viewBox="0 0 46 30" fill="red" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M46 3.99351L46 16.8831L22.8708 30L-2.65624e-06 16.8831L-1.51785e-06 3.99351L22.8708 17.5649L46 3.99351Z"
+                        fill="#fe7c24" />
+                      <path
+                        d="M14.1489 8.96104C14.1489 4.01199 18.1117 1.40134e-06 23 1.82436e-06C27.8883 2.24738e-06 31.8511 4.012 31.8511 8.96104C31.8511 13.9101 27.8883 17.9221 23 17.9221C18.1117 17.9221 14.1489 13.9101 14.1489 8.96104Z"
+                        fill="#fe7c24" />
+                    </svg>
+                    <h2 class="ex-heading" data-translatekey="ex-heading2b"> </h2>
+                    <p class="ex-des" data-translatekey="ex-des8"> </p>
+                  </div>
+                  <div class="ex-card"> <svg width="46" height="30" viewBox="0 0 46 30" fill="red"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M46 3.99351L46 16.8831L22.8708 30L-2.65624e-06 16.8831L-1.51785e-06 3.99351L22.8708 17.5649L46 3.99351Z"
+                        fill="#fe7c24" />
+                      <path
+                        d="M14.1489 8.96104C14.1489 4.01199 18.1117 1.40134e-06 23 1.82436e-06C27.8883 2.24738e-06 31.8511 4.012 31.8511 8.96104C31.8511 13.9101 27.8883 17.9221 23 17.9221C18.1117 17.9221 14.1489 13.9101 14.1489 8.96104Z"
+                        fill="#fe7c24" />
+                    </svg>
+                    <h2 class="ex-heading" data-translatekey="ex-heading8b"> </h2>
+                    <p class="ex-des" data-translatekey="ex-des8a"> </p>
+                  </div>
+                </div>
+                <div class="tab-inner hide" id="31">
+                  <div class="ex-sdg-div"> <img src="./images/goals/E_SDG_PRINT-10.jpg" class="ex-sdg-img img10" />
+                    <div class="ex-sdg-txt-div">
+                      <h2 class="ex-sdg-heading" data-translatekey="ex-sdg-heading10c"> </h2>
+                      <p class="ex-sdg-des" data-translatekey="ex-sdg-des10e"> </p>
+                    </div>
+                  </div>
+                  <div class="ex-sdg-div"> <img src="./images/goals/E_SDG_PRINT-16.jpg" class="ex-sdg-img img16" />
+                    <div class="ex-sdg-txt-div">
+                      <h2 class="ex-sdg-heading" data-translatekey="ex-sdg-heading8"> </h2>
+                      <p class="ex-sdg-des" data-translatekey="ex-sdg-des8"> </p>
+                      <p class="ex-sdg-des" data-translatekey="ex-sdg-des8a"> </p>
+                      <p class="ex-sdg-des" data-translatekey="ex-sdg-des8b"> </p>
+                      <p class="ex-sdg-des" data-translatekey="ex-sdg-des8c"> </p>
+                    </div>
+                  </div>
+                  <div class="ex-sdg-div"> <img src="./images/goals/E_SDG_PRINT-17.jpg" class="ex-sdg-img img17" />
+                    <div class="ex-sdg-txt-div">
+                      <h2 class="ex-sdg-heading" data-translatekey="ex-sdg-heading8a"> </h2>
+                      <p class="ex-sdg-des" data-translatekey="ex-sdg-des8d"> </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tab-data tab-inner2 hide" id="ninthTab">
+            <div class="card"> <img id="ninthTabImg" src="./images/objectivesImg/GCM_09_EN.svg" alt="objectivesImg" />
+              <div class="wrapper">
+                <h2 data-translatekey="gcmobjectiveheadingtab9"> </h2>
+                <a href="./pdf/English/23 GCM Objectives/9-COUNTER SMUGGLING.pdf" id="tab9pdf"
+                  data-translatekey="gcmobjectivelink" target="_blank"></a>
+              </div>
+            </div>
+            <div>
+              <div class="tab-button"> <button class="clickme active" data-tag="32"
+                  data-translatekey="gcmobjectivesubtabheading1"></button> <button class="clickme" data-tag="33"
+                  data-translatekey="gcmobjectivesubtabheading2"></button> <button class="clickme" data-tag="34"
+                  data-translatekey="gcmobjectivesubtabheading3"></button> </div>
+              <div class="tab-maindata">
+                <ul class="tab-inner des-text" id="32">
+                  <li data-translatekey="tab-innerdes-text9a"> </li>
+                  <li data-translatekey="tab-innerdes-text9b"> </li>
+                  <li data-translatekey="tab-innerdes-text9c"> </li>
+                  <li data-translatekey="tab-innerdes-text9d"> </li>
+                  <li data-translatekey="tab-innerdes-text9e"> </li>
+                  <li data-translatekey="tab-innerdes-text9f"> </li>
+                </ul>
+                <div class="tab-inner ex-main-div hide" id="33">
+                  <div class="ex-card"> <svg width="46" height="30" viewBox="0 0 46 30" fill="red"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M46 3.99351L46 16.8831L22.8708 30L-2.65624e-06 16.8831L-1.51785e-06 3.99351L22.8708 17.5649L46 3.99351Z"
+                        fill="#fd9d24" />
+                      <path
+                        d="M14.1489 8.96104C14.1489 4.01199 18.1117 1.40134e-06 23 1.82436e-06C27.8883 2.24738e-06 31.8511 4.012 31.8511 8.96104C31.8511 13.9101 27.8883 17.9221 23 17.9221C18.1117 17.9221 14.1489 13.9101 14.1489 8.96104Z"
+                        fill="#fd9d24" />
+                    </svg>
+                    <h2 class="ex-heading" data-translatekey="ex-heading9"> </h2>
+                    <p class="ex-des" data-translatekey="ex-des9"> </p>
+                  </div>
+                  <div class="ex-card"> <svg width="46" height="30" viewBox="0 0 46 30" fill="red"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M46 3.99351L46 16.8831L22.8708 30L-2.65624e-06 16.8831L-1.51785e-06 3.99351L22.8708 17.5649L46 3.99351Z"
+                        fill="#fd9d24" />
+                      <path
+                        d="M14.1489 8.96104C14.1489 4.01199 18.1117 1.40134e-06 23 1.82436e-06C27.8883 2.24738e-06 31.8511 4.012 31.8511 8.96104C31.8511 13.9101 27.8883 17.9221 23 17.9221C18.1117 17.9221 14.1489 13.9101 14.1489 8.96104Z"
+                        fill="#fd9d24" />
+                    </svg>
+                    <h2 class="ex-heading" data-translatekey="ex-heading9a"></h2>
+                    <p class="ex-des" data-translatekey="ex-des9a"> </p>
+                  </div>
+                  <div class="ex-card"> <svg width="46" height="30" viewBox="0 0 46 30" fill="red"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M46 3.99351L46 16.8831L22.8708 30L-2.65624e-06 16.8831L-1.51785e-06 3.99351L22.8708 17.5649L46 3.99351Z"
+                        fill="#fd9d24" />
+                      <path
+                        d="M14.1489 8.96104C14.1489 4.01199 18.1117 1.40134e-06 23 1.82436e-06C27.8883 2.24738e-06 31.8511 4.012 31.8511 8.96104C31.8511 13.9101 27.8883 17.9221 23 17.9221C18.1117 17.9221 14.1489 13.9101 14.1489 8.96104Z"
+                        fill="#fd9d24" />
+                    </svg>
+                    <h2 class="ex-heading" data-translatekey="ex-heading9c"></h2>
+                    <p class="ex-des" data-translatekey="ex-des9c"> </p>
+                  </div>
+                </div>
+                <div class="tab-inner hide" id="34">
+                  <div class="ex-sdg-div"> <img src="./images/goals/E_SDG_PRINT-10.jpg" class="ex-sdg-img img10" />
+                    <div class="ex-sdg-txt-div">
+                      <h2 class="ex-sdg-heading" data-translatekey="ex-sdg-heading9"> </h2>
+                      <p class="ex-sdg-des" data-translatekey="ex-sdg-des9"> </p>
+                    </div>
+                  </div>
+                  <div class="ex-sdg-div"> <img src="./images/goals/E_SDG_PRINT-16.jpg" class="ex-sdg-img  img16" />
+                    <div class="ex-sdg-txt-div">
+                      <h2 class="ex-sdg-heading" data-translatekey="ex-sdg-heading9a"> </h2>
+                      <p class="ex-sdg-des" data-translatekey="ex-sdg-des9a"> </p>
+                      <p class="ex-sdg-des" data-translatekey="ex-sdg-des9b"> </p>
+                      <p class="ex-sdg-des" data-translatekey="ex-sdg-des9c"> </p>
+                      <p class="ex-sdg-des" data-translatekey="ex-sdg-des9d"> </p>
+                    </div>
+                  </div>
+                  <div class="ex-sdg-div"> <img src="./images/goals/E_SDG_PRINT-17.jpg" class="ex-sdg-img img17" />
+                    <div class="ex-sdg-txt-div">
+                      <h2 class="ex-sdg-heading" data-translatekey="ex-sdg-heading9b"> </h2>
+                      <p class="ex-sdg-des" data-translatekey="ex-sdg-des9e"> </p>
+                      <p class="ex-sdg-des" data-translatekey="ex-sdg-des9f"> </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tab-data tab-inner2 hide" id="tenthTab">
+            <div class="card"> <img id="tenthTabImg" src="./images/objectivesImg/GCM_10_EN.svg" alt="objectivesImg" />
+              <div class="wrapper">
+                <h2 data-translatekey="gcmobjectiveheadingtab10"> </h2>
+                <a href="./pdf/English/23 GCM Objectives/10-ERADICATE TRAFFIKING.pdf" id="tab10pdf"
+                  data-translatekey="gcmobjectivelink" target="_blank"></a>
+              </div>
+            </div>
+            <div>
+              <div class="tab-button"> <button class="clickme active" data-tag="35"
+                  data-translatekey="gcmobjectivesubtabheading1"></button> <button class="clickme" data-tag="36"
+                  data-translatekey="gcmobjectivesubtabheading2"></button> <button class="clickme" data-tag="37"
+                  data-translatekey="gcmobjectivesubtabheading3"></button> </div>
+              <div class="tab-maindata">
+                <ul class="tab-inner des-text" id="35">
+                  <li data-translatekey="tab-innerdes-text10"> </li>
+                  <li data-translatekey="tab-innerdes-text10a"> </li>
+                  <li data-translatekey="tab-innerdes-text10b"> </li>
+                  <li data-translatekey="tab-innerdes-text10c"> </li>
+                  <li data-translatekey="tab-innerdes-text10d"> </li>
+                  <li data-translatekey="tab-innerdes-text10e"> </li>
+                  <li data-translatekey="tab-innerdes-text10f"> </li>
+                  <li data-translatekey="tab-innerdes-text10g"> </li>
+                  <li data-translatekey="tab-innerdes-text10h"> </li>
+                  <li data-translatekey="tab-innerdes-text10i"> </li>
+                </ul>
+                <div class="tab-inner ex-main-div hide" id="36">
+                  <div class="ex-card"> <svg width="46" height="30" viewBox="0 0 46 30" fill="red"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M46 3.99351L46 16.8831L22.8708 30L-2.65624e-06 16.8831L-1.51785e-06 3.99351L22.8708 17.5649L46 3.99351Z"
+                        fill="#fd9d24" />
+                      <path
+                        d="M14.1489 8.96104C14.1489 4.01199 18.1117 1.40134e-06 23 1.82436e-06C27.8883 2.24738e-06 31.8511 4.012 31.8511 8.96104C31.8511 13.9101 27.8883 17.9221 23 17.9221C18.1117 17.9221 14.1489 13.9101 14.1489 8.96104Z"
+                        fill="#fd9d24" />
+                    </svg>
+                    <h2 class="ex-heading" data-translatekey="ex-heading10"> </h2>
+                    <p class="ex-des" data-translatekey="ex-des10"></p>
+                  </div>
+                  <div class="ex-card"> <svg width="46" height="30" viewBox="0 0 46 30" fill="red"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M46 3.99351L46 16.8831L22.8708 30L-2.65624e-06 16.8831L-1.51785e-06 3.99351L22.8708 17.5649L46 3.99351Z"
+                        fill="#fd9d24" />
+                      <path
+                        d="M14.1489 8.96104C14.1489 4.01199 18.1117 1.40134e-06 23 1.82436e-06C27.8883 2.24738e-06 31.8511 4.012 31.8511 8.96104C31.8511 13.9101 27.8883 17.9221 23 17.9221C18.1117 17.9221 14.1489 13.9101 14.1489 8.96104Z"
+                        fill="#fd9d24" />
+                    </svg>
+                    <h2 class="ex-heading" data-translatekey="ex-heading10a"> </h2>
+                    <p class="ex-des" data-translatekey="ex-des10a"></p> <br>
+                    <p class="ex-des inner" data-translatekey="ex-desinner10"> </p> <br>
+                    <p class="ex-des inner" data-translatekey="ex-desinner10a"> </p> <br>
+                    <p class="ex-des inner" data-translatekey="ex-desinner10b"> </p>
+                  </div>
+                  <div class="ex-card"> <svg width="46" height="30" viewBox="0 0 46 30" fill="red"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M46 3.99351L46 16.8831L22.8708 30L-2.65624e-06 16.8831L-1.51785e-06 3.99351L22.8708 17.5649L46 3.99351Z"
+                        fill="#fd9d24" />
+                      <path
+                        d="M14.1489 8.96104C14.1489 4.01199 18.1117 1.40134e-06 23 1.82436e-06C27.8883 2.24738e-06 31.8511 4.012 31.8511 8.96104C31.8511 13.9101 27.8883 17.9221 23 17.9221C18.1117 17.9221 14.1489 13.9101 14.1489 8.96104Z"
+                        fill="#fd9d24" />
+                    </svg>
+                    <h2 class="ex-heading" data-translatekey="ex-heading10b"> </h2>
+                    <p class="ex-des" data-translatekey="ex-des10b"></p>
+                  </div>
+                </div>
+                <div class="tab-inner hide" id="37">
+                  <div class="ex-sdg-div"> <img src="./images/goals/E_SDG_PRINT-05.jpg" class="ex-sdg-img img5" />
+                    <div class="ex-sdg-txt-div">
+                      <h2 class="ex-sdg-heading" data-translatekey="ex-sdg-heading10a"> </h2>
+                      <p class="ex-sdg-des" data-translatekey="ex-sdg-des10b"> </p>
+                    </div>
+                  </div>
+                  <div class="ex-sdg-div"> <img src="./images/goals/E_SDG_PRINT-08.jpg" class="ex-sdg-img img8" />
+                    <div class="ex-sdg-txt-div">
+                      <h2 class="ex-sdg-heading" data-translatekey="ex-sdg-heading10b"> </h2>
+                      <p class="ex-sdg-des" data-translatekey="ex-sdg-des10c"> </p>
+                      <p class="ex-sdg-des" data-translatekey="ex-sdg-des10d"> </p>
+                    </div>
+                  </div>
+                  <div class="ex-sdg-div"> <img src="./images/goals/E_SDG_PRINT-10.jpg" class="ex-sdg-img img10" />
+                    <div class="ex-sdg-txt-div">
+                      <h2 class="ex-sdg-heading" data-translatekey="ex-sdg-heading10c"> </h2>
+                      <p class="ex-sdg-des" data-translatekey="ex-sdg-des10e"> </p>
+                    </div>
+                  </div>
+                  <div class="ex-sdg-div"> <img src="./images/goals/E_SDG_PRINT-16.jpg" class="ex-sdg-img img16" />
+                    <div class="ex-sdg-txt-div">
+                      <h2 class="ex-sdg-heading" data-translatekey="ex-sdg-heading10d"> </h2>
+                      <p class="ex-sdg-des" data-translatekey="ex-sdg-des10f"> </p>
+                      <p class="ex-sdg-des" data-translatekey="ex-sdg-des10g"> </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tab-data tab-inner2 hide" id="eleventhtab">
+            <div class="card"> <img id="eleventhTabImg" src="./images/objectivesImg/GCM_11_EN.svg"
+                alt="objectivesImg" />
+              <div class="wrapper">
+                <h2 data-translatekey="gcmobjectiveheading11"> </h2>
+                <a href="./pdf/English/23 GCM Objectives/11-MANAGE BORDERS.pdf" id="tab11pdf"
+                  data-translatekey="gcmobjectivelink" target="_blank"></a>
+              </div>
+            </div>
+            <div>
+              <div class="tab-button"> <button class="clickme active" data-tag="38"
+                  data-translatekey="gcmobjectivesubtabheading1"></button> <button class="clickme" data-tag="39"
+                  data-translatekey="gcmobjectivesubtabheading2"></button> <button class="clickme" data-tag="40"
+                  data-translatekey="gcmobjectivesubtabheading3"></button> </div>
+              <div class="tab-maindata">
+                <ul class="tab-inner des-text" id="38">
+                  <li data-translatekey="tab-innerdes-text11a"> </li>
+                  <li data-translatekey="tab-innerdes-text11b"> </li>
+                  <li data-translatekey="tab-innerdes-text11c"> </li>
+                  <li data-translatekey="tab-innerdes-text11d"> </li>
+                  <li data-translatekey="tab-innerdes-text11e"> </li>
+                  <li data-translatekey="tab-innerdes-text11f"> </li>
+                  <li data-translatekey="tab-innerdes-text11g"> </li>
+                </ul>
+                <div class="tab-inner ex-main-div hide" id="39">
+                  <div class="ex-card"> <svg width="46" height="30" viewBox="0 0 46 30" fill="red"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M46 3.99351L46 16.8831L22.8708 30L-2.65624e-06 16.8831L-1.51785e-06 3.99351L22.8708 17.5649L46 3.99351Z"
+                        fill="#fbb613" />
+                      <path
+                        d="M14.1489 8.96104C14.1489 4.01199 18.1117 1.40134e-06 23 1.82436e-06C27.8883 2.24738e-06 31.8511 4.012 31.8511 8.96104C31.8511 13.9101 27.8883 17.9221 23 17.9221C18.1117 17.9221 14.1489 13.9101 14.1489 8.96104Z"
+                        fill="#fbb613" />
+                    </svg>
+                    <h2 class="ex-heading" data-translatekey="ex-heading11a"> </h2>
+                    <p class="ex-des" data-translatekey="ex-des11"></p>
+                  </div>
+                  <div class="ex-card"> <svg width="46" height="30" viewBox="0 0 46 30" fill="red"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M46 3.99351L46 16.8831L22.8708 30L-2.65624e-06 16.8831L-1.51785e-06 3.99351L22.8708 17.5649L46 3.99351Z"
+                        fill="#fbb613" />
+                      <path
+                        d="M14.1489 8.96104C14.1489 4.01199 18.1117 1.40134e-06 23 1.82436e-06C27.8883 2.24738e-06 31.8511 4.012 31.8511 8.96104C31.8511 13.9101 27.8883 17.9221 23 17.9221C18.1117 17.9221 14.1489 13.9101 14.1489 8.96104Z"
+                        fill="#fbb613" />
+                    </svg>
+                    <h2 class="ex-heading" data-translatekey="ex-heading11b"></h2>
+                    <p class="ex-des" data-translatekey="ex-des11a"> </p>
+                  </div>
+                  <div class="ex-card"> <svg width="46" height="30" viewBox="0 0 46 30" fill="red"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M46 3.99351L46 16.8831L22.8708 30L-2.65624e-06 16.8831L-1.51785e-06 3.99351L22.8708 17.5649L46 3.99351Z"
+                        fill="#fbb613" />
+                      <path
+                        d="M14.1489 8.96104C14.1489 4.01199 18.1117 1.40134e-06 23 1.82436e-06C27.8883 2.24738e-06 31.8511 4.012 31.8511 8.96104C31.8511 13.9101 27.8883 17.9221 23 17.9221C18.1117 17.9221 14.1489 13.9101 14.1489 8.96104Z"
+                        fill="#fbb613" />
+                    </svg>
+                    <h2 class="ex-heading" data-translatekey="ex-heading11c"> </h2>
+                    <p class="ex-des" data-translatekey="ex-des11b"> </p>
+                  </div>
+                </div>
+                <div class="tab-inner hide" id="40">
+                  <div class="ex-sdg-div"> <img src="./images/goals/E_SDG_PRINT-09.jpg" class="ex-sdg-img img9" />
+                    <div class="ex-sdg-txt-div">
+                      <h2 class="ex-sdg-heading" data-translatekey="ex-sdg-heading11a"></h2>
+                      <p class="ex-sdg-des" data-translatekey="ex-sdg-des11a"> </p>
+                      <p class="ex-sdg-des" data-translatekey="ex-sdg-des11b"> </p>
+                    </div>
+                  </div>
+                  <div class="ex-sdg-div"> <img src="./images/goals/E_SDG_PRINT-10.jpg" class="ex-sdg-img img10" />
+                    <div class="ex-sdg-txt-div">
+                      <h2 class="ex-sdg-heading" data-translatekey="ex-sdg-heading11b"> </h2>
+                      <p class="ex-sdg-des" data-translatekey="ex-sdg-des11c"> </p>
+                    </div>
+                  </div>
+                  <div class="ex-sdg-div"> <img src="./images/goals/E_SDG_PRINT-16.jpg" class="ex-sdg-img img16" />
+                    <div class="ex-sdg-txt-div">
+                      <h2 class="ex-sdg-heading" data-translatekey="ex-sdg-heading11c"> </h2>
+                      <p class="ex-sdg-des" data-translatekey="ex-sdg-des11d"> </p>
+                    </div>
+                  </div>
+                  <div class="ex-sdg-div"> <img src="./images/goals/E_SDG_PRINT-17.jpg" class="ex-sdg-img img17" />
+                    <div class="ex-sdg-txt-div">
+                      <h2 class="ex-sdg-heading" data-translatekey="ex-sdg-heading11d"> </h2>
+                      <p class="ex-sdg-des" data-translatekey="ex-sdg-des11e"> </p>
+                      <p class="ex-sdg-des" data-translatekey="ex-sdg-des11f"> </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tab-data tab-inner2 hide" id="twelfthTab">
+            <div class="card"> <img id="twelfthTabImg" src="./images/objectivesImg/GCM_12_EN.svg" alt="objectivesImg" />
+              <div class="wrapper">
+                <h2 data-translatekey="gcmobjectiveheadingtab12"> </h2>
+                <a href="./pdf/English/23 GCM Objectives/12-SCREENING AND REFERRAL.pdf" id="tab12pdf"
+                  data-translatekey="gcmobjectivelink" target="_blank"></a>
+              </div>
+            </div>
+            <div>
+              <div class="tab-button"> <button class="clickme active" data-tag="41"
+                  data-translatekey="gcmobjectivesubtabheading1"></button> <button class="clickme" data-tag="42"
+                  data-translatekey="gcmobjectivesubtabheading2"></button> <button class="clickme" data-tag="43"
+                  data-translatekey="gcmobjectivesubtabheading3"></button> </div>
+              <div class="tab-maindata">
+                <ul class="tab-inner des-text" id="41">
+                  <li data-translatekey="tab-innerdes-text12a"> </li>
+                  <li data-translatekey="tab-innerdes-text12b"> </li>
+                  <li data-translatekey="tab-innerdes-text12c"> </li>
+                  <li data-translatekey="tab-innerdes-text12d"> </li>
+                  <li data-translatekey="tab-innerdes-text12e"> </li>
+                </ul>
+                <div class="tab-inner ex-main-div hide" id="42">
+                  <div class="ex-card"> <svg width="46" height="30" viewBox="0 0 46 30" fill="red"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M46 3.99351L46 16.8831L22.8708 30L-2.65624e-06 16.8831L-1.51785e-06 3.99351L22.8708 17.5649L46 3.99351Z"
+                        fill="#ffc30b" />
+                      <path
+                        d="M14.1489 8.96104C14.1489 4.01199 18.1117 1.40134e-06 23 1.82436e-06C27.8883 2.24738e-06 31.8511 4.012 31.8511 8.96104C31.8511 13.9101 27.8883 17.9221 23 17.9221C18.1117 17.9221 14.1489 13.9101 14.1489 8.96104Z"
+                        fill="#ffc30b" />
+                    </svg>
+                    <h2 class="ex-heading" data-translatekey="ex-heading12a"> </h2>
+                    <p class="ex-des" data-translatekey="ex-des12a"></p>
+                  </div>
+                  <div class="ex-card"> <svg width="46" height="30" viewBox="0 0 46 30" fill="red"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M46 3.99351L46 16.8831L22.8708 30L-2.65624e-06 16.8831L-1.51785e-06 3.99351L22.8708 17.5649L46 3.99351Z"
+                        fill="#ffc30b" />
+                      <path
+                        d="M14.1489 8.96104C14.1489 4.01199 18.1117 1.40134e-06 23 1.82436e-06C27.8883 2.24738e-06 31.8511 4.012 31.8511 8.96104C31.8511 13.9101 27.8883 17.9221 23 17.9221C18.1117 17.9221 14.1489 13.9101 14.1489 8.96104Z"
+                        fill="#ffc30b" />
+                    </svg>
+                    <h2 class="ex-heading" data-translatekey="ex-heading12b"> </h2>
+                    <p class="ex-des" data-translatekey="ex-des12b"> </p>
+                    <p class="ex-des" data-translatekey="ex-des12c"> </p>
+                    <p class="ex-des" data-translatekey="ex-des12cc"> </p>
+
+                    <p class="ex-des" data-translatekey="ex-des12d"></p>
+                  </div>
+                  <div class="ex-card"> <svg width="46" height="30" viewBox="0 0 46 30" fill="red"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M46 3.99351L46 16.8831L22.8708 30L-2.65624e-06 16.8831L-1.51785e-06 3.99351L22.8708 17.5649L46 3.99351Z"
+                        fill="#ffc30b" />
+                      <path
+                        d="M14.1489 8.96104C14.1489 4.01199 18.1117 1.40134e-06 23 1.82436e-06C27.8883 2.24738e-06 31.8511 4.012 31.8511 8.96104C31.8511 13.9101 27.8883 17.9221 23 17.9221C18.1117 17.9221 14.1489 13.9101 14.1489 8.96104Z"
+                        fill="#ffc30b" />
+                    </svg>
+                    <h2 class="ex-heading" data-translatekey="ex-heading12c"> </h2>
+                    <p class="ex-des" data-translatekey="ex-des12e"> </p>
+                  </div>
+                  <div class="ex-card"> <svg width="46" height="30" viewBox="0 0 46 30" fill="red"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M46 3.99351L46 16.8831L22.8708 30L-2.65624e-06 16.8831L-1.51785e-06 3.99351L22.8708 17.5649L46 3.99351Z"
+                        fill="#ffc30b" />
+                      <path
+                        d="M14.1489 8.96104C14.1489 4.01199 18.1117 1.40134e-06 23 1.82436e-06C27.8883 2.24738e-06 31.8511 4.012 31.8511 8.96104C31.8511 13.9101 27.8883 17.9221 23 17.9221C18.1117 17.9221 14.1489 13.9101 14.1489 8.96104Z"
+                        fill="#ffc30b" />
+                    </svg>
+                    <h2 class="ex-heading" data-translatekey="ex-heading12d"> </h2>
+                    <p class="ex-des" data-translatekey="ex-des12f"> </p>
+                  </div>
+                </div>
+                <div class="tab-inner hide" id="43">
+                  <div class="ex-sdg-div"> <img src="./images/goals/E_SDG_PRINT-05.jpg" class="ex-sdg-img img5" />
+                    <div class="ex-sdg-txt-div">
+                      <h2 class="ex-sdg-heading" data-translatekey="ex-sdg-heading12a"> </h2>
+                      <p class="ex-sdg-des" data-translatekey="ex-sdg-des"> </p>
+                    </div>
+                  </div>
+                  <div class="ex-sdg-div"> <img src="./images/goals/E_SDG_PRINT-10.jpg" class="ex-sdg-img img10" />
+                    <div class="ex-sdg-txt-div">
+                      <h2 class="ex-sdg-heading" data-translatekey="ex-sdg-heading12f"> </h2>
+                      <p class="ex-sdg-des" data-translatekey="ex-sdg-des12f"> </p>
+                    </div>
+                  </div>
+                  <div class="ex-sdg-div"> <img src="./images/goals/E_SDG_PRINT-16.jpg" class="ex-sdg-img img16" />
+                    <div class="ex-sdg-txt-div">
+                      <h2 class="ex-sdg-heading" data-translatekey="ex-sdg-heading12g"> </h2>
+                      <p class="ex-sdg-des" data-translatekey="ex-sdg-des12g"> </p>
+                      <p class="ex-sdg-des" data-translatekey="ex-sdg-des12h"> </p>
+                      <p class="ex-sdg-des" data-translatekey="ex-sdg-des12i"> </p>
+                      <p class="ex-sdg-des" data-translatekey="ex-sdg-des12j"> </p>
+                    </div>
+                  </div>
+                  <div class="ex-sdg-div"> <img src="./images/goals/E_SDG_PRINT-17.jpg" class="ex-sdg-img img17" />
+                    <div class="ex-sdg-txt-div">
+                      <h2 class="ex-sdg-heading" data-translatekey="ex-sdg-heading12h"> </h2>
+                      <p class="ex-sdg-des" data-translatekey="ex-sdg-des12k"> </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tab-data tab-inner2 hide" id="thirteenthTab">
+            <div class="card"> <img id="thirteenthTabImg" src="./images/objectivesImg/GCM_13_EN.svg"
+                alt="objectivesImg" />
+              <div class="wrapper">
+                <h2 data-translatekey="gcmobjectiveheadindtab13"> </h2>
+                <a href="./pdf/English/23 GCM Objectives/13-ALTERNATIVES TO DETENTION.pdf" id="tab13pdf"
+                  data-translatekey="gcmobjectivelink" target="_blank"></a>
+              </div>
+            </div>
+            <div>
+              <div class="tab-button"> <button class="clickme active" data-tag="44"
+                  data-translatekey="gcmobjectivesubtabheading1"></button> <button class="clickme" data-tag="45"
+                  data-translatekey="gcmobjectivesubtabheading2"></button> <button class="clickme" data-tag="46"
+                  data-translatekey="gcmobjectivesubtabheading3"></button> </div>
+              <div class="tab-maindata">
+                <ul class="tab-inner des-text" id="44">
+                  <li data-translatekey="tab-innerdes-text13a"> </li>
+                  <li data-translatekey="tab-innerdes-text13b"> </li>
+                  <li data-translatekey="tab-innerdes-text13c"> </li>
+                  <li data-translatekey="tab-innerdes-text13d"> </li>
+                  <li data-translatekey="tab-innerdes-text13e"> </li>
+                  <li data-translatekey="tab-innerdes-text13f"> </li>
+                  <li data-translatekey="tab-innerdes-text13g"> </li>
+                  <li data-translatekey="tab-innerdes-text13h"> </li>
+                </ul>
+                <div class="tab-inner ex-main-div hide" id="45">
+                  <div class="ex-card"> <svg width="46" height="30" viewBox="0 0 46 30" fill="red"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M46 3.99351L46 16.8831L22.8708 30L-2.65624e-06 16.8831L-1.51785e-06 3.99351L22.8708 17.5649L46 3.99351Z"
+                        fill="#c6c316" />
+                      <path
+                        d="M14.1489 8.96104C14.1489 4.01199 18.1117 1.40134e-06 23 1.82436e-06C27.8883 2.24738e-06 31.8511 4.012 31.8511 8.96104C31.8511 13.9101 27.8883 17.9221 23 17.9221C18.1117 17.9221 14.1489 13.9101 14.1489 8.96104Z"
+                        fill="#c6c316" />
+                    </svg>
+                    <h2 class="ex-heading" data-translatekey="ex-heading13a"></h2>
+                    <p class="ex-des" data-translatekey="ex-des13a"> </p>
+                  </div>
+                  <div class="ex-card"> <svg width="46" height="30" viewBox="0 0 46 30" fill="red"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M46 3.99351L46 16.8831L22.8708 30L-2.65624e-06 16.8831L-1.51785e-06 3.99351L22.8708 17.5649L46 3.99351Z"
+                        fill="#c6c316" />
+                      <path
+                        d="M14.1489 8.96104C14.1489 4.01199 18.1117 1.40134e-06 23 1.82436e-06C27.8883 2.24738e-06 31.8511 4.012 31.8511 8.96104C31.8511 13.9101 27.8883 17.9221 23 17.9221C18.1117 17.9221 14.1489 13.9101 14.1489 8.96104Z"
+                        fill="#c6c316" />
+                    </svg>
+                    <h2 class="ex-heading" data-translatekey="ex-heading13"></h2>
+                    <p class="ex-des" data-translatekey="ex-des13"> </p>
+                  </div>
+                  <div class="ex-card"> <svg width="46" height="30" viewBox="0 0 46 30" fill="red"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M46 3.99351L46 16.8831L22.8708 30L-2.65624e-06 16.8831L-1.51785e-06 3.99351L22.8708 17.5649L46 3.99351Z"
+                        fill="#c6c316" />
+                      <path
+                        d="M14.1489 8.96104C14.1489 4.01199 18.1117 1.40134e-06 23 1.82436e-06C27.8883 2.24738e-06 31.8511 4.012 31.8511 8.96104C31.8511 13.9101 27.8883 17.9221 23 17.9221C18.1117 17.9221 14.1489 13.9101 14.1489 8.96104Z"
+                        fill="#c6c316" />
+                    </svg>
+                    <h2 class="ex-heading" data-translatekey="ex-heading13b"></h2>
+                    <p class="ex-des" data-translatekey="ex-des13b"> </p>
+                  </div>
+                  <div class="ex-card"> <svg width="46" height="30" viewBox="0 0 46 30" fill="red"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M46 3.99351L46 16.8831L22.8708 30L-2.65624e-06 16.8831L-1.51785e-06 3.99351L22.8708 17.5649L46 3.99351Z"
+                        fill="#c6c316" />
+                      <path
+                        d="M14.1489 8.96104C14.1489 4.01199 18.1117 1.40134e-06 23 1.82436e-06C27.8883 2.24738e-06 31.8511 4.012 31.8511 8.96104C31.8511 13.9101 27.8883 17.9221 23 17.9221C18.1117 17.9221 14.1489 13.9101 14.1489 8.96104Z"
+                        fill="#c6c316" />
+                    </svg>
+                    <h2 class="ex-heading" data-translatekey="ex-heading13c"></h2>
+                    <p class="ex-des" data-translatekey="ex-des13c"> </p>
+                  </div>
+                </div>
+                <div class="tab-inner hide" id="46">
+                  <div class="ex-sdg-div"> <img src="./images/goals/E_SDG_PRINT-09.jpg" class="ex-sdg-img img9" />
+                    <div class="ex-sdg-txt-div">
+                      <h2 class="ex-sdg-heading" data-translatekey="ex-sdg-des13a"> </h2>
+                      <p class="ex-sdg-des" data-translatekey="ex-sdg-des13b"> </p>
+                    </div>
+                  </div>
+                  <div class="ex-sdg-div"> <img src="./images/goals/E_SDG_PRINT-16.jpg" class="ex-sdg-img img16" />
+                    <div class="ex-sdg-txt-div">
+                      <h2 class="ex-sdg-heading" data-translatekey="ex-sdg-heading13a"> </h2>
+                      <p class="ex-sdg-des" data-translatekey="ex-sdg-des13c"> </p>
+                      <p class="ex-sdg-des" data-translatekey="ex-sdg-des13d"> </p>
+                      <p class="ex-sdg-des" data-translatekey="ex-sdg-des13e"> </p>
+                      <p class="ex-sdg-des" data-translatekey="ex-sdg-des13f"> </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tab-data tab-inner2 hide" id="fourteenthTab">
+            <div class="card"> <img id="fourteenthTabImg" src="./images/objectivesImg/GCM_14_EN.svg" />
+              <div class="wrapper">
+                <h2 data-translatekey="gcmobjectiveheadingtab14a"> </h2>
+                <a href="./pdf/English/23 GCM Objectives/14-CONSULAR PROTECTION.pdf" id="tab14pdf"
+                  data-translatekey="gcmobjectivelink" target="_blank"></a>
+              </div>
+            </div>
+            <div>
+              <div class="tab-button"> <button class="clickme active" data-tag="47"
+                  data-translatekey="gcmobjectivesubtabheading1"></button> <button class="clickme" data-tag="48"
+                  data-translatekey="gcmobjectivesubtabheading2"></button> <button class="clickme" data-tag="49"
+                  data-translatekey="gcmobjectivesubtabheading3"></button> </div>
+              <div class="tab-maindata">
+                <ul class="tab-inner des-text" id="47">
+                  <li data-translatekey="tab-innerdes-text14a"> </li>
+                  <li data-translatekey="tab-innerdes-text14b"> </li>
+                  <li data-translatekey="tab-innerdes-text14c"> </li>
+                  <li data-translatekey="tab-innerdes-text14d"> </li>
+                  <li data-translatekey="tab-innerdes-text14e"> </li>
+                  <li data-translatekey="tab-innerdes-text14f"> </li>
+                </ul>
+                <div class="tab-inner ex-main-div hide" id="48">
+                  <div class="ex-card">
+                    <svg width="46" height="30" viewBox="0 0 46 30" fill="red" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M46 3.99351L46 16.8831L22.8708 30L-2.65624e-06 16.8831L-1.51785e-06 3.99351L22.8708 17.5649L46 3.99351Z"
+                        fill="#8dc11f" />
+                      <path
+                        d="M14.1489 8.96104C14.1489 4.01199 18.1117 1.40134e-06 23 1.82436e-06C27.8883 2.24738e-06 31.8511 4.012 31.8511 8.96104C31.8511 13.9101 27.8883 17.9221 23 17.9221C18.1117 17.9221 14.1489 13.9101 14.1489 8.96104Z"
+                        fill="#8dc11f" />
+                    </svg>
+                    <h2 class="ex-heading" data-translatekey="ex-heading14a"></h2>
+                    <p class="ex-des" data-translatekey="ex-des14a"> </p>
+                  </div>
+                  <div class="ex-card">
+                    <svg width="46" height="30" viewBox="0 0 46 30" fill="red" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M46 3.99351L46 16.8831L22.8708 30L-2.65624e-06 16.8831L-1.51785e-06 3.99351L22.8708 17.5649L46 3.99351Z"
+                        fill="#8dc11f" />
+                      <path
+                        d="M14.1489 8.96104C14.1489 4.01199 18.1117 1.40134e-06 23 1.82436e-06C27.8883 2.24738e-06 31.8511 4.012 31.8511 8.96104C31.8511 13.9101 27.8883 17.9221 23 17.9221C18.1117 17.9221 14.1489 13.9101 14.1489 8.96104Z"
+                        fill="#8dc11f" />
+                    </svg>
+                    <h2 class="ex-heading" data-translatekey="ex-heading10c"></h2>
+                    <p class="ex-des" data-translatekey="ex-des10c"> </p>
+                  </div>
+                  <div class="ex-card"> <svg width="46" height="30" viewBox="0 0 46 30" fill="red"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M46 3.99351L46 16.8831L22.8708 30L-2.65624e-06 16.8831L-1.51785e-06 3.99351L22.8708 17.5649L46 3.99351Z"
+                        fill="#8dc11f" />
+                      <path
+                        d="M14.1489 8.96104C14.1489 4.01199 18.1117 1.40134e-06 23 1.82436e-06C27.8883 2.24738e-06 31.8511 4.012 31.8511 8.96104C31.8511 13.9101 27.8883 17.9221 23 17.9221C18.1117 17.9221 14.1489 13.9101 14.1489 8.96104Z"
+                        fill="#8dc11f" />
+                    </svg>
+                    <h2 class="ex-heading" data-translatekey="ex-heading14c"> </h2>
+                    <p class="ex-des" data-translatekey="ex-des14b"> </p>
+                  </div>
+                </div>
+                <div class="tab-inner hide" id="49">
+                  <div class="ex-sdg-div"> <img src="./images/goals/E_SDG_PRINT-01.jpg" class="ex-sdg-img img1" />
+                    <div class="ex-sdg-txt-div">
+                      <h2 class="ex-sdg-heading" data-translatekey="ex-sdg-heading14a"> </h2>
+                      <p class="ex-sdg-des" data-translatekey="ex-sdg-des14b"> </p>
+                    </div>
+                  </div>
+                  <div class="ex-sdg-div"> <img src="./images/goals/E_SDG_PRINT-10.jpg" class="ex-sdg-img img10" />
+                    <div class="ex-sdg-txt-div">
+                      <h2 class="ex-sdg-heading" data-translatekey="ex-sdg-heading14b"> </h2>
+                      <p class="ex-sdg-des" data-translatekey="ex-sdg-des14c"> </p>
+                    </div>
+                  </div>
+                  <div class="ex-sdg-div"> <img src="./images/goals/E_SDG_PRINT-16.jpg" class="ex-sdg-img img16" />
+                    <div class="ex-sdg-txt-div">
+                      <h2 class="ex-sdg-heading" data-translatekey="ex-sdg-heading14c"> </h2>
+                      <p class="ex-sdg-des" data-translatekey="ex-sdg-des14d"> </p>
+                      <p class="ex-sdg-des" data-translatekey="ex-sdg-des14e"> </p>
+                      <p class="ex-sdg-des" data-translatekey="ex-sdg-des14f"> </p>
+                      <p class="ex-sdg-des" data-translatekey="ex-sdg-des14g"> </p>
+                    </div>
+                  </div>
+                  <div class="ex-sdg-div"> <img src="./images/goals/E_SDG_PRINT-17.jpg" class="ex-sdg-img img17" />
+                    <div class="ex-sdg-txt-div">
+                      <h2 class="ex-sdg-heading" data-translatekey="ex-sdg-des14h"> </h2>
+                      <p class="ex-sdg-des" data-translatekey="ex-sdg-des14i"> </p>
+                      <p class="ex-sdg-des" data-translatekey="ex-sdg-des14j"> </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tab-data tab-inner2 hide" id="fifteenthTab">
+            <div class="card"> <img id="fifteenthTabImg" src="./images/objectivesImg/GCM_15_EN.svg"
+                alt="objectivesImg" />
+              <div class="wrapper">
+                <h2 data-translatekey="gcmobjectiveheadingtab15a"> </h2>
+                <a href="./pdf/English/23 GCM Objectives/15-ACCESS TO BASIC SERVICES.pdf" id="tab15pdf"
+                  data-translatekey="gcmobjectivelink" target="_blank"></a>
+              </div>
+            </div>
+            <div>
+              <div class="tab-button"> <button class="clickme active" data-tag="50"
+                  data-translatekey="gcmobjectivesubtabheading1"></button> <button class="clickme" data-tag="51"
+                  data-translatekey="gcmobjectivesubtabheading2"></button> <button class="clickme" data-tag="52"
+                  data-translatekey="gcmobjectivesubtabheading3"></button> </div>
+              <div class="tab-maindata">
+                <ul class="tab-inner des-text" id="50">
+                  <li data-translatekey="tab-innerdes-text15a"> </li>
+                  <li data-translatekey="tab-innerdes-text15b"> </li>
+                  <li data-translatekey="tab-innerdes-text15c"> </li>
+                  <li data-translatekey="tab-innerdes-text15d"> </li>
+                  <li data-translatekey="tab-innerdes-text15e"> </li>
+                  <li data-translatekey="tab-innerdes-text15f"> </li>
+                </ul>
+                <div class="tab-inner ex-main-div hide" id="51">
+                  <div class="ex-card"> <svg width="46" height="30" viewBox="0 0 46 30" fill="red"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M46 3.99351L46 16.8831L22.8708 30L-2.65624e-06 16.8831L-1.51785e-06 3.99351L22.8708 17.5649L46 3.99351Z"
+                        fill="#56c02a" />
+                      <path
+                        d="M14.1489 8.96104C14.1489 4.01199 18.1117 1.40134e-06 23 1.82436e-06C27.8883 2.24738e-06 31.8511 4.012 31.8511 8.96104C31.8511 13.9101 27.8883 17.9221 23 17.9221C18.1117 17.9221 14.1489 13.9101 14.1489 8.96104Z"
+                        fill="#56c02a" />
+                    </svg>
+                    <h2 class="ex-heading" data-translatekey="ex-heading15a"> </h2>
+                    <p class="ex-des" data-translatekey="ex-des15a"> </p>
+                  </div>
+                  <div class="ex-card"> <svg width="46" height="30" viewBox="0 0 46 30" fill="red"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M46 3.99351L46 16.8831L22.8708 30L-2.65624e-06 16.8831L-1.51785e-06 3.99351L22.8708 17.5649L46 3.99351Z"
+                        fill="#56c02a" />
+                      <path
+                        d="M14.1489 8.96104C14.1489 4.01199 18.1117 1.40134e-06 23 1.82436e-06C27.8883 2.24738e-06 31.8511 4.012 31.8511 8.96104C31.8511 13.9101 27.8883 17.9221 23 17.9221C18.1117 17.9221 14.1489 13.9101 14.1489 8.96104Z"
+                        fill="#56c02a" />
+                    </svg>
+                    <h2 class="ex-heading" data-translatekey="ex-heading15b"> </h2>
+                    <p class="ex-des" data-translatekey="ex-des15b"> </p>
+                  </div>
+                  <div class="ex-card"> <svg width="46" height="30" viewBox="0 0 46 30" fill="red"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M46 3.99351L46 16.8831L22.8708 30L-2.65624e-06 16.8831L-1.51785e-06 3.99351L22.8708 17.5649L46 3.99351Z"
+                        fill="#56c02a" />
+                      <path
+                        d="M14.1489 8.96104C14.1489 4.01199 18.1117 1.40134e-06 23 1.82436e-06C27.8883 2.24738e-06 31.8511 4.012 31.8511 8.96104C31.8511 13.9101 27.8883 17.9221 23 17.9221C18.1117 17.9221 14.1489 13.9101 14.1489 8.96104Z"
+                        fill="#56c02a" />
+                    </svg>
+                    <h2 class="ex-heading" data-translatekey="ex-heading15c"> </h2>
+                    <p class="ex-des" data-translatekey="ex-des15c"> </p>
+                  </div>
+                </div>
+                <div class="tab-inner hide" id="52">
+                  <div class="ex-sdg-div"> <img src="./images/goals/E_SDG_PRINT-01.jpg" class="ex-sdg-img img1" />
+                    <div class="ex-sdg-txt-div">
+                      <h2 class="ex-sdg-heading" data-translatekey="ex-sdg-heading15b"> </h2>
+                      <p class="ex-sdg-des" data-translatekey="ex-sdg-des15b"> </p>
+                      <p class="ex-sdg-des" data-translatekey="ex-sdg-des15c"> </p>
+                    </div>
+                  </div>
+                  <div class="ex-sdg-div"> <img src="./images/goals/E_SDG_PRINT-03.jpg" class="ex-sdg-img img3" />
+                    <div class="ex-sdg-txt-div">
+                      <h2 class="ex-sdg-heading" data-translatekey="ex-sdg-heading15a"> </h2>
+                      <p class="ex-sdg-des" data-translatekey="ex-sdg-des15a"> </p>
+                      <p class="ex-sdg-des" data-translatekey="ex-des15d"> </p>
+                      <p class="ex-sdg-des" data-translatekey="ex-des15e"> </p>
+                      <p class="ex-sdg-des" data-translatekey="ex-sdg-des15d"> </p>
+                    </div>
+                  </div>
+                  <div class="ex-sdg-div"> <img src="./images/goals/E_SDG_PRINT-04.jpg" class="ex-sdg-img img4" />
+                    <div class="ex-sdg-txt-div">
+                      <h2 class="ex-sdg-heading" data-translatekey="ex-sdg-heading15c"> </h2>
+                      <p class="ex-sdg-des" data-translatekey="ex-sdg-des15e"> </p>
+                      <p class="ex-sdg-des" data-translatekey="ex-sdg-des15f"> </p>
+                      <p class="ex-sdg-des" data-translatekey="ex-sdg-des15g"> </p>
+                      <p class="ex-sdg-des" data-translatekey="ex-sdg-des15h"> </p>
+                    </div>
+                  </div>
+                  <div class="ex-sdg-div"> <img src="./images/goals/E_SDG_PRINT-06.jpg" class="ex-sdg-img img6" />
+                    <div class="ex-sdg-txt-div">
+                      <h2 class="ex-sdg-heading" data-translatekey="ex-sdg-heading15h"> </h2>
+                      <p class="ex-sdg-des" data-translatekey="ex-sdg-des15i"> </p>
+                      <p class="ex-sdg-des" data-translatekey="ex-sdg-des15j"> </p>
+                    </div>
+                  </div>
+                  <div class="ex-sdg-div"> <img src="./images/goals/E_SDG_PRINT-07.jpg" class="ex-sdg-img img7" />
+                    <div class="ex-sdg-txt-div">
+                      <h2 class="ex-sdg-heading" data-translatekey="ex-sdg-heading15i"> </h2>
+                      <p class="ex-sdg-des" data-translatekey="ex-sdg-des15k"> </p>
+                    </div>
+                  </div>
+                  <div class="ex-sdg-div"> <img src="./images/goals/E_SDG_PRINT-11.jpg" class="ex-sdg-img img11" />
+                    <div class="ex-sdg-txt-div">
+                      <h2 class="ex-sdg-heading" data-translatekey="ex-sdg-heading15j"> </h2>
+                      <p class="ex-sdg-des" data-translatekey="ex-sdg-des15l"> </p>
+                    </div>
+                  </div>
+                  <div class="ex-sdg-div"> <img src="./images/goals/E_SDG_PRINT-16.jpg" class="ex-sdg-img img16" />
+                    <div class="ex-sdg-txt-div">
+                      <h2 class="ex-sdg-heading" data-translatekey="ex-sdg-heading15k"> </h2>
+                      <p class="ex-sdg-des" data-translatekey="ex-sdg-des15m"> </p>
+                      <p class="ex-sdg-des" data-translatekey="ex-sdg-des15n"> </p>
+                      <p class="ex-sdg-des" data-translatekey="ex-sdg-des15o"> </p>
+                      <p class="ex-sdg-des" data-translatekey="ex-sdg-des15p"> </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tab-data tab-inner2 hide" id="sixteenthTab">
+            <div class="card"> <img id="sixteenthTabImg" src="./images/objectivesImg/GCM_16_EN.svg"
+                alt="objectivesImg" />
+              <div class="wrapper">
+                <h2 data-translatekey="gcmobjectiveheadingtab16"> </h2>
+                <a href="./pdf/English/23 GCM Objectives/16-INCLUSION AND SOCIAL COHESION.pdf" id="tab16pdf"
+                  data-translatekey="gcmobjectivelink" target="_blank"></a>
+              </div>
+            </div>
+            <div>
+              <div class="tab-button"> <button class="clickme active" data-tag="53"
+                  data-translatekey="gcmobjectivesubtabheading1"></button> <button class="clickme" data-tag="54"
+                  data-translatekey="gcmobjectivesubtabheading2"></button> <button class="clickme" data-tag="55"
+                  data-translatekey="gcmobjectivesubtabheading3"></button> </div>
+              <div class="tab-maindata">
+                <ul class="tab-inner des-text" id="53">
+                  <li data-translatekey="tab-innerdes-text16a"> </li>
+                  <li data-translatekey="tab-innerdes-text16b"> </li>
+                  <li data-translatekey="tab-innerdes-text16c"> </li>
+                  <li data-translatekey="tab-innerdes-text16d"> </li>
+                  <li data-translatekey="tab-innerdes-text16e"> </li>
+                  <li data-translatekey="tab-innerdes-text16f"> </li>
+                  <li data-translatekey="tab-innerdes-text16g"> </li>
+                  <li data-translatekey="tab-innerdes-text16h"> </li>
+                  <li data-translatekey="tab-innerdes-text16i"> </li>
+                </ul>
+                <div class="tab-inner ex-main-div hide" id="54">
+                  <div class="ex-card"> <svg width="46" height="30" viewBox="0 0 46 30" fill="red"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M46 3.99351L46 16.8831L22.8708 30L-2.65624e-06 16.8831L-1.51785e-06 3.99351L22.8708 17.5649L46 3.99351Z"
+                        fill="#47bf68" />
+                      <path
+                        d="M14.1489 8.96104C14.1489 4.01199 18.1117 1.40134e-06 23 1.82436e-06C27.8883 2.24738e-06 31.8511 4.012 31.8511 8.96104C31.8511 13.9101 27.8883 17.9221 23 17.9221C18.1117 17.9221 14.1489 13.9101 14.1489 8.96104Z"
+                        fill="#47bf68" />
+                    </svg>
+                    <h2 class="ex-heading" data-translatekey="ex-heading16i"> </h2>
+                    <p class="ex-des" data-translatekey="ex-des16i"></p>
+                    <p class="ex-des" data-translatekey="ex-des16j"> </p>
+                    <p class="ex-des" data-translatekey="ex-des16k"> </p>
+                    <p class="ex-des" data-translatekey="ex-des16l"> </p>
+                    <p class="ex-des" data-translatekey="ex-des16lA"> </p>
+
+                  </div>
+                  <div class="ex-card"> <svg width="46" height="30" viewBox="0 0 46 30" fill="red"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M46 3.99351L46 16.8831L22.8708 30L-2.65624e-06 16.8831L-1.51785e-06 3.99351L22.8708 17.5649L46 3.99351Z"
+                        fill="#47bf68" />
+                      <path
+                        d="M14.1489 8.96104C14.1489 4.01199 18.1117 1.40134e-06 23 1.82436e-06C27.8883 2.24738e-06 31.8511 4.012 31.8511 8.96104C31.8511 13.9101 27.8883 17.9221 23 17.9221C18.1117 17.9221 14.1489 13.9101 14.1489 8.96104Z"
+                        fill="#47bf68" />
+                    </svg>
+                    <h2 class="ex-heading" data-translatekey="ex-headingtab16a"> </h2>
+                    <p class="ex-des" data-translatekey="ex-des16m"></p>
+                  </div>
+                </div>
+                <div class="tab-inner hide" id="55">
+                  <div class="ex-sdg-div"> <img src="./images/goals/E_SDG_PRINT-04.jpg" class="ex-sdg-img img4" />
+                    <div class="ex-sdg-txt-div">
+                      <h2 class="ex-sdg-heading" data-translatekey="ex-sdg-heading16m"> </h2>
+                      <p class="ex-sdg-des" data-translatekey="ex-sdg-des16m"> </p>
+                    </div>
+                  </div>
+                  <div class="ex-sdg-div"> <img src="./images/goals/E_SDG_PRINT-05.jpg" class="ex-sdg-img img5" />
+                    <div class="ex-sdg-txt-div">
+                      <h2 class="ex-sdg-heading" data-translatekey="ex-sdg-heading16n"> </h2>
+                      <p class="ex-sdg-des" data-translatekey="ex-sdg-des16n"> </p>
+                    </div>
+                  </div>
+                  <div class="ex-sdg-div"> <img src="./images/goals/E_SDG_PRINT-10.jpg" class="ex-sdg-img img10" />
+                    <div class="ex-sdg-txt-div">
+                      <h2 class="ex-sdg-heading" data-translatekey="ex-sdg-heading16o"> </h2>
+                      <p class="ex-sdg-des" data-translatekey="ex-sdg-des16o"> </p>
+                      <p class="ex-sdg-des" data-translatekey="ex-sdg-des16p"> </p>
+                    </div>
+                  </div>
+                  <div class="ex-sdg-div"> <img src="./images/goals/E_SDG_PRINT-11.jpg" class="ex-sdg-img img11" />
+                    <div class="ex-sdg-txt-div">
+                      <h2 class="ex-sdg-heading" data-translatekey="ex-sdg-heading16a"> </h2>
+                      <p class="ex-sdg-des" data-translatekey="ex-sdg-des16q"> </p>
+                    </div>
+                  </div>
+                  <div class="ex-sdg-div"> <img src="./images/goals/E_SDG_PRINT-16.jpg" class="ex-sdg-img img16" />
+                    <div class="ex-sdg-txt-div">
+                      <h2 class="ex-sdg-heading" data-translatekey="ex-sdg-heading16b"> </h2>
+                      <p class="ex-sdg-des" data-translatekey="ex-sdg-des16r"> </p>
+                      <p class="ex-sdg-des" data-translatekey="ex-sdg-des16s"> </p>
+                    </div>
+                  </div>
+                  <div class="ex-sdg-div"> <img src="./images/goals/E_SDG_PRINT-17.jpg" class="ex-sdg-img img17" />
+                    <div class="ex-sdg-txt-div">
+                      <h2 class="ex-sdg-heading" data-translatekey="ex-sdg-heading16c"> </h2>
+                      <p class="ex-sdg-des" data-translatekey="ex-sdg-des16t"> </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tab-data tab-inner2 hide" id="seventeenthTab">
+            <div class="card"> <img id="seventeenthTabImg" src="./images/objectivesImg/GCM_17_EN.svg"
+                alt="objectivesImg" />
+              <div class="wrapper">
+                <h2 data-translatekey="gcmobjectiveheadingtab17"> </h2>
+                <a href="./pdf/English/23 GCM Objectives/17-ELIMINATE DISCRIMINATION.pdf" id="tab17pdf"
+                  data-translatekey="gcmobjectivelink" target="_blank"></a>
+              </div>
+            </div>
+            <div>
+              <div class="tab-button"> <button class="clickme active" data-tag="56"
+                  data-translatekey="gcmobjectivesubtabheading1"></button> <button class="clickme" data-tag="57"
+                  data-translatekey="gcmobjectivesubtabheading2"></button> <button class="clickme" data-tag="58"
+                  data-translatekey="gcmobjectivesubtabheading3"></button> </div>
+              <div class="tab-maindata">
+                <ul class="tab-inner des-text" id="56">
+                  <li data-translatekey="tab-innedes-text17a"> </li>
+                  <li data-translatekey="tab-innedes-text17b"> </li>
+                  <li data-translatekey="tab-innedes-text17c"> </li>
+                  <li data-translatekey="tab-innedes-text17d"> </li>
+                  <li data-translatekey="tab-innedes-text17e"> </li>
+                  <li data-translatekey="tab-innedes-text17f"> </li>
+                  <li data-translatekey="tab-innedes-text17g"> </li>
+                </ul>
+                <div class="tab-inner ex-main-div hide" id="57">
+                  <div class="ex-card"> <svg width="46" height="30" viewBox="0 0 46 30" fill="red"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M46 3.99351L46 16.8831L22.8708 30L-2.65624e-06 16.8831L-1.51785e-06 3.99351L22.8708 17.5649L46 3.99351Z"
+                        fill="#35bea4" />
+                      <path
+                        d="M14.1489 8.96104C14.1489 4.01199 18.1117 1.40134e-06 23 1.82436e-06C27.8883 2.24738e-06 31.8511 4.012 31.8511 8.96104C31.8511 13.9101 27.8883 17.9221 23 17.9221C18.1117 17.9221 14.1489 13.9101 14.1489 8.96104Z"
+                        fill="#35bea4" />
+                    </svg>
+                    <h2 class="ex-heading" data-translatekey="ex-headingtab17a"> </h2>
+                    <p class="ex-des" data-translatekey="ex-des17a"></p>
+                    <p class="ex-des" data-translatekey="ex-des17b"> </p>
+                    <p class="ex-des" data-translatekey="ex-des17c"> </p>
+                    <p class="ex-des" data-translatekey="ex-des17d"> </p>
+                  </div>
+                  <div class="ex-card"> <svg width="46" height="30" viewBox="0 0 46 30" fill="red"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M46 3.99351L46 16.8831L22.8708 30L-2.65624e-06 16.8831L-1.51785e-06 3.99351L22.8708 17.5649L46 3.99351Z"
+                        fill="#35bea4" />
+                      <path
+                        d="M14.1489 8.96104C14.1489 4.01199 18.1117 1.40134e-06 23 1.82436e-06C27.8883 2.24738e-06 31.8511 4.012 31.8511 8.96104C31.8511 13.9101 27.8883 17.9221 23 17.9221C18.1117 17.9221 14.1489 13.9101 14.1489 8.96104Z"
+                        fill="#35bea4" />
+                    </svg>
+                    <h2 class="ex-heading" data-translatekey="ex-headingtab17b"> </h2>
+                    <p class="ex-des" data-translatekey="ex-des17e"> </p>
+                    <p class="ex-des" data-translatekey="ex-des17f"> </p>
+                    <p class="ex-des" data-translatekey="ex-des17g"> </p>
+                    <p class="ex-des" data-translatekey="ex-des17h"> </p>
+                  </div>
+                  <div class="ex-card"> <svg width="46" height="30" viewBox="0 0 46 30" fill="red"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M46 3.99351L46 16.8831L22.8708 30L-2.65624e-06 16.8831L-1.51785e-06 3.99351L22.8708 17.5649L46 3.99351Z"
+                        fill="#35bea4" />
+                      <path
+                        d="M14.1489 8.96104C14.1489 4.01199 18.1117 1.40134e-06 23 1.82436e-06C27.8883 2.24738e-06 31.8511 4.012 31.8511 8.96104C31.8511 13.9101 27.8883 17.9221 23 17.9221C18.1117 17.9221 14.1489 13.9101 14.1489 8.96104Z"
+                        fill="#35bea4" />
+                    </svg>
+                    <h2 class="ex-heading" data-translatekey="ex-headingtab17c"> </h2>
+                    <p class="ex-des" data-translatekey="ex-des17i"> </p>
+                  </div>
+                  <div class="ex-card"> <svg width="46" height="30" viewBox="0 0 46 30" fill="red"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M46 3.99351L46 16.8831L22.8708 30L-2.65624e-06 16.8831L-1.51785e-06 3.99351L22.8708 17.5649L46 3.99351Z"
+                        fill="#35bea4" />
+                      <path
+                        d="M14.1489 8.96104C14.1489 4.01199 18.1117 1.40134e-06 23 1.82436e-06C27.8883 2.24738e-06 31.8511 4.012 31.8511 8.96104C31.8511 13.9101 27.8883 17.9221 23 17.9221C18.1117 17.9221 14.1489 13.9101 14.1489 8.96104Z"
+                        fill="#35bea4" />
+                    </svg>
+                    <h2 class="ex-heading" data-translatekey="ex-headingtab17d"> </h2>
+                    <p class="ex-des" data-translatekey="ex-des17j"> </p>
+                  </div>
+                </div>
+                <div class="tab-inner hide" id="58">
+                  <div class="ex-sdg-div"> <img src="./images/goals/E_SDG_PRINT-08.jpg" class="ex-sdg-img img8" />
+                    <div class="ex-sdg-txt-div">
+                      <h2 class="ex-sdg-heading" data-translatekey="ex-des17k"> </h2>
+                      <p class="ex-sdg-des" data-translatekey="ex-des17l"> </p>
+                      <p class="ex-sdg-des" data-translatekey="ex-sdg-des17l"> </p>
+                    </div>
+                  </div>
+                  <div class="ex-sdg-div"> <img src="./images/goals/E_SDG_PRINT-10.jpg" class="ex-sdg-img img10" />
+                    <div class="ex-sdg-txt-div">
+                      <h2 class="ex-sdg-heading" data-translatekey="ex-sdg-heading17b"> </h2>
+                      <p class="ex-sdg-des" data-translatekey="ex-sdg-des17m"> </p>
+                      <p class="ex-sdg-des" data-translatekey="ex-sdg-des3a"> </p>
+
+                      <!-- <p class="ex-sdg-des" data-translatekey="ex-sdg-des17n"> </p> -->
+                    </div>
+                  </div>
+                  <div class="ex-sdg-div"> <img src="./images/goals/E_SDG_PRINT-16.jpg" class="ex-sdg-img img16" />
+                    <div class="ex-sdg-txt-div">
+                      <h2 class="ex-sdg-heading" data-translatekey="ex-heading17n"> </h2>
+                      <p class="ex-sdg-des" data-translatekey="ex-sdg-des17o"> </p>
+                      <p class="ex-sdg-des" data-translatekey="ex-sdg-des17p"> </p>
+                    </div>
+                  </div>
+                  <div class="ex-sdg-div"> <img src="./images/goals/E_SDG_PRINT-17.jpg" class="ex-sdg-img img17" />
+                    <div class="ex-sdg-txt-div">
+                      <h2 class="ex-sdg-heading" data-translatekey="ex-sdg-heading17p"> </h2>
+                      <p class="ex-sdg-des" data-translatekey="ex-sdg-des17q"> </p>
+                      <p class="ex-sdg-des" data-translatekey="ex-sdg-des17r"> </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tab-data tab-inner2 hide" id="eighteenthTab">
+            <div class="card"> <img id="eighteenthTabImg" src="./images/objectivesImg/GCM_18_EN.svg"
+                alt="objectivesImg" />
+              <div class="wrapper">
+                <h2 data-translatekey="gcmobjectiveheadingtab18"> </h2>
+                <a href="./pdf/English/23 GCM Objectives/18-SKILLS DEVELOPMENT AND RECOGNITION.pdf" id="tab18pdf"
+                  data-translatekey="gcmobjectivelink" target="_blank"></a>
+              </div>
+            </div>
+            <div>
+              <div class="tab-button"> <button class="clickme active" data-tag="59"
+                  data-translatekey="gcmobjectivesubtabheading1"></button> <button class="clickme" data-tag="60"
+                  data-translatekey="gcmobjectivesubtabheading2"></button> <button class="clickme" data-tag="61"
+                  data-translatekey="gcmobjectivesubtabheading3"></button> </div>
+              <div class="tab-maindata">
+                <ul class="tab-inner des-text" id="59">
+                  <li data-translatekey="tab-innerdes-text18a"> </li>
+                  <li data-translatekey="tab-innerdes-text18b"> </li>
+                  <li data-translatekey="tab-innerdes-text18c"> </li>
+                  <li data-translatekey="tab-innerdes-text18d"> </li>
+                  <li data-translatekey="tab-innerdes-text18e"> </li>
+                  <li data-translatekey="tab-innerdes-text18f"> </li>
+                  <li data-translatekey="tab-innerdes-text18g"> </li>
+                  <li data-translatekey="tab-innerdes-text18h"> </li>
+                  <li data-translatekey="tab-innerdes-text18i"> </li>
+                  <li data-translatekey="tab-innerdes-text18j"> </li>
+                  <li data-translatekey="tab-innerdes-text18k"> </li>
+                  <li data-translatekey="tab-innerdes-text18l"> </li>
+                </ul>
+                <div class="tab-inner ex-main-div hide" id="60">
+                  <div class="ex-card"> <svg width="46" height="30" viewBox="0 0 46 30" fill="red"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M46 3.99351L46 16.8831L22.8708 30L-2.65624e-06 16.8831L-1.51785e-06 3.99351L22.8708 17.5649L46 3.99351Z"
+                        fill="#25bde2" />
+                      <path
+                        d="M14.1489 8.96104C14.1489 4.01199 18.1117 1.40134e-06 23 1.82436e-06C27.8883 2.24738e-06 31.8511 4.012 31.8511 8.96104C31.8511 13.9101 27.8883 17.9221 23 17.9221C18.1117 17.9221 14.1489 13.9101 14.1489 8.96104Z"
+                        fill="#25bde2" />
+                    </svg>
+                    <h2 class="ex-heading" data-translatekey="ex-heading18a"> </h2>
+                    <p class="ex-des" data-translatekey="ex-des18a"></p>
+                  </div>
+                  <div class="ex-card"> <svg width="46" height="30" viewBox="0 0 46 30" fill="red"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M46 3.99351L46 16.8831L22.8708 30L-2.65624e-06 16.8831L-1.51785e-06 3.99351L22.8708 17.5649L46 3.99351Z"
+                        fill="#25bde2" />
+                      <path
+                        d="M14.1489 8.96104C14.1489 4.01199 18.1117 1.40134e-06 23 1.82436e-06C27.8883 2.24738e-06 31.8511 4.012 31.8511 8.96104C31.8511 13.9101 27.8883 17.9221 23 17.9221C18.1117 17.9221 14.1489 13.9101 14.1489 8.96104Z"
+                        fill="#25bde2" />
+                    </svg>
+                    <h2 class="ex-heading" data-translatekey="ex-heading18b"> </h2>
+                    <p class="ex-des" data-translatekey="ex-des18b"> </p>
+                  </div>
+                </div>
+                <div class="tab-inner hide" id="61">
+                  <div class="ex-sdg-div">
+                    <img src="./images/goals/E_SDG_PRINT-03.jpg" class="ex-sdg-img img3" />
+                    <div class="ex-sdg-txt-div">
+                      <h2 class="ex-sdg-heading" data-translatekey="ex-sdg-heading18b"> </h2>
+                      <p class="ex-sdg-des" data-translatekey="ex-sdg-des18b"> </p>
+                    </div>
+                  </div>
+                  <div class="ex-sdg-div">
+                    <img src="./images/goals/E_SDG_PRINT-04.jpg" class="ex-sdg-img img4" />
+                    <div class="ex-sdg-txt-div">
+                      <h2 class="ex-sdg-heading" data-translatekey="ex-sdg-heading18c"> </h2>
+                      <p class="ex-sdg-des" data-translatekey="ex-sdg-des18c"> </p>
+                      <p class="ex-sdg-des" data-translatekey="ex-sdg-des18d"> </p>
+                    </div>
+                  </div>
+                  <div class="ex-sdg-div">
+                    <img src="./images/goals/E_SDG_PRINT-08.jpg" class="ex-sdg-img img8" />
+                    <div class="ex-sdg-txt-div">
+                      <h2 class="ex-sdg-heading" data-translatekey="ex-sdg-heading18d"> </h2>
+                      <p class="ex-sdg-des" data-translatekey="ex-sdg-des18e"> </p>
+                      <p class="ex-sdg-des" data-translatekey="ex-sdg-des18f"> </p>
+                    </div>
+                  </div>
+                  <div class="ex-sdg-div">
+                    <img src="./images/goals/E_SDG_PRINT-10.jpg" class="ex-sdg-img img10" />
+                    <div class="ex-sdg-txt-div">
+                      <h2 class="ex-sdg-heading" data-translatekey="ex-sdg-heading18e"> </h2>
+                      <p class="ex-sdg-des" data-translatekey="ex-sdg-des18g"> </p>
+                    </div>
+                  </div>
+                  <div class="ex-sdg-div">
+                    <img src="./images/goals/E_SDG_PRINT-17.jpg" class="ex-sdg-img img17" />
+                    <div class="ex-sdg-txt-div">
+                      <h2 class="ex-sdg-heading" data-translatekey="ex-sdg-heading18f"> </h2>
+                      <p class="ex-sdg-des" data-translatekey="ex-sdg-des18h"> </p>
+                      <p class="ex-sdg-des" data-translatekey="ex-sdg-des18i"> </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tab-data tab-inner2 hide" id="nineteenthTab">
+            <div class="card"> <img id="nineteenthTabImg" src="./images/objectivesImg/GCM_19_EN.svg"
+                alt="objectivesImg" />
+              <div class="wrapper">
+                <h2 data-translatekey="gcmobjectiveheadingtab19"> </h2>
+                <a href="./pdf/English/23 GCM Objectives/19-MIGRANT AND DIASPORA CONTRIBUTIONS.pdf" id="tab19pdf"
+                  data-translatekey="gcmobjectivelink" target="_blank"></a>
+              </div>
+            </div>
+            <div>
+              <div class="tab-button">
+                <button class="clickme active" data-tag="62" data-translatekey="gcmobjectivesubtabheading1"></button>
+                <button class="clickme" data-tag="63" data-translatekey="gcmobjectivesubtabheading2"></button>
+                <button class="clickme" data-tag="64" data-translatekey="gcmobjectivesubtabheading3"></button>
+              </div>
+              <div class="tab-maindata">
+                <ul class="tab-inner des-text" id="62">
+                  <li data-translatekey="tab-innerdes-text19a"> </li>
+                  <li data-translatekey="tab-innerdes-text19b"> </li>
+                  <li data-translatekey="tab-innerdes-text19c"> </li>
+                  <li data-translatekey="tab-innerdes-text19d"> </li>
+                  <li data-translatekey="tab-innerdes-text19e"> </li>
+                  <li data-translatekey="tab-innerdes-text19f"> </li>
+                  <li data-translatekey="tab-innerdes-text19g"> </li>
+                  <li data-translatekey="tab-innerdes-text19h"> </li>
+                  <li data-translatekey="tab-innerdes-text19i"> </li>
+                  <li data-translatekey="tab-innerdes-text19j"> </li>
+                </ul>
+                <div class="tab-inner ex-main-div hide" id="63">
+                  <div class="ex-card"> <svg width="46" height="30" viewBox="0 0 46 30" fill="red"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M46 3.99351L46 16.8831L22.8708 30L-2.65624e-06 16.8831L-1.51785e-06 3.99351L22.8708 17.5649L46 3.99351Z"
+                        fill="#19a7d5" />
+                      <path
+                        d="M14.1489 8.96104C14.1489 4.01199 18.1117 1.40134e-06 23 1.82436e-06C27.8883 2.24738e-06 31.8511 4.012 31.8511 8.96104C31.8511 13.9101 27.8883 17.9221 23 17.9221C18.1117 17.9221 14.1489 13.9101 14.1489 8.96104Z"
+                        fill="#19a7d5" />
+                    </svg>
+                    <h2 class="ex-heading" data-translatekey="ex-heading19a"> </h2>
+                    <p class="ex-des" data-translatekey="ex-des19a"> </p>
+                    <p class="ex-des" data-translatekey="ex-des19b"> </p>
+                    <p class="ex-des" data-translatekey="ex-des19c"> </p>
+                    <p class="ex-des" data-translatekey="ex-des19d"> </p>
+                  </div>
+                  <div class="ex-card"> <svg width="46" height="30" viewBox="0 0 46 30" fill="red"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M46 3.99351L46 16.8831L22.8708 30L-2.65624e-06 16.8831L-1.51785e-06 3.99351L22.8708 17.5649L46 3.99351Z"
+                        fill="#19a7d5" />
+                      <path
+                        d="M14.1489 8.96104C14.1489 4.01199 18.1117 1.40134e-06 23 1.82436e-06C27.8883 2.24738e-06 31.8511 4.012 31.8511 8.96104C31.8511 13.9101 27.8883 17.9221 23 17.9221C18.1117 17.9221 14.1489 13.9101 14.1489 8.96104Z"
+                        fill="#19a7d5" />
+                    </svg>
+                    <h2 class="ex-heading" data-translatekey="ex-heading19d"> </h2>
+                    <p class="ex-des" data-translatekey="ex-des19e"> </p>
+                  </div>
+                  <div class="ex-card"> <svg width="46" height="30" viewBox="0 0 46 30" fill="red"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M46 3.99351L46 16.8831L22.8708 30L-2.65624e-06 16.8831L-1.51785e-06 3.99351L22.8708 17.5649L46 3.99351Z"
+                        fill="#19a7d5" />
+                      <path
+                        d="M14.1489 8.96104C14.1489 4.01199 18.1117 1.40134e-06 23 1.82436e-06C27.8883 2.24738e-06 31.8511 4.012 31.8511 8.96104C31.8511 13.9101 27.8883 17.9221 23 17.9221C18.1117 17.9221 14.1489 13.9101 14.1489 8.96104Z"
+                        fill="#19a7d5" />
+                    </svg>
+                    <h2 class="ex-heading" data-translatekey="ex-heading19e"> </h2>
+                    <p class="ex-des" data-translatekey="ex-des19f"> </p>
+                  </div>
+                </div>
+                <div class="tab-inner hide" id="64">
+                  <div class="ex-sdg-div">
+                    <!-- <img src="./images/goals/-01.jpg" class="ex-sdg-img" /> -->
+                    <div class="ex-sdg-txt-div">
+                      <h2 class="ex-sdg-heading" data-translatekey="ex-sdg-des19f"> </h2>
+                      <p class="ex-sdg-des" data-translatekey="ex-sdg-heading19f"> </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tab-data tab-inner2 hide" id="twentythTab">
+            <div class="card"> <img id="twentythTabImg" src="./images/objectivesImg/GCM_20_EN.svg"
+                alt="objectivesImg" />
+              <div class="wrapper">
+                <h2 data-translatekey="gcmobjectiveheadingtab20"> </h2>
+                <a href="./pdf/English/23 GCM Objectives/20-REMITTANCES.pdf" id="tab20pdf"
+                  data-translatekey="gcmobjectivelink" target="_blank"></a>
+              </div>
+            </div>
+            <div>
+              <div class="tab-button"> <button class="clickme active" data-tag="65"
+                  data-translatekey="gcmobjectivesubtabheading1"></button> <button class="clickme" data-tag="66"
+                  data-translatekey="gcmobjectivesubtabheading2"></button> <button class="clickme" data-tag="67"
+                  data-translatekey="gcmobjectivesubtabheading3"></button> </div>
+              <div class="tab-maindata">
+                <ul class="tab-inner des-text" id="65">
+                  <li data-translatekey="tab-innerdes-text20a"> </li>
+                  <li data-translatekey="tab-innerdes-text20b"> </li>
+                  <li data-translatekey="tab-innerdes-text20c"> </li>
+                  <li data-translatekey="tab-innerdes-text20d"> </li>
+                  <li data-translatekey="tab-innerdes-text20e"> </li>
+                  <li data-translatekey="tab-innerdes-text20f"> </li>
+                  <li data-translatekey="tab-innerdes-text20g"> </li>
+                  <li data-translatekey="tab-innerdes-text20h"></li>
+                  <li data-translatekey="tab-innerdes-text20i"></li>
+                </ul>
+                <div class="tab-inner ex-main-div hide" id="66">
+                  <div class="ex-card"> <svg width="46" height="30" viewBox="0 0 46 30" fill="red"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M46 3.99351L46 16.8831L22.8708 30L-2.65624e-06 16.8831L-1.51785e-06 3.99351L22.8708 17.5649L46 3.99351Z"
+                        fill="#0c92c7" />
+                      <path
+                        d="M14.1489 8.96104C14.1489 4.01199 18.1117 1.40134e-06 23 1.82436e-06C27.8883 2.24738e-06 31.8511 4.012 31.8511 8.96104C31.8511 13.9101 27.8883 17.9221 23 17.9221C18.1117 17.9221 14.1489 13.9101 14.1489 8.96104Z"
+                        fill="#0c92c7" />
+                    </svg>
+                    <h2 class="ex-heading" data-translatekey="ex-heading20a"> </h2>
+                    <p class="ex-des" data-translatekey="ex-des20a"> </p>
+                  </div>
+                  <div class="ex-card"> <svg width="46" height="30" viewBox="0 0 46 30" fill="red"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M46 3.99351L46 16.8831L22.8708 30L-2.65624e-06 16.8831L-1.51785e-06 3.99351L22.8708 17.5649L46 3.99351Z"
+                        fill="#0c92c7" />
+                      <path
+                        d="M14.1489 8.96104C14.1489 4.01199 18.1117 1.40134e-06 23 1.82436e-06C27.8883 2.24738e-06 31.8511 4.012 31.8511 8.96104C31.8511 13.9101 27.8883 17.9221 23 17.9221C18.1117 17.9221 14.1489 13.9101 14.1489 8.96104Z"
+                        fill="#0c92c7" />
+                    </svg>
+                    <h2 class="ex-heading" data-translatekey="ex-heading20b"> </h2>
+                    <p class="ex-des" data-translatekey="ex-des20b"></p>
+                    <p class="ex-des" data-translatekey="ex-des20c"> </p>
+                    <p class="ex-des" data-translatekey="ex-des20d"> </p>
+                  </div>
+                  <div class="ex-card"> <svg width="46" height="30" viewBox="0 0 46 30" fill="red"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M46 3.99351L46 16.8831L22.8708 30L-2.65624e-06 16.8831L-1.51785e-06 3.99351L22.8708 17.5649L46 3.99351Z"
+                        fill="#0c92c7" />
+                      <path
+                        d="M14.1489 8.96104C14.1489 4.01199 18.1117 1.40134e-06 23 1.82436e-06C27.8883 2.24738e-06 31.8511 4.012 31.8511 8.96104C31.8511 13.9101 27.8883 17.9221 23 17.9221C18.1117 17.9221 14.1489 13.9101 14.1489 8.96104Z"
+                        fill="#0c92c7" />
+                    </svg>
+                    <h2 class="ex-heading" data-translatekey="ex-heading20c"> </h2>
+                    <p class="ex-des" data-translatekey="ex-sdg-heading20e"> </p>
+                  </div>
+                </div>
+                <div class="tab-inner hide" id="67">
+                  <div class="ex-sdg-div"> <img src="./images/goals/E_SDG_PRINT-01.jpg" class="ex-sdg-img img1" />
+                    <div class="ex-sdg-txt-div">
+                      <h2 class="ex-sdg-heading" data-translatekey="ex-sdg-heading14a"> </h2>
+                      <p class="ex-sdg-des" data-translatekey="gcmobjectivedatasection3a"> </p>
+                    </div>
+                  </div>
+                  <div class="ex-sdg-div"> <img src="./images/goals/E_SDG_PRINT-08.jpg" class="ex-sdg-img img8" />
+                    <div class="ex-sdg-txt-div">
+                      <h2 class="ex-sdg-heading" data-translatekey="gcmobjectiveheading5c"> </h2>
+                      <p class="ex-sdg-des" data-translatekey="ex-sdg-des20"> </p>
+                    </div>
+                  </div>
+                  <div class="ex-sdg-div"> <img src="./images/goals/E_SDG_PRINT-10.jpg" class="ex-sdg-img img10" />
+                    <div class="ex-sdg-txt-div">
+                      <h2 class="ex-sdg-heading" data-translatekey="ex-sdg-heading3a"> </h2>
+                      <p class="ex-sdg-des" data-translatekey="ex-sdg-des20a"> </p>
+                    </div>
+                  </div>
+                  <div class="ex-sdg-div"> <img src="./images/goals/E_SDG_PRINT-17.jpg" class="ex-sdg-img img17" />
+                    <div class="ex-sdg-txt-div">
+                      <h2 class="ex-sdg-heading" data-translatekey="ex-des20e"> </h2>
+                      <p class="ex-sdg-des" data-translatekey="ex-sdg-des20e"> </p>
+                      <p class="ex-sdg-des" data-translatekey="ex-sdg-des20f"> </p>
+                      <p class="ex-sdg-des" data-translatekey="ex-sdg-des20g"> </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tab-data tab-inner2 hide" id="twentyonethTab">
+            <div class="card"> <img id="twentyonethTabImg" src="./images/objectivesImg/GCM_21_EN.svg"
+                alt="objectivesImg" />
+              <div class="wrapper">
+                <h2 data-translatekey="gcmobjectiveheadingtab21a"> </h2>
+                <a href="./pdf/English/23 GCM Objectives/21-DIGNIFIED RETURN AND REINTEGRATION.pdf" id="tab21pdf"
+                  data-translatekey="gcmobjectivelink" target="_blank"></a>
+              </div>
+            </div>
+            <div>
+              <div class="tab-button"> <button class="clickme active" data-tag="68"
+                  data-translatekey="gcmobjectivesubtabheading1"></button> <button class="clickme" data-tag="69"
+                  data-translatekey="gcmobjectivesubtabheading2"></button> <button class="clickme" data-tag="70"
+                  data-translatekey="gcmobjectivesubtabheading3"></button> </div>
+              <div class="tab-maindata">
+                <ul class="tab-inner des-text" id="68">
+                  <li data-translatekey="tab-innerdes-text21a"> </li>
+                  <li data-translatekey="tab-innerdes-text21b"> </li>
+                  <li data-translatekey="tab-innerdes-text21c"> </li>
+                  <li data-translatekey="tab-innerdes-text21d"> </li>
+                  <li data-translatekey="tab-innerdes-text21e"> </li>
+                  <li data-translatekey="tab-innerdes-text21f"> </li>
+                  <li data-translatekey="tab-innerdes-text21g"> </li>
+                  <li data-translatekey="tab-innerdes-text21h"> </li>
+                  <li data-translatekey="tab-innerdes-text21i"> </li>
+                </ul>
+                <div class="tab-inner ex-main-div hide" id="69">
+                  <div class="ex-card"> <svg width="46" height="30" viewBox="0 0 46 30" fill="red"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M46 3.99351L46 16.8831L22.8708 30L-2.65624e-06 16.8831L-1.51785e-06 3.99351L22.8708 17.5649L46 3.99351Z"
+                        fill="#007cba" />
+                      <path
+                        d="M14.1489 8.96104C14.1489 4.01199 18.1117 1.40134e-06 23 1.82436e-06C27.8883 2.24738e-06 31.8511 4.012 31.8511 8.96104C31.8511 13.9101 27.8883 17.9221 23 17.9221C18.1117 17.9221 14.1489 13.9101 14.1489 8.96104Z"
+                        fill="#007cba" />
+                    </svg>
+                    <h2 class="ex-heading" data-translatekey="ex-heading21a"></h2>
+                    <p class="ex-des" data-translatekey="ex-des21a"> </p>
+                    <p class="ex-des" data-translatekey="ex-des21b"> </p>
+                    <p class="ex-des" data-translatekey="ex-des21c"> </p>
+                    <p class="ex-des" data-translatekey="ex-des21d"> </p>
+                    <p class="ex-des" data-translatekey="ex-des21e"> </p>
+                  </div>
+                  <div class="ex-card"> <svg width="46" height="30" viewBox="0 0 46 30" fill="red"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M46 3.99351L46 16.8831L22.8708 30L-2.65624e-06 16.8831L-1.51785e-06 3.99351L22.8708 17.5649L46 3.99351Z"
+                        fill="#007cba" />
+                      <path
+                        d="M14.1489 8.96104C14.1489 4.01199 18.1117 1.40134e-06 23 1.82436e-06C27.8883 2.24738e-06 31.8511 4.012 31.8511 8.96104C31.8511 13.9101 27.8883 17.9221 23 17.9221C18.1117 17.9221 14.1489 13.9101 14.1489 8.96104Z"
+                        fill="#007cba" />
+                    </svg>
+                    <h2 class="ex-heading" data-translatekey="ex-heading21e"> </h2>
+                    <p class="ex-des" data-translatekey="ex-des21f"> </p>
+                  </div>
+                  <div class="ex-card"> <svg width="46" height="30" viewBox="0 0 46 30" fill="red"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M46 3.99351L46 16.8831L22.8708 30L-2.65624e-06 16.8831L-1.51785e-06 3.99351L22.8708 17.5649L46 3.99351Z"
+                        fill="#007cba" />
+                      <path
+                        d="M14.1489 8.96104C14.1489 4.01199 18.1117 1.40134e-06 23 1.82436e-06C27.8883 2.24738e-06 31.8511 4.012 31.8511 8.96104C31.8511 13.9101 27.8883 17.9221 23 17.9221C18.1117 17.9221 14.1489 13.9101 14.1489 8.96104Z"
+                        fill="#007cba" />
+                    </svg>
+                    <h2 class="ex-heading" data-translatekey="ex-heading21f"> </h2>
+                    <p class="ex-des" data-translatekey="ex-des21g"> </p>
+                  </div>
+                  <div class="ex-card"> <svg width="46" height="30" viewBox="0 0 46 30" fill="red"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M46 3.99351L46 16.8831L22.8708 30L-2.65624e-06 16.8831L-1.51785e-06 3.99351L22.8708 17.5649L46 3.99351Z"
+                        fill="#007cba" />
+                      <path
+                        d="M14.1489 8.96104C14.1489 4.01199 18.1117 1.40134e-06 23 1.82436e-06C27.8883 2.24738e-06 31.8511 4.012 31.8511 8.96104C31.8511 13.9101 27.8883 17.9221 23 17.9221C18.1117 17.9221 14.1489 13.9101 14.1489 8.96104Z"
+                        fill="#007cba" />
+                    </svg>
+                    <h2 class="ex-heading" data-translatekey="ex-heading21g"> </h2>
+                    <p class="ex-des" data-translatekey="ex-des21h"> </p>
+                  </div>
+                </div>
+                <div class="tab-inner hide" id="70">
+                  <div class="ex-sdg-div"> <img src="./images/goals/E_SDG_PRINT-01.jpg" class="ex-sdg-img img1" />
+                    <div class="ex-sdg-txt-div">
+                      <h2 class="ex-sdg-heading" data-translatekey="ex-sdg-heading21a"> </h2>
+                      <p class="ex-sdg-des" data-translatekey="ex-sdg-des21a"> </p>
+                      <p class="ex-sdg-des" data-translatekey="ex-sdg-des2b"> </p>
+                    </div>
+                  </div>
+                  <div class="ex-sdg-div"> <img src="./images/goals/E_SDG_PRINT-10.jpg" class="ex-sdg-img img10" />
+                    <div class="ex-sdg-txt-div">
+                      <h2 class="ex-sdg-heading" data-translatekey="ex-sdg-heading21b"> </h2>
+                      <p class="ex-sdg-des" data-translatekey="ex-sdg-des2c"> </p>
+                    </div>
+                  </div>
+                  <div class="ex-sdg-div"> <img src="./images/goals/E_SDG_PRINT-16.jpg" class="ex-sdg-img img16" />
+                    <div class="ex-sdg-txt-div">
+                      <h2 class="ex-sdg-heading" data-translatekey="ex-sdg-heading21c"> </h2>
+                      <p class="ex-sdg-des" data-translatekey="ex-sdg-des2d"> </p>
+                      <p class="ex-sdg-des" data-translatekey="ex-sdg-des2e"> </p>
+                    </div>
+                  </div>
+                  <div class="ex-sdg-div"> <img src="./images/goals/E_SDG_PRINT-17.jpg" class="ex-sdg-img img17" />
+                    <div class="ex-sdg-txt-div">
+                      <h2 class="ex-sdg-heading" data-translatekey="ex-sdg-heading21d"> </h2>
+                      <p class="ex-sdg-des" data-translatekey="ex-sdg-des2f"> </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tab-data tab-inner2 hide" id="twentytwothTab">
+            <div class="card"> <img id="twentytwothTabImg" src="./images/objectivesImg/GCM_22_EN.svg"
+                alt="objectivesImg" />
+              <div class="wrapper">
+                <h2 data-translatekey="gcmobjectiveheadingtab22"> </h2>
+                <a href="./pdf/English/23 GCM Objectives/22-SOCIAL PROTECTION.pdf" id="tab22pdf"
+                  data-translatekey="gcmobjectivelink" target="_blank"></a>
+              </div>
+            </div>
+            <div>
+              <div class="tab-button"> <button class="clickme active" data-tag="71"
+                  data-translatekey="gcmobjectivesubtabheading1"></button> <button class="clickme" data-tag="72"
+                  data-translatekey="gcmobjectivesubtabheading2"></button> <button class="clickme" data-tag="73"
+                  data-translatekey="gcmobjectivesubtabheading3"></button> </div>
+              <div class="tab-maindata">
+                <ul class="tab-inner des-text" id="71">
+                  <li data-translatekey="tab-innerdes-text22a"> </li>
+                  <li data-translatekey="tab-innerdes-text22b"> </li>
+                  <li data-translatekey="tab-innerdes-text22"> </li>
+                </ul>
+                <div class="tab-inner ex-main-div hide" id="72">
+                  <div class="ex-card"> <svg width="46" height="30" viewBox="0 0 46 30" fill="red"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M46 3.99351L46 16.8831L22.8708 30L-2.65624e-06 16.8831L-1.51785e-06 3.99351L22.8708 17.5649L46 3.99351Z"
+                        fill="#076b9f" />
+                      <path
+                        d="M14.1489 8.96104C14.1489 4.01199 18.1117 1.40134e-06 23 1.82436e-06C27.8883 2.24738e-06 31.8511 4.012 31.8511 8.96104C31.8511 13.9101 27.8883 17.9221 23 17.9221C18.1117 17.9221 14.1489 13.9101 14.1489 8.96104Z"
+                        fill="#076b9f" />
+                    </svg>
+                    <h2 class="ex-heading" data-translatekey="tab-innerdes-text22c"> </h2>
+                    <p class="ex-des" data-translatekey="tab-innerdes-text22d"> </p>
+                  </div>
+                  <div class="ex-card"> <svg width="46" height="30" viewBox="0 0 46 30" fill="red"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M46 3.99351L46 16.8831L22.8708 30L-2.65624e-06 16.8831L-1.51785e-06 3.99351L22.8708 17.5649L46 3.99351Z"
+                        fill="#076b9f" />
+                      <path
+                        d="M14.1489 8.96104C14.1489 4.01199 18.1117 1.40134e-06 23 1.82436e-06C27.8883 2.24738e-06 31.8511 4.012 31.8511 8.96104C31.8511 13.9101 27.8883 17.9221 23 17.9221C18.1117 17.9221 14.1489 13.9101 14.1489 8.96104Z"
+                        fill="#076b9f" />
+                    </svg>
+                    <h2 class="ex-heading" data-translatekey="tab-innerdes-text22e"> </h2>
+                    <p class="ex-des" data-translatekey="tab-innerdes-text22f"> </p>
+                  </div>
+                  <div class="ex-card"> <svg width="46" height="30" viewBox="0 0 46 30" fill="red"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M46 3.99351L46 16.8831L22.8708 30L-2.65624e-06 16.8831L-1.51785e-06 3.99351L22.8708 17.5649L46 3.99351Z"
+                        fill="#076b9f" />
+                      <path
+                        d="M14.1489 8.96104C14.1489 4.01199 18.1117 1.40134e-06 23 1.82436e-06C27.8883 2.24738e-06 31.8511 4.012 31.8511 8.96104C31.8511 13.9101 27.8883 17.9221 23 17.9221C18.1117 17.9221 14.1489 13.9101 14.1489 8.96104Z"
+                        fill="#076b9f" />
+                    </svg>
+                    <h2 class="ex-heading" data-translatekey="tab-innerdes-text22g"> </h2>
+                    <p class="ex-des" data-translatekey="tab-innerdes-text22h"> </p>
+                    <p class="ex-des" data-translatekey="tab-innerdes-text22i"> </p>
+                    <p class="ex-des" data-translatekey="tab-innerdes-text22j"> </p>
+                    <p class="ex-des" data-translatekey="tab-innerdes-text22k"> </p>
+                  </div>
+                </div>
+                <div class="tab-inner hide" id="73">
+                  <div class="ex-sdg-div"> <img src="./images/goals/E_SDG_PRINT-01.jpg" class="ex-sdg-img img1" />
+                    <div class="ex-sdg-txt-div">
+                      <h2 class="ex-sdg-heading" data-translatekey="ex-sdg-heading22a"> </h2>
+                      <p class="ex-sdg-des" data-translatekey="ex-sdg-heading22b"> </p>
+                    </div>
+                  </div>
+                  <div class="ex-sdg-div"> <img src="./images/goals/E_SDG_PRINT-03.jpg" class="ex-sdg-img img3" />
+                    <div class="ex-sdg-txt-div">
+                      <h2 class="ex-sdg-heading" data-translatekey="ex-sdg-heading22c"> </h2>
+                      <p class="ex-sdg-des" data-translatekey="ex-sdg-heading22d"> </p>
+                    </div>
+                  </div>
+                  <div class="ex-sdg-div"> <img src="./images/goals/E_SDG_PRINT-05.jpg" class="ex-sdg-img img5" />
+                    <div class="ex-sdg-txt-div">
+                      <h2 class="ex-sdg-heading" data-translatekey="ex-sdg-heading22e"> </h2>
+                      <p class="ex-sdg-des" data-translatekey="ex-sdg-heading22f"> </p>
+                    </div>
+                  </div>
+                  <div class="ex-sdg-div"> <img src="./images/goals/E_SDG_PRINT-10.jpg" class="ex-sdg-img img10" />
+                    <div class="ex-sdg-txt-div">
+                      <h2 class="ex-sdg-heading" data-translatekey="ex-sdg-heading22g"> </h2>
+                      <p class="ex-sdg-des" data-translatekey="ex-sdg-heading22h"> </p>
+                      <p class="ex-sdg-des" data-translatekey="ex-sdg-heading22i"> </p>
+                    </div>
+                  </div>
+                  <div class="ex-sdg-div"> <img src="./images/goals/E_SDG_PRINT-17.jpg" class="ex-sdg-img img17" />
+                    <div class="ex-sdg-txt-div">
+                      <h2 class="ex-sdg-heading" data-translatekey="ex-sdg-heading22j"> </h2>
+                      <p class="ex-sdg-des" data-translatekey="ex-sdg-heading22k"> </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tab-data tab-inner2 hide" id="twentythreethTab">
+            <div class="card"> <img id="twentythreethTabImg" src="./images/objectivesImg/GCM_23_EN.svg"
+                alt="objectivesImg" />
+              <div class="wrapper">
+                <h2 data-translatekey="gcmobjectiveheadingtab23"> </h2>
+                <a href="./pdf/English/23 GCM Objectives/23-INTERNATIONAL COOPERATION.pdf" id="tab23pdf"
+                  data-translatekey="gcmobjectivelink" target="_blank"></a>
+              </div>
+            </div>
+            <div>
+              <div class="tab-button"> <button class="clickme active" data-tag="74"
+                  data-translatekey="gcmobjectivesubtabheading1"></button>
+                <button class="clickme" data-tag="75" data-translatekey="gcmobjectivesubtabheading2"></button> <button
+                  class="clickme" data-tag="76" data-translatekey="gcmobjectivesubtabheading3"></button>
+              </div>
+              <div class="tab-maindata">
+                <ul class="tab-inner des-text" id="74">
+                  <li data-translatekey="tab-innerdes-text23"> </li>
+                  <li data-translatekey="tab-innerdes-text23a"> </li>
+                  <li data-translatekey="tab-innerdes-text23b"> </li>
+                  <li data-translatekey="tab-innerdes-text23c"> </li>
+                  <li data-translatekey="tab-innerdes-text23d"> </li>
+                </ul>
+                <div class="tab-inner ex-main-div hide" id="75">
+                  <div class="ex-card"> <svg width="46" height="30" viewBox="0 0 46 30" fill="red"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M46 3.99351L46 16.8831L22.8708 30L-2.65624e-06 16.8831L-1.51785e-06 3.99351L22.8708 17.5649L46 3.99351Z"
+                        fill="#115a85" />
+                      <path
+                        d="M14.1489 8.96104C14.1489 4.01199 18.1117 1.40134e-06 23 1.82436e-06C27.8883 2.24738e-06 31.8511 4.012 31.8511 8.96104C31.8511 13.9101 27.8883 17.9221 23 17.9221C18.1117 17.9221 14.1489 13.9101 14.1489 8.96104Z"
+                        fill="#115a85" />
+                    </svg>
+                    <h2 class="ex-heading" data-translatekey="ex-heading23a"> </h2>
+                    <p class="ex-des" data-translatekey="ex-des23a"> </p>
+                  </div>
+                  <div class="ex-card"> <svg width="46" height="30" viewBox="0 0 46 30" fill="red"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M46 3.99351L46 16.8831L22.8708 30L-2.65624e-06 16.8831L-1.51785e-06 3.99351L22.8708 17.5649L46 3.99351Z"
+                        fill="#115a85" />
+                      <path
+                        d="M14.1489 8.96104C14.1489 4.01199 18.1117 1.40134e-06 23 1.82436e-06C27.8883 2.24738e-06 31.8511 4.012 31.8511 8.96104C31.8511 13.9101 27.8883 17.9221 23 17.9221C18.1117 17.9221 14.1489 13.9101 14.1489 8.96104Z"
+                        fill="#115a85" />
+                    </svg>
+                    <h2 class="ex-heading" data-translatekey="ex-heading23b"> </h2>
+                    <p class="ex-des" data-translatekey="ex-des23b"> </p>
+                  </div>
+                  <div class="ex-card"> <svg width="46" height="30" viewBox="0 0 46 30" fill="red"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M46 3.99351L46 16.8831L22.8708 30L-2.65624e-06 16.8831L-1.51785e-06 3.99351L22.8708 17.5649L46 3.99351Z"
+                        fill="#115a85" />
+                      <path
+                        d="M14.1489 8.96104C14.1489 4.01199 18.1117 1.40134e-06 23 1.82436e-06C27.8883 2.24738e-06 31.8511 4.012 31.8511 8.96104C31.8511 13.9101 27.8883 17.9221 23 17.9221C18.1117 17.9221 14.1489 13.9101 14.1489 8.96104Z"
+                        fill="#115a85" />
+                    </svg>
+                    <h2 class="ex-heading" data-translatekey="ex-heading23c"></h2>
+                    <p class="ex-des" data-translatekey="ex-des23c"> </p>
+                  </div>
+                  <div class="ex-card"> <svg width="46" height="30" viewBox="0 0 46 30" fill="red"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M46 3.99351L46 16.8831L22.8708 30L-2.65624e-06 16.8831L-1.51785e-06 3.99351L22.8708 17.5649L46 3.99351Z"
+                        fill="#115a85" />
+                      <path
+                        d="M14.1489 8.96104C14.1489 4.01199 18.1117 1.40134e-06 23 1.82436e-06C27.8883 2.24738e-06 31.8511 4.012 31.8511 8.96104C31.8511 13.9101 27.8883 17.9221 23 17.9221C18.1117 17.9221 14.1489 13.9101 14.1489 8.96104Z"
+                        fill="#115a85" />
+                    </svg>
+                    <h2 class="ex-heading" data-translatekey="ex-heading23d"> </h2>
+                    <p class="ex-sdg-des" data-translatekey="ex-heading23e"> </p> <br> <br>
+                  </div>
+                </div>
+                <div class="tab-inner hide" id="76">
+                  <div class="ex-goals-des">
+                    <p class="ex-des" data-translatekey="ex-des23f"></p>
+                  </div>
+                  <div class="ex-sdg-div"> <img src="./images/goals/E_SDG_PRINT-17.jpg" class="ex-sdg-img img17" />
+                    <div class="ex-sdg-txt-div">
+                      <h2 class="ex-sdg-heading" data-translatekey="ex-des23g"> </h2>
+                      <p class="ex-sdg-des" data-translatekey="ex-des23h"> </p>
+                      <p class="ex-sdg-des" data-translatekey="ex-des23i"> </p>
+                      <p class="ex-sdg-des" data-translatekey="ex-des23j"> </p>
+                      <p class="ex-sdg-des" data-translatekey="ex-des23k"> </p>
+                      <p class="ex-sdg-des" data-translatekey="ex-des23l"> </p>
+                      <p class="ex-sdg-des" data-translatekey="ex-des23m"> </p>
+                      <p class="ex-sdg-des" data-translatekey="ex-des23n"> </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+  </section>
+
+  <!-- second hero section -->
+  <div class="ex-AboutsecondSection">
+    <section class="container">
+      <h2 class="ex-section-heading" data-translatekey="GCM360DegreeVision"></h2>
+      <p class="ex-section-des" data-translatekey="principlestwocardheadingdescription"></p>
+      <div class="ex-Twocard">
+        <div class="ex-section-card">
+          <img id="Guidingprp" src="./images/guiding_principles_square.jpg" class="ex-section-img" />
+          <div class="ex-content">
+            <p data-translatekey="homeGuidingPrinciples"></p>
+            <button class="ex-secondarybtn" onclick="document.location='./Principles.html'"
+              data-translatekey="viewPrinciplesButton"></button>
+          </div>
+        </div>
+        <div class="ex-section-card">
+          <img id="6step" src="./images/6step_process_square.jpg" class="ex-section-img" />
+          <div class="ex-content">
+            <p data-translatekey="steppagemaintitletxt2"></p>
+            <button class="ex-secondarybtn" onclick="document.location='./ImplementationSteps.html'"
+              data-translatekey="viewStepsButton"></button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- bluebanner section -->
+  <section class="aboutv2Page">
+    <div class="container-fluid">
+      <div class="sixthSection">
+        <div class="content" style="margin-bottom: 16px;">
+          <h2 data-translatekey="gcmobjectivesixthSection"></h2>
+        </div>
+        <div class="btnWrap">
+          <a target="_blank" id="VisittheWebLink" href='https://migrationnetwork.un.org/hub/repository-of-practices'
+            class=" secondarybtn" data-translatekey="visitWebisteButton2"></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- footer section -->
+  <section class="footer-bg">
+    <div class="container">
+      <div class="footer">
+        <div class="scroller" id="scroll-to-bottom">
+          <button onclick="topFunction()" id="myBtn" title="Go to top" data-translatekey="backToTopButton">
+          </button>
+        </div>
+        <div class="leftside">
+          <h4 data-translatekey="footerKnowMoreQuestion"></h4>
+          <img class="firstimg" id='footerglobal' src="./images/footer-Logo.png" alt="footer logo" />
+          <!-- <a target="_blank" id="FooterLeftLink" href="https://migrationnetwork.un.org/migration-network-hub">
+            <img class="secondimg" src="./images/logo.svg" alt="logo" />
+          </a> -->
+          <button class="return-btn" data-translatekey="returntomigrationhub"></button>
+        </div>
+        <div class="rightside">
+          <ul>
+            <li>
+              <h5 data-translatekey="footerQuickLinks"></h5>
+            </li>
+            <li>
+              <a target="_blank" href="https://migrationnetwork.un.org/" data-translatekey="footerUnitedNationLink"
+                id="UNNLink"></a>
+            </li>
+            <li>
+              <a target="_blank" id="GCMImmplementLink" href="https://migrationnetwork.un.org/gcm-guidance"
+                data-translatekey="footerGCMImplementationLink"></a>
+            </li>
+            <li>
+              <a target="_blank" id="MigrationNetHubLink" href="https://migrationnetwork.un.org/migration-network-hub"
+                data-translatekey="footerMigrationNetworkLink"></a>
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <h5 data-translatekey="footerAboutGCM"></h5>
+            </li>
+            <li>
+              <a target="_blank" id="NutshellLink" href="https://migrationnetwork.un.org/global-compact-for-migration"
+                data-translatekey="footerNutshellLink"></a>
+            </li>
+            <li>
+              <a target="_blank" id="PledgesLink" href="https://migrationnetwork.un.org/the-pledging-dashboard"
+                data-translatekey="footerPledgesLink"></a>
+            </li>
+            <li>
+              <a target="_blank" id="RepoofPracticeLink"
+                href="https://migrationnetwork.un.org/hub/repository-of-practices"
+                data-translatekey="footerRepositoryLink"></a>
+            </li>
+            <li>
+              <a target="_blank" id="TrustFundLink" href="https://migrationnetwork.un.org/mptf"
+                data-translatekey="footerTrustFundLink"></a>
+            </li>
+            <li>
+              <a target="_blank" id="InternationalMigrationLink"
+                href="https://migrationnetwork.un.org/international-migration-review-forum-2022"
+                data-translatekey="footerInternationalForumLink"></a>
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <h5 data-translatekey="footerFollowUs"></h5>
+            </li>
+            <li><a target="_blank" href="https://twitter.com/UNMigNetwork" data-translatekey="footerTwitterLink"></a>
+            </li>
+            <li>
+              <a target="_blank"
+                href="https://migrationnetwork.us19.list-manage.com/subscribe?u=91a1d870ca31df83b2b697cf6&id=9c7fcb90a4"
+                data-translatekey="footerNewsletterLink"></a>
+            </li>
+            <li>
+              <a target="_blank" id="EventsLink"
+                href="https://migrationnetwork.un.org/hub/events?text=&gcm_objectives=All&cross_cutting_theme=All&region=All&country=All"
+                data-translatekey="footerEventsLink"></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="bottom-section">
+        <ul>
+          <li><a target="_blank" href="#" id="copyRight" data-translatekey="footerCopyright"></a></li>
+          <li><a target="_blank" href="#" id="fraudAlert" data-translatekey="footerFraudAlert"></a></li>
+          <li><a target="_blank" href="#" id="PrivacyNotice" data-translatekey="footerPrivacyNotice"></a></li>
+          <li><a target="_blank" href="#" id="termsofUse" data-translatekey="footerTermsOfUse"></a></li>
+        </ul>
+        <!-- <a target="_blank" id="FooterRightLink" href="https://migrationnetwork.un.org/">
+          <img id="footerunited" src="./images/mignet-logo.png" alt="logo" />
+        </a> -->
+      </div>
+    </div>
+  </section>
+
+  <script>
+    // for scroll down page 
+    let scrollToBottom = document.querySelector("#scroll-to-bottom");
+    let pageBottom = document.querySelector("#pageScrollBottom");
+    scrollToBottom.addEventListener("click",
+      function () {
+        pageBottom.scrollIntoView();
+      });
+
+    // for scroll up page 
+    var mybutton = document.getElementById("myBtn");
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function () {
+      scrollFunction();
+    };
+    function scrollFunction() {
+      if (
+        document.body.scrollTop > 20 ||
+        document.documentElement.scrollTop > 20
+      ) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+  </script>
+
+</body>
+
+</html>

@@ -1,0 +1,3039 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Implementation Steps </title>
+  <link rel="stylesheet" href="./styles/steps.css" />
+  <link rel="stylesheet" href="./styles/style.css" />
+  <link rel="stylesheet" href="./styles/Objectives-style.css" />
+  <script src="js/jquery.min.js"></script>
+  <script src="js/index.js"></script>
+  <script src="js/tinyi18n.js"></script>
+  <script src="js/ImplementationSteps.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <div class="hero-bg-steps">
+    <!-- Header -->
+    <div class="step-bg-about">
+      <header class="headerBg">
+        <div class="container-fluid">
+          <div class="header">
+            <input id="menu__toggle" type="checkbox" />
+            <label class="menu__btn" for="menu__toggle"><span></span></label>
+            <div class="logo">
+              <a target="_blank" href="https://migrationnetwork.un.org/" id="HeaderRightLink">
+                <img id='headerunited' src="./images/UNNM-Logo-TAG.png" alt="logo" />
+              </a>
+              <a target="_blank" class="LogoforMobile" target="_blank"
+                href="https://migrationnetwork.un.org/migration-network-hub"><img src="./images/footer-Logo.png"
+                  alt="logo" /></a>
+            </div>
+            <div id="overlay"></div>
+
+            <div id="menu-close" class="menu__box">
+              <div class="collapse-top">
+                <a target="_blank" href="https://migrationnetwork.un.org/migration-network-hub"><img
+                    class="collapse-logo" src="./images/footer-Logo.png" alt="logo" /></a>
+              </div>
+              <ul>
+                <li><a href="/" data-translatekey="home"></a></li>
+                <li><a href="about.html" data-translatekey="about"></a></li>
+                <li><a href="gcmobjectives.html" data-translatekey="objective"></a></li>
+                <li><a href="Principles.html" data-translatekey="priniciples"></a></li>
+                <li> <a href="ImplementationSteps.html" class="active" data-translatekey="implementation"></a></li>
+                <li><a href="resources.html" data-translatekey="resources"></a></li>
+                <li>
+                  <div class="dropdown">
+                    <button class="dropbtn" id="dropdowntext" onclick="myFunction()">English</button>
+                    <div id="selectBox" class="dropdown-content">
+                      <a onclick="changeFunc('en')">English</a>
+                      <a onclick="changeFunc('fr')">Français</a>
+                      <a onclick="changeFunc('spa')">Español</a>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+
+              <div class="collapse-bottom">
+                <h4 data-translatekey="gcmobjcollapsetitle"></h4>
+                <a target="_blank" href="https://migrationnetwork.un.org/migration-network-hub"><img
+                    src="./images/logo.svg" alt="logo" /></a>
+                <hr class="mobileview-divider">
+                <a target="_blank" href="https://migrationnetwork.un.org/migration-network-hub"><img id="headerunited2"
+                    class="secondImg" src="./images/mignet-logo.png" alt="logo" /></a>
+              </div>
+            </div>
+            <div class="Rightlogo">
+              <a target="_blank" class="LogoforWeb" target="_blank" id="HeaderLeftLink"
+                href="https://migrationnetwork.un.org/migration-network-hub"><img src="./images/logo.svg"
+                  alt="logo" /></a>
+            </div>
+          </div>
+        </div>
+      </header>
+      <section>
+        <div class="container">
+          <div class="innerSection inner-section-steps">
+            <div class="image-section">
+              <img src="./images/objecthero1.svg" alt="objecthero1" />
+              <button class="step1links clickme4" data-tag="firstContent" id="scroll-to-bottom">
+                <p data-translatekey="steppagestp1"></p>
+                <h6 data-translatekey="steppagestp1txt"></h6>
+              </button>
+              <button class="step2links clickme4" data-tag="secondContent" id="scroll-to-bottom2">
+                <p data-translatekey="steppagestp2"></p>
+                <h6 data-translatekey="steppagestp2txt"></h6>
+              </button>
+              <button class="step3links clickme4" data-tag="thirdContent" id="scroll-to-bottom3">
+                <p data-translatekey="steppagestp3"></p>
+                <h6 data-translatekey="steppagestp3txt"></h6>
+              </button>
+              <button class="step4links clickme4" data-tag="fourthContent" id="scroll-to-bottom4">
+                <p data-translatekey="steppagestp4"></p>
+                <h6 data-translatekey="steppagestp4txt"></h6>
+              </button>
+              <button class="step5links clickme4" data-tag="fifthContent" id="scroll-to-bottom5">
+                <p data-translatekey="steppagestp5"></p>
+                <h6 data-translatekey="steppagestp5txt"></h6>
+              </button>
+              <button class="step6links clickme4" data-tag="sixthContent" id="scroll-to-bottom6">
+                <p data-translatekey="steppagestp6"></p>
+                <h6 data-translatekey="steppagestp6txt"></h6>
+              </button>
+            </div>
+            <p id="page-bottom"></p>
+            <p id="page-bottom2"></p>
+            <p id="page-bottom3"></p>
+            <p id="page-bottom4"></p>
+            <p id="page-bottom5"></p>
+            <p id="page-bottom6"></p>
+
+            <div class="content">
+              <h2 data-translatekey="steppagemaintitle"></h2>
+              <p data-translatekey="steppagemaintitletxt"></p>
+              <a target="_blank" class="primarybtn guidepdf">
+                <span data-translatekey="steppagebtn1txt"></span>
+                <img src="./images/icons/download.svg" alt="download" />
+              </a>
+            </div>
+          </div>
+          <div class="scrollerr" id="scroll-to-bottom1">
+            <p class="Explore-Text" data-translatekey="Implementationsteplink"></p> <a>
+              <img src="./images/Arrow_Circular_5.png" id="arrowImages" class="down-icon1" /></i></a>
+          </div>
+          <!-- <div class="scrollerr" id="scroll-to-bottom1">
+            <p class="Explore-Text" data-translatekey="Implementationsteplink"></p> <a>
+              <img src="./images/arrow-down.png" class="down-icon" /></i></a>
+          </div> -->
+
+        </div>
+      </section>
+      </section>
+    </div>
+
+  </div>
+
+  <p id="pageScrollBottom"></p>
+
+  <!-- EXplore GCM section-->
+  <!-- Section Inner wrap -->
+
+  <section class="inner-section">
+    <div class="container">
+      <div class="for-mobile">
+        <form class="search-form">
+          <input type="hidden" name="search-form-loc" id="search-form-loc" />
+          <div class="pos-rel">
+            <div class="search-form__selector">
+              <p class="search-form__label search-form__label--loc" data-translatekey="steppageimgtab1"></p>
+              <img class="search-form__icon" src="./images/AngleDownblue.svg" alt="AngleDownblue">
+            </div>
+            <ul class="search-form__dropdown" id="selectBox4">
+              <li class="search-form__value clickme4 active" data-tag="firstContent" data-loc="search-form-loc"
+                data-translatekey="steppageimgtab1">
+              </li>
+              <li class="search-form__value  clickme4" data-tag="secondContent" data-loc="search-form-loc"
+                data-translatekey="steppageimgtab2"></li>
+              <li class="search-form__value clickme4" data-tag="thirdContent" data-loc="search-form-loc"
+                data-translatekey="steppageimgtab3"></li>
+              <li class="search-form__value clickme4" data-tag="fourthContent" data-loc="search-form-loc"
+                data-translatekey="steppageimgtab4"></li>
+              <li class="search-form__value clickme4" data-tag="fifthContent" data-loc="search-form-loc"
+                data-translatekey="steppageimgtab5"></li>
+              <li class="search-form__value clickme4" data-tag="sixthContent" data-loc="search-form-loc"
+                data-translatekey="steppageimgtab6"></li>
+            </ul>
+          </div>
+        </form>
+      </div>
+
+      <div class="for-web">
+        <div class="tabs-wrap">
+          <button class="tab-item btn1 clickme4 active" data-tag="firstContent">
+            <div class="tabbutton">
+              <p data-translatekey="steppagestp1"></p>
+              <h5 data-translatekey="steppagestp1txt"></h5>
+            </div>
+            <div class="borderbottom1"></div>
+          </button>
+          <button class="tab-item btn2 clickme4" data-tag="secondContent">
+            <div class="tabbutton">
+              <p data-translatekey="steppagestp2"></p>
+              <h5 data-translatekey="steppagestp2txt"></h5>
+            </div>
+            <div class="borderbottom2"></div>
+          </button>
+          <button class="tab-item btn3 clickme4" data-tag="thirdContent">
+            <div class="tabbutton">
+              <p data-translatekey="steppagestp3"></p>
+              <h5 data-translatekey="steppagestp3txt"></h5>
+            </div>
+            <div class="borderbottom3"></div>
+          </button>
+          <button class="tab-item btn4 clickme4" data-tag="fourthContent">
+            <div class="tabbutton">
+              <p data-translatekey="steppagestp4"></p>
+              <h5 data-translatekey="steppagestp4txt"></h5>
+            </div>
+            <div class="borderbottom4"></div>
+          </button>
+          <button class="tab-item btn5 clickme4" data-tag="fifthContent">
+            <div class="tabbutton">
+              <p data-translatekey="steppagestp5"></p>
+              <h5 data-translatekey="steppagestp5txt"></h5>
+            </div>
+            <div class="borderbottom5"></div>
+          </button>
+          <button class="tab-item btn6 clickme4" data-tag="sixthContent">
+            <div class="tabbutton">
+              <p data-translatekey="steppagestp6"></p>
+              <h5 data-translatekey="steppagestp6txt"></h5>
+            </div>
+            <div class="borderbottom6"></div>
+          </button>
+          <!-- <div class="borderbottom"></div> -->
+        </div>
+      </div>
+      <div class="type-inner-wrap tab-inner4 active step1" id="firstContent">
+        <div class="inner-tabs">
+          <button class="tab-link clickme active btn1" data-tag="1">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M22 17.075V4.75004C21.9993 4.44847 21.8181 4.17664 21.54 4.06004C21.4487 4.01958 21.3498 3.99913 21.25 4.00004H2.75C2.59987 3.99852 2.45302 4.04397 2.33 4.13004C2.12337 4.26863 1.99957 4.50123 2 4.75004V17.25C2 17.6643 2.33579 18 2.75 18H5V21.23C4.99987 21.3245 5.01857 21.4179 5.055 21.505C5.09462 21.5961 5.15054 21.6791 5.22 21.75C5.29049 21.82 5.37363 21.876 5.465 21.915C5.641 21.9884 5.839 21.9884 6.015 21.915C6.10706 21.8773 6.19043 21.8212 6.26 21.75L10.035 18H21.27C21.6764 17.9892 22.0001 17.6566 22 17.25C22.0077 17.192 22.0077 17.1331 22 17.075ZM9.415 16.5L7.915 18L6.5 19.42V16.5H3.5V5.50001H20.5V16.5H9.415ZM7.025 11.0001C7.025 10.4478 7.47272 10.0001 8.025 10.0001C8.57729 10.0001 9.025 10.4478 9.025 11.0001C9.025 11.5524 8.57729 12.0001 8.025 12.0001C7.47272 12.0001 7.025 11.5524 7.025 11.0001ZM17.025 11.0001C17.025 11.5524 16.5773 12.0001 16.025 12.0001C15.4727 12.0001 15.025 11.5524 15.025 11.0001C15.025 10.4478 15.4727 10.0001 16.025 10.0001C16.5773 10.0001 17.025 10.4478 17.025 11.0001ZM11.025 11.0001C11.025 10.4478 11.4727 10.0001 12.025 10.0001C12.5773 10.0001 13.025 10.4478 13.025 11.0001C13.025 11.5524 12.5773 12.0001 12.025 12.0001C11.4727 12.0001 11.025 11.5524 11.025 11.0001Z"
+                fill="" />
+            </svg>
+            <span data-translatekey="guidingquestion"></span>
+          </button>
+          <button class="tab-link clickme" data-tag="2">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M9.25 0.75C9.25 0.3355 9.5855 0 10 0C10.4145 0 10.75 0.3355 10.75 0.75V5.25C10.75 5.6645 10.4145 6 10 6C9.5855 6 9.25 5.6645 9.25 5.25V0.75ZM9.25 14.75C9.25 14.3355 9.5855 14 10 14C10.4145 14 10.75 14.3355 10.75 14.75V19.25C10.75 19.6645 10.4145 20 10 20C9.5855 20 9.25 19.6645 9.25 19.25V14.75ZM14.596 6.46485L17.0709 3.98985C17.3635 3.69685 17.3635 3.22235 17.0709 2.92935C16.778 2.63635 16.3029 2.63635 16.01 2.92935L13.535 5.40385C13.242 5.69685 13.242 6.17185 13.535 6.46485C13.8279 6.75785 14.3029 6.75785 14.596 6.46485ZM2.9293 16.0101L5.4043 13.5352C5.6968 13.2422 6.1718 13.2422 6.4648 13.5352C6.7578 13.8281 6.7578 14.3032 6.4648 14.5956L3.9898 17.0707C3.6968 17.3636 3.2223 17.3636 2.9293 17.0707C2.6363 16.7776 2.6363 16.3032 2.9293 16.0101ZM19.25 9.25H14.75C14.3355 9.25 14 9.5855 14 10C14 10.4145 14.3355 10.75 14.75 10.75H19.25C19.6645 10.75 20 10.4145 20 10C20 9.5855 19.6645 9.25 19.25 9.25ZM5.25 9.25C5.6645 9.25 6 9.5855 6 10C6 10.4145 5.6645 10.75 5.25 10.75H0.75C0.3355 10.75 0 10.4145 0 10C0 9.5855 0.3355 9.25 0.75 9.25H5.25ZM14.596 13.5352C14.3029 13.2422 13.8279 13.2422 13.535 13.5352C13.242 13.8281 13.242 14.3032 13.535 14.5956L16.01 17.0707C16.3029 17.3636 16.778 17.3636 17.0709 17.0707C17.3635 16.7776 17.3635 16.3032 17.0709 16.0101L14.596 13.5352ZM2.929 2.9292C3.222 2.6367 3.697 2.6367 3.99 2.9292L6.465 5.4042C6.758 5.6972 6.758 6.1717 6.465 6.4647C6.172 6.7577 5.697 6.7577 5.4045 6.4647L2.929 3.9902C2.6365 3.6972 2.6365 3.2222 2.929 2.9292Z"
+                fill="" />
+            </svg>
+            <span data-translatekey="actions"></span>
+          </button>
+          <button class="tab-link  clickme" data-tag="3">
+            <svg width="20" height="17" viewBox="0 0 20 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M4.26497 0.24464C4.55891 -0.0450884 5.03103 -0.0450884 5.32497 0.24464C5.61081 0.526548 5.62187 0.98426 5.34997 1.27964L2.84997 3.77964C2.7092 3.92302 2.51587 4.00252 2.31497 3.99964C2.11428 4.00136 1.92139 3.92204 1.77997 3.77964L0.719966 2.71964C0.57828 2.57967 0.498535 2.3888 0.498535 2.18964C0.498535 1.99048 0.57828 1.79961 0.719966 1.65964C0.859933 1.51795 1.0508 1.43821 1.24997 1.43821C1.44913 1.43821 1.64 1.51795 1.77997 1.65964L2.31497 2.19464L4.26497 0.24464ZM18.835 1.74964H8.16497C7.77454 1.77377 7.47718 2.10914 7.49997 2.49964C7.47718 2.89014 7.77454 3.22551 8.16497 3.24964H18.835C19.2254 3.22551 19.5227 2.89014 19.5 2.49964C19.5227 2.10914 19.2254 1.77377 18.835 1.74964ZM4.26497 6.74464C4.55891 6.45491 5.03103 6.45491 5.32497 6.74464C5.47 6.88124 5.55429 7.07024 5.55898 7.26942C5.56368 7.4686 5.4884 7.66136 5.34997 7.80464L2.84997 10.2796C2.7092 10.423 2.51587 10.5025 2.31497 10.4996C2.11428 10.5014 1.92139 10.422 1.77997 10.2796L0.719966 9.21964C0.57828 9.07967 0.498535 8.8888 0.498535 8.68964C0.498535 8.49048 0.57828 8.29961 0.719966 8.15964C0.859933 8.01795 1.0508 7.93821 1.24997 7.93821C1.44913 7.93821 1.64 8.01795 1.77997 8.15964L2.31497 8.69464L4.26497 6.74464ZM8.16497 8.24964H18.835C19.2254 8.27377 19.5227 8.60914 19.5 8.99964C19.5227 9.39014 19.2254 9.72551 18.835 9.74964H8.16497C7.77454 9.72551 7.47718 9.39014 7.49997 8.99964C7.47718 8.60914 7.77454 8.27377 8.16497 8.24964ZM18.835 14.7496H8.16497C7.77454 14.7738 7.47718 15.1091 7.49997 15.4996C7.47718 15.8901 7.77454 16.2255 8.16497 16.2496H18.835C19.2254 16.2255 19.5227 15.8901 19.5 15.4996C19.5227 15.1091 19.2254 14.7738 18.835 14.7496ZM4.26497 13.2446C4.55891 12.9549 5.03103 12.9549 5.32497 13.2446C5.61081 13.5265 5.62187 13.9843 5.34997 14.2796L2.84997 16.7796C2.7092 16.923 2.51587 17.0025 2.31497 16.9996C2.11428 17.0014 1.92139 16.922 1.77997 16.7796L0.719966 15.7196C0.57828 15.5797 0.498535 15.3888 0.498535 15.1896C0.498535 14.9905 0.57828 14.7996 0.719966 14.6596C0.859933 14.518 1.0508 14.4382 1.24997 14.4382C1.44913 14.4382 1.64 14.518 1.77997 14.6596L2.31497 15.1946L4.26497 13.2446Z"
+                fill="" />
+            </svg>
+            <span data-translatekey="checklist"></span>
+          </button>
+          <button class="tab-link  clickme" data-tag="4">
+            <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M14.7725 19.16C15.5065 18.119 16.0955 16.7805 16.4835 15.25H18.9295C18.008 16.963 16.5435 18.3375 14.7725 19.16ZM3.0705 15.25H5.5165C5.9045 16.7805 6.4935 18.119 7.2275 19.16C5.4565 18.3375 3.992 16.963 3.0705 15.25ZM7.2275 2.8395C6.4935 3.8805 5.9045 5.219 5.5165 6.75H3.0705C3.992 5.0365 5.4565 3.662 7.2275 2.8395ZM18.9295 6.75H16.4835C16.0955 5.219 15.5065 3.8805 14.7725 2.8395C16.5435 3.662 18.008 5.0365 18.9295 6.75ZM16.785 8.25H19.5665C19.8455 9.1175 20 10.0405 20 11C20 11.959 19.8455 12.882 19.5665 13.75H16.785C16.921 12.872 17 11.953 17 11C17 10.0465 16.921 9.128 16.785 8.25ZM11 2C12.4945 2 14.106 3.8275 14.935 6.75H7.065C7.894 3.8275 9.5055 2 11 2ZM2 11C2 10.0405 2.1545 9.1175 2.4335 8.25H5.215C5.079 9.128 5 10.0465 5 11C5 11.953 5.079 12.872 5.215 13.75H2.4335C2.1545 12.882 2 11.959 2 11ZM6.726 13.75C6.5815 12.896 6.5 11.9755 6.5 11C6.5 10.024 6.5815 9.104 6.726 8.25H15.274C15.4185 9.104 15.5 10.024 15.5 11C15.5 11.9755 15.4185 12.896 15.274 13.75H6.726ZM11 20C9.5055 20 7.894 18.172 7.065 15.25H14.935C14.106 18.172 12.4945 20 11 20ZM11 0.5C5.201 0.5 0.5 5.201 0.5 11C0.5 16.799 5.201 21.5 11 21.5C16.799 21.5 21.5 16.799 21.5 11C21.5 5.201 16.799 0.5 11 0.5Z"
+                fill="" />
+            </svg>
+            <span data-translatekey="tools"></span>
+          </button>
+          <button class="tab-link clickme" data-tag="5">
+            <span data-translatekey="downloadStep1"></span>
+            <img class="first" src=" ./images/icons/downloadGrey.svg" alt="downloadGrey" style="margin-left: 10px;" />
+            <img class="second" src=" ./images/icons/downloadGreyactive1.svg" alt="downloadGreyactive1"
+              style="margin-left: 10px;" />
+          </button>
+        </div>
+        <div class="tab-maindata step1">
+          <div id="1" class="tabcontent tab-inner active">
+            <div class="textWrapper">
+              <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+              <p data-translatekey="step1question1"></p>
+            </div>
+            <div class="textWrapper">
+              <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+              <p data-translatekey="step1question2"></p>
+            </div>
+            <div class="textWrapper">
+              <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+              <p data-translatekey="step1question3"></p>
+            </div>
+            <div class="textWrapper">
+              <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+              <p data-translatekey="step1question4"></p>
+            </div>
+            <div class="textWrapper">
+              <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+              <p data-translatekey="step1question5"></p>
+            </div>
+            <div class="textWrapper">
+              <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+              <p data-translatekey="step1question6"></p>
+            </div>
+            <a id="step1questionpdf" target="_blank"
+              href="./pdf/English/Implementation Steps/Step 1 Kick-off/STEP 1 - GUIDING QUESTIONS.pdf"
+              class="download-link" data-translatekey="downloadthissection"></a>
+          </div>
+          <div id="2" class="tabcontent tab-inner hide">
+            <div class="action-wrap">
+              <div class="accordion">
+                <div class="step-accord-wrap ">
+                  <h6 class="title" data-translatekey="action1"></h6>
+                  <h6 class="para" data-translatekey="step1actions1title"></h6>
+                </div>
+              </div>
+              <div class="panel active">
+                <p class="description" data-translatekey="step1actions1t1p1"></p>
+                <!-- <p class="description" data-translatekey="step1actions1t1p2"></p> -->
+                <div class="linkwrap tab-link toolaccordin" data-id="tool1" data-tag="4">
+                  <span class="first" data-translatekey="step1actions1t1p3a"> </span>
+                  <span><a onclick="" data-translatekey="tool1"> </a></span>
+                  <span data-translatekey="step1actions1t1p3b"></span>
+                </div>
+                <div class="dotWrap">
+                  <div class="greendot"></div>
+                  <p class="description" data-translatekey="step1actions1t1p4"></p>
+                </div>
+                <div class="dotWrap">
+                  <div class="greendot"></div>
+                  <p class="description" data-translatekey="step1actions1t1p5"></p>
+                </div>
+                <div class="dotWrap">
+                  <div class="greendot"></div>
+                  <p class="description" data-translatekey="step1actions1t1p6"></p>
+                </div>
+                <div class="dotWrap">
+                  <div class="greendot"></div>
+                  <p class="description" data-translatekey="step1actions1t1p7"></p>
+                </div>
+                <div class="dotWrap">
+                  <div class="greendot"></div>
+                  <p class="description" data-translatekey="step1actions1t1p8"></p>
+                </div>
+                <div class="dotWrap">
+                  <div class="greendot"></div>
+                  <p class="description" data-translatekey="step1actions1t1p9"></p>
+                </div>
+                <div class="dotWrap">
+                  <div class="greendot"></div>
+                  <p class="description" data-translatekey="step1actions1t1p10"></p>
+                </div>
+
+              </div>
+            </div>
+            <div class="action-wrap">
+              <div class="accordion">
+                <div class="step-accord-wrap">
+                  <h6 class="title" data-translatekey="action2"></h6>
+                  <h6 class="para" data-translatekey="step1actions2title"></h6>
+                </div>
+              </div>
+              <div class="panel">
+                <p class="description" data-translatekey="step1actions2p1"></p>
+                <h6 data-translatekey="step1actions2p2"></h6>
+                <div class="dotWrap">
+                  <div class="greendot"></div>
+                  <p class="description" data-translatekey="step1actions2p3"></p>
+                </div>
+                <div class="dotWrap">
+                  <div class="greendot"></div>
+                  <p class="description" data-translatekey="step1actions2p4"></p>
+                </div>
+                <div class="dotWrap">
+                  <div class="greendot"></div>
+                  <p class="description" data-translatekey="step1actions2p5"></p>
+                </div>
+                <div class="dotWrap">
+                  <div class="greendot"></div>
+                  <p class="description" data-translatekey="step1actions2p6"></p>
+                </div>
+                <h6 data-translatekey="step1actions2p7"></h6>
+                <p class="description" data-translatekey="step1actions2p8"></p>
+                <div class="flex">
+                  <div class="leftside">
+                    <div class="grid">
+                      <h6 data-translatekey="step1actions2p9"></h6>
+                      <p data-translatekey="step1actions2p10"></p>
+                    </div>
+                    <div class="grid">
+                      <h6 data-translatekey="step1actions2p11"></h6>
+                      <p data-translatekey="step1actions2p12"></p>
+                    </div>
+                  </div>
+                  <div class="rightside">
+                    <div class="grid">
+                      <h6 data-translatekey="step1actions2p13"></h6>
+                      <p data-translatekey="step1actions2p14"></p>
+                    </div>
+                    <div class="grid">
+                      <h6 data-translatekey="step1actions2p15"></h6>
+                      <p data-translatekey="step1actions2p16"></p>
+                    </div>
+                  </div>
+                </div>
+                <p class="description" data-translatekey="step1actions2p17"></p>
+                <!-- <p class="description" data-translatekey="step1actions2p18"></p> -->
+                <div class="dotWrap">
+                  <div class="greendot"></div>
+                  <p class="description" data-translatekey="step1actions2p19"></p>
+                </div>
+                <div class="dotWrap">
+                  <div class="greendot"></div>
+                  <p class="description" data-translatekey="step1actions2p20"></p>
+                </div>
+                <div class="dotWrap">
+                  <div class="greendot"></div>
+                  <p class="description" data-translatekey="step1actions2p211"></p>
+                </div>
+                <p class="description" data-translatekey="step1actions2p21"></p>
+                <div class="dotWrap">
+                  <div class="greendot"></div>
+                  <p class="description" data-translatekey="step1actions2p22"></p>
+                </div>
+                <div class="dotWrap">
+                  <div class="greendot"></div>
+                  <p class="description" data-translatekey="step1actions2p23"></p>
+                </div>
+                <div class="dotWrap">
+                  <div class="greendot"></div>
+                  <p class="description" data-translatekey="step1actions2p24"></p>
+                </div>
+              </div>
+            </div>
+            <div class="action-wrap">
+              <div class="accordion">
+                <div class="step-accord-wrap">
+                  <h6 class="title" data-translatekey="action3"></h6>
+                  <h6 class="para" data-translatekey="step1actions3title"></h6>
+                </div>
+              </div>
+              <div class="panel">
+                <p class="description" data-translatekey="step1actions3p1"></p>
+                <p class="description" data-translatekey="step1actions3p2"></p>
+                <h6 data-translatekey="step1actions3p3"></h6>
+                <p class="description" data-translatekey="step1actions3p4"></p>
+                <p class="description" data-translatekey="step1action3example1"></p>
+                <p class="description" data-translatekey="step1action3example2"></p>
+                <h6 data-translatekey="step1actions3p5"></h6>
+                <p class="description" data-translatekey="step1actions3p6"></p>
+              </div>
+            </div>
+            <div class="action-wrap">
+              <div class="accordion">
+                <div class="step-accord-wrap">
+                  <h6 class="title" data-translatekey="action4"></h6>
+                  <h6 class="para" data-translatekey="step1actions4title"></h6>
+                </div>
+              </div>
+              <div class="panel">
+                <p class="description" data-translatekey="step1action4p1"></p>
+                <p class="description" data-translatekey="step1action4p2"></p>
+                <h6 data-translatekey="step1action4p3"></h6>
+                <p class="description" data-translatekey="step1action4p4"></p>
+                <p data-translatekey="step1action4p5"></p>
+                <p data-translatekey="step1action4p6"></p>
+                <p data-translatekey="step1action4p7"></p>
+                <p data-translatekey="step1action4p8"></p>
+                <p data-translatekey="step1action4p9"></p>
+                <p data-translatekey="step1action4p10"></p>
+                <p data-translatekey="step1action4p11"></p>
+                <p data-translatekey="step1action4p12" class="description"></p>
+
+                <p class="description" data-translatekey="step1action4p13"></p>
+                <p class="description" data-translatekey="step1action4p14"></p>
+                <p class="description" data-translatekey="step1action4p15"></p>
+                <p class="description">
+                  <text data-translatekey="step1action4p16"></text>
+                  <a id="Link21b" target="_blank" href=""></a>.
+                </p>
+              </div>
+            </div>
+            <a id="step1actionpdf" target="_blank"
+              href="./pdf/English/Implementation Steps/Step 1 Kick-off/STEP 1 - ACTIONS.pdf" class="download-link"
+              data-translatekey="downloadthissection"></a>
+          </div>
+          <div id="3" class="tabcontent tab-inner hide">
+            <div class="checklist-wrap">
+              <div class="tab">
+                <i class="fa-solid fa-check"></i>
+                <p data-translatekey="step1checklistp1"></p>
+              </div>
+              <div class="tab">
+                <i class="fa-solid fa-check"></i>
+                <p data-translatekey="step1checklistp2"></p>
+              </div>
+              <div class="tab">
+                <i class="fa-solid fa-check"></i>
+                <p data-translatekey="step1checklistp3"></p>
+              </div>
+              <div class="tab">
+                <i class="fa-solid fa-check"></i>
+                <p data-translatekey="step1checklistp4"></p>
+              </div>
+              <div class="tab">
+                <i class="fa-solid fa-check"></i>
+                <p data-translatekey="step1checklistp5"></p>
+              </div>
+              <div class="tab">
+                <i class="fa-solid fa-check"></i>
+                <p data-translatekey="step1checklistp6"></p>
+              </div>
+
+            </div>
+            <a id="step1checklistpdf" target="_blank"
+              href="./pdf/English/Implementation Steps/Step 1 Kick-off/STEP 1 - CHECKLIST.pdf" class="download-link"
+              data-translatekey="downloadthissection"></a>
+          </div>
+          <div id="4" class="tabcontent tab-inner hide">
+            <div class="tool-wrap">
+              <div class="accordion accoractive tool1">
+                <div class="accord-tab">
+                  <div class="leftside">
+                    <h4 data-translatekey="tool1"></h4>
+                    <div class="toolsec-divider"></div>
+                    <p data-translatekey="step1tool1p1"></p>
+                  </div>
+                </div>
+              </div>
+              <div class="panel tool1">
+                <div class="accord-data">
+                  <div class="card">
+                    <h6 data-translatekey="step1tool1p2"></h6>
+                    <p data-translatekey="step1tool1p3"></p>
+                  </div>
+                  <div class="card">
+                    <h6 data-translatekey="step1tool1p4"></h6>
+                    <p data-translatekey="step1tool1p5"></p>
+                  </div>
+                  <div class="card">
+                    <h6 data-translatekey="step1tool1p6"></h6>
+                    <p data-translatekey="step1tool1p7"></p>
+                  </div>
+                  <div class="card">
+                    <h6 data-translatekey="step1tool1p8"></h6>
+                    <p data-translatekey="step1tool1p9"></p>
+                  </div>
+                  <div class="card">
+                    <h6 data-translatekey="step1tool1p10"></h6>
+                    <p data-translatekey="step1tool1p11"></p>
+                  </div>
+                  <div class="card">
+                    <h6 data-translatekey="step1tool1p12"></h6>
+                    <p data-translatekey="step1tool1p13"></p>
+                  </div>
+                  <div class="card">
+                    <h6 data-translatekey="step1tool1p14"></h6>
+                    <p>
+                      <text data-translatekey="step1tool1p15"></text>
+                      <a id="step1too1Link" target="_blank" href=""></a>.
+                    </p>
+
+                  </div>
+                  <div class="card">
+                    <h6 data-translatekey="step1tool1p16"></h6>
+                    <p data-translatekey="step1tool1p17"></p>
+                  </div>
+                  <div class="card">
+                    <h6 data-translatekey="step1tool1p18"></h6>
+                    <p data-translatekey="step1tool1p19"></p>
+                  </div>
+                  <div class="card">
+                    <h6 data-translatekey="step1tool1p20"></h6>
+                    <p data-translatekey="step1tool1p21"></p>
+                  </div>
+                  <div class="card">
+                    <h6 data-translatekey="step1tool1p22"></h6>
+                    <p data-translatekey="step1tool1p23"></p>
+                  </div>
+                  <div class="card">
+                    <h6 data-translatekey="step1tool1p24"></h6>
+                    <p data-translatekey="step1tool1p25"></p>
+                  </div>
+                  <div class="card">
+                    <h6 data-translatekey="step1tool1p26"></h6>
+                    <p data-translatekey="step1tool1p27"></p>
+                  </div>
+                  <div class="card">
+                    <h6 data-translatekey="step1tool1p28"></h6>
+                    <p data-translatekey="step1tool1p29"></p>
+                  </div>
+                  <!-- <div class="card">
+                    <h6 data-translatekey="step1tool1p30"></h6>
+                    <p data-translatekey="step1tool1p31"></p>
+                  </div> -->
+                  <div class="card">
+                    <h6 data-translatekey="step1tool1p32"></h6>
+                    <p data-translatekey="step1tool1p33"></p>
+                  </div>
+                  <div class="card">
+                    <h6 data-translatekey="step1tool1p34"></h6>
+                    <p data-translatekey="step1tool1p35"></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <a id="step1toolpdf" target="_blank"
+              href="./pdf/English/Implementation Steps/Step 1 Kick-off/STEP 1 - TOOLS.pdf" class="download-link"
+              data-translatekey="downloadthissection"></a>
+          </div>
+          <div id="5" class="tabcontent tab-inner hide">
+            <!-- <p>Download Step Content</p> -->
+            <a id="step1pdf" target="_blank"
+              href="./pdf/English/Implementation Steps/Step 1 Kick-off/STEP 1 - KICK OFF.pdf" class="download-link"
+              data-translatekey="downloadstepcontent"></a>
+          </div>
+        </div>
+      </div>
+      <div class="type-inner-wrap tab-inner4 hide" id="secondContent">
+        <div class="inner-tabs">
+          <button class="tab-link clickme active" data-tag="21">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M22 17.075V4.75004C21.9993 4.44847 21.8181 4.17664 21.54 4.06004C21.4487 4.01958 21.3498 3.99913 21.25 4.00004H2.75C2.59987 3.99852 2.45302 4.04397 2.33 4.13004C2.12337 4.26863 1.99957 4.50123 2 4.75004V17.25C2 17.6643 2.33579 18 2.75 18H5V21.23C4.99987 21.3245 5.01857 21.4179 5.055 21.505C5.09462 21.5961 5.15054 21.6791 5.22 21.75C5.29049 21.82 5.37363 21.876 5.465 21.915C5.641 21.9884 5.839 21.9884 6.015 21.915C6.10706 21.8773 6.19043 21.8212 6.26 21.75L10.035 18H21.27C21.6764 17.9892 22.0001 17.6566 22 17.25C22.0077 17.192 22.0077 17.1331 22 17.075ZM9.415 16.5L7.915 18L6.5 19.42V16.5H3.5V5.50001H20.5V16.5H9.415ZM7.025 11.0001C7.025 10.4478 7.47272 10.0001 8.025 10.0001C8.57729 10.0001 9.025 10.4478 9.025 11.0001C9.025 11.5524 8.57729 12.0001 8.025 12.0001C7.47272 12.0001 7.025 11.5524 7.025 11.0001ZM17.025 11.0001C17.025 11.5524 16.5773 12.0001 16.025 12.0001C15.4727 12.0001 15.025 11.5524 15.025 11.0001C15.025 10.4478 15.4727 10.0001 16.025 10.0001C16.5773 10.0001 17.025 10.4478 17.025 11.0001ZM11.025 11.0001C11.025 10.4478 11.4727 10.0001 12.025 10.0001C12.5773 10.0001 13.025 10.4478 13.025 11.0001C13.025 11.5524 12.5773 12.0001 12.025 12.0001C11.4727 12.0001 11.025 11.5524 11.025 11.0001Z"
+                fill="" />
+            </svg>
+            <span data-translatekey="guidingquestion"></span>
+          </button>
+          <button class="tab-link clickme" data-tag="22">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M9.25 0.75C9.25 0.3355 9.5855 0 10 0C10.4145 0 10.75 0.3355 10.75 0.75V5.25C10.75 5.6645 10.4145 6 10 6C9.5855 6 9.25 5.6645 9.25 5.25V0.75ZM9.25 14.75C9.25 14.3355 9.5855 14 10 14C10.4145 14 10.75 14.3355 10.75 14.75V19.25C10.75 19.6645 10.4145 20 10 20C9.5855 20 9.25 19.6645 9.25 19.25V14.75ZM14.596 6.46485L17.0709 3.98985C17.3635 3.69685 17.3635 3.22235 17.0709 2.92935C16.778 2.63635 16.3029 2.63635 16.01 2.92935L13.535 5.40385C13.242 5.69685 13.242 6.17185 13.535 6.46485C13.8279 6.75785 14.3029 6.75785 14.596 6.46485ZM2.9293 16.0101L5.4043 13.5352C5.6968 13.2422 6.1718 13.2422 6.4648 13.5352C6.7578 13.8281 6.7578 14.3032 6.4648 14.5956L3.9898 17.0707C3.6968 17.3636 3.2223 17.3636 2.9293 17.0707C2.6363 16.7776 2.6363 16.3032 2.9293 16.0101ZM19.25 9.25H14.75C14.3355 9.25 14 9.5855 14 10C14 10.4145 14.3355 10.75 14.75 10.75H19.25C19.6645 10.75 20 10.4145 20 10C20 9.5855 19.6645 9.25 19.25 9.25ZM5.25 9.25C5.6645 9.25 6 9.5855 6 10C6 10.4145 5.6645 10.75 5.25 10.75H0.75C0.3355 10.75 0 10.4145 0 10C0 9.5855 0.3355 9.25 0.75 9.25H5.25ZM14.596 13.5352C14.3029 13.2422 13.8279 13.2422 13.535 13.5352C13.242 13.8281 13.242 14.3032 13.535 14.5956L16.01 17.0707C16.3029 17.3636 16.778 17.3636 17.0709 17.0707C17.3635 16.7776 17.3635 16.3032 17.0709 16.0101L14.596 13.5352ZM2.929 2.9292C3.222 2.6367 3.697 2.6367 3.99 2.9292L6.465 5.4042C6.758 5.6972 6.758 6.1717 6.465 6.4647C6.172 6.7577 5.697 6.7577 5.4045 6.4647L2.929 3.9902C2.6365 3.6972 2.6365 3.2222 2.929 2.9292Z"
+                fill="" />
+            </svg>
+            <span data-translatekey="actions"></span>
+          </button>
+          <button class="tab-link  clickme" data-tag="23">
+            <svg width="20" height="17" viewBox="0 0 20 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M4.26497 0.24464C4.55891 -0.0450884 5.03103 -0.0450884 5.32497 0.24464C5.61081 0.526548 5.62187 0.98426 5.34997 1.27964L2.84997 3.77964C2.7092 3.92302 2.51587 4.00252 2.31497 3.99964C2.11428 4.00136 1.92139 3.92204 1.77997 3.77964L0.719966 2.71964C0.57828 2.57967 0.498535 2.3888 0.498535 2.18964C0.498535 1.99048 0.57828 1.79961 0.719966 1.65964C0.859933 1.51795 1.0508 1.43821 1.24997 1.43821C1.44913 1.43821 1.64 1.51795 1.77997 1.65964L2.31497 2.19464L4.26497 0.24464ZM18.835 1.74964H8.16497C7.77454 1.77377 7.47718 2.10914 7.49997 2.49964C7.47718 2.89014 7.77454 3.22551 8.16497 3.24964H18.835C19.2254 3.22551 19.5227 2.89014 19.5 2.49964C19.5227 2.10914 19.2254 1.77377 18.835 1.74964ZM4.26497 6.74464C4.55891 6.45491 5.03103 6.45491 5.32497 6.74464C5.47 6.88124 5.55429 7.07024 5.55898 7.26942C5.56368 7.4686 5.4884 7.66136 5.34997 7.80464L2.84997 10.2796C2.7092 10.423 2.51587 10.5025 2.31497 10.4996C2.11428 10.5014 1.92139 10.422 1.77997 10.2796L0.719966 9.21964C0.57828 9.07967 0.498535 8.8888 0.498535 8.68964C0.498535 8.49048 0.57828 8.29961 0.719966 8.15964C0.859933 8.01795 1.0508 7.93821 1.24997 7.93821C1.44913 7.93821 1.64 8.01795 1.77997 8.15964L2.31497 8.69464L4.26497 6.74464ZM8.16497 8.24964H18.835C19.2254 8.27377 19.5227 8.60914 19.5 8.99964C19.5227 9.39014 19.2254 9.72551 18.835 9.74964H8.16497C7.77454 9.72551 7.47718 9.39014 7.49997 8.99964C7.47718 8.60914 7.77454 8.27377 8.16497 8.24964ZM18.835 14.7496H8.16497C7.77454 14.7738 7.47718 15.1091 7.49997 15.4996C7.47718 15.8901 7.77454 16.2255 8.16497 16.2496H18.835C19.2254 16.2255 19.5227 15.8901 19.5 15.4996C19.5227 15.1091 19.2254 14.7738 18.835 14.7496ZM4.26497 13.2446C4.55891 12.9549 5.03103 12.9549 5.32497 13.2446C5.61081 13.5265 5.62187 13.9843 5.34997 14.2796L2.84997 16.7796C2.7092 16.923 2.51587 17.0025 2.31497 16.9996C2.11428 17.0014 1.92139 16.922 1.77997 16.7796L0.719966 15.7196C0.57828 15.5797 0.498535 15.3888 0.498535 15.1896C0.498535 14.9905 0.57828 14.7996 0.719966 14.6596C0.859933 14.518 1.0508 14.4382 1.24997 14.4382C1.44913 14.4382 1.64 14.518 1.77997 14.6596L2.31497 15.1946L4.26497 13.2446Z"
+                fill="" />
+            </svg>
+            <span data-translatekey="checklist"></span>
+          </button>
+          <button class="tab-link  clickme" data-tag="24">
+            <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M14.7725 19.16C15.5065 18.119 16.0955 16.7805 16.4835 15.25H18.9295C18.008 16.963 16.5435 18.3375 14.7725 19.16ZM3.0705 15.25H5.5165C5.9045 16.7805 6.4935 18.119 7.2275 19.16C5.4565 18.3375 3.992 16.963 3.0705 15.25ZM7.2275 2.8395C6.4935 3.8805 5.9045 5.219 5.5165 6.75H3.0705C3.992 5.0365 5.4565 3.662 7.2275 2.8395ZM18.9295 6.75H16.4835C16.0955 5.219 15.5065 3.8805 14.7725 2.8395C16.5435 3.662 18.008 5.0365 18.9295 6.75ZM16.785 8.25H19.5665C19.8455 9.1175 20 10.0405 20 11C20 11.959 19.8455 12.882 19.5665 13.75H16.785C16.921 12.872 17 11.953 17 11C17 10.0465 16.921 9.128 16.785 8.25ZM11 2C12.4945 2 14.106 3.8275 14.935 6.75H7.065C7.894 3.8275 9.5055 2 11 2ZM2 11C2 10.0405 2.1545 9.1175 2.4335 8.25H5.215C5.079 9.128 5 10.0465 5 11C5 11.953 5.079 12.872 5.215 13.75H2.4335C2.1545 12.882 2 11.959 2 11ZM6.726 13.75C6.5815 12.896 6.5 11.9755 6.5 11C6.5 10.024 6.5815 9.104 6.726 8.25H15.274C15.4185 9.104 15.5 10.024 15.5 11C15.5 11.9755 15.4185 12.896 15.274 13.75H6.726ZM11 20C9.5055 20 7.894 18.172 7.065 15.25H14.935C14.106 18.172 12.4945 20 11 20ZM11 0.5C5.201 0.5 0.5 5.201 0.5 11C0.5 16.799 5.201 21.5 11 21.5C16.799 21.5 21.5 16.799 21.5 11C21.5 5.201 16.799 0.5 11 0.5Z"
+                fill="" />
+            </svg>
+            <span data-translatekey="tools"></span>
+          </button>
+          <button class="tab-link clickme" data-tag="25">
+            <span data-translatekey="downloadStep2"></span>
+            <img class="first" src=" ./images/icons/downloadGrey.svg" alt="downloadGrey" style="margin-left: 10px;" />
+            <img class="second" src=" ./images/icons/downloadGreyactive2.svg" alt="downloadGreyactive2"
+              style="margin-left: 10px;" />
+          </button>
+        </div>
+        <div class="tab-maindata" id="mainDataId">
+
+          <div id="21" class="tabcontent tab-inner active">
+            <div class="textWrapper">
+              <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+              <p data-translatekey="step2question1"></p>
+            </div>
+            <div class="textWrapper">
+              <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+              <p data-translatekey="step2question2"></p>
+            </div>
+            <div class="textWrapper">
+              <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+              <p data-translatekey="step2question3"></p>
+            </div>
+            <div class="textWrapper">
+              <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+              <p data-translatekey="step2question4"></p>
+            </div>
+            <div class="textWrapper">
+              <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+              <p data-translatekey="step2question5"></p>
+            </div>
+            <div class="textWrapper">
+              <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+              <p data-translatekey="step2question6"></p>
+            </div>
+            <div class="textWrapper">
+              <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+              <p data-translatekey="step2question7"></p>
+            </div>
+            <div class="textWrapper">
+              <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+              <p data-translatekey="step2question8"></p>
+            </div>
+            <div class="textWrapper">
+              <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+              <p data-translatekey="step2question9"></p>
+            </div>
+            <div class="textWrapper">
+              <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+              <p data-translatekey="step2question10"></p>
+            </div>
+            <a id="step2questionpdf" target="_blank"
+              href="./pdf/English/Implementation Steps/Step 2 Need Assessment/STEP 2 - GUIDING QUESTIONS.pdf"
+              class="download-link" data-translatekey="downloadthissection"></a>
+          </div>
+          <div id="22" class="tabcontent tab-inner hide">
+            <div class="action-wrap">
+              <div class="accordion">
+                <div class="step-accord-wrap ">
+                  <h6 class="title" data-translatekey="action1"></h6>
+                  <h6 class="para" data-translatekey="step2actionsp1"></h6>
+                </div>
+              </div>
+              <div class="panel active">
+                <p class="description" data-translatekey="step2actionsp2"></p>
+                <p class="description" data-translatekey="step2actionsp3"></p>
+                <p class="description" data-translatekey="step2actionsp4"></p>
+                <div class="linkwrap tab-link  toolaccordin" data-id="tool2" data-tag="24">
+                  <span class="first" data-translatekey="step2actionsp5a"></span>
+                  <span><a onclick="" data-translatekey="tool2"></a></span>
+                  <span data-translatekey="step2actionsp5b"></span>
+                </div>
+                <p class="linksparagraphWrap linkwrap">
+                  <span class=" tab-link toolaccordin" data-id="tool3" data-tag="24">
+
+                    <span data-translatekey="step2actionsp6a"></span>
+
+                    <span data-id="tool3">
+                      <a onclick="" data-translatekey="tool3"></a>
+                    </span>
+
+                    <span data-translatekey="step2actionsp6b"></span>
+                  </span>
+                  <span class=" tab-link toolaccordin" data-id="tool4" data-tag="24">
+
+                    <span data-id="tool4">
+                      <a onclick="" data-translatekey="tool4"></a>
+                    </span>
+
+                    <span data-translatekey="step2actionsp6c"></span>
+                  </span>
+                </p>
+
+                <p class="linkwrap tab-link toolaccordin" data-id="tool3" data-tag="24">
+                  <span data-translatekey="step2actionsp7a"></span>
+                  <span><a onclick="" data-translatekey="tool3"></a></span>
+                  <span data-translatekey="step2actionsp7b"></span>
+                </p>
+                <p class="description" data-translatekey="step2actionsp8">
+                  <!-- <text data-translatekey="step2actionsp8first"></text>
+                  <span data-translatekey="step2actionsp8second"></span>
+                  <text data-translatekey="step2actionsp8third"></text> -->
+                </p>
+
+                <p class="description" data-translatekey="step2actionsp8a"></p>
+                <p class="description" data-translatekey="step2actionsp8b"></p>
+                <p class="description" data-translatekey="step2actionsp9"></p>
+                <p class="description" data-translatekey="step2actionsp9a"></p>
+                <p class="description" data-translatekey="step2actionsp9b"></p>
+                <p class="description" data-translatekey="step2actionsp10"></p>
+                <p class="description" data-translatekey="step2actionsp11"></p>
+                <p class="description"><span class="marker">›</span> <text data-translatekey="step2actionsp12">
+                  </text><a id="Link40" target="_blank" href="https://www.ohchr.org/ohchr_home"></a>.</p>
+                <p class="description"><span class="marker">›</span> <text data-translatekey="step2actionsp13">
+                  </text><a id="Link41" target="_blank" href="https://www.ohchr.org/ohchr_home"></a>.</p>
+                <p class="description"><span class="marker">›</span> <text data-translatekey="step2actionsp14">
+                  </text><a id="Link42" target="_blank" href="https://www.ohchr.org/ohchr_home"></a>.</p>
+                <p class="description"><span class="marker">›</span> <text data-translatekey="step2actionsp15">
+                  </text><a id="Link43" target="_blank" href="https://www.ohchr.org/ohchr_home"></a>.</p>
+                <p class="description"><span class="marker">›</span>
+                  <text data-translatekey="step2actionsp16"></text>
+                  <a id="Link44" target="_blank" href="https://www.unwomen.org"></a>.
+                </p>
+                <p class="description"><span class="marker">›</span>
+                  <text data-translatekey="step2actionsp17"></text>
+                  <a id="Link45" target="_blank" href="https://www.ilo.org"></a>.
+                </p>
+                <p class="description"><span class="marker">›</span> <text data-translatekey="step2actionsp18">
+                  </text><a id="Link46" target="_blank" href="https://www.unicef.org"></a>.
+                </p>
+                <p class="description"><span class="marker">›</span> <text data-translatekey="step2actionsp19">
+                  </text><a id="Link47" target="_blank" href="https://www.unicef.org"></a>.
+                </p>
+                <p class="description"><span class="marker">›</span> <text data-translatekey="step2actionsp20"></text>
+                  <a id="Link39" target="_blank" href="https://hrbaportal.org">https://hrbaportal.org</a>.
+                </p>
+                <p class="description" data-translatekey="step2actionsp21"></p>
+                <p class="description" data-translatekey="step2actionsp22"></p>
+              </div>
+            </div>
+            <div class="action-wrap">
+              <div class="accordion">
+                <div class="step-accord-wrap">
+                  <h6 class="title" data-translatekey="action2"></h6>
+                  <h6 class="para" data-translatekey="step2actions2p1"></h6>
+                </div>
+              </div>
+              <div class="panel">
+                <p class="description" data-translatekey="step2actions2p2"></p>
+                <p class="description" data-translatekey="step2actions2p3"></p>
+                <p class="description" data-translatekey="step2actions2p4"></p>
+                <p class="description" data-translatekey="step2actions2p5"></p>
+                <p class="description" data-translatekey="step2actions2p6"></p>
+              </div>
+            </div>
+            <a id="step2actionpdf" target="_blank"
+              href="./pdf/English/Implementation Steps/Step 2 Need Assessment/STEP 2 -  ACTIONS.pdf"
+              class="download-link" data-translatekey="downloadthissection"></a>
+          </div>
+          <div id="23" class="tabcontent tab-inner hide">
+            <div class="checklist-wrap">
+              <div class="tab">
+                <i class="fa-solid fa-check"></i>
+                <p data-translatekey="step2checkboxp1"></p>
+              </div>
+              <div class="tab">
+                <i class="fa-solid fa-check"></i>
+                <p data-translatekey="step2checkboxp2"></p>
+              </div>
+              <div class="tab">
+                <i class="fa-solid fa-check"></i>
+                <p data-translatekey="step2checkboxp3"></p>
+              </div>
+              <div class="tab">
+                <i class="fa-solid fa-check"></i>
+                <p data-translatekey="step2checkboxp4"></p>
+              </div>
+              <div class="tab">
+                <i class="fa-solid fa-check"></i>
+                <p data-translatekey="step2checkboxp5"></p>
+              </div>
+              <div class="tab">
+                <i class="fa-solid fa-check"></i>
+                <p data-translatekey="step2checkboxp6"></p>
+              </div>
+              <div class="tab">
+                <i class="fa-solid fa-check"></i>
+                <p data-translatekey="step2checkboxp7"></p>
+              </div>
+              <div class="tab">
+                <i class="fa-solid fa-check"></i>
+                <p data-translatekey="step2checkboxp8"></p>
+              </div>
+              <div class="tab">
+                <i class="fa-solid fa-check"></i>
+                <p data-translatekey="step2checkboxp9"></p>
+              </div>
+              <div class="tab">
+                <i class="fa-solid fa-check"></i>
+                <p data-translatekey="step2checkboxp10"></p>
+              </div>
+            </div>
+            <a id="step2checklistpdf" target="_blank"
+              href="./pdf/English/Implementation Steps/Step 2 Need Assessment/STEP 2 - CHECKLIST.pdf"
+              class="download-link" data-translatekey="downloadthissection"></a>
+          </div>
+          <div id="24" class="tabcontent tab-inner hide">
+            <div class="tool-wrap">
+              <div class="accordion accoractive tool2">
+                <div class="accord-tab">
+                  <div class="leftside">
+                    <h4 data-translatekey="tool2"></h4>
+                    <div class="toolsec-divider"></div>
+                    <p data-translatekey="step2tool2p1"></p>
+                  </div>
+                </div>
+              </div>
+              <div class="panel tool2">
+                <div class="accord-data">
+                  <div class="card">
+                    <h6 data-translatekey="step2tool2p2"></h6>
+                    <p data-translatekey="step2tool2p3"></p>
+                  </div>
+                  <div class="card">
+                    <p data-translatekey="step2tool2p4"></p>
+                  </div>
+                  <div class="card">
+                    <p data-translatekey="step2tool2p5"></p>
+                  </div>
+                  <div class="card">
+                    <p data-translatekey="step2tool2p6"></p>
+                  </div>
+                  <div class="card">
+                    <p data-translatekey="step2tool2p7"></p>
+                  </div>
+                  <div class="card">
+                    <p data-translatekey="step2tool2p8"></p>
+                  </div>
+                  <div class="card">
+                    <p data-translatekey="step2tool2p9"></p>
+                  </div>
+                  <div class="card">
+                    <p data-translatekey="step2tool2p10"></p>
+                  </div>
+                  <div class="card">
+                    <p data-translatekey="step2tool2p11"></p>
+                  </div>
+                  <div class="card">
+                    <p data-translatekey="step2tool2p12"></p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion accoractive tool3">
+                <div class="accord-tab">
+                  <div class="leftside">
+                    <h4 data-translatekey="tool3"></h4>
+                    <div class="toolsec-divider"></div>
+                    <p data-translatekey="step2tool3p1"></p>
+                  </div>
+                </div>
+              </div>
+              <div class="panel tool3">
+                <div class="accord-data">
+                  <br>
+                  <h6 data-translatekey="step2tool3p2"></h6>
+                  <div class="card">
+                    <p data-translatekey="step2tool3p3"></p>
+                  </div>
+                  <div class="card">
+                    <p data-translatekey="step2tool3p4"></p>
+                  </div>
+                  <div class="card">
+                    <p data-translatekey="step2tool3p5"></p>
+                  </div>
+                  <div class="card">
+                    <p data-translatekey="step2tool3p6"></p>
+                  </div>
+                  <div class="card">
+                    <p data-translatekey="step2tool3p7"></p>
+                  </div>
+                  <h6 data-translatekey="step2tool3p8"></h6>
+                  <div class="card">
+                    <p data-translatekey="step2tool3p9missing"></p>
+                  </div>
+                  <div class="card">
+                    <p data-translatekey="step2tool3p9"></p>
+                  </div>
+                  <div class="card">
+                    <p data-translatekey="step2tool3p10"></p>
+                  </div>
+                  <div class="card">
+                    <p data-translatekey="step2tool3p11"></p>
+                  </div>
+                  <div class="card">
+                    <p data-translatekey="step2tool3p12"></p>
+                  </div>
+                  <div class="card">
+                    <p data-translatekey="step2tool3p13"></p>
+                  </div>
+                  <div class="card">
+                    <p data-translatekey="step2tool3p14"></p>
+                  </div>
+                  <div class="card">
+                    <p data-translatekey="step2tool3p15"></p>
+                  </div>
+                  <div class="card">
+                    <p data-translatekey="step2tool3p16"></p>
+                  </div>
+                  <div class="card">
+                    <p data-translatekey="step2tool3p17"></p>
+                  </div>
+                  <h6 data-translatekey="step2tool3p18"></h6>
+                  <div class="card">
+                    <p data-translatekey="step2tool3p19"></p>
+                  </div>
+                  <div class="card">
+                    <p data-translatekey="step2tool3p20"></p>
+                  </div>
+                  <div class="card">
+                    <p data-translatekey="step2tool3p21"></p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion accoractive tool4">
+                <div class="accord-tab">
+                  <div class="leftside">
+                    <h4 data-translatekey="tool4"></h4>
+                    <div class="toolsec-divider"></div>
+                    <p data-translatekey="step2tool4p1"></p>
+                  </div>
+                </div>
+              </div>
+              <div class="panel tool4">
+                <div class="accord-data">
+                  <div class="card">
+                    <h6 data-translatekey="step2tool4p2"></h6>
+                    <p data-translatekey="step2tool4p3"></p>
+                  </div>
+                  <div class="card">
+                    <h6 data-translatekey="step2tool4p4"></h6>
+                    <p data-translatekey="step2tool4p5"></p>
+                  </div>
+                  <div class="card">
+                    <h6 data-translatekey="step2tool4p6"></h6>
+                    <p data-translatekey="step2tool4p7"></p>
+                  </div>
+                  <div class="card">
+                    <h6 data-translatekey="step2tool4p8"></h6>
+                    <p data-translatekey="step2tool4p9"></p>
+                  </div>
+                  <div class="card">
+                    <h6 data-translatekey="step2tool4p10"></h6>
+                    <p data-translatekey="step2tool4p11"></p>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+            <a id="step2toolpdf" target="_blank"
+              href="./pdf/English/Implementation Steps/Step 2 Need Assessment/STEP 2 - TOOLS.pdf" class="download-link"
+              data-translatekey="downloadthissection"></a>
+          </div>
+          <div id="25" class="tabcontent tab-inner hide">
+            <!-- <p>Download Step Content</p> -->
+            <a id="step2pdf" target="_blank"
+              href="./pdf/English/Implementation Steps/Step 2 Need Assessment/STEP 2 - NEEDS ASSESSMENT.pdf"
+              class="download-link" data-translatekey="downloadstepcontent"></a>
+          </div>
+        </div>
+      </div>
+      <div class="type-inner-wrap tab-inner4 hide" id="thirdContent">
+        <div class="inner-tabs">
+          <button class="tab-link clickme active step3click" data-tag="26">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M22 17.075V4.75004C21.9993 4.44847 21.8181 4.17664 21.54 4.06004C21.4487 4.01958 21.3498 3.99913 21.25 4.00004H2.75C2.59987 3.99852 2.45302 4.04397 2.33 4.13004C2.12337 4.26863 1.99957 4.50123 2 4.75004V17.25C2 17.6643 2.33579 18 2.75 18H5V21.23C4.99987 21.3245 5.01857 21.4179 5.055 21.505C5.09462 21.5961 5.15054 21.6791 5.22 21.75C5.29049 21.82 5.37363 21.876 5.465 21.915C5.641 21.9884 5.839 21.9884 6.015 21.915C6.10706 21.8773 6.19043 21.8212 6.26 21.75L10.035 18H21.27C21.6764 17.9892 22.0001 17.6566 22 17.25C22.0077 17.192 22.0077 17.1331 22 17.075ZM9.415 16.5L7.915 18L6.5 19.42V16.5H3.5V5.50001H20.5V16.5H9.415ZM7.025 11.0001C7.025 10.4478 7.47272 10.0001 8.025 10.0001C8.57729 10.0001 9.025 10.4478 9.025 11.0001C9.025 11.5524 8.57729 12.0001 8.025 12.0001C7.47272 12.0001 7.025 11.5524 7.025 11.0001ZM17.025 11.0001C17.025 11.5524 16.5773 12.0001 16.025 12.0001C15.4727 12.0001 15.025 11.5524 15.025 11.0001C15.025 10.4478 15.4727 10.0001 16.025 10.0001C16.5773 10.0001 17.025 10.4478 17.025 11.0001ZM11.025 11.0001C11.025 10.4478 11.4727 10.0001 12.025 10.0001C12.5773 10.0001 13.025 10.4478 13.025 11.0001C13.025 11.5524 12.5773 12.0001 12.025 12.0001C11.4727 12.0001 11.025 11.5524 11.025 11.0001Z"
+                fill="" />
+            </svg>
+            <span data-translatekey="guidingquestion"></span>
+          </button>
+          <button class="tab-link clickme" data-tag="27">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M9.25 0.75C9.25 0.3355 9.5855 0 10 0C10.4145 0 10.75 0.3355 10.75 0.75V5.25C10.75 5.6645 10.4145 6 10 6C9.5855 6 9.25 5.6645 9.25 5.25V0.75ZM9.25 14.75C9.25 14.3355 9.5855 14 10 14C10.4145 14 10.75 14.3355 10.75 14.75V19.25C10.75 19.6645 10.4145 20 10 20C9.5855 20 9.25 19.6645 9.25 19.25V14.75ZM14.596 6.46485L17.0709 3.98985C17.3635 3.69685 17.3635 3.22235 17.0709 2.92935C16.778 2.63635 16.3029 2.63635 16.01 2.92935L13.535 5.40385C13.242 5.69685 13.242 6.17185 13.535 6.46485C13.8279 6.75785 14.3029 6.75785 14.596 6.46485ZM2.9293 16.0101L5.4043 13.5352C5.6968 13.2422 6.1718 13.2422 6.4648 13.5352C6.7578 13.8281 6.7578 14.3032 6.4648 14.5956L3.9898 17.0707C3.6968 17.3636 3.2223 17.3636 2.9293 17.0707C2.6363 16.7776 2.6363 16.3032 2.9293 16.0101ZM19.25 9.25H14.75C14.3355 9.25 14 9.5855 14 10C14 10.4145 14.3355 10.75 14.75 10.75H19.25C19.6645 10.75 20 10.4145 20 10C20 9.5855 19.6645 9.25 19.25 9.25ZM5.25 9.25C5.6645 9.25 6 9.5855 6 10C6 10.4145 5.6645 10.75 5.25 10.75H0.75C0.3355 10.75 0 10.4145 0 10C0 9.5855 0.3355 9.25 0.75 9.25H5.25ZM14.596 13.5352C14.3029 13.2422 13.8279 13.2422 13.535 13.5352C13.242 13.8281 13.242 14.3032 13.535 14.5956L16.01 17.0707C16.3029 17.3636 16.778 17.3636 17.0709 17.0707C17.3635 16.7776 17.3635 16.3032 17.0709 16.0101L14.596 13.5352ZM2.929 2.9292C3.222 2.6367 3.697 2.6367 3.99 2.9292L6.465 5.4042C6.758 5.6972 6.758 6.1717 6.465 6.4647C6.172 6.7577 5.697 6.7577 5.4045 6.4647L2.929 3.9902C2.6365 3.6972 2.6365 3.2222 2.929 2.9292Z"
+                fill="" />
+            </svg>
+            <span data-translatekey="actions"></span>
+          </button>
+          <button class="tab-link  clickme" data-tag="28">
+            <svg width="20" height="17" viewBox="0 0 20 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M4.26497 0.24464C4.55891 -0.0450884 5.03103 -0.0450884 5.32497 0.24464C5.61081 0.526548 5.62187 0.98426 5.34997 1.27964L2.84997 3.77964C2.7092 3.92302 2.51587 4.00252 2.31497 3.99964C2.11428 4.00136 1.92139 3.92204 1.77997 3.77964L0.719966 2.71964C0.57828 2.57967 0.498535 2.3888 0.498535 2.18964C0.498535 1.99048 0.57828 1.79961 0.719966 1.65964C0.859933 1.51795 1.0508 1.43821 1.24997 1.43821C1.44913 1.43821 1.64 1.51795 1.77997 1.65964L2.31497 2.19464L4.26497 0.24464ZM18.835 1.74964H8.16497C7.77454 1.77377 7.47718 2.10914 7.49997 2.49964C7.47718 2.89014 7.77454 3.22551 8.16497 3.24964H18.835C19.2254 3.22551 19.5227 2.89014 19.5 2.49964C19.5227 2.10914 19.2254 1.77377 18.835 1.74964ZM4.26497 6.74464C4.55891 6.45491 5.03103 6.45491 5.32497 6.74464C5.47 6.88124 5.55429 7.07024 5.55898 7.26942C5.56368 7.4686 5.4884 7.66136 5.34997 7.80464L2.84997 10.2796C2.7092 10.423 2.51587 10.5025 2.31497 10.4996C2.11428 10.5014 1.92139 10.422 1.77997 10.2796L0.719966 9.21964C0.57828 9.07967 0.498535 8.8888 0.498535 8.68964C0.498535 8.49048 0.57828 8.29961 0.719966 8.15964C0.859933 8.01795 1.0508 7.93821 1.24997 7.93821C1.44913 7.93821 1.64 8.01795 1.77997 8.15964L2.31497 8.69464L4.26497 6.74464ZM8.16497 8.24964H18.835C19.2254 8.27377 19.5227 8.60914 19.5 8.99964C19.5227 9.39014 19.2254 9.72551 18.835 9.74964H8.16497C7.77454 9.72551 7.47718 9.39014 7.49997 8.99964C7.47718 8.60914 7.77454 8.27377 8.16497 8.24964ZM18.835 14.7496H8.16497C7.77454 14.7738 7.47718 15.1091 7.49997 15.4996C7.47718 15.8901 7.77454 16.2255 8.16497 16.2496H18.835C19.2254 16.2255 19.5227 15.8901 19.5 15.4996C19.5227 15.1091 19.2254 14.7738 18.835 14.7496ZM4.26497 13.2446C4.55891 12.9549 5.03103 12.9549 5.32497 13.2446C5.61081 13.5265 5.62187 13.9843 5.34997 14.2796L2.84997 16.7796C2.7092 16.923 2.51587 17.0025 2.31497 16.9996C2.11428 17.0014 1.92139 16.922 1.77997 16.7796L0.719966 15.7196C0.57828 15.5797 0.498535 15.3888 0.498535 15.1896C0.498535 14.9905 0.57828 14.7996 0.719966 14.6596C0.859933 14.518 1.0508 14.4382 1.24997 14.4382C1.44913 14.4382 1.64 14.518 1.77997 14.6596L2.31497 15.1946L4.26497 13.2446Z"
+                fill="" />
+            </svg>
+            <span data-translatekey="checklist"></span>
+          </button>
+          <button class="tab-link  clickme" data-tag="29">
+            <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M14.7725 19.16C15.5065 18.119 16.0955 16.7805 16.4835 15.25H18.9295C18.008 16.963 16.5435 18.3375 14.7725 19.16ZM3.0705 15.25H5.5165C5.9045 16.7805 6.4935 18.119 7.2275 19.16C5.4565 18.3375 3.992 16.963 3.0705 15.25ZM7.2275 2.8395C6.4935 3.8805 5.9045 5.219 5.5165 6.75H3.0705C3.992 5.0365 5.4565 3.662 7.2275 2.8395ZM18.9295 6.75H16.4835C16.0955 5.219 15.5065 3.8805 14.7725 2.8395C16.5435 3.662 18.008 5.0365 18.9295 6.75ZM16.785 8.25H19.5665C19.8455 9.1175 20 10.0405 20 11C20 11.959 19.8455 12.882 19.5665 13.75H16.785C16.921 12.872 17 11.953 17 11C17 10.0465 16.921 9.128 16.785 8.25ZM11 2C12.4945 2 14.106 3.8275 14.935 6.75H7.065C7.894 3.8275 9.5055 2 11 2ZM2 11C2 10.0405 2.1545 9.1175 2.4335 8.25H5.215C5.079 9.128 5 10.0465 5 11C5 11.953 5.079 12.872 5.215 13.75H2.4335C2.1545 12.882 2 11.959 2 11ZM6.726 13.75C6.5815 12.896 6.5 11.9755 6.5 11C6.5 10.024 6.5815 9.104 6.726 8.25H15.274C15.4185 9.104 15.5 10.024 15.5 11C15.5 11.9755 15.4185 12.896 15.274 13.75H6.726ZM11 20C9.5055 20 7.894 18.172 7.065 15.25H14.935C14.106 18.172 12.4945 20 11 20ZM11 0.5C5.201 0.5 0.5 5.201 0.5 11C0.5 16.799 5.201 21.5 11 21.5C16.799 21.5 21.5 16.799 21.5 11C21.5 5.201 16.799 0.5 11 0.5Z"
+                fill="" />
+            </svg>
+            <span data-translatekey="tools"></span>
+          </button>
+          <button class="tab-link clickme" data-tag="30">
+            <span data-translatekey="downloadStep3"></span>
+            <img class="first" src=" ./images/icons/downloadGrey.svg" alt="downloadGrey" style="margin-left: 10px;" />
+            <img class="second" src=" ./images/icons/downloadGreyactive3.svg" alt="downloadGrey"
+              style="margin-left: 10px;" />
+          </button>
+        </div>
+        <div class="tab-maindata">
+
+          <div id="26" class="tabcontent tab-inner active">
+            <div class="textWrapper">
+              <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+              <p data-translatekey="step3question1"></p>
+            </div>
+            <div class="textWrapper">
+              <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+              <p data-translatekey="step3question2"></p>
+            </div>
+            <div class="textWrapper">
+              <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+              <p data-translatekey="step3question3"></p>
+            </div>
+            <div class="textWrapper">
+              <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+              <p data-translatekey="step3question4"></p>
+            </div>
+            <div class="textWrapper">
+              <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+              <p data-translatekey="step3question5"></p>
+            </div>
+            <div class="textWrapper">
+              <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+              <p data-translatekey="step3question6"></p>
+            </div>
+            <div class="textWrapper">
+              <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+              <p data-translatekey="step3question7"></p>
+            </div>
+            <a id="step3questionpdf"
+              href="./pdf/English/Implementation Steps/Step 3 Design/STEP 3 - GUIDING QUESTIONS.pdf"
+              class="download-link" target="_blank" data-translatekey="downloadthissection"></a>
+          </div>
+          <div id="27" class="tabcontent tab-inner hide">
+            <div class="action-wrap">
+              <div class="accordion">
+                <div class="step-accord-wrap ">
+                  <h6 class="title" data-translatekey="action1"></h6>
+                  <h6 class="para" data-translatekey="step3actionsp1"></h6>
+                </div>
+              </div>
+              <div class="panel active">
+                <p class="description" data-translatekey="step3actionsp2"></p>
+                <p class="description" data-translatekey="step3actionsp3"></p>
+                <h6 class="description mb10" data-translatekey="step3actionsp4"></h6>
+                <p class="description" data-translatekey="step3actionsp5"></p>
+                <p class="description"><strong data-translatekey="step3actionsp6"></strong> <text
+                    data-translatekey="step3actionsp6area"></text>
+                  <a id="step3action1Link1" target="_blank" href=""></a>
+                </p>
+                <p class="description">
+                  <strong class="title" data-translatekey="step3actionsp7"></strong> <text
+                    data-translatekey="step3actionsp7area"></text>
+                  <a class="migrationdataportalLink" target="_blank" href=""></a>.
+                  <text data-translatekey="step3actionsp7area2"></text>
+                  <a id="Link00" target="_blank" href=""></a>.
+                </p>
+                <p class="description">
+                  <text data-translatekey="step3actionsp8"></text>
+                  <a id="Link0" target="_blank" href="">/</a>.
+                </p>
+                <p class="description">
+                  <text data-translatekey="step3actionsp9"></text>
+                  <a id="Link1" target="_blank" href=""></a>.
+                </p>
+                <h6 data-translatekey="step3actionsp10"></h6>
+                <p class="description"><span class="marker">›</span> <text data-translatekey="step3actionsp11"></text>
+                  <a id="Link2" target="_blank" href="">.</a>
+                </p>
+                <p class="description">
+                  <span class="marker">›</span> <text data-translatekey="step3actionsp12"></text>
+                  <a id="Link3" target="_blank" href=""></a>.
+                </p>
+                <p class="description"><span class="marker">›</span> <text data-translatekey="step3actionsp13"></text>
+                  <a id="Link4" target="_blank" href=""></a>.
+                </p>
+                <p class="description"><span class="marker">›</span> <text data-translatekey="step3actionsp14"></text>
+                  <a id="Link5" target="_blank" href=""></a>.
+                </p>
+                <p class="description"><span class="marker">›</span> <text data-translatekey="step3actionsp15"></text>
+                  <a id="Link6" target="_blank" href=""></a>.
+                </p>
+                <p class="description"><span class="marker">›</span>
+                  <text data-translatekey="step3actionsp16"></text>
+                  <a id="Link7" target="_blank" href=""></a>.
+                </p>
+                <p class="description"><span class="marker">›</span>
+                  <text data-translatekey="step3actionsp17"></text><a id="Link8" target="_blank" href=""></a>.
+                </p>
+                <!-- <p class="description"><span class="marker">›</span> <text data-translatekey="step3actionsp18"></text>
+                </p> -->
+                <p class="description"><span class="marker">›</span> <text data-translatekey="step3actionsp19"></text>
+                  <a id="Link9" target="_blank" href=""></a>.
+                </p>
+                <p class="description"><span class="marker">›</span> <text data-translatekey="step3actionsp20"></text>
+                  <a id="Link10" target="_blank" href=""></a>.
+                </p>
+                <p class="description"><span class="marker">›</span> <text data-translatekey="step3actionsp21"></text>
+                  <a id="Link11" target="_blank" href=""></a>.
+                </p>
+                <p class="description" data-translatekey="step3actionsp21a"></p>
+                <p class="description" data-translatekey="step3actionsp22"></p>
+                <h6 class="title" data-translatekey="step3actionsp23"></h6>
+                <div class="description linkwrap ">
+                  <text class="first" data-translatekey="step3actionsp24a"></text>
+                  <span><a onclick="" class="toolaccordin" data-id="tool5" data-tag="29"
+                      data-translatekey="tool5"></a></span>
+                  <text data-translatekey="step3actionsp24b"></text>
+                  <a id="Link12a" target="_blank" href="https://publications.iom.int">https://publications.iom.int</a>
+                </div>
+                <p class="description" data-translatekey="step3actionsp25"></p>
+                <p class="description" data-translatekey="step3actionsp26"></p>
+                <p class="description" data-translatekey="step3actionsp27"></p>
+                <p class="description" data-translatekey="step3actionsp28"></p>
+                <p class="description"><span class="marker">›</span>
+                  <text data-translatekey="step3actionsp29"></text>
+                  <a id="Link36" target="_blank" href=""></a>.
+                </p>
+                <p class="description"><span class="marker">›</span>
+                  <text data-translatekey="step3actionsp30"></text>
+                  <a id="Link37" target="_blank" href=""></a>.
+                </p>
+                <p class="description"><span class="marker">›</span>
+                  <text data-translatekey="step3actionsp31"></text>
+                  <a id="Link38" target="_blank" href=""></a>.
+                </p>
+              </div>
+            </div>
+            <div class="action-wrap">
+              <div class="accordion">
+                <div class="step-accord-wrap">
+                  <h6 class="title" data-translatekey="action2"></h6>
+                  <h6 class="para" data-translatekey="step3actions2p1"></h6>
+                </div>
+              </div>
+              <div class="panel">
+                <p class="description" data-translatekey="step3actions2p2"></p>
+                <div class="dotWrap">
+                  <div class="greendot"></div>
+                  <p class="description" data-translatekey="step3actions2p3"></p>
+                </div>
+                <div class="dotWrap">
+                  <div class="greendot"></div>
+                  <p class="description" data-translatekey="step3actions2p4"></p>
+                </div>
+                <div class="dotWrap">
+                  <div class="greendot"></div>
+                  <p class="description" data-translatekey="step3actions2p5"></p>
+                </div>
+                <div class="dotWrap">
+                  <div class="greendot"></div>
+                  <p class="description" data-translatekey="step3actions2p6"></p>
+                </div>
+                <div class="dotWrap">
+                  <div class="greendot"></div>
+                  <p class="description" data-translatekey="step3actions2p7"></p>
+                </div>
+                <div class="dotWrap">
+                  <div class="greendot"></div>
+                  <p class="description" data-translatekey="step3actions2p8"></p>
+                </div>
+                <!-- <img src="./images/stepimg/tab3tool.PNG" alt=""> -->
+                <p class="description" data-translatekey="step3actions2p9"></p>
+                <p class="description" data-translatekey="step3actions2p10"></p>
+                <p class="description" data-translatekey="step3actions2p11"></p>
+                <h6 class="title" data-translatekey="step3actions2p12"></h6>
+                <p class="description">
+                  <text data-translatekey="step3actions2p13"></text>
+                  <a target="_blank" href="https://gmdac.iom.int/migration-governance-indicators">
+                    https://gmdac.iom.int/migration-governance-indicators.</a>
+                </p>
+                <p class="description" data-translatekey="step3actions2p14"></p>
+                <p class="description">
+                  <text data-translatekey="step3actions2p15"></text>
+
+                </p>
+                <h6 class="title" data-translatekey="step3actions2p16"></h6>
+                <p class="description">
+                  <text data-translatekey="step3actions2p17"></text>
+                  <a id="Link12" target="_blank" href=""></a>.
+                </p>
+              </div>
+            </div>
+            <div class="action-wrap">
+              <div class="accordion">
+                <div class="step-accord-wrap">
+                  <h6 class="title" data-translatekey="action3"></h6>
+                  <h6 class="para" data-translatekey="step3actions3p1"></h6>
+                </div>
+              </div>
+              <div class="panel">
+                <p class="description" data-translatekey="step3actions3p2"></p>
+                <div class="dotWrap">
+                  <div class="greendot"></div>
+                  <p class="description" data-translatekey="step3actions3p3"></p>
+                </div>
+                <div class="dotWrap">
+                  <div class="greendot"></div>
+                  <p class="description" data-translatekey="step3actions3p4"></p>
+                </div>
+                <div class="dotWrap">
+                  <div class="greendot"></div>
+                  <p class="description" data-translatekey="step3actions3p5"></p>
+                </div>
+                <div class="dotWrap">
+                  <div class="greendot"></div>
+                  <p class="description" data-translatekey="step3actions3p6"></p>
+                </div>
+                <div class="dotWrap">
+                  <div class="greendot"></div>
+                  <p class="description" data-translatekey="step3actions3p7"></p>
+                </div>
+                <div class="dotWrap">
+                  <div class="greendot"></div>
+                  <p class="description" data-translatekey="step3actions3p8"></p>
+                </div>
+                <p class="linkwrap">
+                  <span class="first" data-translatekey="step3actions3p9a"></span>
+                  <span><a onclick="" class="clickme4 step1" data-id="step1" data-tag="firstContent"
+                      data-translatekey="step1lkickof"></a></span>
+                  <span data-translatekey="step3actions3p9b"></span>
+                </p>
+                <p class="description" data-translatekey="step3actions3p10"></p>
+                <div class="dotWrap">
+                  <div class="greendot"></div>
+                  <p class="description" data-translatekey="step3actions3p11"></p>
+                </div>
+                <!-- <p class="description" data-translatekey="step3actions3p12"></p> -->
+                <div class="dotWrap">
+                  <div class="greendot"></div>
+                  <p class="description" data-translatekey="step3actions3p13"></p>
+                </div>
+                <div class="dotWrap">
+                  <div class="greendot"></div>
+                  <p class="description" data-translatekey="step3actions3p14"></p>
+                </div>
+                <div class="dotWrap">
+                  <div class="greendot"></div>
+                  <p class="description" data-translatekey="step3actions3p15"></p>
+                </div>
+                <div class="dotWrap">
+                  <div class="greendot"></div>
+                  <p class="description" data-translatekey="step3actions3p16"></p>
+                </div>
+              </div>
+            </div>
+            <div class="action-wrap">
+              <div class="accordion">
+                <div class="step-accord-wrap">
+                  <h6 class="title" data-translatekey="action4"></h6>
+                  <h6 class="para" data-translatekey="step3actions4p1"></h6>
+                </div>
+              </div>
+              <div class="panel">
+                <p class="description" data-translatekey="step3actions4p2"></p>
+                <h6 class="title" data-translatekey="step3actions4p3"></h6>
+                <p class="description" data-translatekey="step3actions4p4"></p>
+                <h6 class="title" data-translatekey="step3actions4p5"></h6>
+                <p class="description" data-translatekey="step3actions4p6"></p>
+                <h6 data-translatekey="step3actions4p7"></h6>
+                <p class="description" data-translatekey="step3actions4p8"></p>
+                <!-- <p class="description" data-translatekey="step3actions4p9"></p> -->
+                <h6 class="title" data-translatekey="step3actions4p10"></h6>
+                <p class="description" data-translatekey="step3actions4p11"></p>
+                <h6 class="title" data-translatekey="step3actions4p12"></h6>
+                <p class="description" data-translatekey="step3actions4p13"></p>
+                <h6 class="title" data-translatekey="step3actions4p13aa"></h6>
+                <p class="description" data-translatekey="step3actions4p13bb"></p>
+
+                <p class="description"><span class="marker">›</span>
+                  <text data-translatekey="step3actions4p14"></text>
+                  <a id="Link13" target="_blank" href=""></a>.
+                </p>
+                <p class="description"><span class="marker">›</span> <text data-translatekey="step3actions4p15"></text>
+                  <a id="Link14" target="_blank" href=""></a>.
+                </p>
+                <p class="description"><span class="marker">›</span> <text data-translatekey="step3actions4p16"></text>
+                  <a id="Link15" target="_blank" href=""></a>.
+                </p>
+                <h6 data-translatekey="step3actions4p17"></h6>
+                <p class="description" data-translatekey="step3actions4p18"></p>
+                <p class="description" data-translatekey="step3actions4p19"></p>
+                <div class="dotWrap">
+                  <div class="greendot"></div>
+                  <p class="description" data-translatekey="step3actions4p20"></p>
+                </div>
+                <div class="dotWrap">
+                  <div class="greendot"></div>
+                  <p class="description" data-translatekey="step3actions4p21"></p>
+                </div>
+                <div class="dotWrap">
+                  <div class="greendot"></div>
+                  <p class="description" data-translatekey="step3actions4p22"></p>
+                </div>
+                <div class="dotWrap">
+                  <div class="greendot"></div>
+                  <p class="description" data-translatekey="step3actions4p23"></p>
+                </div>
+                <div class="dotWrap">
+                  <div class="greendot"></div>
+                  <p class="description" data-translatekey="step3actions4p24"></p>
+                </div>
+                <div class="dotWrap">
+                  <div class="greendot"></div>
+                  <p class="description" data-translatekey="step3actions4p25"></p>
+                </div>
+                <div class="dotWrap">
+                  <div class="greendot"></div>
+                  <p class="description" data-translatekey="step3actions4p26"></p>
+                </div>
+                <div class="dotWrap">
+                  <div class="greendot"></div>
+                  <p class="description" data-translatekey="step3actions4p27"></p>
+                </div>
+                <div class="dotWrap">
+                  <div class="greendot"></div>
+                  <p class="description" data-translatekey="step3actions4p28"></p>
+                </div>
+                <div class="dotWrap">
+                  <div class="greendot"></div>
+                  <p class="description" data-translatekey="step3actions4p29"></p>
+                </div>
+                <div class="dotWrap">
+                  <div class="greendot"></div>
+                  <p class="description" data-translatekey="step3actions4p30"></p>
+                </div>
+                <div class="dotWrap">
+                  <div class="greendot"></div>
+                  <p class="description" data-translatekey="step3actions4p31"></p>
+                </div>
+              </div>
+            </div>
+            <div class="action-wrap">
+              <div class="accordion action5">
+                <div class="step-accord-wrap">
+                  <h6 class="title" data-translatekey="action5"></h6>
+                  <h6 class="para" data-translatekey="step3actions5p1"></h6>
+                </div>
+              </div>
+              <div class="panel action5">
+                <p class="description" data-translatekey="step3actions5p2"></p>
+                <h6 class="title" data-translatekey="step3actions5p3"></h6>
+                <p class="description" data-translatekey="step3actions5p4"></p>
+                <p class="description"><span class="marker">›</span>
+                  <text data-translatekey="step3actions5p5"></text>
+                  <a id="Link16" target="_blank" href=""></a>.
+                  <text data-translatekey="step3actions5p5area2"></text>
+                </p>
+                <p class="description"><span class="marker">›</span> <text data-translatekey="step3actions5p7"></text>
+                  <a id="Link17" target="_blank" href=""></a>.
+                </p>
+                <p class="description"><span class="marker">›</span> <text data-translatekey="step3actions5p8"></text>
+                  <a id="Link18" target="_blank" href=""></a>.
+                </p>
+                <p class="description" data-translatekey="step3actions5p9"></p>
+                <h6 class="title" data-translatekey="step3actions5p10"></h6>
+                <p class="description"> <text data-translatekey="step3actions5p11"></text>
+                  <a id="Link48" target="_blank" href=""></a>.
+                </p>
+                <h6 data-translatekey="step3actions5p12"></h6>
+                <p class="description"> <text data-translatekey="step3actions5p13"></text>
+                  <a id="Link49" target="_blank" href=""></a>.
+                </p>
+                <h6 data-translatekey="step3actions5p14"></h6>
+                <p class="description"><text data-translatekey="step3actions5p15"></text>
+                  <a id="Link19" target="_blank" href=""></a>.
+                </p>
+
+                <p class="description" data-translatekey="step3actions5p16"></p>
+
+                <p class="description" data-translatekey="step3actions5p17"></p>
+                <p class="description" data-translatekey="step3actions5p18"></p>
+                <p class="description" data-translatekey="step3actions5p19"></p>
+
+                <!-- <p class="description" data-translatekey="step3actions5p20"></p> -->
+                <p class="description linkwrap toolaccordin" data-id="tool6" data-tag="29">
+                  <text class="first" data-translatekey="step3actions5p20a"></text>
+                  <span><a onclick="" data-translatekey="tool6"></a></span>
+                  <text data-translatekey="step3actions5p20b"></text>
+                </p>
+                <!-- <p class="description" data-translatekey="step3actions5p21"></p> -->
+                <p class="description linkwrap toolaccordin" data-id="tool7" data-tag="29">
+                  <span class="first textcolor" data-translatekey="step3actions5p21a"></span>
+                  <span><a onclick="" data-translatekey="tool7"></a></span>
+                  <text data-translatekey="step3actions5p21b"><text>
+                </p>
+              </div>
+            </div>
+
+            <a id="step3actionpdf" target="_blank"
+              href="./pdf/English/Implementation Steps/Step 3 Design/STEP 3 - ACTIONS.pdf" class="download-link"
+              data-translatekey="downloadthissection"></a>
+          </div>
+          <div id="28" class="tabcontent tab-inner hide">
+            <div class="checklist-wrap">
+              <div class="tab">
+                <i class="fa-solid fa-check"></i>
+                <p data-translatekey="step3checklistp1"></p>
+              </div>
+              <div class="tab">
+                <i class="fa-solid fa-check"></i>
+                <p data-translatekey="step3checklistp2"></p>
+              </div>
+              <div class="tab">
+                <i class="fa-solid fa-check"></i>
+                <p data-translatekey="step3checklistp3"></p>
+              </div>
+              <div class="tab">
+                <i class="fa-solid fa-check"></i>
+                <p data-translatekey="step3checklistp4"></p>
+              </div>
+              <div class="tab">
+                <i class="fa-solid fa-check"></i>
+                <p data-translatekey="step3checklistp5"></p>
+              </div>
+              <div class="tab">
+                <i class="fa-solid fa-check"></i>
+                <p data-translatekey="step3checklistp6"></p>
+              </div>
+              <div class="tab">
+                <i class="fa-solid fa-check"></i>
+                <p data-translatekey="step3checklistp7"></p>
+              </div>
+              <div class="tab">
+                <i class="fa-solid fa-check"></i>
+                <p data-translatekey="step3checklistp8"></p>
+              </div>
+            </div>
+            <a id="step3checklistpdf" target="_blank"
+              href="./pdf/English/Implementation Steps/Step 3 Design/STEP 3 - CHECKLIST.pdf" class="download-link"
+              data-translatekey="downloadthissection"></a>
+          </div>
+          <div id="29" class="tabcontent tab-inner hide">
+            <div class="tool-wrap">
+              <div class="accordion accoractive tool5">
+                <div class="accord-tab">
+                  <div class="leftside">
+                    <h4 data-translatekey="tool5"></h4>
+                    <div class="toolsec-divider"></div>
+                    <p data-translatekey="step3tool1p1"></p>
+                  </div>
+                </div>
+              </div>
+              <div class="panel tool5">
+                <div class="accord-data">
+                  <div class="card">
+                    <h6 data-translatekey="step3tool1p2"></h6>
+                    <p data-translatekey="step3tool1p3"></p>
+                  </div>
+                  <div class="card">
+                    <h6 data-translatekey="step3tool1p4"></h6>
+                    <p data-translatekey="step3tool1p5"></p>
+                  </div>
+                  <div class="card">
+                    <h6 data-translatekey="step3tool1p6"></h6>
+                    <p data-translatekey="step3tool1p7"></p>
+                  </div>
+                  <div class="card">
+                    <h6 data-translatekey="step3tool1p8"></h6>
+                    <p data-translatekey="step3tool1p9"></p>
+                  </div>
+                  <div class="card">
+                    <h6 data-translatekey="step3tool1p10"></h6>
+                    <p data-translatekey="step3tool1p11"></p>
+                  </div>
+                  <div class="card">
+                    <h6 data-translatekey="step3tool1p12"></h6>
+                    <p data-translatekey="step3tool1p13"></p>
+                  </div>
+                  <div class="card">
+                    <h6 data-translatekey="step3tool1p14"></h6>
+                    <p data-translatekey="step3tool1p15"></p>
+                  </div>
+                  <div class="card">
+                    <h6 data-translatekey="step3tool1p16"></h6>
+                    <p data-translatekey="step3tool1p17"></p>
+                  </div>
+                  <div class="card">
+                    <h6 data-translatekey="step3tool1p18"></h6>
+                    <p data-translatekey="step3tool1p19"></p>
+                  </div>
+                  <div class="card">
+                    <h6 data-translatekey="step3tool1p20"></h6>
+                    <p data-translatekey="step3tool1p21"></p>
+                  </div>
+                  <div class="card">
+                    <h6 data-translatekey="step3tool1p22"></h6>
+                    <p data-translatekey="step3tool1p23"></p>
+                  </div>
+                  <div class="card cardhideES">
+                    <h6 data-translatekey="step3tool1p24"></h6>
+                    <p data-translatekey="step3tool1p25"></p>
+                  </div>
+                  <!-- <h6 class="title" data-translatekey="step3tool1p26"></h6>
+                  <p class="description" data-translatekey="step3tool1p27"></p>
+
+                  <br>
+                  <p class="description" data-translatekey="step3tool1p28"></p>
+                  <p class="description"> <span data-translatekey="step3tool1p29"></span>( <a
+                      href="https://www.unicef-irc.org/">unicef-irc.org</a> ) </p>
+                  <p class="description"> <span data-translatekey="step3tool1p30"></span> <a
+                      href="https://www.unicef.org/">https://sites.unicef.org.</a> </p>
+                  <p class="description"> <span data-translatekey="step3tool1p31"></span> <a
+                      href="https://www.unicef-irc.org/">unicef-irc.org</a>. </p> -->
+                </div>
+              </div>
+
+              <div class="accordion accoractive tool6">
+                <div class="accord-tab">
+                  <div class="leftside">
+                    <h4 data-translatekey="tool6"></h4>
+                    <div class="toolsec-divider"></div>
+                    <p data-translatekey="step3tool2p1"></p>
+                  </div>
+                </div>
+              </div>
+              <div class="panel tool6">
+                <div class="accord-data">
+                  <br>
+                  <h6 class="title" data-translatekey="step3tool2p2"></h6>
+                  <div class="card">
+                    <p class="description" data-translatekey="step3tool2p3"></p>
+                  </div>
+                  <div class="card">
+                    <p class="description" data-translatekey="step3tool2p4"></p>
+                  </div>
+                  <div class="card">
+                    <p class="description" data-translatekey="step3tool2p5"></p>
+                  </div>
+                  <div class="card">
+                    <p data-translatekey="step3tool2p6"></p>
+                  </div>
+                  <div class="card cardhide">
+                    <p data-translatekey="step3tool2p7"></p>
+                  </div>
+                  <div class="card">
+                    <p>
+                      <span data-translatekey="step3tool2p8"></span>
+                      <a id="Link20" target="_blank" href=""></a>.
+                    </p>
+                  </div>
+                  <div class="card">
+                    <p data-translatekey="step3tool2p9"></p>
+                  </div>
+                  <div class="card">
+                    <p data-translatekey="step3tool2p10"></p>
+                  </div>
+                  <div class="card">
+                    <p data-translatekey="step3tool2p11"></p>
+                  </div>
+                  <div class="card">
+                    <p data-translatekey="step3tool2p12"></p>
+                  </div>
+                  <div class="card">
+                    <p data-translatekey="step3tool2p13"></p>
+                  </div>
+                  <div class="card">
+                    <p data-translatekey="step3tool2p14"></p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion accoractive tool7">
+                <div class="accord-tab">
+                  <div class="leftside">
+                    <h4 data-translatekey="tool7"></h4>
+                    <div class="toolsec-divider"></div>
+                    <p data-translatekey="step3tool3p1"></p>
+                  </div>
+                </div>
+              </div>
+              <div class="panel tool7">
+                <div class="accord-data">
+                  <!-- <h6 class="title" data-translatekey="step3tool3p2"></h6> -->
+                  <div class="card">
+                    <p data-translatekey="step3tool3p3"></p>
+                    <p data-translatekey="step3tool3p4"></p>
+                    <p data-translatekey="step3tool3p5"></p>
+                    <p data-translatekey="step3tool3p6"></p>
+                    <p data-translatekey="step3tool3p7"></p>
+                    <p data-translatekey="step3tool3p8"></p>
+                    <p data-translatekey="step3tool3p9"></p>
+                    <p data-translatekey="step3tool3p10"></p>
+                    <!-- <p data-translatekey="step3tool3p11"></p> -->
+                    <p class="linkwrap">
+                      <span class="first" data-translatekey="step3tool3p11a"></span>
+                      <span>
+                        <a onclick="" class="second clickme" data-id="action5" data-tag="27"
+                          data-translatekey="action5"></a>
+                      </span>
+                      <span data-translatekey="step3tool3p11b"></span>
+                    </p>
+                    <p data-translatekey="step3tool3p12"></p>
+                    <p data-translatekey="step3tool3p13"></p>
+                    <p data-translatekey="step3tool3p14"></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <a id="step3toolpdf" href="./pdf/English/Implementation Steps/Step 3 Design/STEP 3 - TOOLS.pdf"
+              class="download-link" target="_blank" data-translatekey="downloadthissection"></a>
+          </div>
+          <div id="30" class="tabcontent tab-inner hide">
+            <!-- <p>Download Step Content</p> -->
+            <a id="step3pdf" target="_blank" href="./pdf/English/Implementation Steps/Step 3 Design/STEP 3 - DESIGN.pdf"
+              class="download-link" data-translatekey="downloadstepcontent"></a>
+          </div>
+        </div>
+      </div>
+      <div class="type-inner-wrap tab-inner4 hide" id="fourthContent">
+        <div class="inner-tabs">
+          <button class="tab-link clickme active" data-tag="31">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M22 17.075V4.75004C21.9993 4.44847 21.8181 4.17664 21.54 4.06004C21.4487 4.01958 21.3498 3.99913 21.25 4.00004H2.75C2.59987 3.99852 2.45302 4.04397 2.33 4.13004C2.12337 4.26863 1.99957 4.50123 2 4.75004V17.25C2 17.6643 2.33579 18 2.75 18H5V21.23C4.99987 21.3245 5.01857 21.4179 5.055 21.505C5.09462 21.5961 5.15054 21.6791 5.22 21.75C5.29049 21.82 5.37363 21.876 5.465 21.915C5.641 21.9884 5.839 21.9884 6.015 21.915C6.10706 21.8773 6.19043 21.8212 6.26 21.75L10.035 18H21.27C21.6764 17.9892 22.0001 17.6566 22 17.25C22.0077 17.192 22.0077 17.1331 22 17.075ZM9.415 16.5L7.915 18L6.5 19.42V16.5H3.5V5.50001H20.5V16.5H9.415ZM7.025 11.0001C7.025 10.4478 7.47272 10.0001 8.025 10.0001C8.57729 10.0001 9.025 10.4478 9.025 11.0001C9.025 11.5524 8.57729 12.0001 8.025 12.0001C7.47272 12.0001 7.025 11.5524 7.025 11.0001ZM17.025 11.0001C17.025 11.5524 16.5773 12.0001 16.025 12.0001C15.4727 12.0001 15.025 11.5524 15.025 11.0001C15.025 10.4478 15.4727 10.0001 16.025 10.0001C16.5773 10.0001 17.025 10.4478 17.025 11.0001ZM11.025 11.0001C11.025 10.4478 11.4727 10.0001 12.025 10.0001C12.5773 10.0001 13.025 10.4478 13.025 11.0001C13.025 11.5524 12.5773 12.0001 12.025 12.0001C11.4727 12.0001 11.025 11.5524 11.025 11.0001Z"
+                fill="" />
+            </svg>
+            <span data-translatekey="guidingquestion"></span>
+          </button>
+          <button class="tab-link clickme" data-tag="32">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M9.25 0.75C9.25 0.3355 9.5855 0 10 0C10.4145 0 10.75 0.3355 10.75 0.75V5.25C10.75 5.6645 10.4145 6 10 6C9.5855 6 9.25 5.6645 9.25 5.25V0.75ZM9.25 14.75C9.25 14.3355 9.5855 14 10 14C10.4145 14 10.75 14.3355 10.75 14.75V19.25C10.75 19.6645 10.4145 20 10 20C9.5855 20 9.25 19.6645 9.25 19.25V14.75ZM14.596 6.46485L17.0709 3.98985C17.3635 3.69685 17.3635 3.22235 17.0709 2.92935C16.778 2.63635 16.3029 2.63635 16.01 2.92935L13.535 5.40385C13.242 5.69685 13.242 6.17185 13.535 6.46485C13.8279 6.75785 14.3029 6.75785 14.596 6.46485ZM2.9293 16.0101L5.4043 13.5352C5.6968 13.2422 6.1718 13.2422 6.4648 13.5352C6.7578 13.8281 6.7578 14.3032 6.4648 14.5956L3.9898 17.0707C3.6968 17.3636 3.2223 17.3636 2.9293 17.0707C2.6363 16.7776 2.6363 16.3032 2.9293 16.0101ZM19.25 9.25H14.75C14.3355 9.25 14 9.5855 14 10C14 10.4145 14.3355 10.75 14.75 10.75H19.25C19.6645 10.75 20 10.4145 20 10C20 9.5855 19.6645 9.25 19.25 9.25ZM5.25 9.25C5.6645 9.25 6 9.5855 6 10C6 10.4145 5.6645 10.75 5.25 10.75H0.75C0.3355 10.75 0 10.4145 0 10C0 9.5855 0.3355 9.25 0.75 9.25H5.25ZM14.596 13.5352C14.3029 13.2422 13.8279 13.2422 13.535 13.5352C13.242 13.8281 13.242 14.3032 13.535 14.5956L16.01 17.0707C16.3029 17.3636 16.778 17.3636 17.0709 17.0707C17.3635 16.7776 17.3635 16.3032 17.0709 16.0101L14.596 13.5352ZM2.929 2.9292C3.222 2.6367 3.697 2.6367 3.99 2.9292L6.465 5.4042C6.758 5.6972 6.758 6.1717 6.465 6.4647C6.172 6.7577 5.697 6.7577 5.4045 6.4647L2.929 3.9902C2.6365 3.6972 2.6365 3.2222 2.929 2.9292Z"
+                fill="" />
+            </svg>
+            <span data-translatekey="actions"></span>
+          </button>
+          <button class="tab-link  clickme" data-tag="33">
+            <svg width="20" height="17" viewBox="0 0 20 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M4.26497 0.24464C4.55891 -0.0450884 5.03103 -0.0450884 5.32497 0.24464C5.61081 0.526548 5.62187 0.98426 5.34997 1.27964L2.84997 3.77964C2.7092 3.92302 2.51587 4.00252 2.31497 3.99964C2.11428 4.00136 1.92139 3.92204 1.77997 3.77964L0.719966 2.71964C0.57828 2.57967 0.498535 2.3888 0.498535 2.18964C0.498535 1.99048 0.57828 1.79961 0.719966 1.65964C0.859933 1.51795 1.0508 1.43821 1.24997 1.43821C1.44913 1.43821 1.64 1.51795 1.77997 1.65964L2.31497 2.19464L4.26497 0.24464ZM18.835 1.74964H8.16497C7.77454 1.77377 7.47718 2.10914 7.49997 2.49964C7.47718 2.89014 7.77454 3.22551 8.16497 3.24964H18.835C19.2254 3.22551 19.5227 2.89014 19.5 2.49964C19.5227 2.10914 19.2254 1.77377 18.835 1.74964ZM4.26497 6.74464C4.55891 6.45491 5.03103 6.45491 5.32497 6.74464C5.47 6.88124 5.55429 7.07024 5.55898 7.26942C5.56368 7.4686 5.4884 7.66136 5.34997 7.80464L2.84997 10.2796C2.7092 10.423 2.51587 10.5025 2.31497 10.4996C2.11428 10.5014 1.92139 10.422 1.77997 10.2796L0.719966 9.21964C0.57828 9.07967 0.498535 8.8888 0.498535 8.68964C0.498535 8.49048 0.57828 8.29961 0.719966 8.15964C0.859933 8.01795 1.0508 7.93821 1.24997 7.93821C1.44913 7.93821 1.64 8.01795 1.77997 8.15964L2.31497 8.69464L4.26497 6.74464ZM8.16497 8.24964H18.835C19.2254 8.27377 19.5227 8.60914 19.5 8.99964C19.5227 9.39014 19.2254 9.72551 18.835 9.74964H8.16497C7.77454 9.72551 7.47718 9.39014 7.49997 8.99964C7.47718 8.60914 7.77454 8.27377 8.16497 8.24964ZM18.835 14.7496H8.16497C7.77454 14.7738 7.47718 15.1091 7.49997 15.4996C7.47718 15.8901 7.77454 16.2255 8.16497 16.2496H18.835C19.2254 16.2255 19.5227 15.8901 19.5 15.4996C19.5227 15.1091 19.2254 14.7738 18.835 14.7496ZM4.26497 13.2446C4.55891 12.9549 5.03103 12.9549 5.32497 13.2446C5.61081 13.5265 5.62187 13.9843 5.34997 14.2796L2.84997 16.7796C2.7092 16.923 2.51587 17.0025 2.31497 16.9996C2.11428 17.0014 1.92139 16.922 1.77997 16.7796L0.719966 15.7196C0.57828 15.5797 0.498535 15.3888 0.498535 15.1896C0.498535 14.9905 0.57828 14.7996 0.719966 14.6596C0.859933 14.518 1.0508 14.4382 1.24997 14.4382C1.44913 14.4382 1.64 14.518 1.77997 14.6596L2.31497 15.1946L4.26497 13.2446Z"
+                fill="" />
+            </svg>
+            <span data-translatekey="checklist"></span>
+          </button>
+          <button class="tab-link  clickme" data-tag="34">
+            <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M14.7725 19.16C15.5065 18.119 16.0955 16.7805 16.4835 15.25H18.9295C18.008 16.963 16.5435 18.3375 14.7725 19.16ZM3.0705 15.25H5.5165C5.9045 16.7805 6.4935 18.119 7.2275 19.16C5.4565 18.3375 3.992 16.963 3.0705 15.25ZM7.2275 2.8395C6.4935 3.8805 5.9045 5.219 5.5165 6.75H3.0705C3.992 5.0365 5.4565 3.662 7.2275 2.8395ZM18.9295 6.75H16.4835C16.0955 5.219 15.5065 3.8805 14.7725 2.8395C16.5435 3.662 18.008 5.0365 18.9295 6.75ZM16.785 8.25H19.5665C19.8455 9.1175 20 10.0405 20 11C20 11.959 19.8455 12.882 19.5665 13.75H16.785C16.921 12.872 17 11.953 17 11C17 10.0465 16.921 9.128 16.785 8.25ZM11 2C12.4945 2 14.106 3.8275 14.935 6.75H7.065C7.894 3.8275 9.5055 2 11 2ZM2 11C2 10.0405 2.1545 9.1175 2.4335 8.25H5.215C5.079 9.128 5 10.0465 5 11C5 11.953 5.079 12.872 5.215 13.75H2.4335C2.1545 12.882 2 11.959 2 11ZM6.726 13.75C6.5815 12.896 6.5 11.9755 6.5 11C6.5 10.024 6.5815 9.104 6.726 8.25H15.274C15.4185 9.104 15.5 10.024 15.5 11C15.5 11.9755 15.4185 12.896 15.274 13.75H6.726ZM11 20C9.5055 20 7.894 18.172 7.065 15.25H14.935C14.106 18.172 12.4945 20 11 20ZM11 0.5C5.201 0.5 0.5 5.201 0.5 11C0.5 16.799 5.201 21.5 11 21.5C16.799 21.5 21.5 16.799 21.5 11C21.5 5.201 16.799 0.5 11 0.5Z"
+                fill="" />
+            </svg>
+            <span data-translatekey="tools"></span>
+          </button>
+          <button class="tab-link clickme" data-tag="35">
+            <span data-translatekey="downloadStep4"></span>
+            <img class="first" src=" ./images/icons/downloadGrey.svg" alt="downloadGrey" style="margin-left: 10px;" />
+            <img class="second" src=" ./images/icons/downloadGreyactive4.svg" alt="downloadGrey"
+              style="margin-left: 10px;" />
+          </button>
+        </div>
+        <div class="tab-maindata">
+
+          <div id="31" class="tabcontent tab-inner active">
+            <div class="textWrapper">
+              <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+              <p data-translatekey="step4question1"></p>
+            </div>
+            <div class="textWrapper">
+              <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+              <p data-translatekey="step4question2"></p>
+            </div>
+            <div class="textWrapper">
+              <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+              <p data-translatekey="step4question3"></p>
+            </div>
+            <div class="textWrapper">
+              <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+              <p data-translatekey="step4question4"></p>
+            </div>
+            <div class="textWrapper">
+              <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+              <p data-translatekey="step4question5"></p>
+            </div>
+            <div class="textWrapper">
+              <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+              <p data-translatekey="step4question6"></p>
+            </div>
+            <div class="textWrapper">
+              <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+              <p data-translatekey="step4question7"></p>
+            </div>
+            <div class="textWrapper">
+              <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+              <p data-translatekey="step4question8"></p>
+            </div>
+            <a id="step4questionpdf"
+              href="./pdf/English/Implementation Steps/Step 4 Implementation/STEP 4 -  GUIDING QUESTIONS.pdf"
+              class="download-link" target="_blank" data-translatekey="downloadthissection"></a>
+          </div>
+          <div id="32" class="tabcontent tab-inner hide">
+            <div class="action-wrap">
+              <div class="accordion">
+                <div class="step-accord-wrap ">
+                  <h6 class="title" data-translatekey="action1"></h6>
+                  <h6 class="para" data-translatekey="step4actions1p1"></h6>
+                </div>
+              </div>
+              <div class="panel active">
+
+                <p class="description" data-translatekey="step4actions1p2"></p>
+                <div class="dotWrap">
+                  <div class="greendot"></div>
+                  <p class="description">
+                    <text class="first" data-translatekey="step4actions1p3a"></text>
+                    <a href="./blog.html" data-translatekey="step4actions1p3b"></a>
+                  </p>
+                </div>
+                <div class="dotWrap">
+                  <div class="greendot"></div>
+                  <p class="description" data-translatekey="step4actions1p4"></p>
+                </div>
+                <!-- <p class="description" data-translatekey="step4actions1p5"></p> -->
+                <p class="description linkwrap toolaccordin" data-id="tool8" data-tag="34">
+                  <text class="first" data-translatekey="step4actions1p5a"></text>
+                  <a onclick="" data-translatekey="tool8"></a>.
+                </p>
+                <h6 class="title" data-translatekey="step4tool1p17"></h6>
+                <p class="description" data-translatekey="step4tool1p18"></p>
+                <br>
+                <div class="pointswrap">
+                  <p class="description" data-translatekey="step4tool1p19"></p>
+                  <p class="description" data-translatekey="step4tool1p21"></p>
+                  <p class="description" data-translatekey="step4tool1p22"></p>
+                  <p class="description" data-translatekey="step4tool1p23"></p>
+                  <p class="description" data-translatekey="step4tool1p24"></p>
+                  <p class="description" data-translatekey="step4tool1p25"></p>
+                  <p class="description" data-translatekey="step4tool1p26"></p>
+                  <p class="description" data-translatekey="step4tool1p27"></p>
+                </div>
+                <br>
+                <h6 class="title" data-translatekey="step4tool1p28"></h6>
+                <p class="description" data-translatekey="step4tool1p29"></p>
+                <br>
+                <h6 class="title" data-translatekey="step4tool1p30"></h6>
+                <p class="description" data-translatekey="step4tool1p31"></p>
+                <br>
+                <h6 class="title" data-translatekey="step4tool1p32"></h6>
+                <p class="description"><text data-translatekey="step4tool1p33"></text>
+                  <a id="Link21" target="_blank" href=""></a>.
+                  <text data-translatekey="step4tool1p34"></text>
+                  <a class="anchor" target="_blank" id="Link22" href=""></a>.
+                </p>
+              </div>
+            </div>
+            <div class="action-wrap">
+              <div class="accordion">
+                <div class="step-accord-wrap">
+                  <h6 class="title" data-translatekey="action2"></h6>
+                  <h6 class="para" data-translatekey="step4actions2p1"></h6>
+                </div>
+              </div>
+              <div class="panel">
+                <p class="description" data-translatekey="step4actions2p2"></p>
+                <h6 data-translatekey="step4actions2p3"></h6>
+                <p class="description" data-translatekey="step4actions2p4"></p>
+
+                <p class="description" data-translatekey="step4actions2p5"></p>
+                <p class="description" data-translatekey="step4actions2p6"></p>
+                <p class="description" data-translatekey="step4actions2p7"></p>
+                <div class="dotWrap">
+                  <div class="greendot"></div>
+                  <p class="description" data-translatekey="step4actions2p8"></p>
+                </div>
+                <div class="dotWrap">
+                  <div class="greendot"></div>
+                  <p class="description" data-translatekey="step4actions2p9"></p>
+                </div>
+                <div class="dotWrap">
+                  <div class="greendot"></div>
+                  <p class="description" data-translatekey="step4actions2p10"></p>
+                </div>
+                <div class="dotWrap">
+                  <div class="greendot"></div>
+                  <p class="description" data-translatekey="step4actions2p11"></p>
+                </div>
+                <div class="dotWrap">
+                  <div class="greendot"></div>
+                  <p class="description" data-translatekey="step4actions2p12"></p>
+                </div>
+                <!-- <p class="description" data-translatekey="step4actions2p13"></p> -->
+                <p class="description linkwrap toolaccordin" data-id="tool9" data-tag="34">
+                  <span class="first" data-translatekey="step4actions2p13"></span>
+                  <span><a onclick="" data-translatekey="tool9"></a> ).</span>
+                </p>
+                <p class="description" data-translatekey="step4actions2p14"></p>
+                <p class="description" data-translatekey="step4actions2p15"></p>
+                <p class="description" data-translatekey="step4actions2p16"></p>
+                <p class="description" data-translatekey="step4actions2p17"></p>
+              </div>
+
+            </div>
+            <div class="action-wrap">
+              <div class="accordion">
+                <div class="step-accord-wrap">
+                  <h6 class="title" data-translatekey="action3"></h6>
+                  <h6 class="para" data-translatekey="step4actions3p1"></h6>
+                </div>
+              </div>
+              <div class="panel">
+                <p class="description" data-translatekey="step4actions3p2"></p>
+                <p class="description" data-translatekey="step4actions3p3"></p>
+                <div class="dotWrap">
+                  <div class="greendot"></div>
+                  <p class="description" data-translatekey="step4actions3p4"></p>
+                </div>
+                <div class="dotWrap">
+                  <div class="greendot"></div>
+                  <p class="description" data-translatekey="step4actions3p5"></p>
+                </div>
+                <div class="dotWrap">
+                  <div class="greendot"></div>
+                  <p class="description" data-translatekey="step4actions3p6"></p>
+                </div>
+                <div class="dotWrap">
+                  <div class="greendot"></div>
+                  <p class="description" data-translatekey="step4actions3p7"></p>
+                </div>
+                <div class="dotWrap">
+                  <div class="greendot"></div>
+                  <p class="description" data-translatekey="step4actions3p8"></p>
+                </div>
+                <p class="description" data-translatekey="step4actions3p9"></p>
+                <p class="description"><span class="marker">›</span> <text data-translatekey="step4actions3p10"></text>
+                </p>
+                <p class="description"><span class="marker">›</span> <text data-translatekey="step4actions3p11"></text>
+                </p>
+                <p class="description"><span class="marker">›</span> <text data-translatekey="step4actions3p12"></text>
+                  <a target="_blank" href="https://jointsdgfund.org">https://jointsdgfund.org.)</a>
+                </p>
+                <p class="description"><span class="marker">›</span> <text data-translatekey="step4actions3p13"></text>
+                </p>
+                <p class="description"><span class="marker">›</span> <text data-translatekey="step4actions3p14"></text>
+                </p>
+                <p class="description" data-translatekey="step4actions3p15"></p>
+              </div>
+            </div>
+            <!-- <div class="action-wrap">
+              <div class="accordion">
+                <div class="step-accord-wrap">
+                  <h6 class="title" data-translatekey="action4"></h6>
+                  <h6 class="para" data-translatekey="step4actions4p1"></h6>
+                </div>
+              </div>
+              <div class="panel">
+                <p class="description" data-translatekey="step4actions4p2"></p>
+                <p class="description" data-translatekey="step4actions4p3"></p>
+
+                <p class="description" data-translatekey="step4actions4p4"></p>
+                <p class="description" data-translatekey="step4actions4p5"></p>
+              </div>
+            </div> -->
+            <a id="step4actionpdf" target="_blank"
+              href="./pdf/English/Implementation Steps/Step 4 Implementation/STEP 4 - ACTIONS.pdf" class="download-link"
+              data-translatekey="downloadthissection"></a>
+          </div>
+          <div id="33" class="tabcontent tab-inner hide">
+            <div class="checklist-wrap">
+              <div class="tab">
+                <i class="fa-solid fa-check"></i>
+                <p data-translatekey="step4checkboxp1"></p>
+              </div>
+              <div class="tab">
+                <i class="fa-solid fa-check"></i>
+                <p data-translatekey="step4checkboxp2"></p>
+              </div>
+              <div class="tab">
+                <i class="fa-solid fa-check"></i>
+                <p data-translatekey="step4checkboxp3"></p>
+              </div>
+              <div class="tab">
+                <i class="fa-solid fa-check"></i>
+                <p data-translatekey="step4checkboxp4"></p>
+              </div>
+              <div class="tab">
+                <i class="fa-solid fa-check"></i>
+                <p data-translatekey="step4checkboxp5"></p>
+              </div>
+              <div class="tab">
+                <i class="fa-solid fa-check"></i>
+                <p data-translatekey="step4checkboxp6"></p>
+              </div>
+              <div class="tab">
+                <i class="fa-solid fa-check"></i>
+                <p data-translatekey="step4checkboxp7"></p>
+              </div>
+              <div class="tab">
+                <i class="fa-solid fa-check"></i>
+                <p data-translatekey="step4checkboxp8"></p>
+              </div>
+            </div>
+            <a id="step4checklistpdf" target="_blank"
+              href="./pdf/English/Implementation Steps/Step 4 Implementation/STEP 4 - CHECKLIST.pdf"
+              class="download-link" data-translatekey="downloadthissection"></a>
+          </div>
+          <div id="34" class="tabcontent tab-inner hide">
+            <div class="tool-wrap">
+              <div class="accordion accoractive tool8">
+                <div class="accord-tab">
+                  <div class="leftside">
+                    <h4 data-translatekey="tool8"></h4>
+                    <div class="toolsec-divider"></div>
+                    <p data-translatekey="step4tool1p1"></p>
+                  </div>
+                </div>
+              </div>
+              <div class="panel tool8">
+                <div class="accord-data">
+                  <br>
+                  <h6 class="title" data-translatekey="step4tool1p2"></h6>
+                  <div class="card">
+                    <p data-translatekey="step4tool1p3"></p>
+                  </div>
+                  <div class="card">
+                    <p data-translatekey="step4tool1p4"></p>
+                  </div>
+                  <div class="card">
+                    <p data-translatekey="step4tool1p5"></p>
+                  </div>
+                  <div class="card">
+                    <p data-translatekey="step4tool1p6"></p>
+                  </div>
+                  <div class="card">
+                    <p data-translatekey="step4tool1p7"></p>
+                  </div>
+                  <div class="card">
+                    <p data-translatekey="step4tool1p8"></p>
+                  </div>
+                  <div class="card">
+                    <p data-translatekey="step4tool1p9"></p>
+                  </div>
+                  <div class="card">
+                    <p data-translatekey="step4tool1p10"></p>
+                  </div>
+                  <div class="card">
+                    <p data-translatekey="step4tool1p11"></p>
+                  </div>
+                  <div class="card">
+                    <p data-translatekey="step4tool1p12"></p>
+                  </div>
+                  <div class="card">
+                    <p data-translatekey="step4tool1p13"></p>
+                  </div>
+                  <div class="card">
+                    <p data-translatekey="step4tool1p14"></p>
+                  </div>
+                  <div class="card">
+                    <p data-translatekey="step4tool1p15"></p>
+                  </div>
+                  <div class="card">
+                    <p data-translatekey="step4tool1p16"></p>
+                  </div>
+
+                </div>
+              </div>
+
+              <div class="accordion accoractive tool9">
+                <div class="accord-tab">
+                  <div class="leftside">
+                    <h4 data-translatekey="tool9"></h4>
+                    <div class="toolsec-divider"></div>
+                    <p data-translatekey="step4tool2p1"></p>
+                  </div>
+                </div>
+              </div>
+              <div class="panel tool9">
+                <div class="accord-data">
+                  <div class="card">
+                    <p class="description" data-translatekey="step4tool2p2"></p>
+                    <br>
+                    <p class="description" data-translatekey="step4tool2p3"></p>
+                    <br>
+                    <p class="description" data-translatekey="step4tool2p4"></p>
+                    <br>
+                    <p class="description" data-translatekey="step4tool2p5"></p>
+                    <br>
+                    <p class="description" data-translatekey="step4tool2p6"></p>
+                    <br>
+                    <p class="description" data-translatekey="step4tool2p7"></p>
+                    <br>
+                    <p class="description" data-translatekey="step4tool2p8"></p>
+                    <br>
+                    <p class="description" data-translatekey="step4tool2p9"></p>
+                    <br>
+                    <p class="description" data-translatekey="step4tool2p10"></p>
+                    <br>
+                    <p class="description" data-translatekey="step4tool2p11"></p>
+                  </div>
+
+                </div>
+              </div>
+
+            </div>
+            <a id="step4toolpdf" target="_blank"
+              href="./pdf/English/Implementation Steps/Step 4 Implementation/STEP 4 - TOOLS.pdf" class="download-link"
+              data-translatekey="downloadthissection"></a>
+          </div>
+          <div id="35" class="tabcontent tab-inner hide">
+            <!-- <p>Download Step Content</p> -->
+            <a id="step4pdf" target="_blank"
+              href="./pdf/English/Implementation Steps/Step 4 Implementation/STEP 4 -  IMPLEMENTATION.pdf"
+              class="download-link" data-translatekey="downloadstepcontent"></a>
+          </div>
+        </div>
+      </div>
+      <div class="type-inner-wrap tab-inner4 hide" id="fifthContent">
+        <div class="inner-tabs">
+          <button class="tab-link clickme active" data-tag="36">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M22 17.075V4.75004C21.9993 4.44847 21.8181 4.17664 21.54 4.06004C21.4487 4.01958 21.3498 3.99913 21.25 4.00004H2.75C2.59987 3.99852 2.45302 4.04397 2.33 4.13004C2.12337 4.26863 1.99957 4.50123 2 4.75004V17.25C2 17.6643 2.33579 18 2.75 18H5V21.23C4.99987 21.3245 5.01857 21.4179 5.055 21.505C5.09462 21.5961 5.15054 21.6791 5.22 21.75C5.29049 21.82 5.37363 21.876 5.465 21.915C5.641 21.9884 5.839 21.9884 6.015 21.915C6.10706 21.8773 6.19043 21.8212 6.26 21.75L10.035 18H21.27C21.6764 17.9892 22.0001 17.6566 22 17.25C22.0077 17.192 22.0077 17.1331 22 17.075ZM9.415 16.5L7.915 18L6.5 19.42V16.5H3.5V5.50001H20.5V16.5H9.415ZM7.025 11.0001C7.025 10.4478 7.47272 10.0001 8.025 10.0001C8.57729 10.0001 9.025 10.4478 9.025 11.0001C9.025 11.5524 8.57729 12.0001 8.025 12.0001C7.47272 12.0001 7.025 11.5524 7.025 11.0001ZM17.025 11.0001C17.025 11.5524 16.5773 12.0001 16.025 12.0001C15.4727 12.0001 15.025 11.5524 15.025 11.0001C15.025 10.4478 15.4727 10.0001 16.025 10.0001C16.5773 10.0001 17.025 10.4478 17.025 11.0001ZM11.025 11.0001C11.025 10.4478 11.4727 10.0001 12.025 10.0001C12.5773 10.0001 13.025 10.4478 13.025 11.0001C13.025 11.5524 12.5773 12.0001 12.025 12.0001C11.4727 12.0001 11.025 11.5524 11.025 11.0001Z"
+                fill="" />
+            </svg>
+            <span data-translatekey="guidingquestion"></span>
+          </button>
+          <button class="tab-link clickme" data-tag="37">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M9.25 0.75C9.25 0.3355 9.5855 0 10 0C10.4145 0 10.75 0.3355 10.75 0.75V5.25C10.75 5.6645 10.4145 6 10 6C9.5855 6 9.25 5.6645 9.25 5.25V0.75ZM9.25 14.75C9.25 14.3355 9.5855 14 10 14C10.4145 14 10.75 14.3355 10.75 14.75V19.25C10.75 19.6645 10.4145 20 10 20C9.5855 20 9.25 19.6645 9.25 19.25V14.75ZM14.596 6.46485L17.0709 3.98985C17.3635 3.69685 17.3635 3.22235 17.0709 2.92935C16.778 2.63635 16.3029 2.63635 16.01 2.92935L13.535 5.40385C13.242 5.69685 13.242 6.17185 13.535 6.46485C13.8279 6.75785 14.3029 6.75785 14.596 6.46485ZM2.9293 16.0101L5.4043 13.5352C5.6968 13.2422 6.1718 13.2422 6.4648 13.5352C6.7578 13.8281 6.7578 14.3032 6.4648 14.5956L3.9898 17.0707C3.6968 17.3636 3.2223 17.3636 2.9293 17.0707C2.6363 16.7776 2.6363 16.3032 2.9293 16.0101ZM19.25 9.25H14.75C14.3355 9.25 14 9.5855 14 10C14 10.4145 14.3355 10.75 14.75 10.75H19.25C19.6645 10.75 20 10.4145 20 10C20 9.5855 19.6645 9.25 19.25 9.25ZM5.25 9.25C5.6645 9.25 6 9.5855 6 10C6 10.4145 5.6645 10.75 5.25 10.75H0.75C0.3355 10.75 0 10.4145 0 10C0 9.5855 0.3355 9.25 0.75 9.25H5.25ZM14.596 13.5352C14.3029 13.2422 13.8279 13.2422 13.535 13.5352C13.242 13.8281 13.242 14.3032 13.535 14.5956L16.01 17.0707C16.3029 17.3636 16.778 17.3636 17.0709 17.0707C17.3635 16.7776 17.3635 16.3032 17.0709 16.0101L14.596 13.5352ZM2.929 2.9292C3.222 2.6367 3.697 2.6367 3.99 2.9292L6.465 5.4042C6.758 5.6972 6.758 6.1717 6.465 6.4647C6.172 6.7577 5.697 6.7577 5.4045 6.4647L2.929 3.9902C2.6365 3.6972 2.6365 3.2222 2.929 2.9292Z"
+                fill="" />
+            </svg>
+            <span data-translatekey="actions"></span>
+          </button>
+          <button class="tab-link  clickme" data-tag="38">
+            <svg width="20" height="17" viewBox="0 0 20 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M4.26497 0.24464C4.55891 -0.0450884 5.03103 -0.0450884 5.32497 0.24464C5.61081 0.526548 5.62187 0.98426 5.34997 1.27964L2.84997 3.77964C2.7092 3.92302 2.51587 4.00252 2.31497 3.99964C2.11428 4.00136 1.92139 3.92204 1.77997 3.77964L0.719966 2.71964C0.57828 2.57967 0.498535 2.3888 0.498535 2.18964C0.498535 1.99048 0.57828 1.79961 0.719966 1.65964C0.859933 1.51795 1.0508 1.43821 1.24997 1.43821C1.44913 1.43821 1.64 1.51795 1.77997 1.65964L2.31497 2.19464L4.26497 0.24464ZM18.835 1.74964H8.16497C7.77454 1.77377 7.47718 2.10914 7.49997 2.49964C7.47718 2.89014 7.77454 3.22551 8.16497 3.24964H18.835C19.2254 3.22551 19.5227 2.89014 19.5 2.49964C19.5227 2.10914 19.2254 1.77377 18.835 1.74964ZM4.26497 6.74464C4.55891 6.45491 5.03103 6.45491 5.32497 6.74464C5.47 6.88124 5.55429 7.07024 5.55898 7.26942C5.56368 7.4686 5.4884 7.66136 5.34997 7.80464L2.84997 10.2796C2.7092 10.423 2.51587 10.5025 2.31497 10.4996C2.11428 10.5014 1.92139 10.422 1.77997 10.2796L0.719966 9.21964C0.57828 9.07967 0.498535 8.8888 0.498535 8.68964C0.498535 8.49048 0.57828 8.29961 0.719966 8.15964C0.859933 8.01795 1.0508 7.93821 1.24997 7.93821C1.44913 7.93821 1.64 8.01795 1.77997 8.15964L2.31497 8.69464L4.26497 6.74464ZM8.16497 8.24964H18.835C19.2254 8.27377 19.5227 8.60914 19.5 8.99964C19.5227 9.39014 19.2254 9.72551 18.835 9.74964H8.16497C7.77454 9.72551 7.47718 9.39014 7.49997 8.99964C7.47718 8.60914 7.77454 8.27377 8.16497 8.24964ZM18.835 14.7496H8.16497C7.77454 14.7738 7.47718 15.1091 7.49997 15.4996C7.47718 15.8901 7.77454 16.2255 8.16497 16.2496H18.835C19.2254 16.2255 19.5227 15.8901 19.5 15.4996C19.5227 15.1091 19.2254 14.7738 18.835 14.7496ZM4.26497 13.2446C4.55891 12.9549 5.03103 12.9549 5.32497 13.2446C5.61081 13.5265 5.62187 13.9843 5.34997 14.2796L2.84997 16.7796C2.7092 16.923 2.51587 17.0025 2.31497 16.9996C2.11428 17.0014 1.92139 16.922 1.77997 16.7796L0.719966 15.7196C0.57828 15.5797 0.498535 15.3888 0.498535 15.1896C0.498535 14.9905 0.57828 14.7996 0.719966 14.6596C0.859933 14.518 1.0508 14.4382 1.24997 14.4382C1.44913 14.4382 1.64 14.518 1.77997 14.6596L2.31497 15.1946L4.26497 13.2446Z"
+                fill="" />
+            </svg>
+            <span data-translatekey="checklist"></span>
+          </button>
+          <button class="tab-link  clickme" data-tag="39">
+            <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M14.7725 19.16C15.5065 18.119 16.0955 16.7805 16.4835 15.25H18.9295C18.008 16.963 16.5435 18.3375 14.7725 19.16ZM3.0705 15.25H5.5165C5.9045 16.7805 6.4935 18.119 7.2275 19.16C5.4565 18.3375 3.992 16.963 3.0705 15.25ZM7.2275 2.8395C6.4935 3.8805 5.9045 5.219 5.5165 6.75H3.0705C3.992 5.0365 5.4565 3.662 7.2275 2.8395ZM18.9295 6.75H16.4835C16.0955 5.219 15.5065 3.8805 14.7725 2.8395C16.5435 3.662 18.008 5.0365 18.9295 6.75ZM16.785 8.25H19.5665C19.8455 9.1175 20 10.0405 20 11C20 11.959 19.8455 12.882 19.5665 13.75H16.785C16.921 12.872 17 11.953 17 11C17 10.0465 16.921 9.128 16.785 8.25ZM11 2C12.4945 2 14.106 3.8275 14.935 6.75H7.065C7.894 3.8275 9.5055 2 11 2ZM2 11C2 10.0405 2.1545 9.1175 2.4335 8.25H5.215C5.079 9.128 5 10.0465 5 11C5 11.953 5.079 12.872 5.215 13.75H2.4335C2.1545 12.882 2 11.959 2 11ZM6.726 13.75C6.5815 12.896 6.5 11.9755 6.5 11C6.5 10.024 6.5815 9.104 6.726 8.25H15.274C15.4185 9.104 15.5 10.024 15.5 11C15.5 11.9755 15.4185 12.896 15.274 13.75H6.726ZM11 20C9.5055 20 7.894 18.172 7.065 15.25H14.935C14.106 18.172 12.4945 20 11 20ZM11 0.5C5.201 0.5 0.5 5.201 0.5 11C0.5 16.799 5.201 21.5 11 21.5C16.799 21.5 21.5 16.799 21.5 11C21.5 5.201 16.799 0.5 11 0.5Z"
+                fill="" />
+            </svg>
+            <span data-translatekey="tools"></span>
+          </button>
+          <button class="tab-link clickme" data-tag="40">
+            <span data-translatekey="downloadStep5"></span>
+            <img class="first" src=" ./images/icons/downloadGrey.svg" alt="downloadGrey" style="margin-left: 10px;" />
+            <img class="second" src=" ./images/icons/downloadGreyactive5.svg" alt="downloadGrey"
+              style="margin-left: 10px;" />
+          </button>
+        </div>
+        <div class="tab-maindata">
+
+          <div id="36" class="tabcontent tab-inner active">
+            <div class="textWrapper">
+              <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+              <p data-translatekey="step5question1"></p>
+            </div>
+            <div class="textWrapper">
+              <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+              <p data-translatekey="step5question2"></p>
+            </div>
+            <div class="textWrapper">
+              <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+              <p data-translatekey="step5question3"></p>
+            </div>
+            <div class="textWrapper">
+              <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+              <!-- <p data-translatekey="step5question4"></p> -->
+              <p class="linkwrap">
+                <span class="first" data-translatekey="step5question4a"></span>
+                <span><a onclick="" class="clickme4" data-tag="thirdContent"
+                    data-translatekey="steppagestp3"></a></span>
+                <span data-translatekey="step5question4b"></span>
+              </p>
+            </div>
+            <div class="textWrapper">
+              <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+              <p data-translatekey="step5question5"></p>
+            </div>
+            <div class="textWrapper">
+              <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+              <p data-translatekey="step5question6"></p>
+            </div>
+            <div class="textWrapper">
+              <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+              <p data-translatekey="step5question7"></p>
+            </div>
+            <div class="textWrapper">
+              <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+              <p data-translatekey="step5question8"></p>
+            </div>
+            <div class="textWrapper">
+              <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+              <p data-translatekey="step5question9"></p>
+            </div>
+            <a id="step5questionpdf" target="_blank"
+              href="./pdf/English/Implementation Steps/Step 5 Monitoring, Evaluation, Review/STEP 5 - GUIDING QUESTIONS.pdf"
+              class="download-link" data-translatekey="downloadthissection"></a>
+          </div>
+          <div id="37" class="tabcontent tab-inner hide">
+            <div class="action-wrap">
+              <div class="accordion">
+                <div class="step-accord-wrap ">
+                  <h6 class="title" data-translatekey="action1"></h6>
+                  <h6 class="para" data-translatekey="step5actions1p1"></h6>
+                </div>
+              </div>
+              <div class="panel active">
+                <!-- <p class="description" data-translatekey="step5actions1p2"></p> -->
+                <p class="description linkwrap">
+                  <text class="first" data-translatekey="step5actions1p2a"></text>
+                  <span><a onclick="" class="clickme4" data-tag="sixthContent" data-translatekey="step6"></a></span>
+                  <text data-translatekey="step5actions1p2b"></text>
+                </p>
+                <p class="description" data-translatekey="step5actions1p2missing"></p>
+
+                <p class="description" data-translatekey="step5actions1p3"></p>
+                <div class="dotWrap">
+                  <div class="greendot"></div>
+                  <p class="description" data-translatekey="step5actions1p4"></p>
+                </div>
+                <div class="dotWrap">
+                  <div class="greendot"></div>
+                  <p class="description" data-translatekey="step5actions1p5"></p>
+                </div>
+                <div class="dotWrap">
+                  <div class="greendot"></div>
+                  <p class="description" data-translatekey="step5actions1p6"></p>
+                </div>
+                <p class="description" data-translatekey="step5actions1p7"></p>
+                <p class="description" data-translatekey="step5actions1p8"></p>
+                <p class="description" data-translatekey="step5actions1p9"></p>
+                <p class="description" data-translatekey="step5actions1p10"></p>
+                <p class="description" data-translatekey="step5actions1p11"></p>
+                <div class="dotWrap">
+                  <div class="greendot"></div>
+                  <p class="description" data-translatekey="step5actions1p12"></p>
+                </div>
+                <div class="dotWrap">
+                  <div class="greendot"></div>
+                  <p class="description" data-translatekey="step5actions1p13"></p>
+                </div>
+                <p class="description" data-translatekey="step5actions1p14"></p>
+                <p class="description" data-translatekey="step5actions1p15"></p>
+                <div class="dotWrap">
+                  <div class="greendot"></div>
+                  <p class="description" data-translatekey="step5actions1p16"></p>
+                </div>
+                <div class="dotWrap">
+                  <div class="greendot"></div>
+                  <p class="description" data-translatekey="step5actions1p17"></p>
+                </div>
+                <div class="dotWrap">
+                  <div class="greendot"></div>
+                  <p class="description" data-translatekey="step5actions1p18"></p>
+                </div>
+              </div>
+            </div>
+            <div class="action-wrap">
+              <div class="accordion">
+                <div class="step-accord-wrap">
+                  <h6 class="title" data-translatekey="action2"></h6>
+                  <h6 class="para" data-translatekey="step5actions2p1"></h6>
+                </div>
+              </div>
+              <div class="panel">
+                <p class="description" data-translatekey="step5actions2pmissing"></p>
+                <p class="description" data-translatekey="step5actions2p2"></p>
+                <p class="description"><span class="marker">›</span> <text data-translatekey="step5actions2p3"></text>
+                </p>
+                <p class="description"><span class="marker">›</span> <text data-translatekey="step5actions2p4"></text>
+                </p>
+                <p class="description"><span class="marker">›</span> <text data-translatekey="step5actions2p5"></text>
+                  (<a id="Link23" target="_blank"
+                    href="https://www.un.org/development/desa/pd/data/global-migration-database">
+                    www.un.org/development/desa/pd/data/global-migration-database
+                  </a>)
+                </p>
+                <p class="description"><span class="marker">›</span> <text data-translatekey="step5actions2p6"></text>
+                </p>
+
+                <p class="description" data-translatekey="step5actions2p7"></p>
+
+                <p class="description" data-translatekey="step5actions2p8"></p>
+                <p class="description" data-translatekey="step5actions2p9"></p>
+                <p class="description" data-translatekey="step5actions2p10"></p>
+
+                <p class="description">
+                  <span class="marker">›</span>
+                  <text data-translatekey="step5actions2p11"></text>(
+                  <a id="Link24" target="_blank" href=""></a>)
+                </p>
+                <p class="description">
+                  <span class="marker">›</span> <text data-translatekey="step5actions2p12"></text>
+                  (<a id="Link25" target="_blank" href=""></a>)
+                </p>
+                <p class="description">
+                  <span class="marker">›</span> <text data-translatekey="step5actions2p13"></text>
+                  (<a id="Link26" target="_blank" href=""></a>)
+                </p>
+                <p class="description">
+                  <span class="marker">›</span> <text data-translatekey="step5actions2p14"></text>
+                  (<a id="Link27" target="_blank" href=""></a>)
+                </p>
+                <p class="description">
+                  <span class="marker">›</span> <text data-translatekey="step5actions2p15"></text>
+                </p>
+                <p class="description">
+                  <span class="marker">›</span> <text data-translatekey="step5actions2p16"></text>
+                </p>
+                <p class="description">
+                  <span class="marker">›</span> <text data-translatekey="step5actions2p16missingone"></text>
+                  <a id="Link50" target="_blank"
+                    href="https://migrationnetwork.un.org/hub">(https://migrationnetwork.un.org/hub)</a>
+                </p>
+                <p class="description" data-translatekey="step5actions2p17"></p>
+                <p class="description" data-translatekey="step5actions2p18"></p>
+                <p class="description" data-translatekey="step5actions2p19"></p>
+                <div class="dotWrap">
+                  <div class="greendot"></div>
+                  <p class="description linkwrap">
+                    <text class="first" data-translatekey="step5actions2p20a"></text>
+                    <span><a class="clickme4" data-id="29" data-tag="thirdContent" onclick=""
+                        data-translatekey="tool5"></a></span>
+                    <text data-translatekey="step5actions2p20b"></text>
+                  </p>
+                </div>
+                <div class="dotWrap">
+                  <div class="greendot"></div>
+                  <p class="description" data-translatekey="step5actions2p21"></p>
+                </div>
+                <p class="description" data-translatekey="step5actions2p22"></p>
+                <p class="description linkwrap">
+                  <text class="first" data-translatekey="step5actions2p23a"></text>
+                  <span><a class="clickme4" data-id="29" data-tag="thirdContent" onclick=""
+                      data-translatekey="tool5"></a></span>
+                  <text data-translatekey="step5actions2p23b"></text>
+                  <span><a class="clickme4" onclick="" data-tag="thirdContent"
+                      data-translatekey="step5actions2p23c"></a></span>
+                </p>
+
+                <p class="description" data-translatekey="step5actions2p24"></p>
+                <h6 class="title" data-translatekey="step5actions2p25"></h6>
+                <p class="description" data-translatekey="step5actions2p26"></p>
+                <p class="description"> <text data-translatekey="step5actions2p27"></text>
+                  <a id="Link28" target="_blank" href=""></a>.
+                </p>
+                <p class="description" data-translatekey="step5actions2p28"></p>
+                <p class="description" data-translatekey="step5actions2p29"></p>
+                <div class="dotWrap">
+                  <div class="greendot"></div>
+                  <p class="description" data-translatekey="step5actions2p30"></p>
+                </div>
+                <div class="dotWrap">
+                  <div class="greendot"></div>
+                  <p class="description" data-translatekey="step5actions2p31"></p>
+                </div>
+                <p class="description" data-translatekey="step5actions2p32"></p>
+                <p class="description" data-translatekey="step5actions2p33"></p>
+                <h6 class="title" data-translatekey="step5actions2p34"></h6>
+                <p class="description linkwrap">
+                  <text class="first" data-translatekey="step5actions2p35a"></text>
+                  <span><a onclick="" class="toolaccordin" data-id="tool10" data-tag="39"
+                      data-translatekey="tool10"></a></span>
+                  <text data-translatekey="and"></text>
+                  <span><a onclick="" class="toolaccordin" data-id="tool11" data-tag="39"
+                      data-translatekey="tool11"></a></span>
+                  <text data-translatekey="step5actions2p35b"></text>
+                </p>
+                <h6 class="title" data-translatekey="step5actions2p36"></h6>
+                <div class="flex">
+                  <div class="leftside">
+                    <div class="grid">
+                      <p data-translatekey="step5actions2p37"></p>
+                    </div>
+                    <div class="grid">
+                      <p data-translatekey="step5actions2p38"></p>
+                    </div>
+                    <div class="grid">
+                      <p data-translatekey="step5actions2p39"></p>
+                    </div>
+                    <div class="grid">
+                      <p data-translatekey="step5actions2p40"></p>
+                    </div>
+                    <div class="grid">
+                      <p data-translatekey="step5actions2p41"></p>
+                    </div>
+                  </div>
+                  <div class="rightside">
+                    <div class="grid">
+                      <p data-translatekey="step5actions2p42"></p>
+                    </div>
+                    <div class="grid">
+                      <p data-translatekey="step5actions2p43"></p>
+                    </div>
+                    <div class="grid">
+                      <p data-translatekey="step5actions2p44"></p>
+                    </div>
+                    <div class="grid">
+                      <p data-translatekey="step5actions2p45"></p>
+                    </div>
+                    <div class="grid">
+                      <p data-translatekey="step5actions2p46"></p>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+            <div class="action-wrap">
+              <div class="accordion">
+                <div class="step-accord-wrap">
+                  <h6 class="title" data-translatekey="action3"></h6>
+                  <h6 class="para" data-translatekey="step5actions3p1"></h6>
+                </div>
+              </div>
+              <div class="panel">
+                <p class="description" data-translatekey="step5actions3p2"></p>
+                <h6 class="title" data-translatekey="step5actions3p3"></h6>
+                <div class="dotWrap">
+                  <div class="greendot"></div>
+                  <p class="description" data-translatekey="step5actions3p4"></p>
+                </div>
+                <div class="dotWrap">
+                  <div class="greendot"></div>
+                  <p class="description" data-translatekey="step5actions3p5"></p>
+                </div>
+                <p class="description" data-translatekey="step5actions3p6"></p>
+                <p class="description" data-translatekey="step5actions3p7"></p>
+                <p class="description" data-translatekey="step5actions3p8"></p>
+                <div class="dotWrap">
+                  <div class="greendot"></div>
+                  <p class="description" data-translatekey="step5actions3p9"></p>
+                </div>
+              </div>
+            </div>
+
+            <a id="step5actionpdf" target="_blank"
+              href="./pdf/English/Implementation Steps/Step 5 Monitoring, Evaluation, Review/STEP 5 - ACTIONS.pdf"
+              class="download-link" data-translatekey="downloadthissection"></a>
+          </div>
+          <div id="38" class="tabcontent tab-inner hide">
+            <div class="checklist-wrap">
+              <div class="tab">
+                <i class="fa-solid fa-check"></i>
+                <p data-translatekey="step5checkboxp2"></p>
+              </div>
+              <div class="tab">
+                <i class="fa-solid fa-check"></i>
+                <p data-translatekey="step5checkboxp3"></p>
+              </div>
+              <div class="tab">
+                <i class="fa-solid fa-check"></i>
+                <p data-translatekey="step5checkboxp4"></p>
+              </div>
+              <div class="tab">
+                <i class="fa-solid fa-check"></i>
+                <p data-translatekey="step5checkboxp5"></p>
+              </div>
+              <div class="tab">
+                <i class="fa-solid fa-check"></i>
+                <p data-translatekey="step5checkboxp6"></p>
+              </div>
+              <div class="tab">
+                <i class="fa-solid fa-check"></i>
+                <p data-translatekey="step5checkboxp7"></p>
+              </div>
+              <div class="tab">
+                <i class="fa-solid fa-check"></i>
+                <p data-translatekey="step5checkboxp8"></p>
+              </div>
+              <div class="tab">
+                <i class="fa-solid fa-check"></i>
+                <p data-translatekey="step5checkboxp9"></p>
+              </div>
+              <div class="tab">
+                <i class="fa-solid fa-check"></i>
+                <p data-translatekey="step5checkboxp10"></p>
+              </div>
+              <div class="tab">
+                <i class="fa-solid fa-check"></i>
+                <p data-translatekey="step5checkboxp11"></p>
+              </div>
+            </div>
+            <a id="step5checklistpdf" target="_blank"
+              href="./pdf/English/Implementation Steps/Step 5 Monitoring, Evaluation, Review/STEP 5 - CHECKLIST.pdf"
+              class="download-link" data-translatekey="downloadthissection"></a>
+          </div>
+          <div id="39" class="tabcontent tab-inner hide">
+            <div class="tool-wrap">
+              <div class="accordion accoractive tool10">
+                <div class="accord-tab">
+                  <div class="leftside">
+                    <h4 data-translatekey="tool10"></h4>
+                    <div class="toolsec-divider"></div>
+                    <p data-translatekey="step5tool1p1"></p>
+                  </div>
+                </div>
+              </div>
+              <div class="panel tool10">
+                <div class="accord-data">
+                  <div class="card">
+                    <p class="para" data-translatekey="step5tool1p2"></p>
+                    <p class="para" data-translatekey="step5tool1p3"></p>
+                    <p class="para" data-translatekey="step5tool1p4"></p>
+                    <p class="para" data-translatekey="step5tool1p5"></p>
+                    <p class="para" data-translatekey="step5tool1p6"></p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion accoractive tool11">
+                <div class="accord-tab">
+                  <div class="leftside">
+                    <h4 data-translatekey="tool11"></h4>
+                    <div class="toolsec-divider"></div>
+                    <p data-translatekey="step5tool2p1"></p>
+                  </div>
+                </div>
+              </div>
+              <div class="panel tool11">
+                <div class="accord-data">
+                  <div class="card">
+                    <p class="para" data-translatekey="step5tool2p2"></p>
+                    <p class="para" data-translatekey="step5tool2p3"></p>
+                    <p class="para" data-translatekey="step5tool2p4"></p>
+                    <p class="para" data-translatekey="step5tool2p5"></p>
+                    <p class="para" data-translatekey="step5tool2p6"></p>
+                    <p class="para">
+                      <text data-translatekey="step5tool2p7a"></text>
+                      <a target="_blank" href="https://ureport.in/">https://ureport.in</a>
+                      <text data-translatekey="step5tool2p7b"></text>
+                    </p>
+                    <p class="para" data-translatekey="step5tool2p8"></p>
+                    <p class="para" data-translatekey="step5tool2p9"></p>
+                    <p class="para" data-translatekey="step5tool2p10"></p>
+                    <p class="para" data-translatekey="step5tool2p11"></p>
+                    <p class="para" data-translatekey="step5tool2p12"></p>
+                    <p class="para" data-translatekey="step5tool2p13"></p>
+                    <p class="para" data-translatekey="step5tool2p14"></p>
+                    <p class="para" data-translatekey="step5tool2p15"></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <a id="step5toolpdf" target="_blank"
+              href="./pdf/English/Implementation Steps/Step 5 Monitoring, Evaluation, Review/STEP 5 - TOOLS.pdf"
+              class="download-link" data-translatekey="downloadthissection"></a>
+          </div>
+          <div id="40" class="tabcontent tab-inner hide">
+            <!-- <p>Download Step Content</p> -->
+            <a id="step5pdf" target="_blank"
+              href="./pdf/English/Implementation Steps/Step 5 Monitoring, Evaluation, Review/STEP 5 - MONITORING.pdf"
+              class="download-link" data-translatekey="downloadstepcontent"></a>
+          </div>
+        </div>
+      </div>
+      <div class="type-inner-wrap tab-inner4 hide" id="sixthContent">
+        <div class="inner-tabs">
+          <button class="tab-link clickme active" data-tag="41">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M22 17.075V4.75004C21.9993 4.44847 21.8181 4.17664 21.54 4.06004C21.4487 4.01958 21.3498 3.99913 21.25 4.00004H2.75C2.59987 3.99852 2.45302 4.04397 2.33 4.13004C2.12337 4.26863 1.99957 4.50123 2 4.75004V17.25C2 17.6643 2.33579 18 2.75 18H5V21.23C4.99987 21.3245 5.01857 21.4179 5.055 21.505C5.09462 21.5961 5.15054 21.6791 5.22 21.75C5.29049 21.82 5.37363 21.876 5.465 21.915C5.641 21.9884 5.839 21.9884 6.015 21.915C6.10706 21.8773 6.19043 21.8212 6.26 21.75L10.035 18H21.27C21.6764 17.9892 22.0001 17.6566 22 17.25C22.0077 17.192 22.0077 17.1331 22 17.075ZM9.415 16.5L7.915 18L6.5 19.42V16.5H3.5V5.50001H20.5V16.5H9.415ZM7.025 11.0001C7.025 10.4478 7.47272 10.0001 8.025 10.0001C8.57729 10.0001 9.025 10.4478 9.025 11.0001C9.025 11.5524 8.57729 12.0001 8.025 12.0001C7.47272 12.0001 7.025 11.5524 7.025 11.0001ZM17.025 11.0001C17.025 11.5524 16.5773 12.0001 16.025 12.0001C15.4727 12.0001 15.025 11.5524 15.025 11.0001C15.025 10.4478 15.4727 10.0001 16.025 10.0001C16.5773 10.0001 17.025 10.4478 17.025 11.0001ZM11.025 11.0001C11.025 10.4478 11.4727 10.0001 12.025 10.0001C12.5773 10.0001 13.025 10.4478 13.025 11.0001C13.025 11.5524 12.5773 12.0001 12.025 12.0001C11.4727 12.0001 11.025 11.5524 11.025 11.0001Z"
+                fill="" />
+            </svg>
+            <span data-translatekey="guidingquestion"></span>
+          </button>
+          <button class="tab-link clickme" data-tag="42">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M9.25 0.75C9.25 0.3355 9.5855 0 10 0C10.4145 0 10.75 0.3355 10.75 0.75V5.25C10.75 5.6645 10.4145 6 10 6C9.5855 6 9.25 5.6645 9.25 5.25V0.75ZM9.25 14.75C9.25 14.3355 9.5855 14 10 14C10.4145 14 10.75 14.3355 10.75 14.75V19.25C10.75 19.6645 10.4145 20 10 20C9.5855 20 9.25 19.6645 9.25 19.25V14.75ZM14.596 6.46485L17.0709 3.98985C17.3635 3.69685 17.3635 3.22235 17.0709 2.92935C16.778 2.63635 16.3029 2.63635 16.01 2.92935L13.535 5.40385C13.242 5.69685 13.242 6.17185 13.535 6.46485C13.8279 6.75785 14.3029 6.75785 14.596 6.46485ZM2.9293 16.0101L5.4043 13.5352C5.6968 13.2422 6.1718 13.2422 6.4648 13.5352C6.7578 13.8281 6.7578 14.3032 6.4648 14.5956L3.9898 17.0707C3.6968 17.3636 3.2223 17.3636 2.9293 17.0707C2.6363 16.7776 2.6363 16.3032 2.9293 16.0101ZM19.25 9.25H14.75C14.3355 9.25 14 9.5855 14 10C14 10.4145 14.3355 10.75 14.75 10.75H19.25C19.6645 10.75 20 10.4145 20 10C20 9.5855 19.6645 9.25 19.25 9.25ZM5.25 9.25C5.6645 9.25 6 9.5855 6 10C6 10.4145 5.6645 10.75 5.25 10.75H0.75C0.3355 10.75 0 10.4145 0 10C0 9.5855 0.3355 9.25 0.75 9.25H5.25ZM14.596 13.5352C14.3029 13.2422 13.8279 13.2422 13.535 13.5352C13.242 13.8281 13.242 14.3032 13.535 14.5956L16.01 17.0707C16.3029 17.3636 16.778 17.3636 17.0709 17.0707C17.3635 16.7776 17.3635 16.3032 17.0709 16.0101L14.596 13.5352ZM2.929 2.9292C3.222 2.6367 3.697 2.6367 3.99 2.9292L6.465 5.4042C6.758 5.6972 6.758 6.1717 6.465 6.4647C6.172 6.7577 5.697 6.7577 5.4045 6.4647L2.929 3.9902C2.6365 3.6972 2.6365 3.2222 2.929 2.9292Z"
+                fill="" />
+            </svg>
+            <span data-translatekey="actions"></span>
+          </button>
+          <button class="tab-link  clickme" data-tag="43">
+            <svg width="20" height="17" viewBox="0 0 20 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M4.26497 0.24464C4.55891 -0.0450884 5.03103 -0.0450884 5.32497 0.24464C5.61081 0.526548 5.62187 0.98426 5.34997 1.27964L2.84997 3.77964C2.7092 3.92302 2.51587 4.00252 2.31497 3.99964C2.11428 4.00136 1.92139 3.92204 1.77997 3.77964L0.719966 2.71964C0.57828 2.57967 0.498535 2.3888 0.498535 2.18964C0.498535 1.99048 0.57828 1.79961 0.719966 1.65964C0.859933 1.51795 1.0508 1.43821 1.24997 1.43821C1.44913 1.43821 1.64 1.51795 1.77997 1.65964L2.31497 2.19464L4.26497 0.24464ZM18.835 1.74964H8.16497C7.77454 1.77377 7.47718 2.10914 7.49997 2.49964C7.47718 2.89014 7.77454 3.22551 8.16497 3.24964H18.835C19.2254 3.22551 19.5227 2.89014 19.5 2.49964C19.5227 2.10914 19.2254 1.77377 18.835 1.74964ZM4.26497 6.74464C4.55891 6.45491 5.03103 6.45491 5.32497 6.74464C5.47 6.88124 5.55429 7.07024 5.55898 7.26942C5.56368 7.4686 5.4884 7.66136 5.34997 7.80464L2.84997 10.2796C2.7092 10.423 2.51587 10.5025 2.31497 10.4996C2.11428 10.5014 1.92139 10.422 1.77997 10.2796L0.719966 9.21964C0.57828 9.07967 0.498535 8.8888 0.498535 8.68964C0.498535 8.49048 0.57828 8.29961 0.719966 8.15964C0.859933 8.01795 1.0508 7.93821 1.24997 7.93821C1.44913 7.93821 1.64 8.01795 1.77997 8.15964L2.31497 8.69464L4.26497 6.74464ZM8.16497 8.24964H18.835C19.2254 8.27377 19.5227 8.60914 19.5 8.99964C19.5227 9.39014 19.2254 9.72551 18.835 9.74964H8.16497C7.77454 9.72551 7.47718 9.39014 7.49997 8.99964C7.47718 8.60914 7.77454 8.27377 8.16497 8.24964ZM18.835 14.7496H8.16497C7.77454 14.7738 7.47718 15.1091 7.49997 15.4996C7.47718 15.8901 7.77454 16.2255 8.16497 16.2496H18.835C19.2254 16.2255 19.5227 15.8901 19.5 15.4996C19.5227 15.1091 19.2254 14.7738 18.835 14.7496ZM4.26497 13.2446C4.55891 12.9549 5.03103 12.9549 5.32497 13.2446C5.61081 13.5265 5.62187 13.9843 5.34997 14.2796L2.84997 16.7796C2.7092 16.923 2.51587 17.0025 2.31497 16.9996C2.11428 17.0014 1.92139 16.922 1.77997 16.7796L0.719966 15.7196C0.57828 15.5797 0.498535 15.3888 0.498535 15.1896C0.498535 14.9905 0.57828 14.7996 0.719966 14.6596C0.859933 14.518 1.0508 14.4382 1.24997 14.4382C1.44913 14.4382 1.64 14.518 1.77997 14.6596L2.31497 15.1946L4.26497 13.2446Z"
+                fill="" />
+            </svg>
+            <span data-translatekey="checklist"></span>
+          </button>
+          <!-- <button class="tab-link  clickme" data-tag="44">
+            <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M14.7725 19.16C15.5065 18.119 16.0955 16.7805 16.4835 15.25H18.9295C18.008 16.963 16.5435 18.3375 14.7725 19.16ZM3.0705 15.25H5.5165C5.9045 16.7805 6.4935 18.119 7.2275 19.16C5.4565 18.3375 3.992 16.963 3.0705 15.25ZM7.2275 2.8395C6.4935 3.8805 5.9045 5.219 5.5165 6.75H3.0705C3.992 5.0365 5.4565 3.662 7.2275 2.8395ZM18.9295 6.75H16.4835C16.0955 5.219 15.5065 3.8805 14.7725 2.8395C16.5435 3.662 18.008 5.0365 18.9295 6.75ZM16.785 8.25H19.5665C19.8455 9.1175 20 10.0405 20 11C20 11.959 19.8455 12.882 19.5665 13.75H16.785C16.921 12.872 17 11.953 17 11C17 10.0465 16.921 9.128 16.785 8.25ZM11 2C12.4945 2 14.106 3.8275 14.935 6.75H7.065C7.894 3.8275 9.5055 2 11 2ZM2 11C2 10.0405 2.1545 9.1175 2.4335 8.25H5.215C5.079 9.128 5 10.0465 5 11C5 11.953 5.079 12.872 5.215 13.75H2.4335C2.1545 12.882 2 11.959 2 11ZM6.726 13.75C6.5815 12.896 6.5 11.9755 6.5 11C6.5 10.024 6.5815 9.104 6.726 8.25H15.274C15.4185 9.104 15.5 10.024 15.5 11C15.5 11.9755 15.4185 12.896 15.274 13.75H6.726ZM11 20C9.5055 20 7.894 18.172 7.065 15.25H14.935C14.106 18.172 12.4945 20 11 20ZM11 0.5C5.201 0.5 0.5 5.201 0.5 11C0.5 16.799 5.201 21.5 11 21.5C16.799 21.5 21.5 16.799 21.5 11C21.5 5.201 16.799 0.5 11 0.5Z"
+                fill="" />
+            </svg>
+            <span data-translatekey="tools"></span>
+          </button> -->
+          <button class="tab-link clickme" data-tag="45">
+            <span data-translatekey="downloadStep6"></span>
+            <img class="first" src=" ./images/icons/downloadGrey.svg" alt="downloadGrey" style="margin-left: 10px;" />
+            <img class="second" src=" ./images/icons/downloadGreyactive6.svg" alt="download"
+              style="margin-left: 10px;" />
+          </button>
+        </div>
+        <div class="tab-maindata">
+
+          <div id="41" class="tabcontent tab-inner active">
+            <div class="textWrapper">
+              <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+              <p data-translatekey="step6question1"></p>
+            </div>
+            <div class="textWrapper">
+              <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+              <p data-translatekey="step6question2"></p>
+            </div>
+            <div class="textWrapper">
+              <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+              <p data-translatekey="step6question3"></p>
+            </div>
+            <div class="textWrapper">
+              <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+              <p data-translatekey="step6question4"></p>
+            </div>
+            <ul class="guidingList">
+              <li data-translatekey="step6question5"></li>
+              <li data-translatekey="step6question6"></li>
+              <li data-translatekey="step6question7"></li>
+            </ul>
+            <div class="textWrapper">
+              <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+              <p data-translatekey="step6question8"></p>
+            </div>
+            <div class="textWrapper">
+              <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+              <p data-translatekey="step6question9"></p>
+            </div>
+            <div class="textWrapper">
+              <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+              <p data-translatekey="step6question10"></p>
+            </div>
+            <a id="step6questionpdf" target="_blank"
+              href="./pdf/English/Implementation Steps/Step 6 Reporting/STEP 6 - GUIDING QUESTIONS.pdf"
+              class="download-link" data-translatekey="downloadthissection"></a>
+          </div>
+          <div id="42" class="tabcontent tab-inner hide">
+            <div class="action-wrap">
+              <div class="accordion">
+                <div class="step-accord-wrap ">
+                  <h6 class="title" data-translatekey="action1"></h6>
+                  <h6 class="para" data-translatekey="step6actions1p1"></h6>
+                </div>
+              </div>
+              <div class="panel active">
+                <p class="description" data-translatekey="step6actions1p2"></p>
+                <h6 class="title" data-translatekey="step6actions1p3"></h6>
+                <p class="description">
+                  <text data-translatekey="step6actions1p4">
+                  </text><a id="Link29" target="_blank" href=""></a>
+                  <text data-translatekey="step6actions1p4a"></text>
+                  <a id="Link30" target="_blank" href=""></a>
+                  <text data-translatekey="step6actions1p4b"></text>
+                </p>
+                <h6 class="title" data-translatekey="step6actions1p5"></h6>
+                <p class="description" data-translatekey="step6actions1p6"></p>
+                <div class="dotWrap">
+                  <div class="greendot"></div>
+                  <!-- <p class="description" data-translatekey="step6actions1p7"></p> -->
+                  <p class="description linkwrap">
+                    <text class="first" data-translatekey="step6actions1p7a"></text>
+                    <span><a onclick="" class="clickme4" data-tag="fifthContent" data-id="39"
+                        data-translatekey="step5"></a></span>
+                    <text data-translatekey="step6actions1p7b"></text>
+                  </p>
+                </div>
+                <div class="dotWrap">
+                  <div class="greendot"></div>
+                  <p class="description" data-translatekey="step6actions1p8"></p>
+                </div>
+                <p class="description"> <text data-translatekey="step6actions1p9"></text>
+                  <a id="Link31" target="_blank" href=""></a>
+                  <text data-translatekey="step6actions1p9a"></text>
+                </p>
+                <h6 class="title" data-translatekey="step6actions1p10"></h6>
+                <p class="description" data-translatekey="step6actions1p11"></p>
+                <h6 class="title" data-translatekey="step6actions1p12"></h6>
+                <p class="description">
+                  <text data-translatekey="step6actions1p13"></text>
+                  <a id="Link32" target="_blank" href=""></a>
+                  <text data-translatekey="step6actions1p13a"></text>
+                </p>
+                <h6 class="title" data-translatekey="step6actions1p14"></h6>
+                <p class="description" data-translatekey="step6actions1p15"></p>
+                <p class="description" data-translatekey="step6actions1p16"></p>
+                <p class="description" data-translatekey="step6actions1p17"></p>
+                <p class="description" data-translatekey="step6actions1p18"></p>
+                <p class="description"> <text data-translatekey="step6actions1p19"></text>
+                  <a id="Link51" target="_blank" href=""></a>
+                </p>
+              </div>
+            </div>
+            <div class="action-wrap">
+              <div class="accordion">
+                <div class="step-accord-wrap">
+                  <h6 class="title" data-translatekey="action2"></h6>
+                  <h6 class="para" data-translatekey="step6actions2p1"></h6>
+                </div>
+              </div>
+              <div class="panel">
+                <p class="description" data-translatekey="step6actions2p2"></p>
+                <h6 class="title" data-translatekey="step6actions2p3"></h6>
+                <p class="description">
+                  <text data-translatekey="step6actions2p4"></text>
+                  <a id="Link33" target="_blank" href=""></a> ).
+                </p>
+                <p class="description" data-translatekey="step6actions2p5missingcontent"></p>
+                <p class="description" data-translatekey="step6actions2p5"></p>
+                <p class="description" data-translatekey="step6actions2p6"></p>
+                <div class="dotWrap">
+                  <div class="greendot"></div>
+                  <p class="description" data-translatekey="step6actions2p7"></p>
+                </div>
+                <div class="dotWrap">
+                  <div class="greendot"></div>
+                  <p class="description" data-translatekey="step6actions2p8"></p>
+                </div>
+                <div class="dotWrap">
+                  <div class="greendot"></div>
+                  <p class="description">
+                    <text data-translatekey="step6actions2p9"></text>
+                    <a id="Link34" target="_blank" href=""></a> ).
+                  </p>
+                </div>
+                <div class="dotWrap">
+                  <div class="greendot"></div>
+                  <p class="description" data-translatekey="step6actions2p10"></p>
+                </div>
+                <div class="dotWrap">
+                  <div class="greendot"></div>
+                  <p class="description" data-translatekey="step6actions2p11"></p>
+                </div>
+                <p class="description" data-translatekey="step6actions2p12"></p>
+                <div class="dotWrap">
+                  <div class="greendot"></div>
+                  <p class="description" data-translatekey="step6actions2p13"></p>
+                </div>
+                <div class="dotWrap">
+                  <div class="greendot"></div>
+                  <p class="description" data-translatekey="step6actions2p14"></p>
+                </div>
+                <div class="dotWrap">
+                  <div class="greendot"></div>
+                  <p class="description" data-translatekey="step6actions2p15"></p>
+                </div>
+                <div class="dotWrap">
+                  <div class="greendot"></div>
+                  <p class="description" data-translatekey="step6actions2p16"></p>
+                </div>
+                <div class="dotWrap">
+                  <div class="greendot"></div>
+                  <p class="description" data-translatekey="step6actions2p17"></p>
+                </div>
+                <div class="dotWrap">
+                  <div class="greendot"></div>
+                  <p class="description" data-translatekey="step6actions2p18"></p>
+                </div>
+                <div class="dotWrap">
+                  <div class="greendot"></div>
+                  <p class="description" data-translatekey="step6actions2p19"></p>
+                </div>
+
+                <p class="description" data-translatekey="step6actions2p20"></p>
+                <p class="description" data-translatekey="step6actions2p21"></p>
+                <p class="description"><span class="marker">›</span> <text data-translatekey="step6actions2p22"></text>
+                </p>
+                <p class="description"><span class="marker">›</span> <text data-translatekey="step6actions2p23"></text>
+                </p>
+                <p class="description"><span class="marker">›</span> <text data-translatekey="step6actions2p24"></text>
+                </p>
+                <p class="description"><span class="marker">›</span> <text data-translatekey="step6actions2p25"></text>
+                </p>
+                <p class="description">
+                  <text data-translatekey="step6actions2p26"></text>
+                  <a id="Link35" target="_blank" href=""> ,</a>
+                  <text data-translatekey="step6actions2p26a"></text>
+                </p>
+                <h6 class="title" data-translatekey="step6actions2p27"></h6>
+                <p class="description" data-translatekey="step6actions2p28"></p>
+                <p class="description" data-translatekey="step6actions2p29"></p>
+                <p class="description" data-translatekey="step6actions2p30"></p>
+                <p class="description" data-translatekey="step6actions2p31"></p>
+                <p class="description" data-translatekey="step6actions2p32"></p>
+                <p class="description" data-translatekey="step6actions2p33"></p>
+                <p class="description" data-translatekey="step6actions2p34"></p>
+                <p class="description" data-translatekey="step6actions2p35"></p>
+              </div>
+            </div>
+            <a id="step6actionpdf" target="_blank"
+              href="./pdf/English/Implementation Steps/Step 6 Reporting/STEP 6 - ACTIONS.pdf" class="download-link"
+              data-translatekey="downloadthissection"></a>
+          </div>
+          <div id="43" class="tabcontent tab-inner hide">
+            <div class="checklist-wrap">
+              <!-- <div class="tab">
+                <i class="fa-solid fa-check"></i>
+                <p data-translatekey="step6checkboxp1"></p>
+              </div> -->
+              <div class="tab">
+                <i class="fa-solid fa-check"></i>
+                <p data-translatekey="step6checkboxp2"></p>
+              </div>
+              <div class="tab">
+                <i class="fa-solid fa-check"></i>
+                <p data-translatekey="step6checkboxp3"></p>
+              </div>
+              <div class="tab">
+                <i class="fa-solid fa-check"></i>
+                <p data-translatekey="step6checkboxp4"></p>
+              </div>
+              <div class="tab">
+                <i class="fa-solid fa-check"></i>
+                <p data-translatekey="step6checkboxp5"></p>
+              </div>
+              <div class="tab">
+                <i class="fa-solid fa-check"></i>
+                <p data-translatekey="step6checkboxp6"></p>
+              </div>
+
+            </div>
+            <a id="step6checklistpdf" target="_blank"
+              href="./pdf/English/Implementation Steps/Step 6 Reporting/STEP 6 - CHECKLIST.pdf" class="download-link"
+              data-translatekey="downloadthissection"></a>
+          </div>
+          <div id="44" class="tabcontent tab-inner hide">
+            <div class="tool-wrap">
+              <div class="accordion accoractive">
+                <div class="accord-tab">
+                  <div class="leftside">
+                    <h4 data-translatekey="tool1"></h4>
+                    <div class="toolsec-divider"></div>
+                    <p data-translatekey="step6tool1p1"></p>
+                  </div>
+                </div>
+              </div>
+              <div class="panel">
+                <div class="accord-data">
+                  <div class="card">
+                    <p data-translatekey="step6tool1p2"></p>
+                  </div>
+                  <div class="card">
+                    <p data-translatekey="step6tool1p3"></p>
+                  </div>
+                  <div class="card">
+                    <p data-translatekey="step6tool1p4"></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <a id="step6toolpdf" target="_blank" href="./pdf/English/Implementation Steps/Step 6 Reporting/tool"
+              class="download-link" data-translatekey="downloadthissection"></a>
+          </div>
+          <div id="45" class="tabcontent tab-inner hide">
+            <!-- <p>Download Step Content</p> -->
+            <a id="step6pdf" target="_blank"
+              href="./pdf/English/Implementation Steps/Step 6 Reporting/STEP 6 - REPORTING.pdf" class="download-link"
+              data-translatekey="downloadstepcontent"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div class="divider"></div>
+
+  <!-- second hero section -->
+  <div class="ex-AboutsecondSection">
+    <section class="container">
+      <h2 class="ex-section-heading" data-translatekey="steppagetwocardtitle"></h2>
+      <p class="ex-section-des" data-translatekey="steppagetwocardsubtitle"></p>
+      <div class="ex-Twocard">
+        <div class="ex-section-card">
+          <img id="Guidingprp" src="./images/guiding_principles_square.jpg" class="ex-section-img" />
+          <div class="ex-content">
+            <p data-translatekey="homeGuidingPrinciples"></p>
+            <button class="ex-secondarybtn" onclick="document.location='./Principles.html'"
+              data-translatekey="viewPrinciplesButton"></button>
+          </div>
+        </div>
+
+        <div class="ex-section-card">
+          <img id="objective" src="./images/GCM176.png" class="ex-section-img" />
+          <div class="ex-content">
+            <p class="more" data-translatekey="homeGCMObjectives"></p>
+            <button class="ex-secondarybtn" onclick="document.location='./gcmobjectives.html'"
+              data-translatekey="viewObjectiveButton"></button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- footer section -->
+  <section class="footer-bg">
+    <div class="container">
+      <div class="footer">
+        <div class="scroller" id="scroll-to-bottom">
+          <button onclick="topFunction()" id="myBtn" title="Go to top" data-translatekey="backToTopButton">
+          </button>
+        </div>
+        <div class="leftside">
+          <h4 data-translatekey="footerKnowMoreQuestion"></h4>
+          <img class="firstimg" id='footerglobal' src="./images/footer-Logo.png" alt="footer logo" />
+          <!-- <a target="_blank" id="FooterLeftLink" href="https://migrationnetwork.un.org/migration-network-hub">
+            <img class="secondimg" src="./images/logo.svg" alt="logo" />
+          </a> -->
+          <button class="return-btn" data-translatekey="returntomigrationhub"></button>
+        </div>
+        <div class="rightside">
+          <ul>
+            <li>
+              <h5 data-translatekey="footerQuickLinks"></h5>
+            </li>
+            <li>
+              <a target="_blank" href="https://migrationnetwork.un.org/" data-translatekey="footerUnitedNationLink"
+                id="UNNLink"></a>
+            </li>
+            <li>
+              <a target="_blank" id="GCMImmplementLink" href="https://migrationnetwork.un.org/gcm-guidance"
+                data-translatekey="footerGCMImplementationLink"></a>
+            </li>
+            <li>
+              <a target="_blank" id="MigrationNetHubLink" href="https://migrationnetwork.un.org/migration-network-hub"
+                data-translatekey="footerMigrationNetworkLink"></a>
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <h5 data-translatekey="footerAboutGCM"></h5>
+            </li>
+            <li>
+              <a target="_blank" id="NutshellLink" href="https://migrationnetwork.un.org/global-compact-for-migration"
+                data-translatekey="footerNutshellLink"></a>
+            </li>
+            <li>
+              <a target="_blank" id="PledgesLink" href="https://migrationnetwork.un.org/the-pledging-dashboard"
+                data-translatekey="footerPledgesLink"></a>
+            </li>
+            <li>
+              <a target="_blank" id="RepoofPracticeLink"
+                href="https://migrationnetwork.un.org/hub/repository-of-practices"
+                data-translatekey="footerRepositoryLink"></a>
+            </li>
+            <li>
+              <a target="_blank" id="TrustFundLink" href="https://migrationnetwork.un.org/mptf"
+                data-translatekey="footerTrustFundLink"></a>
+            </li>
+            <li>
+              <a target="_blank" id="InternationalMigrationLink"
+                href="https://migrationnetwork.un.org/international-migration-review-forum-2022"
+                data-translatekey="footerInternationalForumLink"></a>
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <h5 data-translatekey="footerFollowUs"></h5>
+            </li>
+            <li><a target="_blank" href="https://twitter.com/UNMigNetwork" data-translatekey="footerTwitterLink"></a>
+            </li>
+            <li>
+              <a target="_blank"
+                href="https://migrationnetwork.us19.list-manage.com/subscribe?u=91a1d870ca31df83b2b697cf6&id=9c7fcb90a4"
+                data-translatekey="footerNewsletterLink"></a>
+            </li>
+            <li>
+              <a target="_blank" id="EventsLink"
+                href="https://migrationnetwork.un.org/hub/events?text=&gcm_objectives=All&cross_cutting_theme=All&region=All&country=All"
+                data-translatekey="footerEventsLink"></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="bottom-section">
+        <ul>
+          <li><a target="_blank" href="#" id="copyRight" data-translatekey="footerCopyright"></a></li>
+          <li><a target="_blank" href="#" id="fraudAlert" data-translatekey="footerFraudAlert"></a></li>
+          <li><a target="_blank" href="#" id="PrivacyNotice" data-translatekey="footerPrivacyNotice"></a></li>
+          <li><a target="_blank" href="#" id="termsofUse" data-translatekey="footerTermsOfUse"></a></li>
+        </ul>
+        <!-- <a target="_blank" id="FooterRightLink" href="https://migrationnetwork.un.org/">
+          <img id="footerunited" src="./images/mignet-logo.png" alt="logo" />
+        </a> -->
+      </div>
+    </div>
+  </section>
+
+  <script>
+    // for scroll down page 
+    let scrollToBottom1 = document.querySelector("#scroll-to-bottom1");
+    let pageBottom1 = document.querySelector("#pageScrollBottom");
+    scrollToBottom1.addEventListener("click",
+      function () {
+        pageBottom.scrollIntoView();
+      });
+
+
+    // for scroll down 1 step
+    let scrollToBottom = document.querySelector("#scroll-to-bottom");
+    let pageBottom = document.querySelector("#page-bottom");
+    scrollToBottom.addEventListener("click", function () {
+      pageBottom.scrollIntoView();
+    });
+    // for scroll down 2 step
+    let scrollToBottom2 = document.querySelector("#scroll-to-bottom2");
+    let pageBottom2 = document.querySelector("#page-bottom2");
+    scrollToBottom2.addEventListener("click", function () {
+      pageBottom2.scrollIntoView();
+    });
+    // for scroll down 3 step
+    let scrollToBottom3 = document.querySelector("#scroll-to-bottom3");
+    let pageBottom3 = document.querySelector("#page-bottom3");
+    scrollToBottom3.addEventListener("click", function () {
+      pageBottom3.scrollIntoView();
+    });
+    // for scroll down 4 step
+    let scrollToBottom4 = document.querySelector("#scroll-to-bottom4");
+    let pageBottom4 = document.querySelector("#page-bottom4");
+    scrollToBottom4.addEventListener("click", function () {
+      pageBottom4.scrollIntoView();
+    });
+    // for scroll down 5 step
+    let scrollToBottom5 = document.querySelector("#scroll-to-bottom5");
+    let pageBottom5 = document.querySelector("#page-bottom5");
+    scrollToBottom5.addEventListener("click", function () {
+      pageBottom5.scrollIntoView();
+    });
+    // for scroll down 6 step
+    let scrollToBottom6 = document.querySelector("#scroll-to-bottom6");
+    let pageBottom6 = document.querySelector("#page-bottom6");
+    scrollToBottom6.addEventListener("click", function () {
+      pageBottom6.scrollIntoView();
+    });
+  </script>
+
+
+  <script>
+    //Scroll to Top
+    var mybutton = document.getElementById("myBtn");
+    window.onscroll = function () {
+      scrollFunction();
+    };
+    function scrollFunction() {
+      if (
+        document.body.scrollTop > 20 ||
+        document.documentElement.scrollTop > 20
+      ) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+    //for images & pdf according to language
+  </script>
+  <script>
+    // for step page accordian
+    var acc = document.getElementsByClassName("accordion");
+    var i;
+    for (i = 0; i < acc.length; i++) {
+      acc[i].addEventListener("click", function () {
+        this.classList.toggle("active");
+        var panel = this.nextElementSibling;
+        if (panel.style.maxHeight) {
+          panel.style.maxHeight = null;
+        } else {
+          panel.style.maxHeight = panel.scrollHeight + "px";
+        }
+      });
+    }
+    var acc = document.getElementsByClassName("accordion3");
+    var i;
+    for (i = 0; i < acc.length; i++) {
+      acc[i].addEventListener("click", function () {
+        this.classList.toggle("active");
+        var panel = this.nextElementSibling;
+        if (panel.style.maxHeight) {
+          panel.style.maxHeight = null;
+        } else {
+          panel.style.maxHeight = panel.scrollHeight + "px";
+        }
+      });
+    }
+
+  </script>
+
+</body>
+
+</html>

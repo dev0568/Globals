@@ -1,0 +1,953 @@
+/* header start */
+
+.ex-logo {
+  margin: unset;
+}
+
+.download-icon {
+  border-radius: unset;
+}
+
+.banner-heading-text {
+  font-weight: 500;
+  font-size: 56px;
+  line-height: 110%;
+  color: #4d4d4d;
+}
+
+.aboutv2Page .sixthSection button a {
+  color: #009edb !important;
+}
+
+.AboutMainSection .content .banner-des {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #333333;
+  text-align: left;
+  margin: 20px 0px;
+  width: 100%;
+  padding: unset;
+}
+
+.exploreDataSection .tab-data .card a {
+  font-weight: 500;
+  text-decoration: underline;
+}
+
+.exploreDataSection .tab-data .card .read-more {
+  padding: 0;
+}
+
+.scroller-bottom {
+  width: 30%;
+  text-align: center;
+  margin-top: -38px;
+}
+
+.download-icon {
+  width: 24px !important;
+  height: 24px;
+  margin: unset;
+  margin-left: 20px;
+}
+
+.Explore-Text {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  color: #4d4d4d;
+  margin-bottom: 25px;
+  font-family: "Roboto Regular";
+}
+
+.down-icon {
+  width: 28px;
+  height: 24px;
+}
+
+.down-icon1 {
+  width: 24px;
+  height: 24px;
+}
+
+.tablinks {
+  padding: unset !important;
+  margin: unset !important;
+  margin-right: 30px !important;
+}
+
+.tablinks:hover {
+  color: #8dc11f;
+}
+
+.exploreDataSection .tabs button img {
+  margin: 0px;
+  width: 100%;
+  height: 100%;
+  max-width: 45px;
+  min-width: 45px;
+  min-height: 45px;
+  margin-right: 8px;
+  background-color: #173364;
+}
+
+.exploreDataSection .tabs button {
+  font-weight: 500;
+  font-size: 14px;
+  color: #333333;
+  line-height: 20px;
+  font-family: "Roboto Bold";
+}
+
+#LeftSideSection img {
+  transition: 0.05s;
+}
+
+#LeftSideSection .active img,
+#LeftSideSection button:hover img {
+  filter: invert(66%) sepia(68%) saturate(536%) hue-rotate(34deg)
+    brightness(95%) contrast(84%);
+}
+
+.ThreeButtons {
+  display: flex !important;
+}
+
+.des-text {
+  padding: unset;
+}
+
+.des-text li {
+  font-weight: 400 !important;
+  font-size: 16px;
+  line-height: 24px;
+  color: #333333;
+  padding: unset !important;
+  padding-bottom: 24px !important;
+}
+
+.ex-card {
+  width: 47%;
+  background: rgba(91, 54, 106, 0.05);
+  padding: 17px;
+  margin: 10px 10px;
+}
+
+.ex-vector-icon {
+  width: 46px;
+  height: 30px;
+  margin-bottom: 10px;
+}
+
+.ex-heading {
+  font-weight: 500;
+  font-size: 21px;
+  line-height: 120%;
+  margin-bottom: 16px;
+  font-family: "Roboto Medium";
+}
+
+.ex-des {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #333333;
+}
+
+.ex-goals-des {
+  margin-bottom: 20px;
+}
+
+.ex-main-div {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.ex-prp-list {
+  margin: 0;
+}
+
+.ex-prp-list ul {
+  margin: 0;
+  padding-left: 20px;
+}
+
+.ex-prp-list ul li {
+  margin-bottom: 10px;
+}
+
+.ex-prp-div {
+  margin-bottom: 20px;
+  width: 85%;
+  margin-left: 0;
+  display: flex;
+}
+
+.ex-prp-div p {
+  flex: 1;
+}
+
+.ex-prp-div a {
+  color: #009edb;
+  text-decoration: underline;
+  word-break: break-all;
+}
+
+.ex-prp-div .greendot {
+  background: #65b157;
+  height: 12px;
+  width: 12px;
+  margin-right: 10px;
+  margin-top: 5px;
+}
+
+.ex-rdmore-btn {
+  color: #009edb;
+  text-decoration: underline;
+}
+
+.ex-sdg-div {
+  display: flex;
+  margin-bottom: 30px;
+}
+
+.ex-sdg-img {
+  width: 111px;
+  height: 111px;
+  object-fit: contain;
+  margin: 0;
+}
+
+.ex-sdg-txt-div {
+  margin-left: 22px;
+}
+
+.ex-sdg-heading {
+  font-weight: 500;
+  font-size: 21px;
+  line-height: 120%;
+  color: #333333;
+  margin-bottom: 10px;
+  font-family: "Roboto Medium";
+}
+
+.exploreDataSection .tabs button {
+  margin: 5px 0px;
+}
+
+.exploreDataSection .tabs button span {
+  margin: 0;
+}
+
+.ex-sdg-des {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #333333;
+  width: 80%;
+  margin: unset;
+}
+
+.ex-AboutsecondSection {
+  background: #f1f7fe;
+  padding: 50px 0 50px 0;
+  margin-top: 50px;
+}
+
+.ex-section-heading {
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 100%;
+  color: #4d4d4d;
+  margin-bottom: 17px;
+  text-align: left;
+}
+
+.ex-section-des {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #4d4d4d;
+  width: 100%;
+  margin: unset;
+  margin-bottom: 50px;
+}
+
+.ex-section-card {
+  display: flex;
+  width: 48%;
+  margin: unset;
+}
+
+.ex-content {
+  margin-left: 24px;
+}
+
+.ex-section-img {
+  width: 195px;
+  height: 195px;
+}
+
+.ex-content p {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 22px;
+  color: #333333;
+  height: 117px;
+}
+
+.ex-Twocard {
+  display: flex;
+  justify-content: space-between;
+}
+
+.ex-secondarybtn {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  color: #009edb;
+  border: 1px solid #009edb;
+  border-radius: 4px;
+  padding: 6px 30px;
+  background: transparent;
+  margin-top: 40px;
+}
+
+.ex-secondarybtn:hover {
+  background-color: #009edb;
+  color: #fff;
+}
+
+.ex-visitcard {
+  background: #173364;
+  padding: 50px 0px 50px 0px;
+}
+
+.ex-content-visit {
+  width: 55%;
+  margin: auto;
+  text-align: center;
+}
+
+.ex-content-visit h2 {
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 40px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.ex-leftside p {
+  font-weight: 600;
+  font-size: 21px;
+  line-height: 120%;
+  color: #4d4d4d;
+  width: 57%;
+  text-align: left;
+  margin: unset;
+  margin: 40px 0 24px 0;
+}
+
+.ex-leftside {
+  width: 50%;
+}
+
+.ex-rightside {
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.ex-rightside h5 {
+  font-weight: 600;
+  font-size: 21px;
+  line-height: 120%;
+  color: #4d4d4d;
+  margin-bottom: 20px;
+}
+
+.ex-rightside ul {
+  padding: unset;
+}
+
+.ex-rightside ul li {
+  margin-bottom: 15px;
+}
+
+.ex-rightside ul li a {
+  font-weight: 400;
+  font-size: 16px;
+  color: #333333;
+}
+
+.bottom-section img {
+  margin: unset;
+}
+
+.hero-bg-about {
+  background: linear-gradient(to right, #f1f7fe 84%, #ffffff 0%);
+  padding-top: 8rem;
+  position: relative;
+  padding-bottom: 70px;
+}
+
+.step-bg-about {
+  background: linear-gradient(to left, #f1f7fe 84%, #ffffff 0%);
+  padding-top: 8rem;
+  position: relative;
+  padding-bottom: 70px;
+}
+
+.hero-bg-about .scroller {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  cursor: pointer;
+}
+
+.hero-bg-about .scroller a {
+  cursor: pointer;
+}
+
+.objective-inner-section {
+  display: flex;
+  align-items: center;
+}
+
+.objective-inner-section .banner-heading-text {
+  font-weight: 500;
+  font-size: 56px;
+  line-height: 110%;
+  color: #4d4d4d;
+  margin-bottom: 24px;
+  font-family: "Roboto Medium";
+}
+
+.objective-inner-section p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #333333;
+  margin-bottom: 24px;
+}
+
+.objective-inner-section .primarybtn {
+  height: 48px;
+  display: flex;
+  align-items: center;
+  margin: 0px;
+  width: 275px;
+  justify-content: center;
+  border-radius: 5px;
+}
+
+.objective-inner-section .primarybtn span {
+  margin: 0;
+}
+
+.objective-inner-section .content {
+  width: 50%;
+}
+
+.objective-inner-section .image-section {
+  width: 50%;
+  padding: 20px;
+}
+
+.objective-inner-section .image-section img {
+  width: 500px;
+}
+
+.objective-inner-section .gif {
+  width: 96%;
+  padding: 20px;
+  height: 428px;
+  object-fit: cover;
+  margin: 0px;
+  margin-left: auto;
+  display: block;
+  filter: drop-shadow(0px 20px 60px rgba(155, 198, 255, 0.2));
+  /* border-radius: 0px 0px 30px 0px; */
+}
+
+.exploreDataSection .hide {
+  display: none;
+}
+
+.exploreDataSection .read-more {
+  font-size: 12px;
+  font-weight: 200 !important;
+}
+
+.tab-button {
+  margin-bottom: 60px;
+  margin-top: 40px;
+  display: flex;
+  padding: 10px;
+}
+
+.tab-button button {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  color: #333333;
+  background-color: transparent;
+  border: none;
+  padding: 0px;
+  margin: 0px;
+  margin-right: 18px;
+  padding-bottom: 5px;
+}
+
+.tab-button button.active {
+  color: #8dc11f;
+  border-bottom: 2px solid #8dc11f;
+  border-radius: 0px;
+}
+
+.principle button:hover,
+.principle .active {
+  background-color: #173364 !important;
+  color: #fff !important;
+}
+
+.principle button:hover img,
+.principle .active img {
+  filter: unset !important;
+}
+
+@media screen and (min-width: 992px) and (max-width: 1024px) {
+  .exploreDataSection .tab-data .card {
+    display: flex !important;
+  }
+
+  .exploreDataSection .tab-data .card h2 {
+    width: 100%;
+  }
+
+  .ex-content p {
+    font-size: 14px !important;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .objective-inner-section .content {
+    width: 50%;
+  }
+
+  .objective-inner-section .image-section {
+    padding: 25px;
+    width: 50%;
+  }
+
+  .objective-inner-section .image-section img {
+    width: 340px;
+    height: unset;
+  }
+
+  .hero-bg-about {
+    padding-top: 6rem;
+    padding-bottom: 7rem;
+  }
+
+  .step-bg-about {
+    padding-top: 6rem;
+    padding-bottom: 10.4rem;
+  }
+
+  .objective-inner-section .banner-heading-text {
+    font-size: 37px;
+    margin-bottom: 17px;
+  }
+
+  .tab-button button {
+    margin-right: 15px;
+    font-size: 16px;
+  }
+
+  .exploreDataSection .tabs button {
+    font-size: 12px;
+  }
+
+  .ex-section-img {
+    width: 150px;
+    height: 175px;
+  }
+
+  .ex-section-card {
+    display: block;
+  }
+
+  .ex-content {
+    margin-left: 0px;
+  }
+
+  .ex-secondarybtn {
+    padding: 4px 10px;
+    font-size: 12px;
+    margin-top: 5px;
+  }
+
+  .exploreDataSection .tab-data .card {
+    display: block;
+  }
+
+  .exploreDataSection .tab-data .card .pnp-img {
+    width: 200px;
+  }
+
+  .ex-AboutsecondSection {
+    padding: 50px 0px;
+  }
+
+  .tab-button {
+    margin-bottom: 15px;
+    margin-top: 10px;
+  }
+
+  .ex-content p {
+    height: 100px;
+    font-size: 12px;
+    line-height: 17px;
+    margin-top: 10px;
+  }
+
+  .ex-card {
+    width: 100%;
+  }
+
+  .hero-bg-about .scroller {
+    bottom: 3px;
+  }
+
+  .Explore-Text {
+    font-size: 15px;
+    line-height: 7px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .objective-inner-section {
+    flex-direction: column;
+  }
+
+  .ex-secondarybtn {
+    padding: 12px 32px;
+  }
+
+  .ex-AboutsecondSection {
+    padding: 50px 0px;
+  }
+
+  .ex-section-heading {
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 40px;
+  }
+
+  .objective-inner-section .image-section {
+    order: 0;
+    width: 100%;
+    padding: 0;
+  }
+
+  .objective-inner-section .image-section img {
+    width: 100%;
+    height: unset;
+    padding: 15px 0px;
+  }
+
+  .hero-bg-about {
+    background: #f1f7fe;
+    padding-top: 6rem;
+  }
+
+  .step-bg-about {
+    background: #f1f7fe;
+    padding-top: 6rem;
+  }
+
+  .objective-inner-section .banner-heading-text {
+    font-size: 32px;
+    margin-bottom: 16px;
+  }
+
+  .objective-inner-section .primarybtn {
+    width: 100%;
+    max-width: 500px;
+  }
+
+  .tab-data {
+    padding: 0px;
+  }
+
+  .exploreDataSection .tab-data .card a {
+    padding-left: 0px;
+  }
+
+  .tab-button button {
+    white-space: nowrap;
+  }
+
+  .tab-button {
+    overflow: auto;
+    margin-top: 20px;
+    margin-bottom: 15px;
+  }
+
+  .objective-inner-section .content {
+    order: 1;
+    width: 100%;
+  }
+
+  .des-text {
+    text-align: left;
+  }
+
+  .ex-logo {
+    display: none;
+  }
+
+  .ex-section-des {
+    width: 100%;
+    text-align: left;
+  }
+
+  .ex-Twocard {
+    display: block;
+    text-align: left;
+  }
+
+  .scroller-bottom {
+    width: 100%;
+    text-align: center;
+    margin-top: -38px;
+  }
+
+  .AboutMainSection .content {
+    width: 92%;
+    order: 2;
+    margin-bottom: 45px;
+  }
+
+  .AboutMainSection {
+    height: unset;
+    display: flex;
+    flex-wrap: wrap;
+    margin: unset;
+    padding-top: 23%;
+  }
+
+  .AboutMainSection .image-section {
+    width: 100%;
+  }
+
+  .AboutMainSection .image-section img {
+    display: block;
+    margin: auto;
+    margin-top: unset;
+    width: 100%;
+  }
+
+  .ex-content p {
+    height: unset;
+  }
+
+  .ex-main-div {
+    display: block;
+  }
+
+  .ex-card {
+    width: 100%;
+    text-align: left;
+  }
+
+  .ex-sdg-txt-div {
+    margin-left: unset;
+  }
+
+  .ex-sdg-div {
+    display: block;
+    margin-bottom: 20px;
+    text-align: left;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 20px;
+  }
+
+  .ex-sdg-img {
+    margin-bottom: 10px;
+  }
+
+  .ex-section-card {
+    display: block;
+    width: 100%;
+    margin-bottom: 50px;
+    text-align: center;
+  }
+
+  .ex-sdg-des {
+    width: 100%;
+  }
+
+  img.ex-section-img {
+    width: 250px;
+    height: 250px;
+    max-width: 500px;
+  }
+
+  .Explore-Text {
+    margin-bottom: 2px;
+  }
+
+  .ex-content {
+    margin: unset;
+    margin-top: 10px;
+  }
+
+  .ex-content-visit {
+    width: 100%;
+  }
+
+  .ex-leftside img {
+    width: 80%;
+    height: 100%;
+  }
+
+  .ex-leftside {
+    width: 100%;
+  }
+
+  .ex-leftside p {
+    width: 100%;
+  }
+
+  .ex-rightside {
+    width: 100%;
+    display: block;
+    margin-top: 40px;
+  }
+
+  .bottom-section img {
+    display: block;
+    margin-bottom: 15px;
+  }
+
+  .AboutMainSection .content .btnSection button {
+    width: 100%;
+  }
+
+  .hero-bg-about {
+    height: unset;
+    border-radius: 0px 0px 35px 20px;
+    padding-bottom: 7rem;
+    margin-bottom: 2rem;
+  }
+
+  .step-bg-about {
+    height: unset;
+    border-radius: 0px 0px 35px 20px;
+    padding-bottom: 3rem;
+    margin-bottom: -20px;
+  }
+
+  .exploreDataSection .tab-data .card img {
+    display: none;
+  }
+
+  .exploreDataSection .tab-data .card h2 {
+    padding: unset;
+    margin-bottom: 15px;
+    font-weight: 600;
+    font-size: 21px;
+    line-height: 120%;
+    color: #333333;
+    text-align: left;
+  }
+
+  .exploreDataSection .tab-data .card h3 {
+    padding: 0px;
+  }
+
+  .exploreDataSection .tab-data .card h4 {
+    padding: 0px;
+  }
+
+  .exploreDataSection .tab-data .card p {
+    padding: 0;
+  }
+
+  .sidebartabcontent .tab {
+    display: flex;
+    margin-top: 30px;
+    overflow: auto;
+  }
+
+  .exploreDataSection .tab-data {
+    width: 100%;
+    margin: auto;
+  }
+
+  .principle-wrap {
+    padding-top: 5rem !important;
+  }
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1200px) {
+  .header {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .ex-logo {
+    display: none;
+  }
+
+  .hero-bg-about {
+    background: linear-gradient(to right, #f1f7fe 77%, #ffffff 26%);
+  }
+
+  .step-bg-about {
+    background: linear-gradient(to left, #f1f7fe 77%, #ffffff 26%);
+  }
+
+  .AboutMainSection {
+    height: unset;
+    padding-top: 7%;
+    padding-bottom: 7%;
+  }
+
+  .explore {
+    padding: 0 20px 0 20px;
+  }
+
+  .exploreDataSection {
+    padding-top: 30px;
+  }
+
+  .ex-AboutsecondSection {
+    padding: 50px 20px 50px 20px;
+  }
+
+  .ex-content-visit {
+    width: 70%;
+  }
+
+  .ex-leftside img {
+    width: 69%;
+  }
+
+  .ex-leftside p {
+    width: 77%;
+  }
+
+  .bottom-section {
+    padding: 0 20px 0 20px;
+  }
+}

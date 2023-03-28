@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="178.238pt" height="192.254pt" viewBox="0 0 178.238 192.254">
+<g enable-background="new">
+<path transform="matrix(1,0,0,-1,0,192.254)" d="M 0 0 L 178.238 0 L 178.238 192.254 L 0 192.254 Z " fill="#fd9d24"/>
+<path transform="matrix(1,0,0,-1,90.5732,85.717098)" stroke-width="1.089" stroke-linecap="butt" stroke-miterlimit="10" stroke-linejoin="miter" fill="none" stroke="#ffffff" d="M 0 0 L -23.906 -41.407 L 23.906 -41.407 L 0 0 Z "/>
+<path transform="matrix(1,0,0,-1,36.1279,80.7229)" stroke-width="1.089" stroke-linecap="butt" stroke-miterlimit="10" stroke-linejoin="miter" fill="none" stroke="#ffffff" d="M 0 0 L 108.892 0 "/>
+<clipPath id="cp0">
+<path transform="matrix(1,0,0,-1,0,192.254)" d="M 0 192.254 L 178.238 192.254 L 178.238 0 L 0 0 Z "/>
+</clipPath>
+<g clip-path="url(#cp0)">
+<path transform="matrix(1,0,0,-1,67.2734,61.852296)" stroke-width="1.089" stroke-linecap="butt" stroke-miterlimit="10" stroke-linejoin="miter" fill="none" stroke="#ffffff" d="M 0 0 C 0 -7.664 -6.213 -13.876 -13.877 -13.876 C -21.54 -13.876 -27.753 -7.664 -27.753 0 C -27.753 7.664 -21.54 13.876 -13.877 13.876 C -6.213 13.876 0 7.664 0 0 Z "/>
+<path transform="matrix(1,0,0,-1,141.626,61.852296)" stroke-width="1.089" stroke-linecap="butt" stroke-miterlimit="10" stroke-linejoin="miter" fill="none" stroke="#ffffff" d="M 0 0 C 0 -7.664 -6.212 -13.876 -13.876 -13.876 C -21.54 -13.876 -27.752 -7.664 -27.752 0 C -27.752 7.664 -21.54 13.876 -13.876 13.876 C -6.212 13.876 0 7.664 0 0 Z "/>
+</g>
+<text fill="#ffffff" xml:space="preserve" transform="matrix(1 0 -0 1 0 192.254)" font-size="13" font-family="SemplicitaPro" font-weight="bold"><tspan y="-29.3853" x="27.6543 35.8313 45.8933 52.9913 60.7133 63.833299 75.6243 82.670299 85.7903 92.8883 102.5993 116.5223 119.6423 129.3533 140.49431 150.37432">RULE OF LAW AND </tspan><tspan y="-13.785299" x="43.241304 53.121305 63.183305 70.905307 74.02531 81.82531 90.00231 101.79331 111.69931 119.42131 127.10431 134.78731">DUE PROCESS </tspan></text>
+</g>
+</svg>

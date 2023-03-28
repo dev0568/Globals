@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="178.238pt" height="192.254pt" viewBox="0 0 178.238 192.254">
+<g enable-background="new">
+<path transform="matrix(1,0,0,-1,0,192.254)" d="M 0 0 L 178.238 0 L 178.238 192.254 L 0 192.254 Z " fill="#fe5b22"/>
+<clipPath id="cp0">
+<path transform="matrix(1,0,0,-1,0,192.254)" d="M 0 192.254 L 178.238 192.254 L 178.238 0 L 0 0 Z "/>
+</clipPath>
+<g clip-path="url(#cp0)">
+<path transform="matrix(1,0,0,-1,70.9023,83.2439)" stroke-width="1.089" stroke-linecap="butt" stroke-dasharray="1.815,1.815" stroke-linejoin="round" fill="none" stroke="#ffffff" d="M 0 0 C 0 -9.963 -8.077 -18.04 -18.04 -18.04 C -28.003 -18.04 -36.08 -9.963 -36.08 0 C -36.08 9.963 -28.003 18.04 -18.04 18.04 C -8.077 18.04 0 9.963 0 0 Z "/>
+<path transform="matrix(1,0,0,-1,89.2686,64.8782)" stroke-width="1.089" stroke-linecap="butt" stroke-dasharray="1.815,1.815" stroke-linejoin="round" fill="none" stroke="#ffffff" d="M 0 0 C -9.964 0 -18.04 8.077 -18.04 18.04 C -18.04 28.003 -9.964 36.08 0 36.08 C 9.963 36.08 18.04 28.003 18.04 18.04 C 18.04 8.077 9.963 0 0 0 Z "/>
+<path transform="matrix(1,0,0,-1,89.2686,137.6897)" stroke-width="1.089" stroke-linecap="butt" stroke-dasharray="1.815,1.815" stroke-linejoin="round" fill="none" stroke="#ffffff" d="M 0 0 C -9.964 0 -18.04 8.077 -18.04 18.04 C -18.04 28.003 -9.964 36.08 0 36.08 C 9.963 36.08 18.04 28.003 18.04 18.04 C 18.04 8.077 9.963 0 0 0 Z "/>
+<path transform="matrix(1,0,0,-1,76.2813,70.257099)" stroke-width="1.089" stroke-linecap="butt" stroke-dasharray="1.815,1.815" stroke-linejoin="round" fill="none" stroke="#ffffff" d="M 0 0 C -7.045 -7.045 -18.467 -7.045 -25.512 0 C -32.557 7.045 -32.557 18.467 -25.512 25.512 C -18.467 32.557 -7.045 32.557 0 25.512 C 7.046 18.467 7.046 7.045 0 0 Z "/>
+<path transform="matrix(1,0,0,-1,50.7695,121.7429)" stroke-width="1.089" stroke-linecap="butt" stroke-dasharray="1.815,1.815" stroke-linejoin="round" fill="none" stroke="#ffffff" d="M 0 0 C -7.045 7.045 -7.045 18.467 0 25.512 C 7.045 32.557 18.467 32.557 25.512 25.512 C 32.558 18.467 32.558 7.045 25.512 0 C 18.467 -7.045 7.045 -7.045 0 0 Z "/>
+<path transform="matrix(1,0,0,-1,130.9297,65.9871)" stroke-width="1.089" stroke-linecap="butt" stroke-dasharray="1.815,1.815" stroke-linejoin="round" fill="none" stroke="#ffffff" d="M 0 0 C 3.641 6.823 2.59 15.49 -3.162 21.242 C -10.207 28.287 -21.63 28.287 -28.675 21.242 C -35.72 14.197 -35.72 2.775 -28.675 -4.27 C -26.504 -6.44 -23.917 -7.937 -21.172 -8.77 "/>
+<path transform="matrix(1,0,0,-1,109.7578,91.7307)" stroke-width="1.089" stroke-linecap="butt" stroke-dasharray="1.815,1.815" stroke-linejoin="round" fill="none" stroke="#ffffff" d="M 0 0 C -2.745 -.833 -5.332 -2.33 -7.503 -4.5 C -14.548 -11.545 -14.548 -22.967 -7.503 -30.012 C -.458 -37.057 10.965 -37.057 18.01 -30.012 C 23.762 -24.26 24.812 -15.593 21.172 -8.77 "/>
+<path transform="matrix(1,0,0,-1,143.7139,83.2439)" stroke-width="1.089" stroke-linecap="butt" stroke-miterlimit="10" stroke-linejoin="miter" fill="none" stroke="#ffffff" d="M 0 0 C 0 -9.963 -8.076 -18.04 -18.04 -18.04 C -28.003 -18.04 -36.079 -9.963 -36.079 0 C -36.079 9.963 -28.003 18.04 -18.04 18.04 C -8.076 18.04 0 9.963 0 0 Z "/>
+</g>
+<text fill="#ffffff" xml:space="preserve" transform="matrix(1 0 -0 1 0 192.254)" font-size="13" font-family="SemplicitaPro" font-weight="bold"><tspan y="-28.2363" x="51.627 62.767999 72.479 80.369998 84.243999 96.034999 107.175998 116.88699 123.98499">NATIONAL </tspan><tspan y="-12.636299" x="41.981 49.663999 61.454999 70.698 78.42 86.597 94.319 98.193 109.243007 120.384 128.27501">SOVEREIGNTY</tspan></text>
+</g>
+</svg>

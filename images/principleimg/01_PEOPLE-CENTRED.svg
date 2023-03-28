@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="178.238pt" height="192.254pt" viewBox="0 0 178.238 192.254">
+<g enable-background="new">
+<path transform="matrix(1,0,0,-1,0,192.254)" d="M 0 0 L 178.238 0 L 178.238 192.254 L 0 192.254 Z " fill="#5a3669"/>
+<clipPath id="cp0">
+<path transform="matrix(1,0,0,-1,0,192.254)" d="M 0 192.254 L 178.238 192.254 L 178.238 0 L 0 0 Z "/>
+</clipPath>
+<g clip-path="url(#cp0)">
+<path transform="matrix(1,0,0,-1,144.6318,83.1892)" stroke-width="1.089" stroke-linecap="butt" stroke-miterlimit="10" stroke-linejoin="miter" fill="none" stroke="#ffffff" d="M 0 0 C 0 -30.07 -24.377 -54.446 -54.446 -54.446 C -84.516 -54.446 -108.892 -30.07 -108.892 0 C -108.892 30.069 -84.516 54.446 -54.446 54.446 C -24.377 54.446 0 30.069 0 0 Z "/>
+<path transform="matrix(1,0,0,-1,131.3223,83.1892)" stroke-width="1.089" stroke-linecap="butt" stroke-miterlimit="10" stroke-linejoin="miter" fill="none" stroke="#ffffff" d="M 0 0 C 0 -22.719 -18.417 -41.137 -41.137 -41.137 C -63.855 -41.137 -82.273 -22.719 -82.273 0 C -82.273 22.719 -63.855 41.137 -41.137 41.137 C -18.417 41.137 0 22.719 0 0 Z "/>
+<path transform="matrix(1,0,0,-1,90.1855,55.9617)" stroke-width="1.089" stroke-linecap="butt" stroke-miterlimit="10" stroke-linejoin="miter" fill="none" stroke="#ffffff" d="M 0 0 C -14.7 0 -26.618 -11.917 -26.618 -26.618 C -26.618 -36.627 -21.087 -45.336 -12.92 -49.882 C -9.684 -46.438 -5.1 -44.274 0 -44.274 C 5.1 -44.274 9.684 -46.438 12.921 -49.882 C 21.087 -45.336 26.618 -36.627 26.618 -26.618 C 26.618 -11.917 14.701 0 0 0 Z "/>
+<path transform="matrix(1,0,0,-1,106.2148,82.4173)" stroke-width="1.089" stroke-linecap="butt" stroke-miterlimit="10" stroke-linejoin="miter" fill="none" stroke="#ffffff" d="M 0 0 C 0 -8.853 -7.177 -16.029 -16.029 -16.029 C -24.882 -16.029 -32.058 -8.853 -32.058 0 C -32.058 8.853 -24.882 16.029 -16.029 16.029 C -7.177 16.029 0 8.853 0 0 Z "/>
+</g>
+<text fill="#ffffff" xml:space="preserve" transform="matrix(1 0 -0 1 0 192.254)" font-size="13" font-family="SemplicitaPro" font-weight="bold"><tspan y="-17.9253" x="30.1445 37.9445 45.6665 57.4575 65.2575 72.3555 80.0775 85.6545 95.5605 103.2825 114.4235 122.3145 130.4915 138.2135">PEOPLE-CENTRED</tspan></text>
+</g>
+</svg>

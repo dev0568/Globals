@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Resources</title>
+  <link rel="stylesheet" href="./styles/style.css" />
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500&display=swap"
+    rel="stylesheet" />
+  <script src="js/jquery.min.js"></script>
+  <script src="js/index.js"></script>
+  <script src="js/tinyi18n.js"></script>
+  <script src="js/resources.js"></script>
+  <script src="js/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+  <div class="resource-background">
+    <div class="resource-Bg">
+      <!-- Header -->
+      <header class="headerBg">
+        <div class="container-fluid">
+          <div class="header">
+            <input id="menu__toggle" type="checkbox" />
+            <label class="menu__btn" for="menu__toggle"><span></span></label>
+            <div class="logo">
+              <a target="_blank" href="https://migrationnetwork.un.org/" id="HeaderRightLink">
+                <img id='headerunited' src="./images/UNNM-Logo-TAG.png" alt="logo" />
+              </a>
+              <a target="_blank" class="LogoforMobile" target="_blank"
+                href="https://migrationnetwork.un.org/migration-network-hub"><img src="./images/footer-Logo.png"
+                  alt="logo" /></a>
+            </div>
+            <div id="overlay"></div>
+
+            <div id="menu-close" class="menu__box">
+              <div class="collapse-top">
+                <a target="_blank" href="https://migrationnetwork.un.org/migration-network-hub"><img
+                    class="collapse-logo" src="./images/footer-Logo.png" alt="logo" /></a>
+              </div>
+              <ul>
+                <li><a href="/" data-translatekey="home"></a></li>
+                <li><a href="about.html" data-translatekey="about"></a></li>
+                <li><a href="gcmobjectives.html" data-translatekey="objective"></a></li>
+                <li><a href="Principles.html" data-translatekey="priniciples"></a></li>
+                <li> <a href="ImplementationSteps.html" data-translatekey="implementation"></a></li>
+                <li><a href="resources.html" class="active" data-translatekey="resources"></a></li>
+                <li>
+                  <div class="dropdown">
+                    <button class="dropbtn" id="dropdowntext" onclick="myFunction()">English</button>
+                    <div id="selectBox" class="dropdown-content">
+                      <a onclick="changeFunc('en')">English</a>
+                      <a onclick="changeFunc('fr')">Français</a>
+                      <a onclick="changeFunc('spa')">Español</a>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+
+              <div class="collapse-bottom">
+                <h4 data-translatekey="gcmobjcollapsetitle"></h4>
+                <a target="_blank" href="https://migrationnetwork.un.org/migration-network-hub"><img
+                    src="./images/logo.svg" alt="logo" /></a>
+                <hr class="mobileview-divider">
+                <a target="_blank" href="https://migrationnetwork.un.org/migration-network-hub"><img id="headerunited2"
+                    class="secondImg" src="./images/mignet-logo.png" alt="logo" /></a>
+              </div>
+            </div>
+            <div class="Rightlogo">
+              <a target="_blank" class="LogoforWeb" target="_blank" id="HeaderLeftLink"
+                href="https://migrationnetwork.un.org/migration-network-hub"><img src="./images/logo.svg"
+                  alt="logo" /></a>
+            </div>
+          </div>
+        </div>
+      </header>
+      <div class="container">
+        <img class="BannerImg" src="./images/resourcesBanner.svg" alt="Banner Image" />
+      </div>
+    </div>
+
+    <!-- Resources section-->
+    <section class="container">
+      <div class="resources">
+        <div class="Card">
+          <div class="text-content">
+            <h1 data-translatekey="resources"></h1>
+            <p data-translatekey="resourcesubtitle"></p>
+          </div>
+          <div class="accordianSection">
+
+            <div class="wrap">
+              <div class="accordion thirdaccordian">
+                <h6 data-translatekey="resourceacctitle2"></h6>
+                <a target="_blank" id="secondaccordianLink" class="migrationnetworkLink"
+                  href="http://migrationnetwork.un.org" data-translatekey="migrationnetworkhublink"></a>
+              </div>
+              <div class="panel">
+                <p data-translatekey="resourceaccpara2"></p>
+              </div>
+            </div>
+            <div class="divider"></div>
+            <div class="wrap">
+              <div class="accordion ">
+                <div>
+                  <h6 data-translatekey="resourceacctitle1"></h6>
+                  <a target="_blank" id="firstaccordianLink" class="migrationnetworkLink"
+                    href="https://migrationnetwork.un.org/hub">https://migrationnetwork.un.org/migration-network-hub</a>
+                </div>
+              </div>
+              <div class="panel">
+                <p data-translatekey="resourceaccpara1"></p>
+              </div>
+            </div>
+            <div class="divider"></div>
+            <div class="wrap">
+              <div class="accordion thirdaccordian">
+                <h6 data-translatekey="resourceacctitle3"></h6>
+                <a target="_blank" id="thirdaccordianLink"
+                  href="https://documents-dds-ny.un.org/doc/UNDOC/GEN/N18/451/99/PDF/N1845199.pdf?OpenElement ">https://documents-dds-ny.un.org/doc/UNDOC/GEN/N18/452/03/PDF/N1845203.pdf?OpenElement
+                </a>
+              </div>
+              <div class="panel">
+                <p data-translatekey="resourceaccpara3"></p>
+              </div>
+            </div>
+            <div class="divider"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Other relevant section-->
+    <section class="otherRelevant">
+      <div class="container">
+        <h3 data-translatekey="resoucesecondtitle"></h3>
+        <div class="content">
+          <div class="leftSide">
+            <div class="wrap">
+              <div class="accordion3">
+                <h6 data-translatekey="resoucetopic1"></h6>
+              </div>
+              <div class="panel">
+                <div class="tab">
+                  <p data-translatekey="resourceacctitle1"></p>
+                  <a target="_blank" id="accor1p1link"
+                    href="https://migrationnetwork.un.org/migration-network-hub">https://migrationnetwork.un.org/migration-network-hub</a>
+                </div>
+                <div class="tab">
+                  <p data-translatekey="resoucetopic1p2"></p>
+                  <a target="_blank" id="accor1p2link"
+                    href="https://migrationnetwork.un.org/">https://migrationnetwork.un.org/</a>
+                </div>
+                <div class="tab">
+                  <p data-translatekey="resoucetopic1p3"></p>
+                  <a target="_blank" id="accor1p3link"
+                    href="https://www.migrationdataportal.org/">https://www.migrationdataportal.org/</a>
+                </div>
+
+              </div>
+            </div>
+            <div class="wrap">
+              <div class="accordion3 accordion-after">
+                <h6 data-translatekey="resoucetopic2"></h6>
+              </div>
+              <div class="panel">
+                <div class="tab">
+                  <p data-translatekey="resourceacctitle2p1"></p>
+                  <a target="_blank" id="accor2p1link"
+                    href="https://documents-dds-ny.un.org/doc/UNDOC/GEN/N18/452/03/PDF/N1845203.pdf?OpenElement">https://documents-dds-ny.un.org/doc/UNDOC/GEN/N18/452/03/PDF/N1845203.pdf?OpenElement</a>
+                </div>
+                <div class="tab">
+                  <p data-translatekey="resourceacctitle2p2"></p>
+                  <a target="_blank" id="accor2p2link"
+                    href="https://www.acnur.org/5c782d124#_ga=2.253349897.1071406557.1665407190-2091751813.1665407190">https://www.acnur.org/5c782d124#_ga=2.253349897.1071406557.1665407190-2091751813.1665407190</a>
+                </div>
+                <div class="tab">
+                  <p data-translatekey="resourceacctitle2p3"></p>
+                  <a target="_blank" id="accor2p3link"
+                    href="https://documents-dds-ny.un.org/doc/UNDOC/GEN/N18/451/99/PDF/N1845199.pdf?OpenElement">https://documents-dds-ny.un.org/doc/UNDOC/GEN/N18/451/99/PDF/N1845199.pdf?OpenElement</a>
+                </div>
+                <div class="tab">
+                  <p data-translatekey="resourceacctitle2p4"></p>
+                  <a target="_blank" id="accor2p4link"
+                    href="https://refugeesmigrants.un.org/es/summit-refugees-and-migrants">https://refugeesmigrants.un.org/es/summit-refugees-and-migrants</a>
+                </div>
+                <div class="tab">
+                  <p data-translatekey="resourceacctitle2p5"></p>
+                  <a target="_blank" id="accor2p5link"
+                    href="https://www.acnur.org/prot/instr/5b4d0eee4/declaracion-de-nueva-york-para-los-refugiados-y-los-migrantes.html">https://www.acnur.org/prot/instr/5b4d0eee4/declaracion-de-nueva-york-para-los-refugiados-y-los-migrantes.html</a>
+                </div>
+              </div>
+            </div>
+            <div class="wrap">
+              <div class="accordion3">
+                <h6 data-translatekey="resoucetopic3"></h6>
+              </div>
+              <div class="panel">
+                <div class="tab">
+                  <p data-translatekey="resourceacctitle3p1"></p>
+                  <a target="_blank" id="accor3p1link"
+                    href="https://habitat3.org/wp-content/uploads/NUA-English.pdf">https://habitat3.org/wp-content/uploads/NUA-English.pdf</a>
+                </div>
+                <div class="tab">
+                  <p data-translatekey="resourceacctitle3p2"></p>
+                  <a target="_blank" id="accor3p2link"
+                    href="https://unfccc.int/fr/a-propos-des-ndcs/l-accord-de-paris">https://unfccc.int/fr/a-propos-des-ndcs/l-accord-de-paris</a>
+                </div>
+                <div class="tab">
+                  <p data-translatekey="resourceacctitle3p3"></p>
+                  <a target="_blank" id="accor3p3link"
+                    href="https://www.unisdr.org/files/43291_frenchs-endaiframeworkfordisasterris.pdf">https://www.unisdr.org/files/43291_frenchs-endaiframeworkfordisasterris.pdf</a>
+                </div>
+
+              </div>
+            </div>
+          </div>
+          <div class="rightSide">
+            <div class="wrap">
+              <div class="accordion3">
+                <h6 data-translatekey="resoucetopic4"></h6>
+              </div>
+              <div class="panel">
+                <div class="tab">
+                  <p data-translatekey="resourceacctitle4p1"></p>
+                  <a target="_blank" id="accor4p1link" href="https://hrbaportal.org/">https://hrbaportal.org/</a>
+                </div>
+                <div class="tab">
+                  <p data-translatekey="resourceacctitle4p2"></p>
+                  <a target="_blank" id="accor4p2link"
+                    href="https://www.ohchr.org/fr/instruments-and-mechanisms">https://www.ohchr.org/fr/instruments-and-mechanisms</a>
+                </div>
+                <div class="tab">
+                  <p data-translatekey="resourceacctitle4p3"></p>
+                  <a target="_blank" id="accor4p3link"
+                    href="https://unsdg.un.org/fr/resources/note-dorientation-du-gnud-sur-les-droits-de-lhomme-lintention-des-coordonnateurs">https://unsdg.un.org/fr/resources/note-dorientation-du-gnud-sur-les-droits-de-lhomme-lintention-des-coordonnateurs</a>
+                </div>
+                <div class="tab">
+                  <p data-translatekey="resourceacctitle4p4"></p>
+                  <a target="_blank" id="accor4p4link" href=""></a>
+                </div>
+
+              </div>
+            </div>
+            <div class="wrap">
+              <div class="accordion3">
+                <h6 data-translatekey="resoucetopic5"></h6>
+              </div>
+              <div class="panel">
+                <div class="tab">
+                  <p data-translatekey="resourceacctitle5p1"></p>
+                  <a target="_blank" id="accor5p1link" href="https://reform.un.org/fr">https://reform.un.org/fr</a>
+                </div>
+                <div class="tab">
+                  <p data-translatekey="resourceacctitle5p2"></p>
+                  <a target="_blank" id="accor5p2link" href="http://www.gfmd.org/">http://www.gfmd.org/</a>
+                </div>
+                <div class="tab">
+                  <p data-translatekey="resourceacctitle5p3"></p>
+                  <a target="_blank" id="accor5p3link" href="https://hlpf.un.org/">https://hlpf.un.org/</a>
+                </div>
+                <div class="tab">
+                  <p data-translatekey="resourceacctitle5p4"></p>
+                  <a target="_blank" id="accor5p4link" href="https://hlpf.un.org/vnrs">https://hlpf.un.org/vnrs</a>
+                </div>
+                <div class="tab">
+                  <p data-translatekey="resourceacctitle5p5"></p>
+                  <a target="_blank" id="accor5p5link"
+                    href="https://www.un.org/sustainabledevelopment/">https://www.un.org/sustainabledevelopment/</a>
+                </div>
+                <div class="tab">
+                  <p data-translatekey="resourceacctitle5p6"></p>
+                  <a target="_blank" id="accor5p6link"
+                    href="https://unctad.org/system/files/official-document/ares69d313_en.pdf">https://unctad.org/system/files/official-document/ares69d313_en.pdf</a>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- footer section -->
+  <section class="footer-bg">
+    <div class="container">
+      <div class="footer">
+        <div class="scroller" id="scroll-to-bottom">
+          <button onclick="topFunction()" id="myBtn" title="Go to top" data-translatekey="backToTopButton">
+          </button>
+        </div>
+        <div class="leftside">
+          <h4 data-translatekey="footerKnowMoreQuestion"></h4>
+          <img class="firstimg" id='footerglobal' src="./images/footer-Logo.png" alt="footer logo" />
+          <!-- <a target="_blank" id="FooterLeftLink" href="https://migrationnetwork.un.org/migration-network-hub">
+            <img class="secondimg" src="./images/logo.svg" alt="logo" />
+          </a> -->
+          <button class="return-btn" data-translatekey="returntomigrationhub"></button>
+        </div>
+        <div class="rightside">
+          <ul>
+            <li>
+              <h5 data-translatekey="footerQuickLinks"></h5>
+            </li>
+            <li>
+              <a target="_blank" href="https://migrationnetwork.un.org/" data-translatekey="footerUnitedNationLink"
+                id="UNNLink"></a>
+            </li>
+            <li>
+              <a target="_blank" id="GCMImmplementLink" href="https://migrationnetwork.un.org/gcm-guidance"
+                data-translatekey="footerGCMImplementationLink"></a>
+            </li>
+            <li>
+              <a target="_blank" id="MigrationNetHubLink" href="https://migrationnetwork.un.org/migration-network-hub"
+                data-translatekey="footerMigrationNetworkLink"></a>
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <h5 data-translatekey="footerAboutGCM"></h5>
+            </li>
+            <li>
+              <a target="_blank" id="NutshellLink" href="https://migrationnetwork.un.org/global-compact-for-migration"
+                data-translatekey="footerNutshellLink"></a>
+            </li>
+            <li>
+              <a target="_blank" id="PledgesLink" href="https://migrationnetwork.un.org/the-pledging-dashboard"
+                data-translatekey="footerPledgesLink"></a>
+            </li>
+            <li>
+              <a target="_blank" id="RepoofPracticeLink"
+                href="https://migrationnetwork.un.org/hub/repository-of-practices"
+                data-translatekey="footerRepositoryLink"></a>
+            </li>
+            <li>
+              <a target="_blank" id="TrustFundLink" href="https://migrationnetwork.un.org/mptf"
+                data-translatekey="footerTrustFundLink"></a>
+            </li>
+            <li>
+              <a target="_blank" id="InternationalMigrationLink"
+                href="https://migrationnetwork.un.org/international-migration-review-forum-2022"
+                data-translatekey="footerInternationalForumLink"></a>
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <h5 data-translatekey="footerFollowUs"></h5>
+            </li>
+            <li><a target="_blank" href="https://twitter.com/UNMigNetwork" data-translatekey="footerTwitterLink"></a>
+            </li>
+            <li>
+              <a target="_blank"
+                href="https://migrationnetwork.us19.list-manage.com/subscribe?u=91a1d870ca31df83b2b697cf6&id=9c7fcb90a4"
+                data-translatekey="footerNewsletterLink"></a>
+            </li>
+            <li>
+              <a target="_blank" id="EventsLink"
+                href="https://migrationnetwork.un.org/hub/events?text=&gcm_objectives=All&cross_cutting_theme=All&region=All&country=All"
+                data-translatekey="footerEventsLink"></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="bottom-section">
+        <ul>
+          <li><a target="_blank" href="#" id="copyRight" data-translatekey="footerCopyright"></a></li>
+          <li><a target="_blank" href="#" id="fraudAlert" data-translatekey="footerFraudAlert"></a></li>
+          <li><a target="_blank" href="#" id="PrivacyNotice" data-translatekey="footerPrivacyNotice"></a></li>
+          <li><a target="_blank" href="#" id="termsofUse" data-translatekey="footerTermsOfUse"></a></li>
+        </ul>
+        <!-- <a target="_blank" id="FooterRightLink" href="https://migrationnetwork.un.org/">
+          <img id="footerunited" src="./images/mignet-logo.png" alt="logo" />
+        </a> -->
+      </div>
+    </div>
+  </section>
+
+  <script>
+    var acc = document.getElementsByClassName("accordion");
+    var i;
+    for (i = 0; i < acc?.length; i++) {
+      acc[i].addEventListener("click", function () {
+        this.classList.toggle("active");
+        var panel = this.nextElementSibling;
+        if (panel.style.maxHeight) {
+          panel.style.maxHeight = null;
+        } else {
+          panel.style.maxHeight = panel.scrollHeight + "px";
+        }
+      });
+    }
+
+    var acc3 = document.getElementsByClassName("accordion3");
+    var i;
+    for (i = 0; i < acc3?.length; i++) {
+      acc3[i].addEventListener("click", function () {
+        this.classList.toggle("active");
+        var panel = this.nextElementSibling;
+        if (panel.style.maxHeight) {
+          panel.style.maxHeight = null;
+        } else {
+          panel.style.maxHeight = panel.scrollHeight + "px";
+        }
+      });
+    }
+
+    //Get the button
+    var mybutton = document.getElementById("myBtn");
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function () {
+      scrollFunction();
+    };
+    function scrollFunction() {
+      if (
+        document.body.scrollTop > 20 ||
+        document.documentElement.scrollTop > 20
+      ) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+  </script>
+</body>
+
+</html>

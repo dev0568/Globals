@@ -1,0 +1,1328 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Guiding Principles</title>
+  <link rel="stylesheet" href="./styles/style.css" />
+  <link rel="stylesheet" href="./styles/Objectives-style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="js/jquery.min.js"></script>
+  <script src="js/index.js"></script>
+  <script src="js/tinyi18n.js"></script>
+  <script src="js/principles.js"></script>
+</head>
+
+<body>
+
+  <!-- Header -->
+  <div class="hero-bg-about principle-wrap" style="padding-bottom: 6rem;padding-top: 12rem;">
+    <header class="headerBg">
+      <div class="container-fluid">
+        <div class="header">
+          <input id="menu__toggle" type="checkbox" />
+          <label class="menu__btn" for="menu__toggle"><span></span></label>
+          <div class="logo">
+            <a target="_blank" href="https://migrationnetwork.un.org/" id="HeaderRightLink">
+              <img id='headerunited' src="./images/UNNM-Logo-TAG.png" alt="logo" />
+            </a>
+            <a target="_blank" class="LogoforMobile" target="_blank"
+              href="https://migrationnetwork.un.org/migration-network-hub"><img src="./images/footer-Logo.png"
+                alt="logo" /></a>
+          </div>
+          <div id="overlay"></div>
+
+          <div id="menu-close" class="menu__box">
+            <div class="collapse-top">
+              <a target="_blank" href="https://migrationnetwork.un.org/migration-network-hub"><img class="collapse-logo"
+                  src="./images/footer-Logo.png" alt="logo" /></a>
+            </div>
+            <ul>
+              <li><a href="/" data-translatekey="home"></a></li>
+              <li><a href="about.html" data-translatekey="about"></a></li>
+              <li><a href="gcmobjectives.html" data-translatekey="objective"></a></li>
+              <li><a href="Principles.html" class="active" data-translatekey="priniciples"></a></li>
+              <li> <a href="ImplementationSteps.html" data-translatekey="implementation"></a></li>
+              <li><a href="resources.html" data-translatekey="resources"></a></li>
+              <li>
+                <div class="dropdown">
+                  <button class="dropbtn" id="dropdowntext" onclick="myFunction()">English</button>
+                  <div id="selectBox" class="dropdown-content">
+                    <a onclick="changeFunc('en')">English</a>
+                    <a onclick="changeFunc('fr')">Français</a>
+                    <a onclick="changeFunc('spa')">Español</a>
+                  </div>
+                </div>
+              </li>
+            </ul>
+
+            <div class="collapse-bottom">
+              <h4 data-translatekey="gcmobjcollapsetitle"></h4>
+              <a target="_blank" href="https://migrationnetwork.un.org/migration-network-hub"><img
+                  src="./images/logo.svg" alt="logo" /></a>
+              <hr class="mobileview-divider">
+              <a target="_blank" href="https://migrationnetwork.un.org/migration-network-hub"><img id="headerunited2"
+                  class="secondImg" src="./images/mignet-logo.png" alt="logo" /></a>
+            </div>
+          </div>
+          <div class="Rightlogo">
+            <a target="_blank" class="LogoforWeb" target="_blank" id="HeaderLeftLink"
+              href="https://migrationnetwork.un.org/migration-network-hub"><img src="./images/logo.svg"
+                alt="logo" /></a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- first hero section -->
+    <section>
+      <div class="container">
+        <div class="objective-inner-section">
+          <div class="content">
+            <h2 class="banner-heading-text" data-translatekey="lespriniciples"></h2>
+            <p class="banner-des" data-translatekey="principleherotext"></p>
+
+            <div class="btnSection">
+              <a target="_blank" class="primarybtn guidepdf">
+                <span data-translatekey="steppagebtn1txt"></span><img src="./images/download.png" class="download-icon">
+                <!-- <i class="fa-solid fa-arrow-down"></i> -->
+              </a>
+            </div>
+          </div>
+          <div class="image-section">
+            <div class="bluecard-wrapper">
+            </div>
+            <img id="heroImgLink" src="./images/Guiding-Principles.png" alt="Guiding-Principles" />
+          </div>
+        </div>
+      </div>
+      <div class="scroller" id="scroll-to-bottom">
+        <p class="Explore-Text" data-translatekey="principlescrolltext"></p>
+        <a> <img src="./images/Arrow_1.png" class="down-icon" /></i></a>
+      </div>
+    </section>
+  </div>
+  <p id="page-bottom"></p>
+
+  <!-- EXplore GCM section-->
+  <section>
+    <div class="container">
+      <div class="explore">
+        <div class="for-mobile">
+          <form class="search-form">
+            <input type="hidden" name="search-form-loc" id="search-form-loc" />
+            <div class="pos-rel">
+              <div class="search-form__selector">
+                <p class="search-form__label search-form__label--loc" data-translatekey="Principletab1"></p>
+                <img class="search-form__icon" src="./images/AngleDownblue.svg" alt="AngleDownblue">
+              </div>
+              <ul class="search-form__dropdown" id="selectBox4">
+                <li class="search-form__value clickme3 active" data-tag="firstcontent" data-loc="search-form-loc"
+                  data-translatekey="Principletab1"></li>
+                <li class="search-form__value clickme3" data-tag="secondcontent" data-loc="search-form-loc"
+                  data-translatekey="Principletab2"></li>
+                <li class="search-form__value clickme3" data-tag="thirdcontent" data-loc="search-form-loc"
+                  data-translatekey="Principletab3"></li>
+                <li class="search-form__value clickme3" data-tag="fourthcontent" data-loc="search-form-loc"
+                  data-translatekey="Principletab4"></li>
+                <li class="search-form__value clickme3" data-tag="fifthcontent" data-loc="search-form-loc"
+                  data-translatekey="Principletab5"></li>
+                <li class="search-form__value clickme3" data-tag="sixthcontent" data-loc="search-form-loc"
+                  data-translatekey="Principletab6"></li>
+                <li class="search-form__value clickme3" data-tag="seventhcontent" data-loc="search-form-loc"
+                  data-translatekey="Principletab7"></li>
+                <li class="search-form__value clickme3" data-tag="eighthcontent" data-loc="search-form-loc"
+                  data-translatekey="Principletab8"></li>
+                <li class="search-form__value clickme3" data-tag="ninthcontent" data-loc="search-form-loc"
+                  data-translatekey="Principletab9"></li>
+                <li class="search-form__value clickme3" data-tag="tenthcontent" data-loc="search-form-loc"
+                  data-translatekey="Principletab10"></li>
+              </ul>
+            </div>
+          </form>
+        </div>
+        <div class="exploreDataSection">
+          <div class="tabs principle">
+            <!-- <div id="LeftSideSection"></div> -->
+            <button class="clickme3 active" data-tag="firstcontent"><img src="./images/principleimg/humanrights.png"
+                alt="human rights img"><span data-translatekey="Principletab1"></span></button>
+            <button class="clickme3" data-tag="secondcontent"><img src="./images/principleimg/sustainable.png"
+                alt="sustainable img"><span data-translatekey="Principletab2"></span></button>
+            <button class="clickme3" data-tag="thirdcontent"><img src="./images/principleimg/childSensetive.png"
+                alt="childSensetive img"><span data-translatekey="Principletab3"></span></button>
+            <button class="clickme3" data-tag="fourthcontent"><img src="./images/principleimg/genderResponsive.png"
+                alt="Principletab4"><span data-translatekey="Principletab4"></span></button>
+            <button class="clickme3" data-tag="fifthcontent"><img src="./images/principleimg/delivering.png"
+                alt="fifthcontent"><span data-translatekey="Principletab5"></span></button>
+            <button class="clickme3" data-tag="sixthcontent"><img src="./images/principleimg/society.png"
+                alt="Principletab"><span data-translatekey="Principletab6"></span></button>
+            <button class="clickme3" data-tag="seventhcontent"><img src="./images/principleimg/ruleLaw.png"
+                alt="Principletab"><span data-translatekey="Principletab7"></span></button>
+            <button class="clickme3" data-tag="eighthcontent"><img src="./images/principleimg/national.png"
+                alt="PrincipletabPrincipletab9"><span data-translatekey="Principletab8"></span></button>
+            <button class="clickme3" data-tag="ninthcontent"><img src="./images/principleimg/international.png"
+                alt="Principletab9"><span data-translatekey="Principletab9"></span></button>
+            <button class="clickme3" data-tag="tenthcontent"><img src="./images/principleimg/people.png"
+                alt="Principletab"><span data-translatekey="Principletab10"></span></button>
+          </div>
+          <div class="tab-data tab-inner3 active" id="firstcontent">
+            <div class="card">
+              <img class="pnp-img" id="firstTabImg" src="./images/principleimg/06_HUMAN RIGHTS.jpg"
+                alt="Principletab9" />
+              <div class="wrapper">
+                <h3 class="heading" data-translatekey="Principletab1heading"></h3>
+                <h4 data-translatekey="Principletab1subheading"></h4>
+                <p class="more" data-translatekey="Principletab1description"></p>
+                <a class="anchor" id="Tab1Spalink" href="./pdf/HUMAN RIGHTS BASED APPROACH.pdf"
+                  data-translatekey="downloadthisprp" target="_blank"></a>
+              </div>
+            </div>
+            <div>
+              <div class="tab-button">
+                <button class="clickme active" data-tag="1" data-translatekey="importance"></button>
+                <button class="clickme" data-tag="2" data-translatekey="inpractice"></button>
+                <button class="clickme" data-tag="3" data-translatekey="resources"></button>
+              </div>
+              <div class="tab-maindata">
+
+                <ul class="tab-inner des-text" id="1">
+                  <li data-translatekey="Principletab1firstp1"></li>
+                  <li data-translatekey="Principletab1firstp2"></li>
+                  <li data-translatekey="Principletab1firstp3"></li>
+                  <li data-translatekey="Principletab1firstp4"></li>
+                  <li data-translatekey="Principletab1firstp5"></li>
+                  <li data-translatekey="Principletab1firstp6"></li>
+                  <li data-translatekey="Principletab1firstp7"></li>
+                  <a id="readmoreLinkTab1"
+                    href="https://migrationnetwork.un.org/hub?gcm_objectives=All&cross_cutting_theme=259&region=All&country=All&text="
+                    class="ex-rdmore-btn readmoreBtnLink" data-translatekey="readmorebutton" target="_blank"></a>
+                </ul>
+                <div class="tab-inner ex-main-div hide" id="2">
+                  <div class="ex-prp-div">
+                    <div class="greendot"></div>
+                    <p class="ex-des" data-translatekey="Principletab1secondp1"></p>
+                  </div>
+                  <div class="ex-prp-div">
+                    <div class="greendot"></div>
+                    <p class="ex-des">
+                      <span data-translatekey="Principletab1secondp2a"></span>
+                      <a id="tab1subtab2Link" target="_blank" href=""></a>
+                      <span data-translatekey="Principletab1secondp2b"></span>
+                    </p>
+                  </div>
+                  <div class="ex-prp-div">
+                    <div class="greendot"></div>
+                    <p class="ex-des" data-translatekey="Principletab1secondp3"></p>
+                  </div>
+                  <div class="ex-prp-div">
+                    <div class="greendot"></div>
+                    <p class="ex-des" data-translatekey="Principletab1secondp4"></p>
+                  </div>
+                  <div class="ex-prp-div">
+                    <div class="greendot"></div>
+                    <p class="ex-des" data-translatekey="Principletab1secondp5"></p>
+                  </div>
+                  <div class="ex-prp-div">
+                    <div class="greendot"></div>
+                    <p class="ex-des" data-translatekey="Principletab1secondp6"></p>
+                  </div>
+                  <div class="ex-prp-div">
+                    <div class="greendot"></div>
+                    <p class="ex-des" data-translatekey="Principletab1secondp7"></p>
+                  </div>
+                  <div class="ex-prp-div">
+                    <div class="greendot"></div>
+                    <p class="ex-des" data-translatekey="Principletab1secondp8">
+                  </div>
+                </div>
+                <div class="tab-inner hide" id="3">
+                  <div class="ex-sdg-div">
+                    <div class="ex-prp-div">
+                      <div class="greendot"></div>
+                      <p class="ex-sdg-des">
+                        <span data-translatekey="Principletab1thirdp1"></span>
+                        <a id="Tab1R1Link" target="_blank" href=""></a>.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="ex-sdg-div">
+                    <div class="ex-prp-div">
+                      <div class="greendot"></div>
+                      <p class="ex-sdg-des">
+                        <span data-translatekey="Principletab1thirdp2"></span>
+                        <a id="Tab1R2Link" target="_blank" href=""></a>.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="ex-sdg-div">
+                    <div class="ex-prp-div">
+                      <div class="greendot"></div>
+                      <p class="ex-sdg-des">
+                        <span data-translatekey="Principletab1thirdp3"></span>
+                        <a id="Tab1R3Link" href=""></a>.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="ex-sdg-div">
+                    <div class="ex-prp-div">
+                      <div class="greendot"></div>
+                      <p class="ex-sdg-des">
+                        <span data-translatekey="Principletab1thirdp4"></span>
+                        <a id="Tab1R4Link" target="_blank" href=""></a>.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tab-data tab-inner3 hide" id="secondcontent">
+            <div class="card">
+              <img class="pnp-img" id="secondTabImg" src="./images/principleimg/05_SUSTAINABLE DEVELOPMENT .jpg"
+                alt="05_SUSTAINABLE development" />
+              <div class="wrapper">
+                <h3 class="heading" data-translatekey="Principletab2heading"></h3>
+                <h4 data-translatekey="Principletab2subheading"></h4>
+                <p class="more" data-translatekey="Principletab2description"></p>
+                <a class="anchor" id="Tab2Spalink" href="./pdf/SUSTAINABLE DEVELOPMENT APPROACH.pdf"
+                  data-translatekey="downloadthisprp" target="_blank"></a>
+              </div>
+            </div>
+            <div>
+              <div class="tab-button">
+                <button class="clickme active" data-tag="4" data-translatekey="importance"></button>
+                <button class="clickme" data-tag="5" data-translatekey="inpractice"></button>
+                <button class="clickme" data-tag="6" data-translatekey="resources"></button>
+              </div>
+              <div class="tab-maindata">
+
+                <ul class="tab-inner des-text" id="4">
+                  <li data-translatekey="Principletab2firstp1"></li>
+                  <li data-translatekey="Principletab2firstp2"></li>
+                  <li data-translatekey="Principletab2firstp3"></li>
+                  <a id="readmoreLinkTab2"
+                    href="https://migrationnetwork.un.org/hub?gcm_objectives=All&cross_cutting_theme=740&region=All&country=All&text=&type_of_resource=All"
+                    class="ex-rdmore-btn readmoreBtnLink" data-translatekey="readmorebutton" target="_blank"></a>
+                </ul>
+                <div class="tab-inner ex-main-div hide" id="5">
+                  <div class="ex-prp-div">
+                    <div class="greendot"></div>
+                    <p class="ex-des" data-translatekey="Principletab2secondp2"></p>
+                  </div>
+                  <div class="ex-prp-div">
+                    <div class="greendot"></div>
+                    <p class="ex-des" data-translatekey="Principletab2secondp3"></p>
+                  </div>
+                  <div class="ex-prp-div">
+                    <div class="greendot"></div>
+                    <p class="ex-des" data-translatekey="Principletab2secondp4"></p>
+                  </div>
+                  <div class="ex-prp-div">
+                    <div class="greendot"></div>
+                    <p class="ex-des" data-translatekey="Principletab2secondp5"></p>
+                  </div>
+                </div>
+                <div class="tab-inner hide" id="6">
+                  <div class="ex-sdg-div">
+                    <div class="ex-prp-div">
+                      <div class="greendot"></div>
+                      <p class="ex-sdg-des">
+                        <span data-translatekey="Principletab2thirdp1"></span>
+                        <a id="Tab2R1Link" target="_blank" href=""></a>.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="ex-sdg-div">
+                    <div class="ex-prp-div">
+                      <div class="greendot"></div>
+                      <p class="ex-sdg-des">
+                        <span data-translatekey="Principletab2thirdp2"></span>
+                        <a id="Tab2R2Link" target="_blank" href=""></a>.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="ex-sdg-div">
+                    <div class="ex-prp-div">
+                      <div class="greendot"></div>
+                      <p class="ex-sdg-des">
+                        <span data-translatekey="Principletab2thirdp3"></span>
+                        <a id="Tab2R3Link" target="_blank" href=""></a>.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="ex-sdg-div">
+                    <div class="ex-prp-div">
+                      <div class="greendot"></div>
+                      <p class="ex-sdg-des">
+                        <span data-translatekey="Principletab2thirdp4"></span>
+                        <a id="Tab2R4Link" target="_blank" href=""></a>.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="ex-sdg-div">
+                    <div class="ex-prp-div">
+                      <div class="greendot"></div>
+                      <p class="ex-sdg-des">
+                        <span data-translatekey="Principletab2thirdp5"></span>
+                        <a id="Tab2R5Link" target="_blank" href=""></a>.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="ex-sdg-div">
+                    <div class="ex-prp-div">
+                      <div class="greendot"></div>
+                      <p class="ex-sdg-des">
+                        <span data-translatekey="Principletab2thirdp6"></span>
+                        <a id="Tab2R6Link" target="_blank" href=""></a>.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tab-data tab-inner3 hide" id="thirdcontent">
+            <div class="card">
+              <img class="pnp-img" id="thirdTabImg" src="./images/principleimg/08_CHILD-SENSITIVE.jpg"
+                alt="SENSITIVE" />
+              <div class="wrapper">
+                <h3 class="heading" data-translatekey="Principletab3heading"></h3>
+                <h4 data-translatekey="Principletab3subheading"></h4>
+                <p class="more" data-translatekey="Principletab3description"></p>
+                <a class=" anchor" id="Tab3Spalink" href="./pdf/CHILD SENSITIVE APPROACH.pdf"
+                  data-translatekey="downloadthisprp" target="_blank"></a>
+              </div>
+            </div>
+            <div>
+              <div class="tab-button">
+                <button class="clickme active" data-tag="7" data-translatekey="importance"></button>
+                <button class="clickme" data-tag="8" data-translatekey="inpractice"></button>
+                <button class="clickme" data-tag="9" data-translatekey="resources"></button>
+              </div>
+              <div class="tab-maindata">
+
+                <ul class="tab-inner des-text" id="7">
+                  <li data-translatekey="Principletab3firstp1"></li>
+                  <li data-translatekey="Principletab3firstp2"></li>
+                  <li data-translatekey="Principletab3firstp3"></li>
+                  <li data-translatekey="Principletab3firstp4"></li>
+                  <li data-translatekey="Principletab3firstp5"></li>
+                  <li data-translatekey="Principletab3firstp6"></li>
+                  <li data-translatekey="Principletab3firstp7"></li>
+                  <li data-translatekey="Principletab3firstp8"></li>
+                  <li data-translatekey="Principletab3firstp9"></li>
+                  <a id="readmoreLinkTab3"
+                    href="https://migrationnetwork.un.org/hub?gcm_objectives=All&cross_cutting_theme=257&region=All&country=All&text=&type_of_resource=All"
+                    class="ex-rdmore-btn readmoreBtnLink" data-translatekey="readmorebutton" target="_blank"></a>
+                </ul>
+                <div class="tab-inner ex-main-div hide" id="8">
+                  <div class="ex-prp-div">
+                    <div class="greendot"></div>
+                    <p class="ex-des" data-translatekey="Principletab3secondp1"></p>
+                  </div>
+                  <div class="ex-prp-div">
+                    <div class="greendot"></div>
+                    <p class="ex-des" data-translatekey="Principletab3secondp2"></p>
+                  </div>
+                  <div class="ex-prp-div">
+                    <div class="greendot"></div>
+                    <p class="ex-des" data-translatekey="Principletab3secondp3"></p>
+                  </div>
+                  <div class="ex-prp-div">
+                    <div class="greendot"></div>
+                    <p class="ex-des" data-translatekey="Principletab3secondp4"></p>
+                  </div>
+                  <div class="ex-prp-div">
+                    <div class="greendot"></div>
+                    <p class="ex-des" data-translatekey="Principletab3secondp5"></p>
+                  </div>
+                </div>
+                <div class="tab-inner hide" id="9">
+                  <div class="ex-prp-div">
+                    <div class="greendot"></div>
+                    <p class="ex-sdg-des">
+                      <span data-translatekey="Principletab3thirdp1"></span>
+                      <a id="Tab3R1Link" target="_blank" href=""></a>.
+                    </p>
+                  </div>
+                  <div class="ex-prp-div">
+                    <div class="greendot"></div>
+                    <p class="ex-sdg-des">
+                      <span data-translatekey="Principletab3thirdp2"></span>
+                      <a id="Tab3R2Link" target="_blank" href=""></a>.
+                    </p>
+                  </div>
+                  <div class="ex-prp-div">
+                    <div class="greendot"></div>
+                    <p class="ex-sdg-des">
+                      <span data-translatekey="Principletab3thirdp3"></span>
+                      <a id="Tab3R3Link" target="_blank" href=""></a>.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tab-data tab-inner3 hide" id="fourthcontent">
+            <div class="card">
+              <img class="pnp-img" id="fourthTabImg" src="./images/principleimg/07_GENDER-RESPONSIVE.jpg"
+                alt="RESPONSIVE" />
+              <div class="wrapper">
+                <h3 class="heading" data-translatekey="Principletab4heading"></h3>
+                <h4 data-translatekey="Principletab4subheading"></h4>
+                <p class="more" data-translatekey="Principletab4description"></p>
+                <a class="anchor" id="Tab4Spalink" href="./pdf/GENDER RESPONSIVE APPROACH.pdf"
+                  data-translatekey="downloadthisprp" target="_blank"></a>
+              </div>
+            </div>
+            <div>
+              <div class="tab-button">
+                <button class="clickme active" data-tag="10" data-translatekey="importance"></button>
+                <button class="clickme" data-tag="11" data-translatekey="inpractice"></button>
+                <button class="clickme" data-tag="12" data-translatekey="resources"></button>
+              </div>
+              <div class="tab-maindata">
+
+                <ul class="tab-inner des-text" id="10">
+                  <li data-translatekey="Principletab4firstp1"></li>
+                  <li data-translatekey="Principletab4firstp2"></li>
+                  <li data-translatekey="Principletab4firstp3"></li>
+                  <li data-translatekey="Principletab4firstp3a"></li>
+                  <li data-translatekey="Principletab4firstp4"></li>
+                  <li data-translatekey="Principletab4firstp5"></li>
+                  <li data-translatekey="Principletab4firstp6"></li>
+                  <li data-translatekey="Principletab4firstp7"></li>
+                  <li data-translatekey="Principletab4firstp8"></li>
+                  <li data-translatekey="Principletab4firstp9"></li>
+
+                  <a id="readmoreLinkTab4"
+                    href="https://migrationnetwork.un.org/hub?gcm_objectives=All&cross_cutting_theme=258&region=All&country=All&text=&type_of_resource=All"
+                    class="ex-rdmore-btn readmoreBtnLink" data-translatekey="readmorebutton" target="_blank"></a>
+                </ul>
+                <div class="tab-inner ex-main-div hide" id="11">
+                  <div class="ex-prp-div">
+                    <p class="ex-des">
+                      <span data-translatekey="Principletab4secondp1a"></span>
+                      <a id="tab4subtab2Link" target="_blank" href=""></a>
+                      <span data-translatekey="Principletab4secondp1b"></span>
+                    </p>
+                  </div>
+                  <div class="ex-prp-div">
+                    <p class="ex-des" data-translatekey="Principletab4secondp2"></p>
+                  </div>
+                  <div class="ex-prp-div">
+                    <p class="ex-des" data-translatekey="Principletab4secondp3"></p>
+                  </div>
+                  <div class="ex-prp-div">
+                    <div class="greendot"></div>
+                    <p class="ex-des" data-translatekey="Principletab4secondp4"></p>
+                  </div>
+                  <div class="ex-prp-div">
+                    <div class="greendot"></div>
+                    <p class="ex-des" data-translatekey="Principletab4secondp5"></p>
+                  </div>
+                  <div class="ex-prp-div">
+                    <div class="greendot"></div>
+                    <p class="ex-des" data-translatekey="Principletab4secondp6"></b>
+                    </p>
+                  </div>
+                  <div class="ex-prp-div">
+                    <div class="greendot"></div>
+                    <p class="ex-des" data-translatekey="Principletab4secondp7"></b>
+                    </p>
+                  </div>
+                  <div class="ex-prp-div">
+                    <div class="greendot"></div>
+                    <p class="ex-des" data-translatekey="Principletab4secondp8"></p>
+                  </div>
+                  <div class="ex-prp-div">
+                    <div class="greendot"></div>
+                    <p class="ex-des" data-translatekey="Principletab4secondp9"></p>
+                  </div>
+                  <div class="ex-prp-div">
+                    <div class="greendot"></div>
+                    <p class="ex-des" data-translatekey="Principletab4secondp10"></p>
+                  </div>
+                </div>
+                <div class="tab-inner hide" id="12">
+                  <div class="ex-sdg-div">
+                    <div class="ex-prp-div">
+                      <div class="greendot"></div>
+                      <p class="ex-sdg-des">
+                        <span data-translatekey="Principletab4thirdp1"></span>
+                        <a id="Tab4R1Link" target="_blank" href=""></a>.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="ex-sdg-div">
+                    <div class="ex-prp-div">
+                      <div class="greendot"></div>
+                      <p class="ex-sdg-des">
+                        <span data-translatekey="Principletab4thirdp2"></span>
+                        <a id="Tab4R2Link" target="_blank" href=""></a>.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tab-data tab-inner3 hide" id="fifthcontent">
+            <div class="card">
+              <img class="pnp-img" id="fifthTabImg" src="./images/principleimg/09_WHOLE-OF-GOVERNMENT APPROACH.jpg"
+                alt="GOVERNMENT" />
+              <div class="wrapper">
+                <h3 class="heading" data-translatekey="Principletab5heading"></h3>
+                <h4 data-translatekey="Principletab5subheading"></h4>
+                <p class="more" data-translatekey="Principletab5description"></p>
+                <a class="anchor" id="Tab5Spalink" href="./pdf/WHOLE OF GOVERNMENT APPROACH.pdf"
+                  data-translatekey="downloadthisprp" target="_blank"></a>
+              </div>
+            </div>
+            <div>
+              <div class="tab-button">
+                <button class="clickme active" data-tag="111" data-translatekey="importance"></button>
+                <button class="clickme" data-tag="222" data-translatekey="inpractice"></button>
+                <button class="clickme" data-tag="333" data-translatekey="resources"></button>
+              </div>
+              <div class="tab-maindata">
+
+                <ul class="tab-inner des-text" id="111">
+                  <li data-translatekey="Principletab5firstp1"></li>
+                  <li data-translatekey="Principletab5firstp2"></li>
+                  <li data-translatekey="Principletab5firstp3"></li>
+                  <li data-translatekey="Principletab5firstp4"></li>
+                  <li data-translatekey="Principletab5firstp5"></li>
+                  <a id="readmoreLinkTab5"
+                    href="https://migrationnetwork.un.org/hub?gcm_objectives=All&cross_cutting_theme=737&region=All&country=All&text=&type_of_resource=All"
+                    class="ex-rdmore-btn readmoreBtnLink" data-translatekey="readmorebutton" target="_blank"></a>
+                </ul>
+                <div class="tab-inner ex-main-div hide" id="222">
+                  <div class="ex-prp-div">
+                    <div class="greendot"></div>
+                    <p class="ex-des" data-translatekey="Principletab5secondp1"></p>
+                  </div>
+                  <div class="ex-prp-div">
+                    <div class="greendot"></div>
+                    <p class="ex-des" data-translatekey="Principletab5secondp2"></p>
+                  </div>
+                  <div class="ex-prp-div">
+                    <div class="greendot"></div>
+                    <p class="ex-des" data-translatekey="Principletab5secondp3"></p>
+                  </div>
+                  <div class="ex-prp-div">
+                    <div class="greendot"></div>
+                    <p class="ex-des" data-translatekey="Principletab5secondp4"></p>
+                  </div>
+                </div>
+                <div class="tab-inner hide" id="333">
+                  <div class="ex-prp-div">
+                    <div class="greendot"></div>
+                    <p class="ex-sdg-des">
+                      <span data-translatekey="Principletab5thirdp1"></span>
+                      <a id="Tab5R1Link" target="_blank" href=""></a>.
+                    </p>
+                  </div>
+                  <div class="ex-prp-div">
+                    <div class="greendot"></div>
+                    <p class="ex-sdg-des">
+                      <span data-translatekey="Principletab5thirdp2"></span>
+                      <a id="Tab5R2Link" target="_blank" href=""></a>.
+                    </p>
+                  </div>
+                  <div class="ex-prp-div">
+                    <div class="greendot"></div>
+                    <p class="ex-sdg-des">
+                      <span data-translatekey="Principletab5thirdp3"></span>
+                      <a id="Tab5R3Link" target="_blank" href=""></a>.
+                    </p>
+                  </div>
+                  <div class="ex-prp-div">
+                    <div class="greendot"></div>
+                    <p class="ex-sdg-des">
+                      <span data-translatekey="Principletab5thirdp4"></span>
+                      <a id="Tab5R4Link" target="_blank" href=""></a>.
+                    </p>
+                  </div>
+                  <div class="ex-prp-div">
+                    <div class="greendot"></div>
+                    <p class="ex-sdg-des">
+                      <span data-translatekey="Principletab5thirdp5"></span>
+                      <a id="Tab5R5Link" target="_blank" href=""></a>.
+                    </p>
+                  </div>
+                  <div class="ex-prp-div">
+                    <div class="greendot"></div>
+                    <p class="ex-sdg-des">
+                      <span data-translatekey="Principletab5thirdp6"></span>
+                      <a id="Tab5R6Link" target="_blank" href=""></a>.
+                    </p>
+                  </div>
+                  <div class="ex-prp-div">
+                    <div class="greendot"></div>
+                    <p class="ex-sdg-des">
+                      <span data-translatekey="Principletab5thirdp7"></span>
+                      <a id="Tab5R7Link" target="_blank" href=""></a>.
+                      <span data-translatekey="Principletab5thirdp8"></span>
+                      <a id="Tab5R8Link" target="_blank" href=""></a>.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tab-data tab-inner3 hide" id="sixthcontent">
+            <div class="card">
+              <img class="pnp-img" id="sixthTabImg" src="./images/principleimg/10_WHOLE-OF-SOCIETY APPROACH.jpg"
+                alt="APPROACH" />
+              <div class="wrapper">
+                <h3 class="heading" data-translatekey="Principletab6heading"></h3>
+                <h4 data-translatekey="Principletab6subheading"></h4>
+                <p class="more" data-translatekey="Principletab6description"></p>
+                <a class="anchor" id="Tab6Spalink" href="./pdf/WHOLE OF SOCIETY APPROACH.pdf"
+                  data-translatekey="downloadthisprp" target="_blank"></a>
+              </div>
+            </div>
+            <div>
+              <div class="tab-button">
+                <button class="clickme active" data-tag="13" data-translatekey="importance"></button>
+                <button class="clickme" data-tag="14" data-translatekey="inpractice"></button>
+                <button class="clickme" data-tag="15" data-translatekey="resources"></button>
+              </div>
+              <div class="tab-maindata">
+
+                <ul class="tab-inner des-text" id="13">
+                  <li data-translatekey="Principletab6firstp1"></li>
+                  <li data-translatekey="Principletab6firstp2"></li>
+                  <li data-translatekey="Principletab6firstp3"></li>
+                  <a id="readmoreLinkTab6"
+                    href="https://migrationnetwork.un.org/hub?gcm_objectives=All&cross_cutting_theme=736&region=All&country=All&text=&type_of_resource=All"
+                    class="ex-rdmore-btn readmoreBtnLink" data-translatekey="readmorebutton" target="_blank"></a>
+                </ul>
+                <div class="tab-inner ex-main-div hide" id="14">
+                  <div class="ex-prp-div">
+                    <div class="greendot"></div>
+                    <p class="ex-des" data-translatekey="Principletab6secondp1"></p>
+                  </div>
+                  <div class="ex-prp-list">
+                    <ul>
+                      <li data-translatekey="Principletab6secondp2"></li>
+                      <li data-translatekey="Principletab6secondp2a"></li>
+                      <li data-translatekey="Principletab6secondp2b"></li>
+                      <li data-translatekey="Principletab6secondp2c"></li>
+                      <li data-translatekey="Principletab6secondp2d"></li>
+                      <li data-translatekey="Principletab6secondp2e"></li>
+                      <li data-translatekey="Principletab6secondp2f"></li>
+                      <li data-translatekey="Principletab6secondp2g"></li>
+                      <li data-translatekey="Principletab6secondp2h"></li>
+                      <li data-translatekey="Principletab6secondp2i"></li>
+                      <li data-translatekey="Principletab6secondp2j"></li>
+                      <li data-translatekey="Principletab6secondp2k"></li>
+                    </ul>
+                  </div>
+                  <div class="ex-prp-div">
+                    <div class="greendot"></div>
+                    <p class="ex-des" data-translatekey="Principletab6secondp3"></p>
+                  </div>
+                  <div class="ex-prp-div">
+                    <div class="greendot"></div>
+                    <p class="ex-des" data-translatekey="Principletab6secondp4"></p>
+                  </div>
+                  <div class="ex-prp-div">
+                    <div class="greendot"></div>
+                    <p class="ex-des" data-translatekey="Principletab6secondp5"></p>
+                  </div>
+                  <div class="ex-prp-list">
+                    <ul>
+                      <li class="ex-des" data-translatekey="Principletab6secondp6"></li>
+                      <li class="ex-des" data-translatekey="Principletab6secondp7"></li>
+                      <li class="ex-des" data-translatekey="Principletab6secondp8"></li>
+                      <li class="ex-des" data-translatekey="Principletab6secondp9"></li>
+                      <li class="ex-des" data-translatekey="Principletab6secondp10"></li>
+                    </ul>
+                  </div>
+
+                  <div class="ex-prp-div">
+                    <div class="greendot"></div>
+                    <p class="ex-des" data-translatekey="Principletab6secondp11"></p>
+                  </div>
+                </div>
+                <div class="tab-inner hide" id="15">
+                  <div class="ex-sdg-div">
+                    <div class="ex-prp-div">
+                      <div class="greendot"></div>
+                      <p class="ex-sdg-des">
+                        <span data-translatekey="Principletab6thirdp1"></span>
+                        <a id="Tab6R1Link" target="_blank" href=""></a>.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tab-data tab-inner3 hide" id="seventhcontent">
+            <div class="card">
+              <img class="pnp-img" id="seventhTabImg" src="./images/principleimg/04_RULE OF LAW AND DUE PROCESS .jpg"
+                alt="principleimg" />
+              <div class="wrapper">
+                <h3 class="heading" data-translatekey="Principletab7heading"></h3>
+                <h4 data-translatekey="Principletab7subheading"></h4>
+                <p><span data-translatekey="Principletab7description"></span> <a id="readmoreLinkTab7"
+                    class="read-more readmoreBtnLink"
+                    href="https://migrationnetwork.un.org/hub?gcm_objectives=All&cross_cutting_theme=741&region=All&country=All&text=&type_of_resource=All"
+                    data-translatekey="readmorebutton" target="_blank"></a>
+                </p>
+                <!-- <a class="anchor" href="#">Download this principle</a> -->
+              </div>
+            </div>
+            <div>
+              <div class="tab-button">
+                <!-- <button class="clickme  active">
+                  <a class="prp-learnmore"
+                    href="https://migrationnetwork.un.org/hub?gcm_objectives=All&cross_cutting_theme=741&region=All&country=All&text=&type_of_resource=All">
+                    Click here to learn more</a>
+                </button> -->
+                <!-- <button class="clickme active" data-tag="16">Importance</button>
+                <button class="clickme" data-tag="17">In Practice</button>
+                <button class="clickme" data-tag="18">Resources</button> -->
+              </div>
+              <!-- <ul class="tab-inner des-text" id="16">
+                <li>Policy coherence helps governments ensure consistency across national and regional policy and
+                  programmatic frameworks, as well as their adherence to international law. Policy coherence means
+                  “developing mutually reinforcing policies across all relevant sectors and government departments so
+                  that policies work together to effectively achieve national development goals, minimizing the negative
+                  impacts that policies in one area can have on policies in another area”.1</li>
+                <li>Policy coherence is important for migration governance. Migration is an intrinsically cross-border
+                  and cross-sectoral phenomenon that affects and is affected by all areas and levels of governance.
+                  Policies directly or indirectly related to migration therefore need to be considered in relation to
+                  other sectoral or thematic policies in a range of areas, such as development, human rights, climate
+                  change, water security, labour, agriculture, trade, housing, health, education and skills development,
+                  non-discrimination, social protection, social cohesion, law enforcement, justice and asylum.</li>
+                <a href="" class="ex-rdmore-btn">Read more</a>
+              </ul>
+              <div class="tab-inner ex-main-div hide" id="17">
+                <div class="ex-prp-div">
+                  <div class="greendot"></div>
+                  <p class="ex-des"><b>Identify or establish mechanisms and institutional set-ups for
+                      robust
+                      collaboration</b>
+                    across all migration-related sectors of government, as well as with all levels of government (local,
+                    national, regional and global) around migration governance.</p>
+                </div>
+                <div class="ex-prp-div">
+                  <div class="greendot"></div>
+                  <p class="ex-des"><b>Build strong monitoring and evaluation frameworks, improve
+                      migration data and</b>
+                    increase migration data capacity so that policy impacts (and policy trade-offs) can be measured with
+                    greater accuracy.</p>
+                </div>
+                <div class="ex-prp-div">
+                  <div class="greendot"></div>
+                  <p class="ex-des"><b>Map your country's international commitments, including
+                      international human
+                      rights
+                      law and international labour standards,</b> to ensure that policies, legislation and programmes
+                    are
+                    aligned with these commitments.</p>
+                </div>
+                <div class="ex-prp-div">
+                  <div class="greendot"></div>
+                  <p class="ex-des"><b>Integrate migration into diverse policy areas</b> (for example,
+                    health,
+                    education), also
+                    known as mainstreaming migration, so that policies in different sectors are inclusive of and
+                    responsive to migrants’ needs and rights and so the development potential of migration is maximized.
+                  </p>
+                </div>
+              </div>
+              <div class="tab-inner hide" id="18">
+                <div class="ex-sdg-div">
+                  <div class="ex-prp-div">
+                    <div class="greendot"></div>
+                    <p class="ex-sdg-des">
+                      <i>Guidelines on Mainstreaming Migration into Local Development Planning (JMDI, 2017) available at
+                      </i><a href=" www.migration4development.org"> www.migration4development.org</a>.
+                    </p>
+                  </div>
+                </div>
+                <div class="ex-sdg-div">
+                  <div class="ex-prp-div">
+                    <div class="greendot"></div>
+                    <p class="ex-sdg-des">
+                      <i>Mainstreaming Migration into Development Planning: A Handbook for Policymakers and
+                        Practitioners (IOM/GMG, 2010) available at
+                      </i><a href="https://publications.iom.int."> https://publications.iom.int.</a>.
+                    </p>
+                  </div>
+                </div>
+              </div> -->
+            </div>
+          </div>
+          <div class="tab-data tab-inner3 hide" id="eighthcontent">
+            <div class="card">
+              <img class="pnp-img" id="eighthTabImg" src="./images/principleimg/03_NATIONAL SOVEREIGNTY.jpg"
+                alt="SOVEREIGNTY" />
+              <div class="wrapper">
+                <h3 class="heading" data-translatekey="Principletab8heading"></h3>
+                <h4 data-translatekey="Principletab8subheading"></h4>
+                <p><span data-translatekey="Principletab8description"></span> <a id="readmoreLinkTab8"
+                    class="read-more readmoreBtnLink"
+                    href="https://migrationnetwork.un.org/hub?gcm_objectives=All&cross_cutting_theme=742&region=All&country=All&text=&type_of_resource=All"
+                    data-translatekey="readmorebutton" target="_blank"></a>
+                </p>
+
+
+                <!-- <a class="anchor" href="#">Download this principle</a> -->
+              </div>
+            </div>
+            <div>
+              <div class="tab-button">
+                <!-- <button class="clickme  active">
+                  <a class="prp-learnmore"
+                    href="https://migrationnetwork.un.org/hub?gcm_objectives=All&cross_cutting_theme=742&region=All&country=All&text=&type_of_resource=All">Click
+                    here to learn more </a>
+                </button> -->
+
+                <!-- <button class="clickme active" data-tag="19">Importance</button>
+                <button class="clickme" data-tag="20">In Practice</button>
+                <button class="clickme" data-tag="21">Resources</button> -->
+              </div>
+              <!-- <ul class="tab-inner des-text" id="19">
+                <li>Policy coherence helps governments ensure consistency across national and regional policy and
+                  programmatic frameworks, as well as their adherence to international law. Policy coherence means
+                  “developing mutually reinforcing policies across all relevant sectors and government departments so
+                  that policies work together to effectively achieve national development goals, minimizing the negative
+                  impacts that policies in one area can have on policies in another area”.1</li>
+                <li>Policy coherence is important for migration governance. Migration is an intrinsically cross-border
+                  and cross-sectoral phenomenon that affects and is affected by all areas and levels of governance.
+                  Policies directly or indirectly related to migration therefore need to be considered in relation to
+                  other sectoral or thematic policies in a range of areas, such as development, human rights, climate
+                  change, water security, labour, agriculture, trade, housing, health, education and skills development,
+                  non-discrimination, social protection, social cohesion, law enforcement, justice and asylum.</li>
+                <a href="" class="ex-rdmore-btn">Read more</a>
+              </ul>
+              <div class="tab-inner ex-main-div hide" id="20">
+                <div class="ex-prp-div">
+                  <div class="greendot"></div>
+                  <p class="ex-des"><b>Identify or establish mechanisms and institutional set-ups for
+                      robust
+                      collaboration</b>
+                    across all migration-related sectors of government, as well as with all levels of government (local,
+                    national, regional and global) around migration governance.</p>
+                </div>
+                <div class="ex-prp-div">
+                  <div class="greendot"></div>
+                  <p class="ex-des"><b>Build strong monitoring and evaluation frameworks, improve
+                      migration data and</b>
+                    increase migration data capacity so that policy impacts (and policy trade-offs) can be measured with
+                    greater accuracy.</p>
+                </div>
+                <div class="ex-prp-div">
+                  <div class="greendot"></div>
+                  <p class="ex-des"><b>Map your country's international commitments, including
+                      international human
+                      rights
+                      law and international labour standards,</b> to ensure that policies, legislation and programmes
+                    are
+                    aligned with these commitments.</p>
+                </div>
+                <div class="ex-prp-div">
+                  <div class="greendot"></div>
+                  <p class="ex-des"><b>Integrate migration into diverse policy areas</b> (for example,
+                    health,
+                    education), also
+                    known as mainstreaming migration, so that policies in different sectors are inclusive of and
+                    responsive to migrants’ needs and rights and so the development potential of migration is maximized.
+                  </p>
+                </div>
+              </div>
+              <div class="tab-inner hide" id="21">
+                <div class="ex-sdg-div">
+                  <div class="ex-prp-div">
+                    <div class="greendot"></div>
+                    <p class="ex-sdg-des">
+                      <i>Guidelines on Mainstreaming Migration into Local Development Planning (JMDI, 2017) available at
+                      </i><a href=" www.migration4development.org"> www.migration4development.org</a>.
+                    </p>
+                  </div>
+                </div>
+                <div class="ex-sdg-div">
+                  <div class="ex-prp-div">
+                    <div class="greendot"></div>
+                    <p class="ex-sdg-des">
+                      <i>Mainstreaming Migration into Development Planning: A Handbook for Policymakers and
+                        Practitioners (IOM/GMG, 2010) available at
+                      </i><a href="https://publications.iom.int."> https://publications.iom.int.</a>.
+                    </p>
+                  </div>
+                </div>
+              </div> -->
+            </div>
+          </div>
+          <div class="tab-data tab-inner3 hide" id="ninthcontent">
+            <div class="card">
+              <img class="pnp-img" id="ninthTabImg" src="./images/principleimg/02_INTERNATIONAL COOPERATION.jpg"
+                alt="COOPERATION" />
+              <div class="wrapper">
+                <h3 class="heading" data-translatekey="Principletab9heading"></h3>
+                <h4 data-translatekey="Principletab9subheading"></h4>
+                <p><span data-translatekey="Principletab9description"></span> <a id="readmoreLinkTab9"
+                    class="read-more readmoreBtnLink"
+                    href="https://migrationnetwork.un.org/hub?gcm_objectives=All&cross_cutting_theme=739&region=All&country=All&text="
+                    data-translatekey="readmorebutton" target="_blank"></a>
+                </p>
+
+                <!-- <a class="anchor" href="#">Download this principle</a> -->
+              </div>
+            </div>
+            <div>
+              <div class="tab-button">
+                <!-- <button class="clickme  active">
+                  <a class=""
+                    href="https://migrationnetwork.un.org/hub?gcm_objectives=All&cross_cutting_theme=739&region=All&country=All&text=">Click
+                    here to learn more</a>
+                </button> -->
+                <!-- <button class="clickme active" data-tag="22">Importance</button>
+                <button class="clickme" data-tag="23">In Practice</button>
+                <button class="clickme" data-tag="24">Resources</button> -->
+              </div>
+              <!-- <ul class="tab-inner des-text" id="22">
+                <li>Policy coherence helps governments ensure consistency across national and regional policy and
+                  programmatic frameworks, as well as their adherence to international law. Policy coherence means
+                  “developing mutually reinforcing policies across all relevant sectors and government departments so
+                  that policies work together to effectively achieve national development goals, minimizing the negative
+                  impacts that policies in one area can have on policies in another area”.1</li>
+                <li>Policy coherence is important for migration governance. Migration is an intrinsically cross-border
+                  and cross-sectoral phenomenon that affects and is affected by all areas and levels of governance.
+                  Policies directly or indirectly related to migration therefore need to be considered in relation to
+                  other sectoral or thematic policies in a range of areas, such as development, human rights, climate
+                  change, water security, labour, agriculture, trade, housing, health, education and skills development,
+                  non-discrimination, social protection, social cohesion, law enforcement, justice and asylum.</li>
+                <a href="" class="ex-rdmore-btn">Read more</a>
+              </ul>
+              <div class="tab-inner ex-main-div hide" id="23">
+                <div class="ex-prp-div">
+                  <div class="greendot"></div>
+                  <p class="ex-des"><b>Identify or establish mechanisms and institutional set-ups for
+                      robust
+                      collaboration</b>
+                    across all migration-related sectors of government, as well as with all levels of government (local,
+                    national, regional and global) around migration governance.</p>
+                </div>
+                <div class="ex-prp-div">
+                  <div class="greendot"></div>
+                  <p class="ex-des"><b>Build strong monitoring and evaluation frameworks, improve
+                      migration data and</b>
+                    increase migration data capacity so that policy impacts (and policy trade-offs) can be measured with
+                    greater accuracy.</p>
+                </div>
+                <div class="ex-prp-div">
+                  <div class="greendot"></div>
+                  <p class="ex-des"><b>Map your country's international commitments, including
+                      international human
+                      rights
+                      law and international labour standards,</b> to ensure that policies, legislation and programmes
+                    are
+                    aligned with these commitments.</p>
+                </div>
+                <div class="ex-prp-div">
+                  <div class="greendot"></div>
+                  <p class="ex-des"><b>Integrate migration into diverse policy areas</b> (for example,
+                    health,
+                    education), also
+                    known as mainstreaming migration, so that policies in different sectors are inclusive of and
+                    responsive to migrants’ needs and rights and so the development potential of migration is maximized.
+                  </p>
+                </div>
+              </div>
+              <div class="tab-inner hide" id="24">
+                <div class="ex-sdg-div">
+                  <div class="ex-prp-div">
+                    <div class="greendot"></div>
+                    <p class="ex-sdg-des">
+                      <i>Guidelines on Mainstreaming Migration into Local Development Planning (JMDI, 2017) available at
+                      </i><a href=" www.migration4development.org"> www.migration4development.org</a>.
+                    </p>
+                  </div>
+                </div>
+                <div class="ex-sdg-div">
+                  <div class="ex-prp-div">
+                    <div class="greendot"></div>
+                    <p class="ex-sdg-des">
+                      <i>Mainstreaming Migration into Development Planning: A Handbook for Policymakers and
+                        Practitioners (IOM/GMG, 2010) available at
+                      </i><a href="https://publications.iom.int."> https://publications.iom.int.</a>.
+                    </p>
+                  </div>
+                </div>
+              </div> -->
+            </div>
+          </div>
+          <div class="tab-data tab-inner3 hide" id="tenthcontent">
+            <div class="card">
+              <img class="pnp-img" id="tenthTabImg" src="./images/principleimg/01_PEOPLE-CENTRED.jpg" alt="CENTRED" />
+              <div class="wrapper">
+                <h3 class="heading" data-translatekey="Principletab10heading"></h3>
+                <h4 data-translatekey="Principletab10subheading"></h4>
+                <p> <span data-translatekey="Principletab10description"></span><a id="readmoreLinkTab10"
+                    class="read-more readmoreBtnLink"
+                    href="https://migrationnetwork.un.org/hub?gcm_objectives=All&cross_cutting_theme=738&region=All&country=All&text="
+                    data-translatekey="readmorebutton" target="_blank"></a>
+                </p>
+                <!-- <a class="anchor" href="#">Download this principle</a> -->
+              </div>
+            </div>
+            <div>
+              <div class="tab-button">
+                <!-- <button class="clickme  active">
+                  <a class=""
+                    href="https://migrationnetwork.un.org/hub?gcm_objectives=All&cross_cutting_theme=738&region=All&country=All&text=">Click
+                    here to learn more</a>
+                </button> -->
+                <!-- <button class="clickme active" data-tag="25">Importance</button> -->
+                <!-- <button class="clickme" data-tag="26">In Practice</button>
+                <button class="clickme" data-tag="27">Resources</button> -->
+              </div>
+              <!-- <ul class="tab-inner des-text" id="25">
+                <li>Policy coherence helps governments ensure consistency across national and regional policy and
+                  programmatic frameworks, as well as their adherence to international law. Policy coherence means
+                  “developing mutually reinforcing policies across all relevant sectors and government departments so
+                  that policies work together to effectively achieve national development goals, minimizing the negative
+                  impacts that policies in one area can have on policies in another area”.1</li>
+                <li>Policy coherence is important for migration governance. Migration is an intrinsically cross-border
+                  and cross-sectoral phenomenon that affects and is affected by all areas and levels of governance.
+                  Policies directly or indirectly related to migration therefore need to be considered in relation to
+                  other sectoral or thematic policies in a range of areas, such as development, human rights, climate
+                  change, water security, labour, agriculture, trade, housing, health, education and skills development,
+                  non-discrimination, social protection, social cohesion, law enforcement, justice and asylum.</li>
+                <a href="" class="ex-rdmore-btn">Read more</a>
+              </ul>
+              <div class="tab-inner ex-main-div hide" id="26">
+                <div class="ex-prp-div">
+                  <div class="greendot"></div>
+                  <p class="ex-des"><b>Identify or establish mechanisms and institutional set-ups for
+                      robust
+                      collaboration</b>
+                    across all migration-related sectors of government, as well as with all levels of government (local,
+                    national, regional and global) around migration governance.</p>
+                </div>
+                <div class="ex-prp-div">
+                  <div class="greendot"></div>
+                  <p class="ex-des"><b>Build strong monitoring and evaluation frameworks, improve
+                      migration data and</b>
+                    increase migration data capacity so that policy impacts (and policy trade-offs) can be measured with
+                    greater accuracy.</p>
+                </div>
+                <div class="ex-prp-div">
+                  <div class="greendot"></div>
+                  <p class="ex-des"><b>Map your country's international commitments, including
+                      international human
+                      rights
+                      law and international labour standards,</b> to ensure that policies, legislation and programmes
+                    are
+                    aligned with these commitments.</p>
+                </div>
+                <div class="ex-prp-div">
+                  <div class="greendot"></div>
+                  <p class="ex-des"><b>Integrate migration into diverse policy areas</b> (for example,
+                    health,
+                    education), also
+                    known as mainstreaming migration, so that policies in different sectors are inclusive of and
+                    responsive to migrants’ needs and rights and so the development potential of migration is maximized.
+                  </p>
+                </div>
+              </div>
+              <div class="tab-inner hide" id="27">
+                <div class="ex-sdg-div">
+                  <div class="ex-prp-div">
+                    <div class="greendot"></div>
+                    <p class="ex-sdg-des">
+                      <i>The Global Compact carries a strong human dimension to it, inherent to the migration experience
+                        itself. It promotes the well-being of migrants and the members of communities in countries of
+                        origin, transit and destination. As a result, the Global Compact places individuals at its core.
+                      </i><a
+                        href=" https://migrationnetwork.un.org/hub?gcm_objectives=All&cross_cutting_theme=738&region=All&country=All&text=">
+                        https://migrationnetwork.un.org/hub?gcm_objectives=All&cross_cutting_theme=738&region=All&country=All&text=</a>.
+                    </p>
+                  </div>
+                </div>
+                <div class="ex-sdg-div">
+                  <div class="ex-prp-div">
+                    <div class="greendot"></div>
+                    <p class="ex-sdg-des">
+                      <i>Mainstreaming Migration into Development Planning: A Handbook for Policymakers and
+                        Practitioners (IOM/GMG, 2010) available at
+                      </i><a href="https://publications.iom.int."> https://publications.iom.int.</a>.
+                    </p>
+                  </div>
+                </div>
+              </div> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- second hero section -->
+  <div class="ex-AboutsecondSection">
+    <section class="container">
+      <h2 class="ex-section-heading" data-translatekey="guidingprinciplestwocardheading"></h2>
+      <p class="ex-section-des" data-translatekey="principlestwocardheadingdescription"></p>
+      <div class="ex-Twocard">
+        <div class="ex-section-card">
+          <img id="objective" src="./images/GCM176.png" class="ex-section-img" />
+          <div class="ex-content">
+            <p class="more" data-translatekey="gcmobjectivedescription"></p>
+            <button class="ex-secondarybtn" onclick="document.location='gcmobjectives.html'"
+              data-translatekey="viewObjectiveButton"></button>
+          </div>
+        </div>
+
+        <div class="ex-section-card">
+          <img id="6step" src="./images/6step_process_square.jpg" class="ex-section-img" />
+          <div class="ex-content">
+            <p data-translatekey="steppagemaintitletxt2"></p>
+            <button class="ex-secondarybtn" onclick="document.location='ImplementationSteps.html'"
+              data-translatekey="viewStepsButton"></button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- footer section -->
+  <section class="footer-bg">
+    <div class="container">
+      <div class="footer">
+        <div class="scroller" id="scroll-to-bottom">
+          <button onclick="topFunction()" id="myBtn" title="Go to top" data-translatekey="backToTopButton">
+          </button>
+        </div>
+        <div class="leftside">
+          <h4 data-translatekey="footerKnowMoreQuestion"></h4>
+          <img class="firstimg" id='footerglobal' src="./images/footer-Logo.png" alt="footer logo" />
+          <!-- <a target="_blank" id="FooterLeftLink" href="https://migrationnetwork.un.org/migration-network-hub">
+            <img class="secondimg" src="./images/logo.svg" alt="logo" />
+          </a> -->
+          <button class="return-btn" data-translatekey="returntomigrationhub"></button>
+        </div>
+        <div class="rightside">
+          <ul>
+            <li>
+              <h5 data-translatekey="footerQuickLinks"></h5>
+            </li>
+            <li>
+              <a target="_blank" href="https://migrationnetwork.un.org/" data-translatekey="footerUnitedNationLink"
+                id="UNNLink"></a>
+            </li>
+            <li>
+              <a target="_blank" id="GCMImmplementLink" href="https://migrationnetwork.un.org/gcm-guidance"
+                data-translatekey="footerGCMImplementationLink"></a>
+            </li>
+            <li>
+              <a target="_blank" id="MigrationNetHubLink" href="https://migrationnetwork.un.org/migration-network-hub"
+                data-translatekey="footerMigrationNetworkLink"></a>
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <h5 data-translatekey="footerAboutGCM"></h5>
+            </li>
+            <li>
+              <a target="_blank" id="NutshellLink" href="https://migrationnetwork.un.org/global-compact-for-migration"
+                data-translatekey="footerNutshellLink"></a>
+            </li>
+            <li>
+              <a target="_blank" id="PledgesLink" href="https://migrationnetwork.un.org/the-pledging-dashboard"
+                data-translatekey="footerPledgesLink"></a>
+            </li>
+            <li>
+              <a target="_blank" id="RepoofPracticeLink"
+                href="https://migrationnetwork.un.org/hub/repository-of-practices"
+                data-translatekey="footerRepositoryLink"></a>
+            </li>
+            <li>
+              <a target="_blank" id="TrustFundLink" href="https://migrationnetwork.un.org/mptf"
+                data-translatekey="footerTrustFundLink"></a>
+            </li>
+            <li>
+              <a target="_blank" id="InternationalMigrationLink"
+                href="https://migrationnetwork.un.org/international-migration-review-forum-2022"
+                data-translatekey="footerInternationalForumLink"></a>
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <h5 data-translatekey="footerFollowUs"></h5>
+            </li>
+            <li><a target="_blank" href="https://twitter.com/UNMigNetwork" data-translatekey="footerTwitterLink"></a>
+            </li>
+            <li>
+              <a target="_blank"
+                href="https://migrationnetwork.us19.list-manage.com/subscribe?u=91a1d870ca31df83b2b697cf6&id=9c7fcb90a4"
+                data-translatekey="footerNewsletterLink"></a>
+            </li>
+            <li>
+              <a target="_blank" id="EventsLink"
+                href="https://migrationnetwork.un.org/hub/events?text=&gcm_objectives=All&cross_cutting_theme=All&region=All&country=All"
+                data-translatekey="footerEventsLink"></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="bottom-section">
+        <ul>
+          <li><a target="_blank" href="#" id="copyRight" data-translatekey="footerCopyright"></a></li>
+          <li><a target="_blank" href="#" id="fraudAlert" data-translatekey="footerFraudAlert"></a></li>
+          <li><a target="_blank" href="#" id="PrivacyNotice" data-translatekey="footerPrivacyNotice"></a></li>
+          <li><a target="_blank" href="#" id="termsofUse" data-translatekey="footerTermsOfUse"></a></li>
+        </ul>
+        <!-- <a target="_blank" id="FooterRightLink" href="https://migrationnetwork.un.org/">
+          <img id="footerunited" src="./images/mignet-logo.png" alt="logo" />
+        </a> -->
+      </div>
+    </div>
+  </section>
+
+
+  <script>
+    // for scroll down page
+    let scrollToBottom = document.querySelector("#scroll-to-bottom");
+    let pageBottom = document.querySelector("#page-bottom");
+
+    scrollToBottom.addEventListener("click", function () {
+      pageBottom.scrollIntoView();
+    });
+  </script>
+
+  <script>
+    //Get the button
+    var mybutton = document.getElementById("myBtn");
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function () {
+      scrollFunction();
+    };
+    function scrollFunction() {
+      if (
+        document.body.scrollTop > 20 ||
+        document.documentElement.scrollTop > 20
+      ) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Global Compact Migration</title>
+  <script src="js/jquery.min.js"></script>
+  <script src="js/index.js"></script>
+  <link rel="stylesheet" href="./styles/style.css" />
+  <script src="js/tinyi18n.js"></script>
+  <script src="js/home.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500&display=swap"
+    rel="stylesheet" />
+</head>
+
+<body>
+  <!-- Header -->
+  <section class="herosection-bg">
+    <header class="headerBg">
+      <div class="container-fluid">
+        <div class="header">
+          <input id="menu__toggle" type="checkbox" />
+          <label class="menu__btn" for="menu__toggle"><span></span></label>
+          <div class="logo">
+            <a target="_blank" href="https://migrationnetwork.un.org/" id="HeaderRightLink">
+              <img id='headerunited' src="./images/UNNM-Logo-TAG.png" alt="logo" />
+            </a>
+            <a target="_blank" class="LogoforMobile" target="_blank"
+              href="https://migrationnetwork.un.org/migration-network-hub"><img src="./images/footer-Logo.png"
+                alt="logo" /></a>
+          </div>
+          <div id="overlay"></div>
+
+          <div id="menu-close" class="menu__box">
+            <div class="collapse-top">
+              <a target="_blank" href="https://migrationnetwork.un.org/migration-network-hub"><img class="collapse-logo"
+                  src="./images/footer-Logo.png" alt="logo" /></a>
+            </div>
+            <ul>
+              <li><a href="/" class="active" data-translatekey="home"></a></li>
+              <li><a href="about.html" data-translatekey="about"></a></li>
+              <li><a href="gcmobjectives.html" data-translatekey="objective"></a></li>
+              <li><a href="Principles.html" data-translatekey="priniciples"></a></li>
+              <li> <a href="ImplementationSteps.html" data-translatekey="implementation"></a></li>
+              <li><a href="resources.html" data-translatekey="resources"></a></li>
+              <li>
+                <div class="dropdown">
+                  <button class="dropbtn" id="dropdowntext" onclick="myFunction()">English</button>
+                  <div id="selectBox" class="dropdown-content">
+                    <a onclick="changeFunc('en')">English</a>
+                    <a onclick="changeFunc('fr')">Français</a>
+                    <a onclick="changeFunc('spa')">Español</a>
+                  </div>
+                </div>
+              </li>
+            </ul>
+
+            <div class="collapse-bottom">
+              <h4 data-translatekey="gcmobjcollapsetitle"></h4>
+              <a target="_blank" href="https://migrationnetwork.un.org/migration-network-hub"><img
+                  src="./images/logo.svg" alt="logo" /></a>
+              <hr class="mobileview-divider">
+              <a target="_blank" href="https://migrationnetwork.un.org/migration-network-hub"><img id="headerunited2"
+                  class="secondImg" src="./images/mignet-logo.png" alt="logo" /></a>
+            </div>
+          </div>
+          <div class="Rightlogo">
+            <a target="_blank" class="LogoforWeb" target="_blank" id="HeaderLeftLink"
+              href="https://migrationnetwork.un.org/migration-network-hub"><img src="./images/logo.svg"
+                alt="logo" /></a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- first hero section -->
+    <div class="container">
+      <div class="mainSection">
+        <div class="content">
+          <h1 data-translatekey="landingPageTitle"></h1>
+          <p data-translatekey="landingPageSubTitle"></p>
+          <p class="seconddescription" data-translatekey="landingPageSubTitle2"></p>
+          <div class="btnSection">
+            <button class="primarybtn firstbtn">
+              <a href="about.html" data-translatekey="aboutButton"></a>
+            </button>
+            <button class="secondarybtn">
+              <a href="#down" class="view2" data-translatekey="exploreButton"></a>
+            </button>
+          </div>
+        </div>
+        <div class="image-section">
+          <div class="slider">
+            <img class="mySlides" src="./images/withoutbadge.png" />
+            <img class="mySlides" src="./images/slider/slide1.jpg" />
+            <img class="mySlides" src="./images/slider/slide2.jpg" />
+            <img class="mySlides" src="./images/slider/slide3.jpg" />
+            <img class="mySlides" src="./images/slider/slide4.jpg" />
+            <img class="mySlides" src="./images/slider/slide5.JPG" />
+
+            <div class="sliderControl">
+              <div class="slideleft" onclick="plusDivs(-1)">
+                <img src="././images/arrow-left.png" alt="slider arrow-left" />
+              </div>
+              <!-- <div class="dotWrapper"> -->
+              <span class="dot" onclick="currentDiv(1)"></span>
+              <span class="dot" onclick="currentDiv(2)"></span>
+              <span class="dot" onclick="currentDiv(3)"></span>
+              <span class="dot" onclick="currentDiv(4)"></span>
+              <span class="dot" onclick="currentDiv(5)"></span>
+              <span class="dot" onclick="currentDiv(6)"></span>
+              <!-- </div> -->
+              <div class="slideright" onclick="plusDivs(1)">
+                <img src="././images/arrow-right.png" alt="slider arrow-right" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- second hero section -->
+  <section class="secondSectionBg">
+    <div class="container">
+      <div class="secondSection">
+        <h2 data-translatekey="globalCompactForMigration"></h2>
+        <p data-translatekey="globalCompactForMigrationContent2"></p>
+      </div>
+    </div>
+
+    <!-- ThreeCard section -->
+    <section class="container">
+      <div class="threecard">
+        <div class="card">
+          <div class="bluecard-wrapper">
+            <img id='card1img' src="./images/pic2_EN.jpg" alt="Guiding Principle" />
+          </div>
+          <p data-translatekey="homeGuidingPrinciples"></p>
+          <button class="secondarybtn" onclick="document.location='Principles.html'"
+            data-translatekey="viewPrinciplesButton">
+          </button>
+        </div>
+        <div class="card">
+          <div class="bluecard-wrapper">
+            <img id='card2img' src="./images/GCMbox2.svg" alt="GCMO bjectives" />
+          </div>
+          <p data-translatekey="homeGCMObjectives">
+          </p>
+          <button class="secondarybtn" onclick="document.location='gcmobjectives.html'"
+            data-translatekey="viewObjectiveButton">
+          </button>
+        </div>
+        <div class="card">
+          <div class="bluecard-wrapper">
+            <img id='card3img' src="./images/pic1_EN (1).jpg" alt="Implementation Steps" />
+          </div>
+          <p data-translatekey="steppagemaintitletxt2">
+          </p>
+          <button class="secondarybtn" onclick="document.location='ImplementationSteps.html'"
+            data-translatekey="viewStepsButton">
+          </button>
+        </div>
+      </div>
+    </section>
+  </section>
+
+  <!-- poster section -->
+  <section class="container-fluid">
+    <div class="poster">
+      <img src="./images/dogmen.png" alt="Men with dog" />
+      <div class="content">
+        <h4 data-translatekey="homePortugalCasestudyTitle"></h4>
+        <p data-translatekey="homePortugalCasestudyContent"></p>
+        <button class="primarybtn">
+          <a href="blog.html" data-translatekey="readCasestudyButton"></a>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Download section -->
+  <section class="download-bg" id="down">
+    <div class="container">
+      <div class="ebook-txt">
+        <h5 data-translatekey="homeTheMaterialTitle"></h5>
+        <p data-translatekey="homeTheMaterialContent">
+        </p>
+      </div>
+
+      <div class="ebook">
+        <div class="booklet">
+          <div class="mobile-div">
+            <h6 class="for-mobile" data-translatekey="homeGuideTitle"></h6>
+            <img class="bookimg" id='Guide' src="./images/guide.png" alt="book" />
+            <!-- <img class="bookimg" src="./images/french/COVERS fr_GUIDE_page1.svg" alt="book" /> -->
+          </div>
+          <div class="content">
+            <h6 data-translatekey="homeGuideTitle"></h6>
+            <p data-translatekey="homeGuideContent">
+            </p>
+            <button class="secondarybtn">
+              <a href="./pdf/guide.pdf" target="_blank" class="view guidepdf"
+                data-translatekey="downloadGuideButton"></a>
+              <img class="first" src="./images/icons/download.png" alt="download-icon" />
+              <img class="second" src="./images/icons/downloadwhite.png" alt="download" />
+            </button>
+          </div>
+        </div>
+        <div class="booklet">
+          <div class="mobile-div">
+            <h6 class="for-mobile" data-translatekey="homeBookletTitle"></h6>
+            <img class="bookimg" id='Booklet' src="./images/booklet.png" alt="booklet" />
+            <!-- <img class="bookimg" src="./images/french/COVERS fr_BROCHURE_page1.svg" alt="book" /> -->
+
+          </div>
+          <div class="content">
+            <h6 data-translatekey="homeBookletTitle"></h6>
+            <p data-translatekey="homeBookletContent"></p>
+            <button class="secondarybtn">
+              <a href="./pdf/booklet.pdf" target="_blank" class="bookletpdf"
+                data-translatekey="downloadBookletButton"></a>
+              <img class="first" src="./images/icons/download.png" alt="download-icon" />
+              <img class="second" src="./images/icons/downloadwhite.png" alt="download-icon white" />
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- footer section -->
+  <section class="footer-bg">
+    <div class="container">
+      <div class="footer">
+        <div class="scroller" id="scroll-to-bottom">
+          <button onclick="topFunction()" id="myBtn" title="Go to top" data-translatekey="backToTopButton">
+          </button>
+        </div>
+        <div class="leftside">
+          <h4 data-translatekey="footerKnowMoreQuestion"></h4>
+          <img class="firstimg" id='footerglobal' src="./images/footer-Logo.png" alt="footer logo" />
+          <!-- <a target="_blank" id="FooterLeftLink" href="https://migrationnetwork.un.org/migration-network-hub">
+            <img class="secondimg" src="./images/logo.svg" alt="logo" />
+          </a> -->
+          <button class="return-btn" data-translatekey="returntomigrationhub"></button>
+        </div>
+        <div class="rightside">
+          <ul>
+            <li>
+              <h5 data-translatekey="footerQuickLinks"></h5>
+            </li>
+            <li>
+              <a target="_blank" href="https://migrationnetwork.un.org/" data-translatekey="footerUnitedNationLink"
+                id="UNNLink"></a>
+            </li>
+            <li>
+              <a target="_blank" id="GCMImmplementLink" href="https://migrationnetwork.un.org/gcm-guidance"
+                data-translatekey="footerGCMImplementationLink"></a>
+            </li>
+            <li>
+              <a target="_blank" id="MigrationNetHubLink" href="https://migrationnetwork.un.org/migration-network-hub"
+                data-translatekey="footerMigrationNetworkLink"></a>
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <h5 data-translatekey="footerAboutGCM"></h5>
+            </li>
+            <li>
+              <a target="_blank" id="NutshellLink" href="https://migrationnetwork.un.org/fr/node/2312"
+                data-translatekey="footerNutshellLink"></a>
+            </li>
+            <li>
+              <a target="_blank" id="PledgesLink" href="https://migrationnetwork.un.org/the-pledging-dashboard"
+                data-translatekey="footerPledgesLink"></a>
+            </li>
+            <li>
+              <a target="_blank" id="RepoofPracticeLink"
+                href="https://migrationnetwork.un.org/hub/repository-of-practices"
+                data-translatekey="footerRepositoryLink"></a>
+            </li>
+            <li>
+              <a target="_blank" id="TrustFundLink" href="https://migrationnetwork.un.org/mptf"
+                data-translatekey="footerTrustFundLink"></a>
+            </li>
+            <li>
+              <a target="_blank" id="InternationalMigrationLink"
+                href="https://migrationnetwork.un.org/international-migration-review-forum-2022"
+                data-translatekey="footerInternationalForumLink"></a>
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <h5 data-translatekey="footerFollowUs"></h5>
+            </li>
+            <li><a target="_blank" href="https://twitter.com/UNMigNetwork" data-translatekey="footerTwitterLink"></a>
+            </li>
+            <li>
+              <a target="_blank"
+                href="https://migrationnetwork.us19.list-manage.com/subscribe?u=91a1d870ca31df83b2b697cf6&id=9c7fcb90a4"
+                data-translatekey="footerNewsletterLink"></a>
+            </li>
+            <li>
+              <a target="_blank" id="EventsLink"
+                href="https://migrationnetwork.un.org/hub/events?text=&gcm_objectives=All&cross_cutting_theme=All&region=All&country=All"
+                data-translatekey="footerEventsLink"></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="bottom-section">
+        <ul>
+          <li><a target="_blank" href="#" id="copyRight" data-translatekey="footerCopyright"></a></li>
+          <li><a target="_blank" href="#" id="fraudAlert" data-translatekey="footerFraudAlert"></a></li>
+          <li><a target="_blank" href="#" id="PrivacyNotice" data-translatekey="footerPrivacyNotice"></a></li>
+          <li><a target="_blank" href="#" id="termsofUse" data-translatekey="footerTermsOfUse"></a></li>
+        </ul>
+        <!-- <a target="_blank" id="FooterRightLink" href="https://migrationnetwork.un.org/">
+          <img id="footerunited" src="./images/mignet-logo.png" alt="logo" />
+        </a> -->
+      </div>
+    </div>
+  </section>
+
+  <script>
+    function showDivs(n) {
+      var i;
+      var x = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("dot");
+      if (n > x.length) {
+        slideIndex = 1;
+      }
+      if (n < 1) {
+        slideIndex = x.length;
+      }
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active-dot", "");
+      }
+      x[slideIndex - 1].style.display = "block";
+      dots[slideIndex - 1].className += " active-dot";
+    }
+
+    // slider
+    var slideIndex = 1;
+    showDivs(slideIndex);
+
+    function plusDivs(n) {
+      showDivs((slideIndex += n));
+    }
+
+    function currentDiv(n) {
+      showDivs((slideIndex = n));
+    }
+
+    //Get the button
+    var mybutton = document.getElementById("myBtn");
+
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function () {
+      scrollFunction();
+    };
+
+    function scrollFunction() {
+      if (
+        document.body.scrollTop > 20 ||
+        document.documentElement.scrollTop > 20
+      ) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+  </script>
+</body>
+
+</html>

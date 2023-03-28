@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About</title>
+  <link rel="stylesheet" href="./styles/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="js/jquery.min.js"></script>
+  <script src="js/index.js"></script>
+  <script src="js/tinyi18n.js"></script>
+  <script src="js/about.js"></script>
+</head>
+
+<body>
+  <p id="page-top"></p>
+  <div class="aboutv2Page">
+    <section class="aboutv2section-bg">
+      <!-- Header -->
+      <header class="headerBg">
+        <div class="container-fluid">
+          <div class="header">
+            <input id="menu__toggle" type="checkbox" />
+            <label class="menu__btn" for="menu__toggle"><span></span></label>
+            <div class="logo">
+              <a target="_blank" href="https://migrationnetwork.un.org/" id="HeaderRightLink">
+                <img id='headerunited' src="./images/UNNM-Logo-TAG.png" alt="logo" />
+              </a>
+              <a target="_blank" class="LogoforMobile" target="_blank"
+                href="https://migrationnetwork.un.org/migration-network-hub"><img src="./images/footer-Logo.png"
+                  alt="logo" /></a>
+            </div>
+            <div id="overlay"></div>
+
+            <div id="menu-close" class="menu__box">
+              <div class="collapse-top">
+                <a target="_blank" href="https://migrationnetwork.un.org/migration-network-hub"><img
+                    class="collapse-logo" src="./images/footer-Logo.png" alt="logo" /></a>
+              </div>
+              <ul>
+                <li><a href="/" data-translatekey="home"></a></li>
+                <li><a href="about.html" class="active" data-translatekey="about"></a></li>
+                <li><a href="gcmobjectives.html" data-translatekey="objective"></a></li>
+                <li><a href="Principles.html" data-translatekey="priniciples"></a></li>
+                <li> <a href="ImplementationSteps.html" data-translatekey="implementation"></a></li>
+                <li><a href="resources.html" data-translatekey="resources"></a></li>
+                <li>
+                  <div class="dropdown">
+                    <button class="dropbtn" id="dropdowntext" onclick="myFunction()">English</button>
+                    <div id="selectBox" class="dropdown-content">
+                      <a onclick="changeFunc('en')">English</a>
+                      <a onclick="changeFunc('fr')">Français</a>
+                      <a onclick="changeFunc('spa')">Español</a>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+
+              <div class="collapse-bottom">
+                <h4 data-translatekey="gcmobjcollapsetitle"></h4>
+                <a target="_blank" href="https://migrationnetwork.un.org/migration-network-hub"><img
+                    src="./images/logo.svg" alt="logo" /></a>
+                <hr class="mobileview-divider">
+                <a target="_blank" href="https://migrationnetwork.un.org/migration-network-hub"><img id="headerunited2"
+                    class="secondImg" src="./images/mignet-logo.png" alt="logo" /></a>
+              </div>
+            </div>
+            <div class="Rightlogo">
+              <a target="_blank" class="LogoforWeb" target="_blank" id="HeaderLeftLink"
+                href="https://migrationnetwork.un.org/migration-network-hub"><img src="./images/logo.svg"
+                  alt="logo" /></a>
+            </div>
+          </div>
+        </div>
+      </header>
+      <div class="container">
+        <div class="firstSection">
+          <div class="content">
+            <h1 data-translatekey="aboutPageTitle"></h1>
+            <p data-translatekey="aboutPageTitleContent">
+            </p>
+            <div class="btnSection">
+              <a class="secondarybtn" onclick="document.location='#Down'" data-translatekey="aboutLearnMoreButton">
+              </a>
+              <a target="_blank" class="primarybtn guidepdf">
+                <span data-translatekey="aboutDownloadMaterialButton"></span>
+                <img class="download-icon" src="./images/download.png" alt="" />
+              </a>
+            </div>
+          </div>
+          <div class="image-section">
+            <!-- <img src="./images/Player.svg" alt="people" /> -->
+
+            <video width="600" controls>
+              <source src="./video/icons_animation_23_objectives.mp4" type="video/mp4" />
+              <source src="./video/icons_animation_23_objectives.mp4" data-translatekey="notSupportMessage"
+                type="video/ogg" />
+            </video>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="secondSectionBg">
+      <div class="bigCircle"></div>
+      <div class="container">
+        <div class="secondSection">
+          <h6 data-translatekey="aboutDegreeVisionTitle"></h6>
+          <p data-translatekey="aboutDegreeVisionContent">
+          <div class="diagram">
+            <div class="wrapper">
+              <div class="first">
+                <span></span>
+                <li>
+                  <a data-translatekey="aboutCircleContent1"></a>
+                </li>
+                <div class="firstCard cardFirst">
+                  <h6 class="heading" data-translatekey="aboutCircleContent1"></h6>
+                  <hr>
+                  <p class="innercontent" data-translatekey="aboutp1"></p>
+                </div>
+              </div>
+
+              <div class="second">
+                <span></span>
+                <li>
+                  <a data-translatekey="aboutCircleContent2"></a>
+                </li>
+                <div class="firstCard cardFirst">
+                  <h6 class="heading" data-translatekey="aboutCircleContent2"></h6>
+                  <hr>
+                  <p class="innercontent" data-translatekey="aboutp2"></p>
+                </div>
+              </div>
+              <div class="third">
+                <span></span>
+                <li>
+                  <a data-translatekey="aboutCircleContent3"></a>
+                </li>
+                <div class="firstCard cardFirst">
+                  <h6 class="heading" data-translatekey="aboutCircleContent3"></h6>
+                  <hr>
+                  <p class="innercontent" data-translatekey="aboutp3"></p>
+                </div>
+              </div>
+              <div class="fourth">
+                <span></span>
+                <li>
+                  <a data-translatekey="aboutCircleContent4"></a>
+                </li>
+                <div class="firstCard cardFirst">
+                  <h6 class="heading" data-translatekey="aboutCircleContent4"></h6>
+                  <hr>
+                  <p class="innercontent" data-translatekey="aboutp4"></p>
+                </div>
+              </div>
+              <div class="fifth">
+                <span></span>
+                <li>
+                  <a data-translatekey="aboutCircleContent6"></a>
+                </li>
+                <div class="firstCard cardFirst">
+                  <h6 class="heading" data-translatekey="aboutCircleContent6"></h6>
+                  <hr>
+                  <p class="innercontent" data-translatekey="aboutp5"></p>
+                </div>
+              </div>
+              <div class="sixth">
+                <span></span>
+                <li>
+                  <a data-translatekey="aboutCircleContent5"></a>
+                </li>
+                <div class="firstCard cardFirst">
+                  <h6 class="heading" data-translatekey="aboutCircleContent5"></h6>
+                  <hr>
+                  <p class="innercontent" data-translatekey="aboutp6"></p>
+                </div>
+              </div>
+
+              <div class="circle"></div>
+            </div>
+          </div>
+          <div class="content">
+            <a target="_blank" class="primarybtn guidepdf" data-translatekey="downloadGuideButton">
+              <img class="first" src="./images/icons/download.png" alt="download icon" />
+              <img class="second" src="./images/icons/downloadwhite.png" alt="download icon" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="thirdSection-bgcolor">
+      <section id="Down">
+        <div class="container">
+          <div class="fourthSection">
+            <div class="image-section">
+              <div class="bluecard-wrapper">
+                <img class="first" id="tenPrinciple" src="./images/Guiding-Principles.png" alt="Guiding-Principles" />
+                <img class="second" id="Guidingprp" src="./images/guiding_principles_square.jpg"
+                  alt="guiding_principles">
+              </div>
+            </div>
+            <div class="content">
+              <p data-translatekey="aboutGuidingPrincipleContent"></p>
+
+              <div class="btnSection">
+                <button class="primarybtn" onclick="document.location='./Principles.html'"
+                  data-translatekey="aboutLearnMoreButton">
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="container">
+          <div class="thirdSection">
+            <div class="text-content">
+              <h6 data-translatekey="aboutGCMObjectiveTitle"></h6>
+              <p data-translatekey="aboutGCMObjectiveContent"></p>
+              <a target="_blank" class="primarybtn bookletpdf" data-translatekey="downloadBookletButton">
+                <img src="./images/icons/downloadwhite.png" alt="downloadwhite icon" />
+              </a>
+            </div>
+            <div class="image-content">
+              <div class="about-image-frame"></div>
+              <img id="MigrationImag" src="./images/GCM_LOGO_Vertical_EN.jpg" alt="GCM_LOGO" />
+
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <section class="seventhSectionBg">
+      <div class="container">
+        <div class="seventhSection">
+          <div class="firstWrap">
+            <div class="first">
+              <h2 data-translatekey="aboutSliderTitle"></h2>
+              <div class="for-mobile">
+
+                <form class="search-form">
+                  <input type="hidden" name="search-form-loc" id="search-form-loc" />
+                  <div class="pos-rel">
+                    <div class="search-form__selector">
+                      <p class="search-form__label search-form__label--loc" data-translatekey="aboutSlider1"></p>
+                      <!-- <i class="fa fa-caret-down search-form__icon"></i> -->
+                      <img class="search-form__icon" src="./images/AngleDownblue.svg" alt="AngleDownblue">
+                    </div>
+                    <ul class="search-form__dropdown" id="selectBox4">
+                      <li class="search-form__value search-form-border clickme4 active" data-tag="firstContent"
+                        data-loc="search-form-loc" data-translatekey="aboutSlider1"></li>
+                      <li class="search-form__value search-form-border clickme4" data-tag="secondContent"
+                        data-loc="search-form-loc" data-translatekey="aboutSlider2"></li>
+                      <li class="search-form__value clickme4" data-tag="thirdContent" data-loc="search-form-loc"
+                        data-translatekey="aboutSlider3"></li>
+                    </ul>
+                  </div>
+                </form>
+              </div>
+              <div class="for-web">
+                <div class="btngroupwrap">
+                  <div class="firstbtn bottomButton tab-item  clickme4  active" data-tag="firstContent"
+                    data-translatekey="aboutSlider1"></div>
+                  <div class="secondbtn bottomButton tab-item  clickme4" data-tag="secondContent"
+                    data-translatekey="aboutSlider2"></div>
+                  <div class="thirdbtn bottomButton tab-item  clickme4" data-tag="thirdContent"
+                    data-translatekey="aboutSlider3"></div>
+                </div>
+              </div>
+              <div class="btngroupcontent">
+                <div class="firstpara type-inner-wrap tab-inner4 active" id="firstContent">
+                  <p data-translatekey="aboutp7"></p>
+                  <div class="slider-full-wrap">
+                    <div class="secondWrap">
+                      <!-- <div class="firsrInnerWrap">
+                        <div class="left">
+                          <p data-translatekey="aboutSliderContent1"></p>
+                        </div>
+                        <div class="right">
+                          <p data-translatekey="aboutSliderContent2"></p>
+                        </div>
+                      </div> -->
+                      <div class="border"></div>
+                      <div class="secondInnerWrap">
+                        <div class="first">
+                          <h6>1948</h6>
+                          <p data-translatekey="aboutp11"></p>
+                        </div>
+                        <div class="second">
+                          <h6>1965</h6>
+                          <p data-translatekey="aboutp13"></p>
+                        </div>
+                        <div class="third">
+                          <h6>1966</h6>
+                          <p data-translatekey="aboutp15"></p>
+                        </div>
+                        <div class="fourth">
+                          <h6></h6>
+                          <p data-translatekey="aboutp17"></p>
+                        </div>
+                        <div class="fifth">
+                          <h6>1979</h6>
+                          <p data-translatekey="aboutp18"></p>
+                        </div>
+                        <div class="sixth">
+                          <h6>1984</h6>
+                          <p data-translatekey="resourceacctitle3p2"></p>
+                        </div>
+                        <div class="seventh">
+                          <h6>1989</h6>
+                          <p data-translatekey="aboutp21"></p>
+                        </div>
+                        <div class="eighth">
+                          <h6>1990</h6>
+                          <p data-translatekey="aboutp22"></p>
+                        </div>
+                        <div class="ninth">
+                          <h6>2006</h6>
+                          <p data-translatekey="resourceacctitle3p3"></p>
+                        </div>
+                        <div class="tenth">
+                          <h6></h6>
+                          <p data-translatekey="aboutp24"></p>
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+                  <div class="slider-arrows">
+                    <input type="hidden" id="slider-input" value=20 />
+                    <img src="images/icons/arrowRight.svg" alt='arrowRight' class="left-arrow" />
+                    <img src="images/icons/arrowRight.svg" alt='arrowRight' class="nextButton" />
+                  </div>
+                </div>
+                <div class="secondpara type-inner-wrap tab-inner4 hide" id="secondContent">
+                  <p data-translatekey="aboutp8"></p>
+                  <div class="slider-full-wrap">
+                    <div class="secondWrap">
+                      <!-- <div class="firsrInnerWrap">
+                        <div class="left">
+                          <p data-translatekey="aboutSliderContent1"></p>
+                        </div>
+                        <div class="right">
+                          <p data-translatekey="aboutSliderContent2"></p>
+                        </div>
+                      </div> -->
+                      <div class="border"></div>
+                      <div class="secondInnerWrap">
+                        <div class="eleventh">
+                          <h6>1927</h6>
+                          <p data-translatekey="eleventhp"></p>
+                        </div>
+                        <div class="twelth">
+                          <h6>1949</h6>
+                          <p data-translatekey="twelthp"></p>
+                        </div>
+                        <div class="thirteen">
+                          <h6>1996</h6>
+                          <p data-translatekey="thirteenp"></p>
+                        </div>
+                        <div class="fourteen">
+                          <h6>2003</h6>
+                          <p data-translatekey="fourteenp"></p>
+                        </div>
+                        <div class="fifteen">
+                          <h6>2004</h6>
+                          <p data-translatekey="fifteenp"></p>
+                        </div>
+                        <div class="sixteen">
+                          <h6>2020</h6>
+                          <p data-translatekey="sixteenp"></p>
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+                  <div class="slider-arrows">
+                    <input type="hidden" id="slider-input" value=20 />
+                    <img src="images/icons/arrowRight.svg" alt='arrowRight' class="left-arrow" />
+                    <img src="images/icons/arrowRight.svg" alt='arrowRight' class="nextButton" />
+                  </div>
+                </div>
+                <div class="thirdpara type-inner-wrap tab-inner4 hide" id="thirdContent">
+                  <p data-translatekey="aboutp9"></p>
+                  <div class="slider-full-wrap">
+                    <div class="secondWrap">
+                      <!-- <div class="firsrInnerWrap">
+                        <div class="left">
+                          <p data-translatekey="aboutSliderContent1"></p>
+                        </div>
+                        <div class="right">
+                          <p data-translatekey="aboutSliderContent2"></p>
+                        </div>
+                      </div> -->
+                      <div class="border"></div>
+                      <div class="secondInnerWrap">
+                        <div class="seventeen">
+                          <h6>2015</h6>
+                          <p data-translatekey="seventeenp"></p>
+                        </div>
+                        <div class="eighteen">
+                          <h6></h6>
+                          <p data-translatekey="eighteenp"></p>
+                        </div>
+                        <div class="nineteen">
+                          <h6></h6>
+                          <p data-translatekey="nineteenp"></p>
+                        </div>
+                        <div class="twenty">
+                          <h6>2016</h6>
+                          <p data-translatekey="twentyp"></p>
+                        </div>
+                        <div class="twentyone">
+                          <h6></h6>
+                          <p data-translatekey="twentyonep"></p>
+                        </div>
+                        <div class="twentytwo">
+                          <h6>2018</h6>
+                          <p data-translatekey="twentytwop"></p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="slider-arrows">
+                    <input type="hidden" id="slider-input" value=20 />
+                    <img src="images/icons/arrowRight.svg" alt='arrowRight' class="left-arrow" />
+                    <img src="images/icons/arrowRight.svg" alt='arrowRight' class="nextButton" />
+                  </div>
+                </div>
+              </div>
+    </section>
+
+    <section>
+      <div class="container-fluid">
+        <div class="sixthSection">
+          <div class="content">
+            <h2 data-translatekey="aboutKnowMoreGCM"></h2>
+            <p data-translatekey="aboutKnowMoreGCMContent"></p>
+          </div>
+          <div class="btnWrap">
+            <a target="_blank" id="VisittheWebLink" href='https://migrationnetwork.un.org/migration-network-hub'
+              class=" secondarybtn" data-translatekey="visitWebisteButton"></a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- footer section -->
+  <section class="footer-bg">
+    <div class="container">
+      <div class="footer">
+        <div class="scroller" id="scroll-to-bottom">
+          <button onclick="topFunction()" id="myBtn" title="Go to top" data-translatekey="backToTopButton">
+          </button>
+        </div>
+        <div class="leftside">
+          <h4 data-translatekey="footerKnowMoreQuestion"></h4>
+          <img class="firstimg" id='footerglobal' src="./images/footer-Logo.png" alt="footer logo" />
+          <!-- <a target="_blank" id="FooterLeftLink" href="https://migrationnetwork.un.org/migration-network-hub">
+            <img class="secondimg" src="./images/logo.svg" alt="logo" />
+          </a> -->
+          <button class="return-btn" data-translatekey="returntomigrationhub"></button>
+        </div>
+        <div class="rightside">
+          <ul>
+            <li>
+              <h5 data-translatekey="footerQuickLinks"></h5>
+            </li>
+            <li>
+              <a target="_blank" href="https://migrationnetwork.un.org/" data-translatekey="footerUnitedNationLink"
+                id="UNNLink"></a>
+            </li>
+            <li>
+              <a target="_blank" id="GCMImmplementLink" href="https://migrationnetwork.un.org/gcm-guidance"
+                data-translatekey="footerGCMImplementationLink"></a>
+            </li>
+            <li>
+              <a target="_blank" id="MigrationNetHubLink" href="https://migrationnetwork.un.org/migration-network-hub"
+                data-translatekey="footerMigrationNetworkLink"></a>
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <h5 data-translatekey="footerAboutGCM"></h5>
+            </li>
+            <li>
+              <a target="_blank" id="NutshellLink" href="https://migrationnetwork.un.org/global-compact-for-migration"
+                data-translatekey="footerNutshellLink"></a>
+            </li>
+            <li>
+              <a target="_blank" id="PledgesLink" href="https://migrationnetwork.un.org/the-pledging-dashboard"
+                data-translatekey="footerPledgesLink"></a>
+            </li>
+            <li>
+              <a target="_blank" id="RepoofPracticeLink"
+                href="https://migrationnetwork.un.org/hub/repository-of-practices"
+                data-translatekey="footerRepositoryLink"></a>
+            </li>
+            <li>
+              <a target="_blank" id="TrustFundLink" href="https://migrationnetwork.un.org/mptf"
+                data-translatekey="footerTrustFundLink"></a>
+            </li>
+            <li>
+              <a target="_blank" id="InternationalMigrationLink"
+                href="https://migrationnetwork.un.org/international-migration-review-forum-2022"
+                data-translatekey="footerInternationalForumLink"></a>
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <h5 data-translatekey="footerFollowUs"></h5>
+            </li>
+            <li><a target="_blank" href="https://twitter.com/UNMigNetwork" data-translatekey="footerTwitterLink"></a>
+            </li>
+            <li>
+              <a target="_blank"
+                href="https://migrationnetwork.us19.list-manage.com/subscribe?u=91a1d870ca31df83b2b697cf6&id=9c7fcb90a4"
+                data-translatekey="footerNewsletterLink"></a>
+            </li>
+            <li>
+              <a target="_blank" id="EventsLink"
+                href="https://migrationnetwork.un.org/hub/events?text=&gcm_objectives=All&cross_cutting_theme=All&region=All&country=All"
+                data-translatekey="footerEventsLink"></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="bottom-section">
+        <ul>
+          <li><a target="_blank" href="#" id="copyRight" data-translatekey="footerCopyright"></a></li>
+          <li><a target="_blank" href="#" id="fraudAlert" data-translatekey="footerFraudAlert"></a></li>
+          <li><a target="_blank" href="#" id="PrivacyNotice" data-translatekey="footerPrivacyNotice"></a></li>
+          <li><a target="_blank" href="#" id="termsofUse" data-translatekey="footerTermsOfUse"></a></li>
+        </ul>
+        <!-- <a target="_blank" id="FooterRightLink" href="https://migrationnetwork.un.org/">
+          <img id="footerunited" src="./images/mignet-logo.png" alt="logo" />
+        </a> -->
+      </div>
+    </div>
+  </section>
+
+  <script>
+    // for scroll down page
+    let scrollToBottom = document.querySelector("#scroll-to-bottom");
+    let pageBottom = document.querySelector("#page-top");
+
+    scrollToBottom.addEventListener("click", function () {
+      pageBottom.scrollIntoView();
+    });
+    //Get the button
+    var mybutton = document.getElementById("myBtn");
+
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function () {
+      scrollFunction();
+    };
+
+    function scrollFunction() {
+      if (
+        document.body.scrollTop > 20 ||
+        document.documentElement.scrollTop > 20
+      ) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+  </script>
+
+</body>
+
+</html>
